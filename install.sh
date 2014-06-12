@@ -11,7 +11,7 @@ exit 0
 fi
 if [ -d ~/.voice_commands ]
 then
-zenity --warning --text="To install must clear before\n $HOME/.voice_commands\nand then run the installer"
+zenity --warning --text="To install must clear before\n $HOME/.voice_commands\nOr run this command:\nsh ~/.voice_commands/uninstall.sh\nand then run the installer"
 exit 0
 fi
 PKG_PATH=$(dirname "$(readlink -f "$0")")
