@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+StartupNotify=false
+Categories=GTK;GNOME;Utility;Accessibility;
+Comment=command your PC with voice commands
+Icon[es_UY]=gnome-sound-recorder
+Name[es_UY]=Voice commands
+Exec=/home/pc/.voice_commands/play_stop.sh
+Name=Voice commands
+Icon=gnome-sound-recorder
