@@ -31,6 +31,14 @@ JSON=`curl -s -X POST \
 'https://www.google.com/speech-api/v2/recognize?output=json&lang='$lang'&key='$key'' | cut -d\" -f8 `
 if echo "$JSON" | grep -q "Your client does not have permission to get URL" ; then
 if new_key=$( zenity --entry --text="The key speech-api/v2 google, should be updated.\nPlease enter a new correct key.\nOtherwise the process can not be made" --title="speech-api new key"); then
+if
+curl -s -X POST \
+--data-binary @/tmp/voice_"$PID".flac \
+--header 'Content-Type: audio/x-flac; rate=16000;' \
+'https://www.google.com/speech-api/v2/recognize?output=json&lang='$lang'&key='$new_key'' | grep "Your client does not have permission to get URL" ; then
+notify-send "Wrong key, Message:" "Your client does not have permission to get URL"
+exit 0
+fi
 sed -i 's/'"$key"'/'"$new_key"'/' "${PKG_PATH}"/play_stop.sh
 sh "${PKG_PATH}"/play_stop.sh
 exit 1
@@ -41,7 +49,7 @@ echo "$JSON" | sed '/^$/d' | tr '[:upper:]' '[:lower:]' > /tmp/speech_recognitio
 rm /tmp/voice_"$PID".flac
 rm /tmp/result
 killall notify-osd 2>/dev/null
-sh "${PKG_PATH}"/speech_commands.sh "$lang" "$key"
+/bin/bash "${PKG_PATH}"/speech_commands.sh"$lang" "$key"
 rm /tmp/process_result
 if [ -f /tmp/line_of_process ] ; then
 rm /tmp/line_of_process

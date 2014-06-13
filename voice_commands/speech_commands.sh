@@ -657,11 +657,11 @@ if [ "$number_process" = 12 ]; then
 echo "0" > /tmp/dictation_mode/number_of_process
 notify-send -i "/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" "Dicatation mode" "Recording ..."
 fi
-arecord -q -f cd -t wav -d 4 -r 16000 | flac - -f --best --sample-rate 16000 -o /tmp/dictation_mode/voice_.flac  2>/dev/null
-PID=$(($RANDOM%8000+1000))
+recording=3
+arecord -q -f cd -t wav -d "$recording" -r 16000 | flac - -f --best --sample-rate 16000 -o /tmp/dictation_mode/voice_.flac  2>/dev/null
 
-mv /tmp/dictation_mode/voice_.flac /tmp/dictation_mode/voice_"$PID".flac
-recognise "$PID" &
+mv /tmp/dictation_mode/voice_.flac /tmp/dictation_mode/voice_"$number_process".flac
+recognise "$number_process" &
 record
 }
 if [ -f /tmp/dictation_mode/line_of_process ] ; then
