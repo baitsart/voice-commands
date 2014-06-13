@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Written by Rodrigo Esteves baitsart@gmail.com www.youtube.com/user/baitsart 
+# GNU License. You are free to modify and redistribute   # 
+
 lang="en"
 recording=5
 key="AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
@@ -26,7 +29,14 @@ JSON=`curl -s -X POST \
 --data-binary @/tmp/voice_"$PID".flac \
 --header 'Content-Type: audio/x-flac; rate=16000;' \
 'https://www.google.com/speech-api/v2/recognize?output=json&lang='$lang'&key='$key'' | cut -d\" -f8 `
-
+if echo "$JSON" | grep -q "Your client does not have permission to get URL" ; then
+if new_key=$( zenity --entry --text="The key speech-api/v2 google, should be updated.\nPlease enter a new correct key.\nOtherwise the process can not be made" --title="speech-api new key"); then
+sed -i 's/'"$key"'/'"$new_key"'/' "${PKG_PATH}"/play_stop.sh
+sh "${PKG_PATH}"/play_stop.sh
+exit 1
+fi
+exit
+fi
 echo "$JSON" | sed '/^$/d' | tr '[:upper:]' '[:lower:]' > /tmp/speech_recognition.tmp
 rm /tmp/voice_"$PID".flac
 rm /tmp/result
