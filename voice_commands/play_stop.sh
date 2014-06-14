@@ -49,7 +49,7 @@ echo "$JSON" | sed '/^$/d' | tr '[:upper:]' '[:lower:]' > /tmp/speech_recognitio
 rm /tmp/voice_"$PID".flac
 rm /tmp/result
 killall notify-osd 2>/dev/null
-/bin/bash "${PKG_PATH}"/speech_commands.sh"$lang" "$key"
+/bin/bash "${PKG_PATH}"/speech_commands.sh "$lang" "$key"
 rm /tmp/process_result
 if [ -f /tmp/line_of_process ] ; then
 rm /tmp/line_of_process
