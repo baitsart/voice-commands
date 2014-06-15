@@ -35,12 +35,17 @@ CMD_WIKI_SEARCH="search wiki\|search wikipedia\|wikipedia"
 CMD_WEATHER="weather\|climate"
 CMD_SEARCH_MAPS="map\|map search\|map of\|map from\|where is"
 CMD_SAY_HI="greets to\|say hi to"
+CMD_HELLO="hello machine"
 CMD_WHOAMI="who i am"
 CMD_OPEN_FOLDER="open folder"
 CMD_OPEN_FOLDER_OF="open folder of"
 CMD_SAY_TIME="tell me the hour\|what the time is\|what time is it"
 CMD_SAY_DATE="date is\|which day is\|that date today\|which day is today\|tell me the date\|on what date we are"
 CMD_DICTATION="dictation mode\|out dictation mode\|end dictation mode"
+CMD_UNDO="undo"
+CMD_REDO="redo"
+CMD_DEL_LINE="delete line"
+CMD_FAV="add to favorite"
 CMD_MAIL="open mail\|open email\|open mail\|mail\|email"
 CMD_COPY="copy"
 CMD_PASTE="paste"
@@ -529,6 +534,20 @@ fi
 ###################################################################
 
 
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_HELLO" )
+	if [ "$recog" != "" ]
+	then
+	notify-send "Command:"  "$recog"
+	the_text_encoded=$(echo "Hello `whoami`, Have a nice day!")
+wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/user-is-it.mp3" "http://translate.google.com/translate_tts?tl=es&q=$(python -c "import urllib; print urllib.quote()")&ie=UTF-8"
+audacious /tmp/user-is-it.mp3 
+rm /tmp/speech_recognition.tmp
+exit 0;
+fi
+
+###################################################################
+
+
 recog=$(echo "$UTTERANCE" | grep -x "$CMD_WHOAMI" )
 	if [ "$recog" != "" ]
 	then
@@ -691,6 +710,30 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_UNDO" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+z"
+	rm /tmp/speech_recognition.tmp
+exit 0;
+fi
+
+###################################################################
+
+
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_REDO" )
+	if [ "$recog" != "" ]
+	then
+	notify-send "Command:"  "$recog"
+	xdotool key "Ctrl+Shift+z"
+	rm /tmp/speech_recognition.tmp
+exit 0;
+fi
+
+###################################################################
+
+
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_FAV\|$CMD_DEL_LINE" )
+	if [ "$recog" != "" ]
+	then
+	notify-send "Command:"  "$recog"
+	xdotool key "Ctrl+d"
 	rm /tmp/speech_recognition.tmp
 exit 0;
 fi

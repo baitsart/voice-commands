@@ -4,7 +4,7 @@ You can modify the commands down below for a better usage, on the file: speech_c
   
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
 Orders can be just a simple context: << order >> , or double context: << order >> << cited-text >>
-Available commands are 84
+Available commands are 87
 
 After installed we can launch it from Applications, Universal Access, Voice Commands
 And you can drag and drop on the gnome panel, and to call it a keyboard shortcut, eg. F6, this is the command: 
@@ -26,7 +26,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    *activate with*
 
 ################################
-CMD_SELECT_FILE
+   SELECT_FILE
    (select)
 ################################
    MUSIC_START
@@ -104,6 +104,9 @@ CMD_SELECT_FILE
    SAY_HI
    (greets to | say hi to)
 ################################
+   HELLO
+   (hello machine)
+################################
    WHOAMI
    (who i am)
 ################################
@@ -121,6 +124,18 @@ CMD_SELECT_FILE
 ################################
    DICTATION
    (dictation mode | out dictation mode | end dictation mode)
+################################
+   UNDO
+   (undo)
+################################
+   REDO
+   (redo)
+################################
+   DEL_LINE
+   (delete line)
+################################
+   FAV
+   (add to favorite)
 ################################
    MAIL
    (open mail | open email | open mail | mail | email)
