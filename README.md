@@ -3,6 +3,7 @@
 You can modify the commands down below for a better usage, on the file: speech_commands.sh
   
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
+Also can repeat the last command with RETRY function
 Orders can be just a simple context: << order >> , or double context: << order >> << cited-text >>
 Available commands are 87
 
@@ -288,7 +289,10 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (photo | take a picture)
 ################################
    OFFICE
-   (open new document | open new document of | create new document | create new document of | create new | open new"
+   (open new document | open new document of | create new document | create new document of | create new | open new)
+################################
+   RETRY
+   (retry command | repeat command | try again the command | retry | repeat | try again)
 ################################
 
 You can find many more features available with this command:

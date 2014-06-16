@@ -110,7 +110,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_SELECT_FILE" )
 	then
 	file=$(echo "$UTTERANCE" | sed 's/'"$CMD_SELECT_FILE"' //g;s/'"$CMD_SELECT_FILE"'//')
 xdotool type "$file"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 1
 fi
 
@@ -122,7 +122,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_MUSIC_START" )
 	then
 	notify-send "Command:"  "$recog"
 	rhythmbox-client --play-pause 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -136,7 +136,7 @@ recog=$(echo "$UTTERANCE" | grep "$CMD_MUSIC_START_SONG" )
 	line=$(echo "$UTTERANCE" | sed 's/'"$CMD_MUSIC_START_SONG"' //g;s/'"$CMD_MUSIC_START_SONG"'//' )
 	name=$(echo "$line")
 	rhythmbox-client && sleep 1 && xdotool key "Ctrl+f" && xdotool type "$name" && rhythmbox-client --play && sleep 1 && rhythmbox-client --next
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -148,7 +148,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_MUSIC_PLAY" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key XF86AudioPlay 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -160,7 +160,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_MUSIC_NEXT" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key XF86AudioNext 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -173,7 +173,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_MUSIC_PREV" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key XF86AudioPrev 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -186,7 +186,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_MUSIC_SHUFFLE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key XF86AudioRandomPlay 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -199,7 +199,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_MUSIC_REPEAT" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key XF86AudioRepeat
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -212,7 +212,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_VIDEO_REW" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key XF86FrameBack
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -225,7 +225,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_VIDEO_FF" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key XF86FrameForward
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -239,7 +239,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_VOLUME_DOWN" )
 	notify-send "Command:"  "$recog"
 	xdotool key XF86AudioLowerVolume
 	xdotool key XF86AudioLowerVolume
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -253,7 +253,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_VOLUME_UP" )
 	notify-send "Command:"  "$recog"
 	xdotool key XF86AudioRaiseVolume
 	xdotool key XF86AudioRaiseVolume
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -266,7 +266,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_VOLUME_MUTE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key XF86AudioMute 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -278,7 +278,7 @@ recog=$(echo "$UTTERANCE" | awk '{print $1}' | grep -x "$CMD_SEARCH" )
 	then
 	name=$(echo "$UTTERANCE" | sed 's/'"$CMD_SEARCH"' //g;s/'"$CMD_SEARCH"'//')
 xdotool key "Ctrl+f" && xdotool type "`echo $name`"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -289,7 +289,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_NO_RESALT" )
 	if [ "$recog" != "" ]
 	then
 xdotool key "Ctrl+Shift+k"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -303,7 +303,7 @@ recog=$(echo "$UTTERANCE" | grep -v "$CMD_WRITE_CAPITAL" | grep -v "$CMD_WRITE_C
 	line=$(echo "$UTTERANCE" | sed 's/'"$CMD_WRITE_CAPITAL"' //g;s/'"$CMD_WRITE_CAPITAL"'//' | sed 's/.*/\u&/' )
 
 xdotool type "$line"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -317,7 +317,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_WRITE_CAPITAL" )
 	line=$(echo "$UTTERANCE" | sed 's/'"$CMD_WRITE_CAPITAL"' //g;s/'"$CMD_WRITE_CAPITAL"'//' | sed 's/.*/\u&/' )
 
 xdotool type "$line"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -331,7 +331,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_WRITE_CAPITAL_ALL" )
 	line=$(echo "$UTTERANCE" | sed 's/'"$CMD_WRITE_CAPITAL_ALL"' //g;s/'"$CMD_WRITE_CAPITAL_ALL"'//' )
 
 xdotool type "$line"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -429,7 +429,7 @@ echo "Translate to `cat /tmp/lang | grep  "$from " | cut -d' ' -f2` to `cat /tmp
 
 	xdg-open "http://translate.google.com/?hl="$lang"#"$from"/"$to"/$(python -c "import urllib; print urllib.quote('''$TEXT''')")"
 	rm /tmp/lang
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -443,7 +443,7 @@ recog=$(echo "$UTTERANCE" | awk '{print $1, $2}' | grep -x "$CMD_SAY_THIS" )
 	the_text_encoded=$(echo "$UTTERANCE" | sed 's/'"$CMD_SAY_THIS"' //g;s/'"$CMD_SAY_THIS"'//')
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/say_this.mp3" "http://translate.google.com/translate_tts?tl=es&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/say_this.mp3
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -457,7 +457,7 @@ recog=$(echo "$UTTERANCE" | grep "$CMD_GOOGLE_SEARCH" )
 	SEARCH=$(echo "$UTTERANCE" | sed 's/'"$CMD_GOOGLE_SEARCH"' //g;s/'"$CMD_GOOGLE_SEARCH"'//')
 	echo "$SEARCH"
 	xdg-open "http://www.google.com/search?q=$(python -c "import urllib; print urllib.quote('''$SEARCH''')")" &
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -471,7 +471,7 @@ recog=$(echo "$UTTERANCE" | awk '{print $1, $2, $3}'| grep "$CMD_YOUTUBE_SEARCH"
 	SEARCH=$(echo "$UTTERANCE" | sed 's/'"$CMD_YOUTUBE_SEARCH"' //g;s/'"$CMD_YOUTUBE_SEARCH"'//')
 	echo "$SEARCH"
 	xdg-open "http://www.youtube.com/results?search_query=$(python -c "import urllib; print urllib.quote('''$SEARCH''')")" &
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -485,7 +485,7 @@ recog=$(echo "$UTTERANCE" | grep "$CMD_WIKI_SEARCH" )
 	SEARCH=$(echo "$UTTERANCE" | sed 's/'"$CMD_WIKI_SEARCH"' //g;s/'"$CMD_WIKI_SEARCH"'//')
 	echo "$SEARCH"
 	xdg-open "http://"$lang".wikipedia.org/w/index.php?search=$(python -c "import urllib; print urllib.quote('''$SEARCH''')")" &
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -498,7 +498,7 @@ recog=$(echo "$UTTERANCE" | grep "$CMD_WEATHER" )
 	notify-send "Command:"  "$recog"
 	PLACE=$(echo "$UTTERANCE" | sed 's/'"$CMD_WEATHER"' //g;s/'"$CMD_WEATHER"'//')
 	xdg-open "https://www.google.com/#q=weather+$(python -c "import urllib; print urllib.quote('''$PLACE''')")&hl="$lang"&safe=off" &
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -512,7 +512,7 @@ recog=$(echo "$UTTERANCE" | grep "$CMD_SEARCH_MAPS" )
 	PLACE=$(echo "$UTTERANCE" | sed 's/'"$CMD_SEARCH_MAPS"' //g;s/'"$CMD_SEARCH_MAPS"'//')
 
 	xdg-open "https://maps.google.com/maps?hl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$PLACE''')")" &
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -527,7 +527,7 @@ recog=$(echo "$UTTERANCE" | awk '{print $1, $2}' | grep "$CMD_SAY_HI" )
 	the_text_encoded=$(echo "Hello "$name" Have a nice day!")
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/say_hi_to.mp3" "http://translate.google.com/translate_tts?tl=es&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/say_hi_to.mp3
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -541,7 +541,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_HELLO" )
 	the_text_encoded=$(echo "Hello `whoami`, Have a nice day!")
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/user-is-it.mp3" "http://translate.google.com/translate_tts?tl=es&q=$(python -c "import urllib; print urllib.quote()")&ie=UTF-8"
 audacious /tmp/user-is-it.mp3 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -555,7 +555,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_WHOAMI" )
 	the_text_encoded=$(echo "Your name of user is `whoami`")
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/user-is-it.mp3" "http://translate.google.com/translate_tts?tl=es&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/user-is-it.mp3 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -576,17 +576,17 @@ sub_folder=$(echo "$UTTERANCE" | sed 's/'"$CMD_OPEN_FOLDER"' '"$command_line"' /
 
 if [ -d $HOME/"$folder/$sub_folder" ]; then
 nautilus $HOME/"$folder/$sub_folder"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 if [ -d $HOME/"$folder/$directory" ]; then
 nautilus $HOME/"$folder/$directory"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 if echo "$UTTERANCE" | grep -x -i "$CMD_OPEN_FOLDER $command_line\|$CMD_OPEN_FOLDER_OF $command_line"; then
 nautilus $HOME/"$folder"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -594,7 +594,7 @@ cd $HOME/"$folder"
 sub_folder=$(find -maxdepth 1 -type d -print | sed 's|./||g' | grep -i "$directory" )
 if [ -d $HOME/"$folder/$sub_folder" ]; then
 nautilus $HOME/"$folder/$sub_folder"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -608,7 +608,7 @@ do
 fi
 
 done
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 ###################################################################
@@ -621,7 +621,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_SAY_TIME" )
 the_text_encoded=$(echo "Is: `date +%k` y `date +%M` minutes, with `date +%S` seconds")
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/time-is-it.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/time-is-it.mp3 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -635,7 +635,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_SAY_DATE" )
 the_text_encoded=$(echo "Today is: `date +%A` `date +%d` of `date +%B` of `date +%Y`")
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/time-is-it.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/time-is-it.mp3 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -688,7 +688,7 @@ notify-send -i "/usr/share/icons/hicolor/48x48/apps/audio-recorder-off.png" "End
 script_process=$(cat /tmp/dictation_mode/line_of_process)
 kill -HUP "$script_process"
 rm -rf /tmp/dictation_mode
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 1;
 fi
 mkdir /tmp/dictation_mode/
@@ -698,7 +698,7 @@ echo "Result:"
 echo "0" > /tmp/dictation_mode/number_of_process
 record
 
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -710,7 +710,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_UNDO" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+z"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -722,7 +722,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_REDO" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+Shift+z"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -734,7 +734,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_FAV\|$CMD_DEL_LINE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+d"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -746,7 +746,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_MAIL" )
 	then
 	notify-send "Command:"  "$recog"
 	exo-open --launch MailReader
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -758,7 +758,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_COPY" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+c"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -770,7 +770,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_PASTE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+v"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -782,7 +782,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_CUT" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+x"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -793,7 +793,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_SELECT_ALL" )
 	if [ "$recog" != "" ]
 	then
 	xdotool key "Ctrl+a"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 1
 fi
 
@@ -804,7 +804,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_SAVE" )
 	if [ "$recog" != "" ]
 	then
 	xdotool key "Ctrl+s"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 1
 fi
 
@@ -815,7 +815,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_SAVE_AS" )
 	if [ "$recog" != "" ]
 	then
 	xdotool key "Ctrl+Shift+s"
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 1
 fi
 
@@ -827,7 +827,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_FOLDER" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+Shift+n"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -839,7 +839,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_MINIMISE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+Alt+0"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -851,7 +851,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_MAXIMISE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+Alt+5"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -863,7 +863,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_FULLSCREEN" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "F11"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -875,7 +875,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_TAB" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Tab"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -887,7 +887,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_ESC" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Escape"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -899,7 +899,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_MENU" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Alt+F1"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -911,7 +911,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_ACTIONS_MENU" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "F10"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -923,7 +923,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_CLOSE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+q"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -935,7 +935,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_CLOSE_WIN" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+w"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -947,7 +947,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_ZOOM_OUT" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "XF86ZoomOut"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -959,7 +959,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_ZOOM_IN" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "XF86ZoomIn"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -971,7 +971,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_TOUCH_ON_OFF" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "XF86TouchpadToggle"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -982,7 +982,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_ZOOM_RESET" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+0"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -994,7 +994,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_BACK" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Alt+Left"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1006,7 +1006,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_ADVANCE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Alt+Right"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1018,7 +1018,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_RIGHT" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Right"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1030,7 +1030,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_LEFT" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Left"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1042,7 +1042,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_DOWN" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Down"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1054,7 +1054,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_UP" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Up"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1066,7 +1066,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_PAGE_UP" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key KP_Page_Up
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1104,7 +1104,7 @@ xdotool click --clearmodifiers 5
 sleep 0.2
 xdotool click --clearmodifiers 5
 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1141,7 +1141,7 @@ xdotool click --clearmodifiers 4
 sleep 0.2
 xdotool click --clearmodifiers 4
 
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1153,7 +1153,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_PAGE_DOWN" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key KP_Page_Down
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1166,7 +1166,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_DELETE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Delete"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1178,7 +1178,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_ENTER" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Enter"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1190,7 +1190,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_NEW_WINDOW" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+n"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1203,7 +1203,7 @@ recog=$(echo "$UTTERANCE" | grep "$CMD_CHANGE_TAB" )
 	winds=$(echo "$UTTERANCE" | sed 's/'"$CMD_CHANGE_TAB"' //g;s/'"$CMD_CHANGE_TAB"'//g;s/ //g;s/diez/010/g;s/once/011/g;s/doce/012/g;s/trece/013/g;s/catorce/014/g;s/quince/015/g;s/dieciséis/016/g;s/dieci/01/g;s/veinte/020/g;s/veinti/020/g;s/treintay/03/g;s/cuarentay/040/g;s/cincuentay/050/g;s/sesentay/060/g;s/setentay/070/g;s/ochentay/080/g;s/noventay/090/g;s/treintai/030/g;s/treinta/030/g;s/cuarentai/040/g;s/cuarenta/040/g;s/cincuentai/050/g;s/cincuenta/050/g;s/sesentai/060/g;s/sesenta/060/g;s/setentai/070/g;s/setenta/070/g;s/ochentai/080/g;s/ochenta/080/g;s/noventai/090/g;s/noventa/090/g;s/doscientos/200/g;s/trescientos/300/g;s/cuatrocientos/400/g;s/quinientos/500/g;s/seiscientos/600/g;s/setecientos/700/g;s/ochocientos/800/g;s/novecientos/900/g;s/ciento/100/g;s/cien/100/g;s/uno/01/g;s/un/01/g;s/dos/02/g;s/tres/03/g;s/cuatro/04/g;s/cinco/05/g;s/seis/06/g;s/siete/07/g;s/ocho/08/g;s/nueve/09/g;s/016/16/g;s/017/17/g;s/018/18/g;s/019/19/g;s/020/20/g;s/030/30/g;s/040/40/g;s/050/50/g;s/060/60/g;s/070/70/g;s/080/80/g;s/090/90/g;s/001/1/g;s/002/2/g;s/003/3/g;s/004/4/g;s/005/5/g;s/006/6/g;s/007/7/g;s/008/8/g;s/009/9/g' | sed 's/^[0]*//' )
 	echo "number `echo $winds`"
 	xdotool key Alt+`echo $winds`
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1215,7 +1215,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_CLOSE_TAB" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+w"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1227,7 +1227,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_BROWSER" )
 	then
 	notify-send "Command:"  "$recog"
 	exo-open --launch WebBrowser
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1239,7 +1239,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_FILE_MANAGER" )
 	then
 	notify-send "Command:"  "$recog"
 	exo-open --launch FileManager
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1251,7 +1251,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_TERMINAL" )
 	then
 	notify-send "Command:"  "$recog"
 	exo-open --launch TerminalEmulator
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1263,7 +1263,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_EXECUTE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Alt+F2"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1293,7 +1293,7 @@ fi
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/how-battery-is-it.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$message''')")&ie=UTF-8"
 audacious /tmp/how-battery-is-it.mp3
     rm /tmp/how-battery-is-it.mp3
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1305,7 +1305,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_TEXT_EDITOR" )
 	then
 	notify-send "Command:"  "$recog"
 	gedit
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1318,7 +1318,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_TAKE_PICTURE" )
 	then
 	notify-send "Command:"  "$recog"
 	cheese
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1388,11 +1388,11 @@ echo "Alarm:$alarm"
 
 #if [ -f "${SONGS_PATH}"/"$pic_ring" ]; then
 #	sleep $alarm && audacious "${SONGS_PATH}"/"$pic_ring"
-#	rm /tmp/speech_recognition.tmp
+#	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 #exit 1
 #fi
 sleep $alarm && audacious ""${SONGS_PATH}"/vip ringtone.mp3"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 }
 
@@ -1441,7 +1441,7 @@ mv "$HOME/$fecha.Alarm sleeping by: $alarm.txt" "$DESTINO"
 exit 0;
 fi
 if [ -f ~/".$fecha.Alarm sleeping by: $alarm.txt" ]; then
-mv ~/".$fecha.Alarm sleeping by: $alarm.txt" ~/Esritorio
+mv ~/".$fecha.Alarm sleeping by: $alarm.txt" ~/Escritorio
 
 fi
 }
@@ -1461,7 +1461,7 @@ mv "$HOME/$fecha.Alarm sleeping by: $alarm.txt" "$DESTINO"
 exit 0;
 fi
 if [ -f ~/".$fecha.Alarm sleeping by: $alarm.txt" ]; then
-mv ~/".$fecha.Alarm sleeping by: $alarm.txt" ~/Esritorio
+mv ~/".$fecha.Alarm sleeping by: $alarm.txt" ~/Escritorio
 
 fi
 }
@@ -1492,7 +1492,7 @@ mv "$HOME/$fecha.Alarm sleeping by: $alarm.txt" "$DESTINO"
 exit 0;
 fi
 if [ -f ~/".$fecha.Alarm sleeping by: $alarm.txt" ]; then
-mv ~/".$fecha.Alarm sleeping by: $alarm.txt" ~/Esritorio
+mv ~/".$fecha.Alarm sleeping by: $alarm.txt" ~/Escritorio
 
 fi
 }
@@ -1535,13 +1535,13 @@ dialogo
 	fi
 }
 comando
-rm /tmp/speech_recognition.tmp
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 fi
 	notify-send "Command, Alaram is:" "sleep ( 0 - 9 ) d ( 0 - 9 ) h ( 0 - 9 ) m ( 0 - 9 ) s 
 Alaram off"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 1;
 fi
 
@@ -1553,7 +1553,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_LOG_OFF" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+Alt+BackSpace"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1565,7 +1565,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_BRIGHTNESS_UP" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "XF86MonBrightnessUp"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1577,7 +1577,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_BRIGHTNESS_DOWN" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "XF86MonBrightnessDown"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1589,7 +1589,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_POWER_OFF" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key "XF86PowerOff"
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1601,7 +1601,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_CALCULATER" )
 	then
 	notify-send "Command:"  "$recog"
 	gcalctool
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1616,7 +1616,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_SCREENSHOT" )
 	import -window root ~/Imágenes/"$DATE_PIC"
 	eog ~/Imágenes/"$DATE_PIC"
 	rm /tmp/date-to-pict.temp
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
@@ -1632,38 +1632,38 @@ Action_Writer=$(echo "$UTTERANCE" | grep "text" )
 	if [ "$Action_Writer" != "" ]
 	then
 libreoffice --writer
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 Action_Calc=$(echo "$UTTERANCE" | grep "calc" )
 	if [ "$Action_Calc" != "" ]
 	then
 libreoffice --calc
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 Action_Impress=$(echo "$UTTERANCE" | grep "presentation\|page\|web" )
 	if [ "$Action_Impress" != "" ]
 	then
 libreoffice --impress
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 Action_Draw=$(echo "$UTTERANCE" | grep "drawing\|graphic" )
 	if [ "$Action_Draw" != "" ]
 	then
 libreoffice --draw
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 Action_Math=$(echo "$UTTERANCE" | grep "formula\|math" )
 	if [ "$Action_Math" != "" ]
 	then
 libreoffice --math
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
-	rm /tmp/speech_recognition.tmp
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
 
