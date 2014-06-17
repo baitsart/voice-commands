@@ -20,10 +20,6 @@ idioma=$(echo $LANG | cut -d'.' -f1)
 sed -i 's|es_UY|'$idioma'|g' ~/.voice_commands/voice-commands.desktop
 sed -i 's|/home/pc|'$HOME'|' ~/.voice_commands/voice-commands.desktop
 mv ~/.voice_commands/voice-commands.desktop  ~/.local/share/applications/voice-commands.desktop
-image_folder=$(xdg-user-dir PICTURES | sed 's|'$HOME'||')
-desk_folder=$(xdg-user-dir DESKTOP | sed 's|'$HOME'||')
-sed -i 's|/Imágenes|'$image_folder'|g' ~/.voice_commands/speech_commands.sh
-sed -i 's|/Escritorio|'$desk_folder'|g' ~/.voice_commands/speech_commands.sh
 if [ -d ~/.gnome2/nautilus-scripts ]
 then
 echo "#!/bin/bash

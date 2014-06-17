@@ -5,7 +5,7 @@ You can modify the commands down below for a better usage, on the file: speech_c
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
 Also can repeat the last command with RETRY function
 Orders can be just a simple context: << order >> , or double context: << order >> << cited-text >>
-Available commands are 87
+Available commands are 92
 
 After installed we can launch it from Applications, Universal Access, Voice Commands
 And you can drag and drop on the gnome panel, and to call it a keyboard shortcut, eg. F6, this is the command: 
@@ -138,6 +138,9 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    FAV
    (add to favorite)
 ################################
+   CLOSE_TERM
+   (close the terminal | close terminal)
+################################
    MAIL
    (open mail | open email | open mail | mail | email)
 ################################
@@ -224,6 +227,18 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
 ################################
    PAGE_UP
    (page up)
+################################
+   HOME_PAGE
+   (top of page | go to top of page | go to the top)
+################################
+   END_PAGE
+   (end of page | go to end of page | go to the end)
+################################
+   HOME
+   (top of)
+################################
+   END
+   (the end)
 ################################
    SCROLL_DOWN
    (run page down | run down)
