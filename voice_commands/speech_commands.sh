@@ -47,6 +47,7 @@ CMD_UNDO="undo"
 CMD_REDO="redo"
 CMD_DEL_LINE="delete line"
 CMD_FAV="add to favorite"
+CMD_CLOSE_TERM="close the terminal\|close terminal"
 CMD_MAIL="open mail\|open email\|open mail\|mail\|email"
 CMD_COPY="copy"
 CMD_PASTE="paste"
@@ -76,6 +77,10 @@ CMD_DOWN="down"
 CMD_UP="go up"
 CMD_PAGE_DOWN="page down"
 CMD_PAGE_UP="page up"
+CMD_HOME_PAGE="top of page\|go to top of page\|go to the top"
+CMD_END_PAGE="end of page\|go to end of page\|go to the end"
+CMD_HOME="top of"
+CMD_END="the end"
 CMD_SCROLL_DOWN="run page down\|run down"
 CMD_SCROLL_UP="run page up\|run up"
 CMD_DELETE="delete"
@@ -729,7 +734,7 @@ fi
 ###################################################################
 
 
-recog=$(echo "$UTTERANCE" | grep -x "$CMD_FAV\|$CMD_DEL_LINE" )
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_FAV\|$CMD_DEL_LINE\|$CMD_CLOSE_TERM" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
@@ -1066,6 +1071,54 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_PAGE_UP" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key KP_Page_Up
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
+exit 0;
+fi
+
+###################################################################
+
+
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_HOME_PAGE" )
+	if [ "$recog" != "" ]
+	then
+	notify-send "Command:"  "$recog"
+	xdotool key "Ctrl+Home"
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
+exit 0;
+fi
+
+###################################################################
+
+
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_END_PAGE" )
+	if [ "$recog" != "" ]
+	then
+	notify-send "Command:"  "$recog"
+	xdotool key "Ctrl+End"
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
+exit 0;
+fi
+
+###################################################################
+
+
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_HOME" )
+	if [ "$recog" != "" ]
+	then
+	notify-send "Command:"  "$recog"
+	xdotool key "Home"
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
+exit 0;
+fi
+
+###################################################################
+
+
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_END" )
+	if [ "$recog" != "" ]
+	then
+	notify-send "Command:"  "$recog"
+	xdotool key "End"
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
@@ -1441,7 +1494,7 @@ mv "$HOME/$fecha.Alarm sleeping by: $alarm.txt" "$DESTINO"
 exit 0;
 fi
 if [ -f ~/".$fecha.Alarm sleeping by: $alarm.txt" ]; then
-mv ~/".$fecha.Alarm sleeping by: $alarm.txt" ~/Escritorio
+mv ~/".$fecha.Alarm sleeping by: $alarm.txt" `xdg-user-dir DESKTOP`
 
 fi
 }
@@ -1461,7 +1514,7 @@ mv "$HOME/$fecha.Alarm sleeping by: $alarm.txt" "$DESTINO"
 exit 0;
 fi
 if [ -f ~/".$fecha.Alarm sleeping by: $alarm.txt" ]; then
-mv ~/".$fecha.Alarm sleeping by: $alarm.txt" ~/Escritorio
+mv ~/".$fecha.Alarm sleeping by: $alarm.txt" `xdg-user-dir DESKTOP`
 
 fi
 }
@@ -1492,7 +1545,7 @@ mv "$HOME/$fecha.Alarm sleeping by: $alarm.txt" "$DESTINO"
 exit 0;
 fi
 if [ -f ~/".$fecha.Alarm sleeping by: $alarm.txt" ]; then
-mv ~/".$fecha.Alarm sleeping by: $alarm.txt" ~/Escritorio
+mv ~/".$fecha.Alarm sleeping by: $alarm.txt" `xdg-user-dir DESKTOP`
 
 fi
 }
@@ -1613,8 +1666,8 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_SCREENSHOT" )
 	then
 	echo "Screenshot of `date +%Y`-`date +%m`-`date +%d`:`date +%k`:`date +%M`:`date +%S`.png" > /tmp/date-to-pict.temp
 	DATE_PIC=$(cat /tmp/date-to-pict.temp)
-	import -window root ~/Imágenes/"$DATE_PIC"
-	eog ~/Imágenes/"$DATE_PIC"
+	import -window root `xdg-user-dir PICTURES`/"$DATE_PIC"
+	eog `xdg-user-dir PICTURES`/"$DATE_PIC"
 	rm /tmp/date-to-pict.temp
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
