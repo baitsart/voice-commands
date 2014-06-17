@@ -6,6 +6,7 @@
 lang="$1"
 key="$2"
 PKG_PATH=$(dirname "$(readlink -f "$0")")
+recording=3
 SONGS_PATH="${PKG_PATH}"/sounds/ringtones
 UTTERANCE=$(cat /tmp/speech_recognition.tmp | sed "s/  / /g" )
 
@@ -676,7 +677,6 @@ if [ "$number_process" = 12 ]; then
 echo "0" > /tmp/dictation_mode/number_of_process
 notify-send -i "/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" "Dicatation mode" "Recording ..."
 fi
-recording=3
 arecord -q -f cd -t wav -d "$recording" -r 16000 | flac - -f --best --sample-rate 16000 -o /tmp/dictation_mode/voice_.flac  2>/dev/null
 
 mv /tmp/dictation_mode/voice_.flac /tmp/dictation_mode/voice_"$number_process".flac
@@ -1469,7 +1469,7 @@ siete()
 {
 echo "Alarm:$alarm"
 notify-send -i "/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" " Recording ..." 
-rec -r 16000 -c 1 -t flac  /tmp/grabacion-recordatorio.flac 2>&1 | awk -vRS="\r" '$1 ~ /In/ {gsub(/In:/," ");gsub(/%\)/," ");gsub(/ \(/," ");print $3"\n# Record reminder.\\n\\nClose this window to\\nend recording.\\n\\nTiempo:\\t"$2"\\nTamaño :\\t"$4; fflush();}' | zenity --window-icon="/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" --progress --pulsate --no-cancel --auto-kill --auto-close --width="255" --height="190" --title=" Recording ..." 
+rec -r 16000 -c 1 -t flac  /tmp/grabacion-recordatorio.flac 2>&1 | awk -vRS="\r" '$1 ~ /In/ {gsub(/In:/," ");gsub(/%\)/," ");gsub(/ \(/," ");print $3"\n# Record reminder.\\n\\nClose this window to\\nend recording.\\n\\nTime:\\t"$2"\\nSize :\\t"$4; fflush();}' | zenity --window-icon="/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" --progress --pulsate --no-cancel --auto-kill --auto-close --width="255" --height="190" --title=" Recording ..." 
 
 JSON=`curl -s -X POST \
 --data-binary @'/tmp/grabacion-recordatorio.flac' \
@@ -1499,8 +1499,8 @@ fi
 
 dialogo()
 {
-	opcion=$( zenity --list --text="Opciones of alarmas" --radiolist --width="330" --height="285" --title="Alarms"  \
-					--column='Clic' --column='Opción'  \
+	opcion=$( zenity --list --text="Options of alarms" --radiolist --width="330" --height="285" --title="Alarms"  \
+					--column='Click' --column='Option'  \
 					'TRUE' 		"Alarm_(A_sound)"  \
 					'FALSE' 		"Alarm_(A_text)"  \
 					'FALSE' 		"Alarm_(Play_Music)"  \
