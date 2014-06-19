@@ -1230,7 +1230,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_ENTER" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
-	xdotool key "Enter"
+	xdotool key KP_Enter
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
@@ -1370,7 +1370,8 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_TAKE_PICTURE" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
-	cheese
+	cheese & sleep 2s
+	xdotool type " "
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
