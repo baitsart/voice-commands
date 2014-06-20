@@ -102,6 +102,7 @@ CMD_BRIGHTNESS_DOWN="lower the brightness\|brightness down\|shine down\|decrease
 CMD_POWER_OFF="shut down the system\|turn off the machine\|turn off the computer\|turn off computer\|power off"
 CMD_CALCULATER="calculator"
 CMD_TAKE_PICTURE="photo\|take a picture"
+CMD_TAKE_VIDEO="record\|record video\|record a video"
 CMD_OFFICE="open new document\|open new document of\|create new document\|create new document of\|create new\|open new"
 
 
@@ -1371,6 +1372,22 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_TAKE_PICTURE" )
 	then
 	notify-send "Command:"  "$recog"
 	cheese & sleep 2s
+	xdotool type " "
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
+exit 0;
+fi
+
+###################################################################
+
+
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_TAKE_VIDEO" )
+	if [ "$recog" != "" ]
+	then
+	notify-send "Command:"  "$recog"
+	cheese & sleep 2s
+	xdotool key "Tab"
+	xdotool key "Tab"
+	xdotool key KP_Enter
 	xdotool type " "
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;

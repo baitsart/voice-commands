@@ -5,7 +5,7 @@ You can modify the commands down below for a better usage, on the file: speech_c
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
 Also can repeat the last command with RETRY function
 Orders can be just a simple context: << order >> , or double context: << order >> << cited-text >>
-Available commands are 92
+Available commands are 93
 
 After installed we can launch it from Applications, Universal Access, Voice Commands
 And you can drag and drop on the gnome panel, and to call it a keyboard shortcut, eg. F6, this is the command: 
@@ -18,7 +18,7 @@ Active, and correct volume Microphone, Check: System Settings, Sound, Internal m
 Install dependencies:
 sudo apt-get install xdotool gawk curl wget cheese audacious sox alsa-utils
 
-Programs that are already in use and the distribution:
+Programs that use and are already in the distribution:
 rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-draw libreoffice-math
 
 ##### ACTIONS AVAILABLE #####
@@ -27,13 +27,13 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    *activate with*
 
 ################################
-   SELECT_FILE
+   SELECT_FILE << cited-text >>
    (select)
 ################################
    MUSIC_START
    (put music | music play | music player | music | pause)
 ################################
-   MUSIC_START_SONG
+   MUSIC_START_SONG << cited-text >>
    (put music of | music of | play to | play music of)
 ################################
    MUSIC_PLAY
@@ -66,43 +66,43 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    VOLUME_MUTE
    (no audio | no volume | turn off audio | dumb)
 ################################
-   SEARCH
+   SEARCH << cited-text >>
    (search)
 ################################
    NO_RESALT
    (remove highlighting | remove highlighted | no highlighting | no highlighted)
 ################################
-   TRANSLATE
+   TRANSLATE [from] [to] << cited-text >>
    (translate | translates the | translation | translates of | translate from | translated from | translation from | dictionary of the | translates the | translation of the)
 ################################
-   WRITE
+   WRITE << cited-text >>
    (write | type)
 ################################
-   WRITE_CAPITAL
+   WRITE_CAPITAL << cited-text >>
    (capitalize | type capital)
 ################################
-   WRITE_CAPITAL_ALL
+   WRITE_CAPITAL_ALL << cited-text >>
    (write all uppercase | write everything capitalized)
 ################################
-   SAY_THIS
+   SAY_THIS << cited-text >>
    (say this | say)
 ################################
-   GOOGLE_SEARCH
+   GOOGLE_SEARCH << cited-text >>
    (search google | internet search | meaning of | what is | search the dictionary)
 ################################
-   YOUTUBE_SEARCH
+   YOUTUBE_SEARCH << cited-text >>
    (search on youtube | what about | search videos | videos | search videos | videos)
 ################################
-   WIKI_SEARCH
+   WIKI_SEARCH << cited-text >>
    (search wiki | search wikipedia | wikipedia)
 ################################
-   WEATHER
+   WEATHER << cited-text >>
    (weather | climate)
 ################################
-   SEARCH_MAPS
+   SEARCH_MAPS << cited-text >>
    (map | map search | map of | map from | where is)
 ################################
-   SAY_HI
+   SAY_HI << cited-text >>
    (greets to | say hi to)
 ################################
    HELLO
@@ -111,10 +111,10 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    WHOAMI
    (who i am)
 ################################
-   OPEN_FOLDER
+   OPEN_FOLDER << cited-text >>
    (open folder)
 ################################
-   OPEN_FOLDER_OF
+   OPEN_FOLDER << cited-text >>_OF
    (open folder of)
 ################################
    SAY_TIME
@@ -123,7 +123,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    SAY_DATE
    (date is | which day is | that date today | which day is today | tell me the date | on what date we are)
 ################################
-   DICTATION
+   DICTATION << cited-text-continuously >>
    (dictation mode | out dictation mode | end dictation mode)
 ################################
    UNDO
@@ -282,7 +282,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    SCREENSHOT
    (screenshot | catch)
 ################################
-   ALARM
+   ALARM << cited-numbers >>
    (alarm | start alarm at)
 ################################
    LOG_OFF
@@ -302,6 +302,9 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
 ################################
    TAKE_PICTURE
    (photo | take a picture)
+################################
+   TAKE_VIDEO
+   (record | record video | record a video)
 ################################
    OFFICE
    (open new document | open new document of | create new document | create new document of | create new | open new)
