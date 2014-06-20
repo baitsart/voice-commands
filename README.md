@@ -282,7 +282,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    SCREENSHOT
    (screenshot | catch)
 ################################
-   ALARM << cited-numbers >>
+   ALARM << cited-numbers [days] [hours] [minutes] [seconds]>>
    (alarm | start alarm at)
 ################################
    LOG_OFF
