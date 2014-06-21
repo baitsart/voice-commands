@@ -310,7 +310,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (open new document | open new document of | create new document | create new document of | create new | open new)
 ################################
    RETRY
-   (retry command | repeat command | try again the command | retry | repeat | try again)
+   (retry command | repeat command | try again the command | retry | try again)
 ################################
 
 You can find many more features available with this command:
