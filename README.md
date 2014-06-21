@@ -91,7 +91,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (search google | internet search | meaning of | what is | search the dictionary)
 ################################
    YOUTUBE_SEARCH << cited-text >>
-   (search on youtube | what about | search videos | videos | search videos | videos)
+   (search on youtube | what about | search videos | videos )
 ################################
    WIKI_SEARCH << cited-text >>
    (search wiki | search wikipedia | wikipedia)
@@ -175,7 +175,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (full screen | fullscreen)
 ################################
    TAB
-   (tabula | tabular | tab)
+   (key tab | tabulation | tab)
 ################################
    ESC
    (escape)
