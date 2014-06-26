@@ -1,0 +1,95 @@
+select
+put music\|music play\|music player\|music\|pause
+put music of\|music of\|play to\|play music of
+play music\|pause music\|start music\|stop music\|stop music
+next song\|next track
+previous song\|previous track
+random music\|mix\|do not mix
+repeat\|not repeat
+delay\|rewind\|go back
+forward\|go forward
+lower the volume\|volume down\|less volume\|volume less
+increase the volume\|volume up\|more volume\|volume more
+no audio\|no volume\|turn off audio\|dumb
+search
+remove highlighting\|remove highlighted\|no highlighting\|no highlighted
+translate\|translates the\|translation\|translates of\|translate from\|translated from\|translation from\|dictionary of the\|translates the\|translation of the
+write\|type
+capitalize\|type capital
+write all uppercase\|write everything capitalized
+say this\|say
+search google\|internet search\|meaning of\|what is\|search the dictionary
+search on youtube\|what about\|search videos\|videos
+search wiki\|search wikipedia\|wikipedia
+weather\|climate
+map\|map search\|map of\|map from\|where is
+greets to\|say hi to
+hello machine
+who i am
+open folder
+open folder of
+tell me the hour\|what the time is\|what time is it
+date is\|which day is\|that date today\|which day is today\|tell me the date\|on what date we are
+dictation mode\|out dictation mode\|end dictation mode
+undo
+redo
+delete line
+add to favorite
+close the terminal\|close terminal
+open mail\|open email\|open mail\|mail\|email
+copy
+paste
+cut
+select all
+save\|save file
+save as\|save page as
+create folder\|new folder
+minimize
+maximize
+full screen\|fullscreen
+key tab\|tabulation\|tab
+escape
+main menu\|open main menu
+menu\|open menu\|close menu
+close program\|exit
+close window
+ward\|shrink\|decrease\|zoom less
+approximate\|enlarge\|raise\|zoom more
+normal size\|zero zoom
+turn off touchpad\|turn on touchpad\|touchpad
+over\|back
+move\|forward
+right
+left
+down
+go up
+page down
+page up
+top of page\|go to top of page\|go to the top
+end of page\|go to end of page\|go to the end
+top of
+the end
+run page down\|run down
+run page up\|run up
+delete
+open\|execute\|enter
+new window
+window move\|go to window\|switch to window\|window\|move tab\|go to tab\|switch to tab
+close tab
+browser\|open browser\|internet
+nautilus\|file explorer\|open nautilus\|open file explorer
+open the console\|open terminal\|terminal opens\|open the terminal
+launch command\|run command
+battery\|battery status\|battery charge
+text editor\|open text editor\|launch text editor\|new text
+screenshot\|catch
+alarm\|start alarm at
+logout\|system logout
+raise the brightness\|brighten up\|shine up\|up brightness\|increase brightness
+lower the brightness\|brightness down\|shine down\|decrease brightness
+shut down the system\|turn off the machine\|turn off the computer\|turn off computer\|power off
+calculator
+photo\|take a picture
+record\|record video\|record a video
+open new document\|open new document of\|create new document\|create new document of\|create new\|open new
+retry command\|repeat command\|try again the command\|retry\|try again

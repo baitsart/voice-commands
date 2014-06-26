@@ -5,105 +5,104 @@
 
 lang="$1"
 key="$2"
-PKG_PATH=$(dirname "$(readlink -f "$0")")
 recording=3
-SONGS_PATH="${PKG_PATH}"/sounds/ringtones
+SONGS_PATH="$HOME/.voice_commands/sounds/ringtones"
 UTTERANCE=$(cat /tmp/speech_recognition.tmp | sed "s/  / /g" )
 
-CMD_SELECT_FILE="select"
-CMD_MUSIC_START="put music\|music play\|music player\|music\|pause"
-CMD_MUSIC_START_SONG="put music of\|music of\|play to\|play music of"
-CMD_MUSIC_PLAY="play music\|pause music\|start music\|stop music\|stop music"
-CMD_MUSIC_NEXT="next song\|next track"
-CMD_MUSIC_PREV="previous song\|previous track"
-CMD_MUSIC_SHUFFLE="random music\|mix\|do not mix"
-CMD_MUSIC_REPEAT="repeat\|not repeat"
-CMD_VIDEO_REW="delay\|rewind\|go back"
-CMD_VIDEO_FF="forward\|go forward"
-CMD_VOLUME_DOWN="lower the volume\|volume down\|less volume\|volume less"
-CMD_VOLUME_UP="increase the volume\|volume up\|more volume\|volume more"
-CMD_VOLUME_MUTE="no audio\|no volume\|turn off audio\|dumb"
-CMD_SEARCH="search"
-CMD_NO_RESALT="remove highlighting\|remove highlighted\|no highlighting\|no highlighted"
-CMD_TRANSLATE="translate\|translates the\|translation\|translates of\|translate from\|translated from\|translation from\|dictionary of the\|translates the\|translation of the"
-CMD_WRITE="write\|type"
-CMD_WRITE_CAPITAL="capitalize\|type capital"
-CMD_WRITE_CAPITAL_ALL="write all uppercase\|write everything capitalized"
-CMD_SAY_THIS="say this\|say"
-CMD_GOOGLE_SEARCH="search google\|internet search\|meaning of\|what is\|search the dictionary"
-CMD_YOUTUBE_SEARCH="search on youtube\|what about\|search videos\|videos"
-CMD_WIKI_SEARCH="search wiki\|search wikipedia\|wikipedia"
-CMD_WEATHER="weather\|climate"
-CMD_SEARCH_MAPS="map\|map search\|map of\|map from\|where is"
-CMD_SAY_HI="greets to\|say hi to"
-CMD_HELLO="hello machine"
-CMD_WHOAMI="who i am"
-CMD_OPEN_FOLDER="open folder"
-CMD_OPEN_FOLDER_OF="open folder of"
-CMD_SAY_TIME="tell me the hour\|what the time is\|what time is it"
-CMD_SAY_DATE="date is\|which day is\|that date today\|which day is today\|tell me the date\|on what date we are"
-CMD_DICTATION="dictation mode\|out dictation mode\|end dictation mode"
-CMD_UNDO="undo"
-CMD_REDO="redo"
-CMD_DEL_LINE="delete line"
-CMD_FAV="add to favorite"
-CMD_CLOSE_TERM="close the terminal\|close terminal"
-CMD_MAIL="open mail\|open email\|open mail\|mail\|email"
-CMD_COPY="copy"
-CMD_PASTE="paste"
-CMD_CUT="cut"
-CMD_SELECT_ALL="select all"
-CMD_SAVE="save\|save file"
-CMD_SAVE_AS="save as\|save page as"
-CMD_FOLDER="create folder\|new folder"
-CMD_MINIMISE="minimize"
-CMD_MAXIMISE="maximize"
-CMD_FULLSCREEN="full screen\|fullscreen"
-CMD_TAB="key tab\|tabulation\|tab"
-CMD_ESC="escape"
-CMD_MENU="main menu\|open main menu"
-CMD_ACTIONS_MENU="menu\|open menu\|close menu"
-CMD_CLOSE="close program\|exit"
-CMD_CLOSE_WIN="close window"
-CMD_ZOOM_OUT="ward\|shrink\|decrease\|zoom less"
-CMD_ZOOM_IN="approximate\|enlarge\|raise\|zoom more"
-CMD_ZOOM_RESET="normal size\|zero zoom"
-CMD_TOUCH_ON_OFF="turn off touchpad\|turn on touchpad\|touchpad"
-CMD_BACK="over\|back"
-CMD_ADVANCE="move\|forward"
-CMD_RIGHT="right"
-CMD_LEFT="left"
-CMD_DOWN="down"
-CMD_UP="go up"
-CMD_PAGE_DOWN="page down"
-CMD_PAGE_UP="page up"
-CMD_HOME_PAGE="top of page\|go to top of page\|go to the top"
-CMD_END_PAGE="end of page\|go to end of page\|go to the end"
-CMD_HOME="top of"
-CMD_END="the end"
-CMD_SCROLL_DOWN="run page down\|run down"
-CMD_SCROLL_UP="run page up\|run up"
-CMD_DELETE="delete"
-CMD_ENTER="open\|execute\|enter"
-CMD_NEW_WINDOW="new window"
-CMD_CHANGE_TAB="window move\|go to window\|switch to window\|window\|move tab\|go to tab\|switch to tab"
-CMD_CLOSE_TAB="close tab"
-CMD_BROWSER="browser\|open browser\|internet"
-CMD_FILE_MANAGER="nautilus\|file explorer\|open nautilus\|open file explorer"
-CMD_TERMINAL="open the console\|open terminal\|terminal opens\|open the terminal"
-CMD_EXECUTE="launch command\|run command"
-CMD_BATTERY="battery\|battery status\|battery charge"
-CMD_TEXT_EDITOR="text editor\|open text editor\|launch text editor\|new text"
-CMD_SCREENSHOT="screenshot\|catch"
-CMD_ALARM="alarm\|start alarm at"
-CMD_LOG_OFF="logout\|system logout"
-CMD_BRIGHTNESS_UP="raise the brightness\|brighten up\|shine up\|up brightness\|increase brightness"
-CMD_BRIGHTNESS_DOWN="lower the brightness\|brightness down\|shine down\|decrease brightness"
-CMD_POWER_OFF="shut down the system\|turn off the machine\|turn off the computer\|turn off computer\|power off"
-CMD_CALCULATER="calculator"
-CMD_TAKE_PICTURE="photo\|take a picture"
-CMD_TAKE_VIDEO="record\|record video\|record a video"
-CMD_OFFICE="open new document\|open new document of\|create new document\|create new document of\|create new\|open new"
+CMD_SELECT_FILE=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MUSIC_START=$(sed -n '2p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MUSIC_START_SONG=$(sed -n '3p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MUSIC_PLAY=$(sed -n '4p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MUSIC_NEXT=$(sed -n '5p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MUSIC_PREV=$(sed -n '6p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MUSIC_SHUFFLE=$(sed -n '7p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MUSIC_REPEAT=$(sed -n '8p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_VIDEO_REW=$(sed -n '9p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_VIDEO_FF=$(sed -n '10p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_VOLUME_DOWN=$(sed -n '11p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_VOLUME_UP=$(sed -n '12p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_VOLUME_MUTE=$(sed -n '13p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SEARCH=$(sed -n '14p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_NO_RESALT=$(sed -n '15p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_TRANSLATE=$(sed -n '16p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_WRITE=$(sed -n '17p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_WRITE_CAPITAL=$(sed -n '18p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_WRITE_CAPITAL_ALL=$(sed -n '19p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SAY_THIS=$(sed -n '20p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_GOOGLE_SEARCH=$(sed -n '21p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_YOUTUBE_SEARCH=$(sed -n '22p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_WIKI_SEARCH=$(sed -n '23p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_WEATHER=$(sed -n '24p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SEARCH_MAPS=$(sed -n '25p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SAY_HI=$(sed -n '26p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_HELLO=$(sed -n '27p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_WHOAMI=$(sed -n '28p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_OPEN_FOLDER=$(sed -n '29p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_OPEN_FOLDER_OF=$(sed -n '30p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SAY_TIME=$(sed -n '31p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SAY_DATE=$(sed -n '32p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_DICTATION=$(sed -n '33p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_UNDO=$(sed -n '34p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_REDO=$(sed -n '35p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_DEL_LINE=$(sed -n '36p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_FAV=$(sed -n '37p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_CLOSE_TERM=$(sed -n '38p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MAIL=$(sed -n '39p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_COPY=$(sed -n '40p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_PASTE=$(sed -n '41p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_CUT=$(sed -n '42p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SELECT_ALL=$(sed -n '43p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SAVE=$(sed -n '44p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SAVE_AS=$(sed -n '45p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_FOLDER=$(sed -n '46p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MINIMISE=$(sed -n '47p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MAXIMISE=$(sed -n '48p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_FULLSCREEN=$(sed -n '49p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_TAB=$(sed -n '50p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_ESC=$(sed -n '51p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_MENU=$(sed -n '52p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_ACTIONS_MENU=$(sed -n '53p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_CLOSE=$(sed -n '54p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_CLOSE_WIN=$(sed -n '55p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_ZOOM_OUT=$(sed -n '56p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_ZOOM_IN=$(sed -n '57p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_ZOOM_RESET=$(sed -n '58p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_TOUCH_ON_OFF=$(sed -n '59p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_BACK=$(sed -n '60p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_ADVANCE=$(sed -n '61p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_RIGHT=$(sed -n '62p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_LEFT=$(sed -n '63p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_DOWN=$(sed -n '64p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_UP=$(sed -n '65p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_PAGE_DOWN=$(sed -n '66p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_PAGE_UP=$(sed -n '67p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_HOME_PAGE=$(sed -n '68p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_END_PAGE=$(sed -n '69p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_HOME=$(sed -n '70p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_END=$(sed -n '71p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SCROLL_DOWN=$(sed -n '72p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SCROLL_UP=$(sed -n '73p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_DELETE=$(sed -n '74p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_ENTER=$(sed -n '75p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_NEW_WINDOW=$(sed -n '76p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_CHANGE_TAB=$(sed -n '77p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_CLOSE_TAB=$(sed -n '78p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_BROWSER=$(sed -n '79p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_FILE_MANAGER=$(sed -n '80p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_TERMINAL=$(sed -n '81p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_EXECUTE=$(sed -n '82p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_BATTERY=$(sed -n '83p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_TEXT_EDITOR=$(sed -n '84p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_SCREENSHOT=$(sed -n '85p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_ALARM=$(sed -n '86p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_LOG_OFF=$(sed -n '87p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_BRIGHTNESS_UP=$(sed -n '88p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_BRIGHTNESS_DOWN=$(sed -n '89p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_POWER_OFF=$(sed -n '90p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_CALCULATER=$(sed -n '91p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_TAKE_PICTURE=$(sed -n '92p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_TAKE_VIDEO=$(sed -n '93p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
+CMD_OFFICE=$(sed -n '94p' ~/.voice_commands/"v-c LANGS"/commands-"$lang")
 
 
 
@@ -1383,7 +1382,7 @@ fi
 recog=$(echo "$UTTERANCE" | grep -x "$CMD_TAKE_VIDEO" )
 	if [ "$recog" != "" ]
 	then
-	notify-send "Command:"  "$recog"
+	notify-send "Comando:"  "$recog"
 	cheese & sleep 2s
 	xdotool key "Tab"
 	xdotool key "Tab"
@@ -1503,7 +1502,7 @@ echo "Alarm:$alarm"
 text_in=$(zenity --title "Text reminder" --width="335" --height="310" --text-info --editable | awk '{ printf "%s ", $0 }')
 echo "$text_in" > /tmp/Texto_recordatorio-temp
 mv /tmp/Texto_recordatorio-temp ~/".$fecha.Alarm sleeping by: $alarm.txt"
-sleep $alarm && audacious ""${PKG_PATH}"/vip ringtone.mp3"
+sleep $alarm && audacious ""${SONGS_PATH}"/vip ringtone.mp3"
 if (zenity --title "Text reminder" --width="335" --height="310" --text-info --checkbox "Check the box to save the text." --filename="$HOME/.$fecha.Alarm sleeping by: $alarm.txt")
 then
 mv ~/".$fecha.Alarm sleeping by: $alarm.txt" ~/"$fecha.Alarm sleeping by: $alarm.txt"
