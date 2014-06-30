@@ -1,95 +1,96 @@
-seçmək
-musiqi qoymaq\|musiqi play\|musiqi\|musiqi\|fasilə
-musiqi qoymaq\|musiqi\|oynamaq\|musiqi oynamaq
-musiqi oynamaq\|fasilə musiqi\|musiqi başlamaq\|musiqi dayandırmaq\|musiqi dayandırmaq
-növbəti mahnı\|növbəti track
-əvvəlki mahnı\|əvvəlki track
-təsadüfi musiqi\|qarışdırmaq\|qarışdırmaq yoxdur
-təkrarlamaq\|demək deyil
-gecikdirmək\|geri\|qayıtmaq
-irəli\|rəvac tapmaq
-həcmi aşağı\|aşağı həcmi\|az həcmi\|həcmi az
-həcminin artırılması\|həcmi\|daha həcmi\|həcmi
-heç bir audio\|deyil həcmi\|audio söndürmək\|lal
-axtarış
-vurğulayaraq aradan qaldırılması\|aradan qaldırılması qeyd\|no işıqlandırılması\|qeyd heç bir
-tərcümə etmək\|çevirir\|tərcümə\|və tərcümə\|tərcümə\|tərcümə\|tərcümə\|bu lüğət\|çevirir\|bu tərcümə
-yazmaq\|növü
-kapitallaşdırmaq\|kapital yazın
-bütün böyük harf yazmaq\|kapitallaşdırılmış hər şeyi yazmaq
-bu demək\|demək
-axtarış google\|internet axtarış\|mənası\|nə\|lüğət axtarış
-youtube axtarış\|nə haqqında\|search videos\|videos
-axtarış wiki\|axtarış wikipedia\|wikipedia
-hava\|iqlim
-xəritə\|xəritə axtarış\|xəritəsi\|xəritəsi\|harada
-üçün salamlayır\|hi demək
-salam maşın
-kim i am
-açıq qovluq
-açıq qovluq
-mənə saat demək\|nə vaxt\|nə vaxt
-tarixi\|olan gün\|ki, tarix bu gün\|olan gün hazırda\|mənə tarix demək\|biz nə tarixi
-imla rejimi\|həyata imla rejimi\|son imla rejimi
-əvvəlki halına qaytar
-redo
-xətti silmək
-favoritə əlavə et
-terminal yaxın\|yaxın terminal
-açıq poçt\|açıq e-poçt\|açıq poçt\|poçt\|epoçt
-köçürmək
-pasta
-kəsmək
-bütün seçin
-yadda saxla\|dosyayı
-kimi saxlamaq\|kimi səhifəni saxla
-qovluq yaratmaq\|yeni qovluq
-azaltmaq
-maksimize
-tam ekran\|tam ekran
-əsas nişanı\|cədvəl\|nişanı
-xilas
-əsas menyu\|açıq əsas menyu
-menyu\|açıq menyu\|yaxın menyu
-close proqram\|çıxış
-yaxın pəncərə
-palata\|büzülmək\|azaltmaq\|az zoom
-təxmini\|genişləndirmək\|qaldırmaq\|daha zoom
-normal ölçüsü\|sıfır zoom
-touchpad söndürmək\|touchpad yandırmaq\|touchpad
-üzərində\|geri
-gediş\|irəli
-sağ
-sol
-aşağı
-qalxmaq
-səhifə aşağı
-səhifə up
-top səhifə\|səhifənin başlanğıcına keçmək getmək\|üst getmək
-səhifənin sonu\|səhifənin sonuna getmək\|getmək son
-top
-son
-aşağı səhifə run\|azaltmaq
-səhifə run\|up run
-silmək
-açıq\|icra etmək\|girmək
-yeni pəncərədə
-pəncərə gediş\|pəncərə getmək\|pəncərə keçid\|pəncərə\|gediş nişanı\|nişanı getmək\|nişanına keçmək
-yaxın nişanı
-browser\|açıq browser\|internet
-nautilus\|file explorer\|açıq nautilus\|açıq fayl explorer
-konsolu açın\|açıq terminal\|terminal açılır\|terminal açmaq
-skript başlamaq\|funksiyanı çalıştırın
-batareya\|batareyanın status\|batareya
-mətn redaktoru\|açıq mətn redaktoru\|mətn redaktoru başlamaq\|yeni mətn
-screenshot\|tutmaq
-həyəcan\|at həyəcan başlamaq
-logout\|sistem logout
-qaldırmaq parlaqlığını\|ağarmaq\|up parlaq\|parlaqlıq up\|parlaqlığını artırmaq
-parlaqlığını aşağı\|aşağı parlaqlıq\|aşağı parlaq\|azaltmaq parlaqlıq
-sistem bağlamaq\|maşın söndürmək\|kompüter söndürmək\|kompüterinizi söndürmək\|güc off
-kalkulyator
-foto\|bir şəkil çəkmək
-rekord\|rekord video\|bir video qeyd
-açıq yeni sənəd\|yeni sənəd açmaq\|yeni sənəd yaratmaq\|yeni sənəd yaratmaq\|yeni yaratmaq\|açıq yeni
-komanda yeniden|əmrini təkrar|əmri yenidən cəhd edin|yeniden|daha cəhd edin
+CMD_SELECT_FILE=seçmək
+CMD_MUSIC_START=musiqi qoymaq\|musiqi play\|musiqi\|musiqi\|fasilə
+CMD_MUSIC_START_SONG=musiqi qoymaq\|musiqi\|oynamaq\|musiqi oynamaq
+CMD_MUSIC_PLAY=musiqi oynamaq\|fasilə musiqi\|musiqi başlamaq\|musiqi dayandırmaq\|musiqi dayandırmaq
+CMD_MUSIC_NEXT=növbəti mahnı\|növbəti track
+CMD_MUSIC_PREV=əvvəlki mahnı\|əvvəlki track
+CMD_MUSIC_SHUFFLE=təsadüfi musiqi\|qarışdırmaq\|qarışdırmaq yoxdur
+CMD_MUSIC_REPEAT=təkrarlamaq\|demək deyil
+CMD_VIDEO_REW=gecikdirmək\|geri\|qayıtmaq
+CMD_VIDEO_FF=irəli\|rəvac tapmaq
+CMD_VOLUME_DOWN=həcmi aşağı\|aşağı həcmi\|az həcmi\|həcmi az
+CMD_VOLUME_UP=həcminin artırılması\|həcmi\|daha həcmi\|həcmi
+CMD_VOLUME_MUTE=heç bir audio\|deyil həcmi\|audio söndürmək\|lal
+CMD_SEARCH=axtarış
+CMD_NO_RESALT=vurğulayaraq aradan qaldırılması\|aradan qaldırılması qeyd\|no işıqlandırılması\|qeyd heç bir
+CMD_TRANSLATE=tərcümə etmək\|çevirir\|tərcümə\|və tərcümə\|tərcümə\|tərcümə\|tərcümə\|bu lüğət\|çevirir\|bu tərcümə
+CMD_WRITE=yazmaq\|növü
+CMD_WRITE_CAPITAL=kapitallaşdırmaq\|kapital yazın
+CMD_WRITE_CAPITAL_ALL=bütün böyük harf yazmaq\|kapitallaşdırılmış hər şeyi yazmaq
+CMD_SAY_THIS=bu demək\|demək
+CMD_GOOGLE_SEARCH=axtarış google\|internet axtarış\|mənası\|nə\|lüğət axtarış
+CMD_YOUTUBE_SEARCH=youtube axtarış\|nə haqqında\|search videos\|videos
+CMD_WIKI_SEARCH=axtarış wiki\|axtarış wikipedia\|wikipedia
+CMD_WEATHER=hava\|iqlim
+CMD_SEARCH_MAPS=xəritə\|xəritə axtarış\|xəritəsi\|xəritəsi\|harada
+CMD_SAY_HI=üçün salamlayır\|hi demək
+CMD_HELLO=salam maşın
+CMD_WHOAMI=kim i am
+CMD_OPEN_FOLDER=açıq qovluq
+CMD_OPEN_FOLDER_OF=açıq qovluq
+CMD_SAY_TIME=mənə saat demək\|nə vaxt\|nə vaxt
+CMD_SAY_DATE=tarixi\|olan gün\|ki, tarix bu gün\|olan gün hazırda\|mənə tarix demək\|biz nə tarixi
+CMD_DICTATION=imla rejimi\|həyata imla rejimi\|son imla rejimi
+CMD_UNDO=əvvəlki halına qaytar
+CMD_REDO=redo
+CMD_DEL_LINE=xətti silmək
+CMD_FAV=favoritə əlavə et
+CMD_CLOSE_TERM=terminal yaxın\|yaxın terminal
+CMD_MAIL=açıq poçt\|açıq e-poçt\|açıq poçt\|poçt\|epoçt
+CMD_COPY=köçürmək
+CMD_PASTE=pasta
+CMD_CUT=kəsmək
+CMD_SELECT_ALL=bütün seçin
+CMD_SAVE=yadda saxla\|dosyayı
+CMD_SAVE_AS=kimi saxlamaq\|kimi səhifəni saxla
+CMD_FOLDER=qovluq yaratmaq\|yeni qovluq
+CMD_MINIMISE=azaltmaq
+CMD_MAXIMISE=maksimize
+CMD_FULLSCREEN=tam ekran\|tam ekran
+CMD_TAB=əsas nişanı\|cədvəl\|nişanı
+CMD_ESC=xilas
+CMD_MENU=əsas menyu\|açıq əsas menyu
+CMD_ACTIONS_MENU=menyu\|açıq menyu\|yaxın menyu
+CMD_CLOSE=close proqram\|çıxış
+CMD_CLOSE_WIN=yaxın pəncərə
+CMD_ZOOM_OUT=palata\|büzülmək\|azaltmaq\|az zoom
+CMD_ZOOM_IN=təxmini\|genişləndirmək\|qaldırmaq\|daha zoom
+CMD_ZOOM_RESET=normal ölçüsü\|sıfır zoom
+CMD_TOUCH_ON_OFF=touchpad söndürmək\|touchpad yandırmaq\|touchpad
+CMD_BACK=üzərində\|geri
+CMD_ADVANCE=gediş\|irəli
+CMD_RIGHT=sağ
+CMD_LEFT=sol
+CMD_DOWN=aşağı
+CMD_UP=qalxmaq
+CMD_PAGE_DOWN=səhifə aşağı
+CMD_PAGE_UP=səhifə up
+CMD_HOME_PAGE=top səhifə\|səhifənin başlanğıcına keçmək getmək\|üst getmək
+CMD_END_PAGE=səhifənin sonu\|səhifənin sonuna getmək\|getmək son
+CMD_HOME=top
+CMD_END=son
+CMD_SCROLL_DOWN=aşağı səhifə run\|azaltmaq
+CMD_SCROLL_UP=səhifə run\|up run
+CMD_DELETE=silmək
+CMD_ENTER=açıq\|icra etmək\|girmək
+CMD_NEW_WINDOW=yeni pəncərədə
+CMD_CHANGE_TAB=pəncərə gediş\|pəncərə getmək\|pəncərə keçid\|pəncərə\|gediş nişanı\|nişanı getmək\|nişanına keçmək
+CMD_CLOSE_TAB=yaxın nişanı
+CMD_BROWSER=browser\|açıq browser\|internet
+CMD_FILE_MANAGER=nautilus\|file explorer\|açıq nautilus\|açıq fayl explorer
+CMD_TERMINAL=konsolu açın\|açıq terminal\|terminal açılır\|terminal açmaq
+CMD_EXECUTE=skript başlamaq\|funksiyanı çalıştırın
+CMD_BATTERY=batareya\|batareyanın status\|batareya
+CMD_TEXT_EDITOR=mətn redaktoru\|açıq mətn redaktoru\|mətn redaktoru başlamaq\|yeni mətn
+CMD_SCREENSHOT=screenshot\|tutmaq
+CMD_ALARM=həyəcan\|at həyəcan başlamaq
+CMD_LOG_OFF=logout\|sistem logout
+CMD_BRIGHTNESS_UP=qaldırmaq parlaqlığını\|ağarmaq\|up parlaq\|parlaqlıq up\|parlaqlığını artırmaq
+CMD_BRIGHTNESS_DOWN=parlaqlığını aşağı\|aşağı parlaqlıq\|aşağı parlaq\|azaltmaq parlaqlıq
+CMD_POWER_OFF=sistem bağlamaq\|maşın söndürmək\|kompüter söndürmək\|kompüterinizi söndürmək\|güc off
+CMD_CALCULATER=kalkulyator
+CMD_TAKE_PICTURE=foto\|bir şəkil çəkmək
+CMD_TAKE_VIDEO=rekord\|rekord video\|bir video qeyd
+CMD_OPEN_FILE=açıq fayl\|yeni bir fayl açmaq
+CMD_OFFICE=açıq yeni sənəd\|yeni sənəd açmaq\|yeni sənəd yaratmaq\|yeni sənəd yaratmaq\|yeni yaratmaq\|açıq yeni
+CMD_RETRY=komanda yeniden|əmrini təkrar|əmri yenidən cəhd edin|yeniden|daha cəhd edin

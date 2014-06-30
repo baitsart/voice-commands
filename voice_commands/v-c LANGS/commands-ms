@@ -1,95 +1,96 @@
-pilih
-meletakkan muzik\|bermain muzik\|pemain muzik\|muzik\|rehat
-meletakkan muzik\|muzik\|bermain untuk\|bermain muzik
-bermain muzik\|jeda muzik\|memulakan muzik\|menghentikan muzik\|menghentikan muzik
-lagu seterusnya\|trek seterusnya
-lagu sebelumnya\|trek sebelumnya
-muzik rawak\|campuran\|tidak bercampur
-ulangan\|tidak mengulangi
-kelewatan\|gulung semula\|kembali
-ke hadapan\|pergi ke hadapan
-menurunkan jumlah\|kelantangan turun\|jumlah kurang\|jumlah kurang
-meningkatkan kelantangan\|kelantangan ke atas\|isipadu yang lebih\|jumlah lebih
-tiada audio\|tidak jumlah\|mematikan audio\|bisu
-carian
-mengeluarkan menonjolkan\|mengeluarkan diketengahkan\|tidak penonjolan\|tidak menekankan
-menterjemahkan\|menterjemahkan\|terjemahan\|diterjemahkan daripada\|menterjemahkan daripada\|diterjemahkan daripada\|terjemahan dari\|kamus\|menterjemahkan\|terjemahan
-menulis\|jenis
-mengambil kesempatan\|menaip modal
-menulis semua huruf besar\|menulis semua modal
-katakan ini\|berkata
-carian google\|carian internet\|pengertian\|apa yang\|mencari kamus
-mencari di youtube\|apa yang kira-kira\|video carian\|video
-carian wiki\|carian wikipedia\|wikipedia
-cuaca\|iklim
-peta\|peta carian\|peta\|peta daripada\|di mana
-menyambut untuk\|mengatakan hi kepada
-hello mesin
-yang i am
-folder terbuka
-folder terbuka
-beritahu saya jam\|apa masa yang\|apa masa ia
-tarikh adalah\|hari manakah\|tarikh itu hari ini\|hari manakah hari ini\|beritahu saya tarikh\|kepada apa yang tarikh kami
-mod imlak\|mod imlak daripada\|mod imlak akhir
-buat asal
-buat semula
-memadam garis
-menambah kegemaran
-menutup terminal\|terminal rapat
-mel terbuka\|e-mel terbuka\|mel terbuka\|mel\|e-mel
-salinan
-pes
-potong
-pilih semua
-menyelamatkan\|simpan fail
-menyimpan\|menyimpan halaman sebagai
-membuat folder\|folder baru
-mengurangkan
-memaksimumkan
-skrin penuh\|skrin penuh
-tekan kunci\|penjadualan\|tekan
-melarikan diri
-menu utama\|menu utama terbuka
-menu\|menu terbuka\|menu rapat
-program rapat\|keluar
-tutup tetingkap
-wad\|mengecut\|mengurangkan\|zum kurang
-anggaran\|membesarkan\|meningkatkan\|zum lebih
-saiz biasa\|zoom sifar
-mematikan touchpad\|menghidupkan touchpad\|touchpad
-lebih\|kembali
-langkah\|ke hadapan
-betul
-kiri
-turun
-naik
-laman turun
-halaman ke atas
-atas laman\|pergi ke bahagian atas halaman\|pergi ke atas
-akhir halaman\|pergi ke akhir halaman\|pergi ke akhirnya
-atas
-akhirnya
-menjalankan halaman turun\|lari ke bawah
-menjalankan halaman ke atas\|berlari
-memadam
-terbuka\|melaksanakan\|memasukkan
-tetingkap baru
-tetingkap langkah\|pergi ke tetingkap\|beralih ke tetingkap\|tetingkap\|langkah tekan\|pergi ke tekan\|beralih ke tekan
-tekan rapat
-pelayar\|terbuka pelayar\|internet
-nautilus\|file explorer\|nautilus terbuka\|membuka fail explorer
-membuka konsol\|terminal terbuka\|terminal membuka\|membuka terminal
-melancarkan arahan\|jalankan arahan
-bateri\|status bateri\|bateri
-editor teks\|editor teks terbuka\|melancarkan editor teks\|teks baru
-screenshot\|tangkapan
-penggera\|mula penggera pada
-logout\|sistem logout
-meningkatkan kecerahan\|menerangi\|bersinar sehingga\|sehingga kecerahan\|meningkatkan kecerahan
-menurunkan kecerahan\|kecerahan turun\|menyinari\|mengurangkan kecerahan
-menutup sistem\|mematikan mesin\|matikan komputer\|matikan komputer\|matikan
-kalkulator
-gambar\|mengambil gambar
-rekod\|rekod video\|merakam video
-dokumen baru terbuka\|membuka dokumen baru\|mencipta dokumen baru\|membuat dokumen baru\|mewujudkan baru\|baru terbuka
-cuba semula perintah|mengulangi perintah|cuba lagi arahan|cuba lagi|cuba lagi
+CMD_SELECT_FILE=pilih
+CMD_MUSIC_START=meletakkan muzik\|bermain muzik\|pemain muzik\|muzik\|rehat
+CMD_MUSIC_START_SONG=meletakkan muzik\|muzik\|bermain untuk\|bermain muzik
+CMD_MUSIC_PLAY=bermain muzik\|jeda muzik\|memulakan muzik\|menghentikan muzik\|menghentikan muzik
+CMD_MUSIC_NEXT=lagu seterusnya\|trek seterusnya
+CMD_MUSIC_PREV=lagu sebelumnya\|trek sebelumnya
+CMD_MUSIC_SHUFFLE=muzik rawak\|campuran\|tidak bercampur
+CMD_MUSIC_REPEAT=ulangan\|tidak mengulangi
+CMD_VIDEO_REW=kelewatan\|gulung semula\|kembali
+CMD_VIDEO_FF=ke hadapan\|pergi ke hadapan
+CMD_VOLUME_DOWN=menurunkan jumlah\|kelantangan turun\|jumlah kurang\|jumlah kurang
+CMD_VOLUME_UP=meningkatkan kelantangan\|kelantangan ke atas\|isipadu yang lebih\|jumlah lebih
+CMD_VOLUME_MUTE=tiada audio\|tidak jumlah\|mematikan audio\|bisu
+CMD_SEARCH=carian
+CMD_NO_RESALT=mengeluarkan menonjolkan\|mengeluarkan diketengahkan\|tidak penonjolan\|tidak menekankan
+CMD_TRANSLATE=menterjemahkan\|menterjemahkan\|terjemahan\|diterjemahkan daripada\|menterjemahkan daripada\|diterjemahkan daripada\|terjemahan dari\|kamus\|menterjemahkan\|terjemahan
+CMD_WRITE=menulis\|jenis
+CMD_WRITE_CAPITAL=mengambil kesempatan\|menaip modal
+CMD_WRITE_CAPITAL_ALL=menulis semua huruf besar\|menulis semua modal
+CMD_SAY_THIS=katakan ini\|berkata
+CMD_GOOGLE_SEARCH=carian google\|carian internet\|pengertian\|apa yang\|mencari kamus
+CMD_YOUTUBE_SEARCH=mencari di youtube\|apa yang kira-kira\|video carian\|video
+CMD_WIKI_SEARCH=carian wiki\|carian wikipedia\|wikipedia
+CMD_WEATHER=cuaca\|iklim
+CMD_SEARCH_MAPS=peta\|peta carian\|peta\|peta daripada\|di mana
+CMD_SAY_HI=menyambut untuk\|mengatakan hi kepada
+CMD_HELLO=hello mesin
+CMD_WHOAMI=yang i am
+CMD_OPEN_FOLDER=folder terbuka
+CMD_OPEN_FOLDER_OF=folder terbuka
+CMD_SAY_TIME=beritahu saya jam\|apa masa yang\|apa masa ia
+CMD_SAY_DATE=tarikh adalah\|hari manakah\|tarikh itu hari ini\|hari manakah hari ini\|beritahu saya tarikh\|kepada apa yang tarikh kami
+CMD_DICTATION=mod imlak\|mod imlak daripada\|mod imlak akhir
+CMD_UNDO=buat asal
+CMD_REDO=buat semula
+CMD_DEL_LINE=memadam garis
+CMD_FAV=menambah kegemaran
+CMD_CLOSE_TERM=menutup terminal\|terminal rapat
+CMD_MAIL=mel terbuka\|e-mel terbuka\|mel terbuka\|mel\|e-mel
+CMD_COPY=salinan
+CMD_PASTE=pes
+CMD_CUT=potong
+CMD_SELECT_ALL=pilih semua
+CMD_SAVE=menyelamatkan\|simpan fail
+CMD_SAVE_AS=menyimpan\|menyimpan halaman sebagai
+CMD_FOLDER=membuat folder\|folder baru
+CMD_MINIMISE=mengurangkan
+CMD_MAXIMISE=memaksimumkan
+CMD_FULLSCREEN=skrin penuh\|skrin penuh
+CMD_TAB=tekan kunci\|penjadualan\|tekan
+CMD_ESC=melarikan diri
+CMD_MENU=menu utama\|menu utama terbuka
+CMD_ACTIONS_MENU=menu\|menu terbuka\|menu rapat
+CMD_CLOSE=program rapat\|keluar
+CMD_CLOSE_WIN=tutup tetingkap
+CMD_ZOOM_OUT=wad\|mengecut\|mengurangkan\|zum kurang
+CMD_ZOOM_IN=anggaran\|membesarkan\|meningkatkan\|zum lebih
+CMD_ZOOM_RESET=saiz biasa\|zoom sifar
+CMD_TOUCH_ON_OFF=mematikan touchpad\|menghidupkan touchpad\|touchpad
+CMD_BACK=lebih\|kembali
+CMD_ADVANCE=langkah\|ke hadapan
+CMD_RIGHT=betul
+CMD_LEFT=kiri
+CMD_DOWN=turun
+CMD_UP=naik
+CMD_PAGE_DOWN=laman turun
+CMD_PAGE_UP=halaman ke atas
+CMD_HOME_PAGE=atas laman\|pergi ke bahagian atas halaman\|pergi ke atas
+CMD_END_PAGE=akhir halaman\|pergi ke akhir halaman\|pergi ke akhirnya
+CMD_HOME=atas
+CMD_END=akhirnya
+CMD_SCROLL_DOWN=menjalankan halaman turun\|lari ke bawah
+CMD_SCROLL_UP=menjalankan halaman ke atas\|berlari
+CMD_DELETE=memadam
+CMD_ENTER=terbuka\|melaksanakan\|memasukkan
+CMD_NEW_WINDOW=tetingkap baru
+CMD_CHANGE_TAB=tetingkap langkah\|pergi ke tetingkap\|beralih ke tetingkap\|tetingkap\|langkah tekan\|pergi ke tekan\|beralih ke tekan
+CMD_CLOSE_TAB=tekan rapat
+CMD_BROWSER=pelayar\|terbuka pelayar\|internet
+CMD_FILE_MANAGER=nautilus\|file explorer\|nautilus terbuka\|membuka fail explorer
+CMD_TERMINAL=membuka konsol\|terminal terbuka\|terminal membuka\|membuka terminal
+CMD_EXECUTE=melancarkan arahan\|jalankan arahan
+CMD_BATTERY=bateri\|status bateri\|bateri
+CMD_TEXT_EDITOR=editor teks\|editor teks terbuka\|melancarkan editor teks\|teks baru
+CMD_SCREENSHOT=screenshot\|tangkapan
+CMD_ALARM=penggera\|mula penggera pada
+CMD_LOG_OFF=logout\|sistem logout
+CMD_BRIGHTNESS_UP=meningkatkan kecerahan\|menerangi\|bersinar sehingga\|sehingga kecerahan\|meningkatkan kecerahan
+CMD_BRIGHTNESS_DOWN=menurunkan kecerahan\|kecerahan turun\|menyinari\|mengurangkan kecerahan
+CMD_POWER_OFF=menutup sistem\|mematikan mesin\|matikan komputer\|matikan komputer\|matikan
+CMD_CALCULATER=kalkulator
+CMD_TAKE_PICTURE=gambar\|mengambil gambar
+CMD_TAKE_VIDEO=rekod\|rekod video\|merakam video
+CMD_OPEN_FILE=fail terbuka\|membuka fail baru
+CMD_OFFICE=dokumen baru terbuka\|membuka dokumen baru\|mencipta dokumen baru\|membuat dokumen baru\|mewujudkan baru\|baru terbuka
+CMD_RETRY=cuba semula perintah|mengulangi perintah|cuba lagi arahan|cuba lagi|cuba lagi

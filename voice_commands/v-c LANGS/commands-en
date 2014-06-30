@@ -1,95 +1,96 @@
-select
-put music\|music play\|music player\|music\|pause
-put music of\|music of\|play to\|play music of
-play music\|pause music\|start music\|stop music\|stop music
-next song\|next track
-previous song\|previous track
-random music\|mix\|do not mix
-repeat\|not repeat
-delay\|rewind\|go back
-forward\|go forward
-lower the volume\|volume down\|less volume\|volume less
-increase the volume\|volume up\|more volume\|volume more
-no audio\|no volume\|turn off audio\|dumb
-search
-remove highlighting\|remove highlighted\|no highlighting\|no highlighted
-translate\|translates the\|translation\|translates of\|translate from\|translated from\|translation from\|dictionary of the\|translates the\|translation of the
-write\|type
-capitalize\|type capital
-write all uppercase\|write everything capitalized
-say this\|say
-search google\|internet search\|meaning of\|what is\|search the dictionary
-search on youtube\|what about\|search videos\|videos
-search wiki\|search wikipedia\|wikipedia
-weather\|climate
-map\|map search\|map of\|map from\|where is
-greets to\|say hi to
-hello machine
-who i am
-open folder
-open folder of
-tell me the hour\|what the time is\|what time is it
-date is\|which day is\|that date today\|which day is today\|tell me the date\|on what date we are
-dictation mode\|out dictation mode\|end dictation mode
-undo
-redo
-delete line
-add to favorite
-close the terminal\|close terminal
-open mail\|open email\|open mail\|mail\|email
-copy
-paste
-cut
-select all
-save\|save file
-save as\|save page as
-create folder\|new folder
-minimize
-maximize
-full screen\|fullscreen
-key tab\|tabulation\|tab
-escape
-main menu\|open main menu
-menu\|open menu\|close menu
-close program\|exit
-close window
-ward\|shrink\|decrease\|zoom less
-approximate\|enlarge\|raise\|zoom more
-normal size\|zero zoom
-turn off touchpad\|turn on touchpad\|touchpad
-over\|back
-move\|forward
-right
-left
-down
-go up
-page down
-page up
-top of page\|go to top of page\|go to the top
-end of page\|go to end of page\|go to the end
-top of
-the end
-run page down\|run down
-run page up\|run up
-delete
-open\|execute\|enter
-new window
-window move\|go to window\|switch to window\|window\|move tab\|go to tab\|switch to tab
-close tab
-browser\|open browser\|internet
-nautilus\|file explorer\|open nautilus\|open file explorer
-open the console\|open terminal\|terminal opens\|open the terminal
-launch command\|run command
-battery\|battery status\|battery charge
-text editor\|open text editor\|launch text editor\|new text
-screenshot\|catch
-alarm\|start alarm at
-logout\|system logout
-raise the brightness\|brighten up\|shine up\|up brightness\|increase brightness
-lower the brightness\|brightness down\|shine down\|decrease brightness
-shut down the system\|turn off the machine\|turn off the computer\|turn off computer\|power off
-calculator
-photo\|take a picture
-record\|record video\|record a video
-open new document\|open new document of\|create new document\|create new document of\|create new\|open new
-retry command\|repeat command\|try again the command\|retry\|try again
+CMD_SELECT_FILE=select
+CMD_MUSIC_START=put music\|music play\|music player\|music\|pause
+CMD_MUSIC_START_SONG=put music of\|music of\|play to\|play music of
+CMD_MUSIC_PLAY=play music\|pause music\|start music\|stop music\|stop music
+CMD_MUSIC_NEXT=next song\|next track
+CMD_MUSIC_PREV=previous song\|previous track
+CMD_MUSIC_SHUFFLE=random music\|mix\|do not mix
+CMD_MUSIC_REPEAT=repeat\|not repeat
+CMD_VIDEO_REW=delay\|rewind\|go back
+CMD_VIDEO_FF=forward\|go forward
+CMD_VOLUME_DOWN=lower the volume\|volume down\|less volume\|volume less
+CMD_VOLUME_UP=increase the volume\|volume up\|more volume\|volume more
+CMD_VOLUME_MUTE=no audio\|no volume\|turn off audio\|dumb
+CMD_SEARCH=search
+CMD_NO_RESALT=remove highlighting\|remove highlighted\|no highlighting\|no highlighted
+CMD_TRANSLATE=translate\|translates the\|translation\|translates of\|translate from\|translated from\|translation from\|dictionary of the\|translates the\|translation of the
+CMD_WRITE=write\|type
+CMD_WRITE_CAPITAL=capitalize\|type capital
+CMD_WRITE_CAPITAL_ALL=write all uppercase\|write everything capitalized
+CMD_SAY_THIS=say this\|say
+CMD_GOOGLE_SEARCH=search google\|internet search\|meaning of\|what is\|search the dictionary
+CMD_YOUTUBE_SEARCH=search on youtube\|what about\|search videos\|videos
+CMD_WIKI_SEARCH=search wiki\|search wikipedia\|wikipedia
+CMD_WEATHER=weather\|climate
+CMD_SEARCH_MAPS=map\|map search\|map of\|map from\|where is
+CMD_SAY_HI=greets to\|say hi to
+CMD_HELLO=hello machine
+CMD_WHOAMI=who i am
+CMD_OPEN_FOLDER=open folder
+CMD_OPEN_FOLDER_OF=open folder of
+CMD_SAY_TIME=tell me the hour\|what the time is\|what time is it
+CMD_SAY_DATE=date is\|which day is\|that date today\|which day is today\|tell me the date\|on what date we are
+CMD_DICTATION=dictation mode\|out dictation mode\|end dictation mode
+CMD_UNDO=undo
+CMD_REDO=redo
+CMD_DEL_LINE=delete line
+CMD_FAV=add to favorite
+CMD_CLOSE_TERM=close the terminal\|close terminal
+CMD_MAIL=open mail\|open email\|open mail\|mail\|email
+CMD_COPY=copy
+CMD_PASTE=paste
+CMD_CUT=cut
+CMD_SELECT_ALL=select all
+CMD_SAVE=save\|save file
+CMD_SAVE_AS=save as\|save page as
+CMD_FOLDER=create folder\|new folder
+CMD_MINIMISE=minimize
+CMD_MAXIMISE=maximize
+CMD_FULLSCREEN=full screen\|fullscreen
+CMD_TAB=key tab\|tabulation\|tab
+CMD_ESC=escape
+CMD_MENU=main menu\|open main menu
+CMD_ACTIONS_MENU=menu\|open menu\|close menu
+CMD_CLOSE=close program\|exit
+CMD_CLOSE_WIN=close window
+CMD_ZOOM_OUT=ward\|shrink\|decrease\|zoom less
+CMD_ZOOM_IN=approximate\|enlarge\|raise\|zoom more
+CMD_ZOOM_RESET=normal size\|zero zoom
+CMD_TOUCH_ON_OFF=turn off touchpad\|turn on touchpad\|touchpad
+CMD_BACK=over\|back
+CMD_ADVANCE=move\|forward
+CMD_RIGHT=right
+CMD_LEFT=left
+CMD_DOWN=down
+CMD_UP=go up
+CMD_PAGE_DOWN=page down
+CMD_PAGE_UP=page up
+CMD_HOME_PAGE=top of page\|go to top of page\|go to the top
+CMD_END_PAGE=end of page\|go to end of page\|go to the end
+CMD_HOME=top of
+CMD_END=the end
+CMD_SCROLL_DOWN=run page down\|run down
+CMD_SCROLL_UP=run page up\|run up
+CMD_DELETE=delete
+CMD_ENTER=open\|execute\|enter
+CMD_NEW_WINDOW=new window
+CMD_CHANGE_TAB=window move\|go to window\|switch to window\|window\|move tab\|go to tab\|switch to tab
+CMD_CLOSE_TAB=close tab
+CMD_BROWSER=browser\|open browser\|internet
+CMD_FILE_MANAGER=nautilus\|file explorer\|open nautilus\|open file explorer
+CMD_TERMINAL=open the console\|open terminal\|terminal opens\|open the terminal
+CMD_EXECUTE=launch command\|run command
+CMD_BATTERY=battery\|battery status\|battery charge
+CMD_TEXT_EDITOR=text editor\|open text editor\|launch text editor\|new text
+CMD_SCREENSHOT=screenshot\|catch
+CMD_ALARM=alarm\|start alarm at
+CMD_LOG_OFF=logout\|system logout
+CMD_BRIGHTNESS_UP=raise the brightness\|brighten up\|shine up\|up brightness\|increase brightness
+CMD_BRIGHTNESS_DOWN=lower the brightness\|brightness down\|shine down\|decrease brightness
+CMD_POWER_OFF=shut down the system\|turn off the machine\|turn off the computer\|turn off computer\|power off
+CMD_CALCULATER=calculator
+CMD_TAKE_PICTURE=photo\|take a picture
+CMD_TAKE_VIDEO=record\|record video\|record a video
+CMD_OPEN_FILE=open file\|open a new file
+CMD_OFFICE=open new document\|open new document of\|create new document\|create new document of\|create new\|open new
+CMD_RETRY=retry command\|repeat command\|try again the command\|retry\|try again

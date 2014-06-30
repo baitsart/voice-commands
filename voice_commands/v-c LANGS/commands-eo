@@ -1,95 +1,96 @@
-elektu
-meti muziko\|muziko teatraĵo\|muziko ludanto\|muziko\|rompo
-meti muziko de\|muziko de\|ludi al\|ludi muzikon el
-ludi muzikon\|paŭzi muziko\|komenci muziko\|haltigi la muzikon\|haltigi la muzikon
-sekvanta kanto\|sekvanta kanto
-antaŭa kanto\|antaŭa track
-hazarda muziko\|miksi\|ne miksi
-ripeti\|ne ripetu
-prokrasto\|rewind\|reiri
-antaŭen\|iru antauxen
-malaltigi la volumeno\|volumo malsupren\|malpli volumo\|volumeno malpli
-pliigi la volumo\|volumo supren\|pli volumo\|volumeno pli
-neniu audio\|ne volumo\|elŝalti audio\|muta
-search
-forigi reliefigante\|forigi reliefigis\|neniu kolorigo\|neniu reliefigis
-traduki\|tradukas la\|tradukado\|tradukas el\|traduki\|tradukita de\|traduko el\|vortaro de la\|tradukas la\|traduko de la
-skribi\|tipo
-capitalize\|tajpi ĉefurbo
-skribi cxiujn majusklajn\|skribi ĉiun majuskloj
-tion diras\|diru
-search google\|interreto search\|signifo de\|kio estas\|serĉu la vortaro
-serĉu per youtube\|kio pri\|search videoj\|videoj
-search vikio\|serĉo vikipedio\|vikipedio
-vetero\|klimato
-mapo\|mapoo serĉo\|mapoo de\|mapoo de\|kie estas
-salutas al\|saluti al
-saluton maŝino
-kia mi estas
-malfermita dosierujo
-malfermita dosierujo de
-diru al mi la horon\|kion la tempo estas\|kioma horo estas
-dato estas\|kiu tago estas\|tiu dato hodiaŭ\|kiu tago estas hodiaŭ\|diru al mi la daton\|sur kio daton ni estas
-diktita mode\|el diktita modo\|fine diktita mode
-undo
-refari
-forviŝi linion
-aldoni al preferataj
-fermi la fina\|proksima stacio
-malfermita poŝto\|malfermita retpoŝto\|malfermita poŝto\|poŝto\|retpoŝto
-kopio
-pasto
-tranĉo
-selektu la tutan
-konservi\|konservi dosieron
-konservi kiel\|savi paĝo
-krei dosierujon\|novan dosierujon
-minimumigi
-maksimumigi
-plena ekrano\|fullscreen
-ŝlosilo langeto\|tabon\|langeto
-eskapo
-ĉefa menuo\|malfermita ĉefa menuo
-menuo\|malfermita menuo\|proksime menuo
-proksima programo\|eliro
-fermu la fenestron
-preskribon\|ŝrumpi\|malgrandiĝi\|zomi malpli
-proksimuma\|plivastigi\|levi\|zomi pli
-normala grandeco\|nulo zoom
-elŝalti touchpad\|ŝalti touchpad\|touchpad
-super\|reen
-movado\|antaŭen
-dekstra
-maldekstra
-malsupren
-iru
-paĝo malsupren
-pagxo supren
-supro de paĝo\|iru al la supro\|iru al la supro
-fino de la paĝo\|iri al fino de la paĝo\|iri al la fino
-supro de
-la fino
-kuri paĝo malsupren\|fluigas
-kuri pagxo supren\|kuros supren
-forviŝi
-malferma\|ekzekuti\|eniri
-nova fenestro
-fenestro movado\|iri al fenestro\|ŝanĝi al fenestro\|fenestro\|movado langeto\|iru langeto\|ŝanĝi al langeto
-proksime langeto
-retumilo\|malferma retumilo\|interreto
-nautilus\|dosiero esploristo\|malfermita nautilus\|malferma dosiero esploristo
-malfermu konzolon\|malfermita stacio\|fina malfermiĝas\|malfermi la fina
-lanĉi komandon\|kuri komando
-baterio\|baterio statuso\|baterio zorge
-tekstoredaktilo\|malfermita tekstoredaktilo\|ĵeti tekstoredaktilo\|nova teksto
-ekrankopio\|catch
-alarmo\|komenci alarmo ĉe
-elsaluti\|sistemo elsaluto
-levi brilo\|gajigos\|brilas supren\|supren heleco\|pliigi heleco
-malaltigi la brilon\|brilo malsupren\|brilas malsupren\|malgrandiĝi heleco
-fermis la sistemo\|elŝalti la maŝino\|malŝalti la komputilon\|elŝalti komputilo\|potenco ekstere
-kalkulilo
-foto\|fotu
-rekordo\|rekordo video\|gravuri video
-malfermita nova dokumento\|malfermi novan dokumenton de\|krei novan dokumenton\|krei novan dokumenton de\|krei novajn\|malfermita nova
-reprovi komando|ripeti komando|reprovu la komandon|reprovi|provu denove
+CMD_SELECT_FILE=elektu
+CMD_MUSIC_START=meti muziko\|muziko teatraĵo\|muziko ludanto\|muziko\|rompo
+CMD_MUSIC_START_SONG=meti muziko de\|muziko de\|ludi al\|ludi muzikon el
+CMD_MUSIC_PLAY=ludi muzikon\|paŭzi muziko\|komenci muziko\|haltigi la muzikon\|haltigi la muzikon
+CMD_MUSIC_NEXT=sekvanta kanto\|sekvanta kanto
+CMD_MUSIC_PREV=antaŭa kanto\|antaŭa track
+CMD_MUSIC_SHUFFLE=hazarda muziko\|miksi\|ne miksi
+CMD_MUSIC_REPEAT=ripeti\|ne ripetu
+CMD_VIDEO_REW=prokrasto\|rewind\|reiri
+CMD_VIDEO_FF=antaŭen\|iru antauxen
+CMD_VOLUME_DOWN=malaltigi la volumeno\|volumo malsupren\|malpli volumo\|volumeno malpli
+CMD_VOLUME_UP=pliigi la volumo\|volumo supren\|pli volumo\|volumeno pli
+CMD_VOLUME_MUTE=neniu audio\|ne volumo\|elŝalti audio\|muta
+CMD_SEARCH=search
+CMD_NO_RESALT=forigi reliefigante\|forigi reliefigis\|neniu kolorigo\|neniu reliefigis
+CMD_TRANSLATE=traduki\|tradukas la\|tradukado\|tradukas el\|traduki\|tradukita de\|traduko el\|vortaro de la\|tradukas la\|traduko de la
+CMD_WRITE=skribi\|tipo
+CMD_WRITE_CAPITAL=capitalize\|tajpi ĉefurbo
+CMD_WRITE_CAPITAL_ALL=skribi cxiujn majusklajn\|skribi ĉiun majuskloj
+CMD_SAY_THIS=tion diras\|diru
+CMD_GOOGLE_SEARCH=search google\|interreto search\|signifo de\|kio estas\|serĉu la vortaro
+CMD_YOUTUBE_SEARCH=serĉu per youtube\|kio pri\|search videoj\|videoj
+CMD_WIKI_SEARCH=search vikio\|serĉo vikipedio\|vikipedio
+CMD_WEATHER=vetero\|klimato
+CMD_SEARCH_MAPS=mapo\|mapoo serĉo\|mapoo de\|mapoo de\|kie estas
+CMD_SAY_HI=salutas al\|saluti al
+CMD_HELLO=saluton maŝino
+CMD_WHOAMI=kia mi estas
+CMD_OPEN_FOLDER=malfermita dosierujo
+CMD_OPEN_FOLDER_OF=malfermita dosierujo de
+CMD_SAY_TIME=diru al mi la horon\|kion la tempo estas\|kioma horo estas
+CMD_SAY_DATE=dato estas\|kiu tago estas\|tiu dato hodiaŭ\|kiu tago estas hodiaŭ\|diru al mi la daton\|sur kio daton ni estas
+CMD_DICTATION=diktita mode\|el diktita modo\|fine diktita mode
+CMD_UNDO=undo
+CMD_REDO=refari
+CMD_DEL_LINE=forviŝi linion
+CMD_FAV=aldoni al preferataj
+CMD_CLOSE_TERM=fermi la fina\|proksima stacio
+CMD_MAIL=malfermita poŝto\|malfermita retpoŝto\|malfermita poŝto\|poŝto\|retpoŝto
+CMD_COPY=kopio
+CMD_PASTE=pasto
+CMD_CUT=tranĉo
+CMD_SELECT_ALL=selektu la tutan
+CMD_SAVE=konservi\|konservi dosieron
+CMD_SAVE_AS=konservi kiel\|savi paĝo
+CMD_FOLDER=krei dosierujon\|novan dosierujon
+CMD_MINIMISE=minimumigi
+CMD_MAXIMISE=maksimumigi
+CMD_FULLSCREEN=plena ekrano\|fullscreen
+CMD_TAB=ŝlosilo langeto\|tabon\|langeto
+CMD_ESC=eskapo
+CMD_MENU=ĉefa menuo\|malfermita ĉefa menuo
+CMD_ACTIONS_MENU=menuo\|malfermita menuo\|proksime menuo
+CMD_CLOSE=proksima programo\|eliro
+CMD_CLOSE_WIN=fermu la fenestron
+CMD_ZOOM_OUT=preskribon\|ŝrumpi\|malgrandiĝi\|zomi malpli
+CMD_ZOOM_IN=proksimuma\|plivastigi\|levi\|zomi pli
+CMD_ZOOM_RESET=normala grandeco\|nulo zoom
+CMD_TOUCH_ON_OFF=elŝalti touchpad\|ŝalti touchpad\|touchpad
+CMD_BACK=super\|reen
+CMD_ADVANCE=movado\|antaŭen
+CMD_RIGHT=dekstra
+CMD_LEFT=maldekstra
+CMD_DOWN=malsupren
+CMD_UP=iru
+CMD_PAGE_DOWN=paĝo malsupren
+CMD_PAGE_UP=pagxo supren
+CMD_HOME_PAGE=supro de paĝo\|iru al la supro\|iru al la supro
+CMD_END_PAGE=fino de la paĝo\|iri al fino de la paĝo\|iri al la fino
+CMD_HOME=supro de
+CMD_END=la fino
+CMD_SCROLL_DOWN=kuri paĝo malsupren\|fluigas
+CMD_SCROLL_UP=kuri pagxo supren\|kuros supren
+CMD_DELETE=forviŝi
+CMD_ENTER=malferma\|ekzekuti\|eniri
+CMD_NEW_WINDOW=nova fenestro
+CMD_CHANGE_TAB=fenestro movado\|iri al fenestro\|ŝanĝi al fenestro\|fenestro\|movado langeto\|iru langeto\|ŝanĝi al langeto
+CMD_CLOSE_TAB=proksime langeto
+CMD_BROWSER=retumilo\|malferma retumilo\|interreto
+CMD_FILE_MANAGER=nautilus\|dosiero esploristo\|malfermita nautilus\|malferma dosiero esploristo
+CMD_TERMINAL=malfermu konzolon\|malfermita stacio\|fina malfermiĝas\|malfermi la fina
+CMD_EXECUTE=lanĉi komandon\|kuri komando
+CMD_BATTERY=baterio\|baterio statuso\|baterio zorge
+CMD_TEXT_EDITOR=tekstoredaktilo\|malfermita tekstoredaktilo\|ĵeti tekstoredaktilo\|nova teksto
+CMD_SCREENSHOT=ekrankopio\|catch
+CMD_ALARM=alarmo\|komenci alarmo ĉe
+CMD_LOG_OFF=elsaluti\|sistemo elsaluto
+CMD_BRIGHTNESS_UP=levi brilo\|gajigos\|brilas supren\|supren heleco\|pliigi heleco
+CMD_BRIGHTNESS_DOWN=malaltigi la brilon\|brilo malsupren\|brilas malsupren\|malgrandiĝi heleco
+CMD_POWER_OFF=fermis la sistemo\|elŝalti la maŝino\|malŝalti la komputilon\|elŝalti komputilo\|potenco ekstere
+CMD_CALCULATER=kalkulilo
+CMD_TAKE_PICTURE=foto\|fotu
+CMD_TAKE_VIDEO=rekordo\|rekordo video\|gravuri video
+CMD_OPEN_FILE=malfermita dosiero\|malfermi novan dosieron
+CMD_OFFICE=malfermita nova dokumento\|malfermi novan dokumenton de\|krei novan dokumenton\|krei novan dokumenton de\|krei novajn\|malfermita nova
+CMD_RETRY=reprovi komando|ripeti komando|reprovu la komandon|reprovi|provu denove

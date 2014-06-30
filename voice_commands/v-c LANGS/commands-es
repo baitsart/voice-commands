@@ -1,95 +1,96 @@
-seleccionar
-poner música\|reproductor de música\|play música\|pausar música\|pausa música\|música\|pausa
-poner música de\|música de\|reproducir a\|reproducir música de\|tocar música de
-música play\|música pausa\|iniciar música\|parar música\|detener música
-canción siguiente\|siguiente canción\|canción próxima\|próxima canción\|pista siguiente\|siguiente pista\|pista próxima\|próxima pista
-canción previa\|previa canción\|canción anterior\|anterior canción\|pista previa\|previa pista\|pista anterior\|anterior pista
-música aleatoria\|mezclar\|no mezclar
-repetir\|no repetir
-atrasar\|rebobinar\|pasar para atrás
-adelantar\|pasar para adelante
-bajar el volumen\|bajar volumen\|menos volumen\|volumen menos
-subir el volumen\|subir volumen\|más volumen\|volumen más
-sin audio\|sin volumen\|apagar volumen\|mudo
-buscar
-quitar el resaltado\|quitar resaltado
-traducir el\|traduce el\|traducción el\|traducir del\|traduce del\|traducción del\|traducir desde\|traduce desde\|traducción desde\|traducir de el\|traduce de el\|traducción de el\|traducir de\|traduce de\|traducción de\|traducir\|traduce\|traducción
-escribir\|escribe\|escriba
-escribir con mayúscula\|escribir en mayúscula
-escribir todo en mayúscula\|escribir todo con mayúscula
-decir esto\|decir
-buscar en google\|buscar en internet\|significado de\|que es\|buscar en el diccionario
-buscar en youtube\|que hay de\|buscar videos de\|videos de\|buscar vídeos de\|vídeos de
-buscar en wiki\|buscar en wikipedia\|wikipedia
-clima\|clima en\|clima de
-mapa\|buscar mapa de\|mapa de\|donde es
-saluda a\|saluda al
-hola compu
-quien soy yo
-abrir carpeta
-abrir carpeta de
-dime la hora\|que hora es\|que hora son
-que fecha es\|que día es\|que fecha es hoy\|que día es hoy\|dime la fecha\|en que fecha estamos
-modo dictado\|salir modo dictado\|terminar modo dictado
-deshacer
-rehacer
-borrar linea
-añadir a favoritos
-cerrar la terminal\|cerrar terminal
-abrir mail\|abrir email\|abrir correo\|mail\|email
-copiar
-pegar
-cortar
-seleccionar todo
-guardar\|guardar archivo
-guardar como\|guardar página como
-crear carpeta\|nueva carpeta
-minimizar
-maximizar
-pantalla completa
-tabula\|tabular\|tabulación
-escape
-menú principal\|abrir menú principal
-menú\|abrir menú\|cerrar menú
-cerrar programa\|salir
-cerrar ventana
-alejar\|achicar\|disminuir\|zoom menos
-acercar\|agrandar\|aumentar\|zoom mas
-tamaño normal\|zoom cero
-apagar ratón táctil\|encender ratón táctil\|touchpad
-atrás\|retroceder\|volver
-avanzar\|adelante
-derecha
-izquierda
-abajo
-arriba
-bajar
-subir
-principio de la página\|ir al principio de la página\|ir al principio
-final de la página\|ir al final de la página\|ir al final
-principio
-final
-bajar página\|correr para abajo\|correr hacia abajo
-subir página\|correr para arriba\|correr hacia arriba
-borrar
-abrir\|ejecutar\|enter
-nueva ventana\|ventana nueva
-mover a ventana\|ir a ventana\|cambiar a ventana\|ventana\|mover a pestaña\|ir a pestaña\|cambiar a pestaña
-cerrar pestaña
-navegador\|abrir navegador\|internet
-nautilus\|explorador de archivos\|abrir nautilus\|abrir explorador de archivos
-abre la consola\|abrir la consola\|abre consola\|abrir consola\|abrir terminal\|abre terminal\|abrir la terminal\|abre la terminal
-lanzar comando\|ejecutar comando
-batería\|estado de la batería\|carga de la batería
-editor de texto\|abrir editor de texto\|lanzar editor de texto\|texto nuevo
-captura de pantalla\|captura
-alarma\|alarma a
-cerrar sesión\|salir de la sesión
-subir el brillo\|aumentar el brillo\|subir brillo\|aumentar brillo
-bajar el brillo\|disminuir el brillo\|bajar brillo\|disminuir brillo
-apagar el sistema\|apagar la máquina\|apagar la computadora\|apagar computadora\|apagar
-calculadora
-fotografía\|tomar una foto\|tomar una fotografía\|foto
-grabar\|grabar un vídeo\|grabar un video
-abrir un nuevo documento de\|abrir un nuevo documento\|crear un nuevo documento de\|crear un nuevo documento\|crear un nuevo\|crear una nueva\|abrir un nuevo\|abrir una nueva
-reintentar comando\|repetir comando\|reiterar comando\|reintentar\|reiterar
+CMD_SELECT_FILE=seleccionar
+CMD_MUSIC_START=poner música\|reproductor de música\|play música\|pausar música\|pausa música\|música\|pausa
+CMD_MUSIC_START_SONG=poner música de\|música de\|reproducir a\|reproducir música de\|tocar música de
+CMD_MUSIC_PLAY=música play\|música pausa\|iniciar música\|parar música\|detener música
+CMD_MUSIC_NEXT=canción siguiente\|siguiente canción\|canción próxima\|próxima canción\|pista siguiente\|siguiente pista\|pista próxima\|próxima pista
+CMD_MUSIC_PREV=canción previa\|previa canción\|canción anterior\|anterior canción\|pista previa\|previa pista\|pista anterior\|anterior pista
+CMD_MUSIC_SHUFFLE=música aleatoria\|mezclar\|no mezclar
+CMD_MUSIC_REPEAT=repetir\|no repetir
+CMD_VIDEO_REW=atrasar\|rebobinar\|pasar para atrás
+CMD_VIDEO_FF=adelantar\|pasar para adelante
+CMD_VOLUME_DOWN=bajar el volumen\|bajar volumen\|menos volumen\|volumen menos
+CMD_VOLUME_UP=subir el volumen\|subir volumen\|más volumen\|volumen más
+CMD_VOLUME_MUTE=sin audio\|sin volumen\|apagar volumen\|mudo
+CMD_SEARCH=buscar
+CMD_NO_RESALT=quitar el resaltado\|quitar resaltado
+CMD_TRANSLATE=traducir el\|traduce el\|traducción el\|traducir del\|traduce del\|traducción del\|traducir desde\|traduce desde\|traducción desde\|traducir de el\|traduce de el\|traducción de el\|traducir de\|traduce de\|traducción de\|traducir\|traduce\|traducción
+CMD_WRITE=escribir\|escribe\|escriba
+CMD_WRITE_CAPITAL=escribir con mayúscula\|escribir en mayúscula
+CMD_WRITE_CAPITAL_ALL=escribir todo en mayúscula\|escribir todo con mayúscula
+CMD_SAY_THIS=decir esto\|decir
+CMD_GOOGLE_SEARCH=buscar en google\|buscar en internet\|significado de\|que es\|buscar en el diccionario
+CMD_YOUTUBE_SEARCH=buscar en youtube\|que hay de\|buscar videos de\|videos de\|buscar vídeos de\|vídeos de
+CMD_WIKI_SEARCH=buscar en wiki\|buscar en wikipedia\|wikipedia
+CMD_WEATHER=clima\|clima en\|clima de
+CMD_SEARCH_MAPS=mapa\|buscar mapa de\|mapa de\|donde es
+CMD_SAY_HI=saluda a\|saluda al
+CMD_HELLO=hola compu
+CMD_WHOAMI=quien soy yo
+CMD_OPEN_FOLDER=abrir carpeta
+CMD_OPEN_FOLDER_OF=abrir carpeta de
+CMD_SAY_TIME=dime la hora\|que hora es\|que hora son
+CMD_SAY_DATE=que fecha es\|que día es\|que fecha es hoy\|que día es hoy\|dime la fecha\|en que fecha estamos
+CMD_DICTATION=modo dictado\|salir modo dictado\|terminar modo dictado
+CMD_UNDO=deshacer
+CMD_REDO=rehacer
+CMD_DEL_LINE=borrar linea
+CMD_FAV=añadir a favoritos
+CMD_CLOSE_TERM=cerrar la terminal\|cerrar terminal
+CMD_MAIL=abrir mail\|abrir email\|abrir correo\|mail\|email
+CMD_COPY=copiar
+CMD_PASTE=pegar
+CMD_CUT=cortar
+CMD_SELECT_ALL=seleccionar todo
+CMD_SAVE=guardar\|guardar archivo
+CMD_SAVE_AS=guardar como\|guardar página como
+CMD_FOLDER=crear carpeta\|nueva carpeta
+CMD_MINIMISE=minimizar
+CMD_MAXIMISE=maximizar
+CMD_FULLSCREEN=pantalla completa
+CMD_TAB=tabula\|tabular\|tabulación
+CMD_ESC=escape
+CMD_MENU=menú principal\|abrir menú principal
+CMD_ACTIONS_MENU=menú\|abrir menú\|cerrar menú
+CMD_CLOSE=cerrar programa\|salir
+CMD_CLOSE_WIN=cerrar ventana
+CMD_ZOOM_OUT=alejar\|achicar\|disminuir\|zoom menos
+CMD_ZOOM_IN=acercar\|agrandar\|aumentar\|zoom mas
+CMD_ZOOM_RESET=tamaño normal\|zoom cero
+CMD_TOUCH_ON_OFF=apagar ratón táctil\|encender ratón táctil\|touchpad
+CMD_BACK=atrás\|retroceder\|volver
+CMD_ADVANCE=avanzar\|adelante
+CMD_RIGHT=derecha
+CMD_LEFT=izquierda
+CMD_DOWN=abajo
+CMD_UP=arriba
+CMD_PAGE_DOWN=bajar
+CMD_PAGE_UP=subir
+CMD_HOME_PAGE=principio de la página\|ir al principio de la página\|ir al principio
+CMD_END_PAGE=final de la página\|ir al final de la página\|ir al final
+CMD_HOME=principio
+CMD_END=final
+CMD_SCROLL_DOWN=bajar página\|correr para abajo\|correr hacia abajo
+CMD_SCROLL_UP=subir página\|correr para arriba\|correr hacia arriba
+CMD_DELETE=borrar
+CMD_ENTER=abrir\|ejecutar\|enter
+CMD_NEW_WINDOW=nueva ventana\|ventana nueva
+CMD_CHANGE_TAB=mover a ventana\|ir a ventana\|cambiar a ventana\|ventana\|mover a pestaña\|ir a pestaña\|cambiar a pestaña
+CMD_CLOSE_TAB=cerrar pestaña
+CMD_BROWSER=navegador\|abrir navegador\|internet
+CMD_FILE_MANAGER=nautilus\|explorador de archivos\|abrir nautilus\|abrir explorador de archivos
+CMD_TERMINAL=abre la consola\|abrir la consola\|abre consola\|abrir consola\|abrir terminal\|abre terminal\|abrir la terminal\|abre la terminal
+CMD_EXECUTE=lanzar comando\|ejecutar comando
+CMD_BATTERY=batería\|estado de la batería\|carga de la batería
+CMD_TEXT_EDITOR=editor de texto\|abrir editor de texto\|lanzar editor de texto\|texto nuevo
+CMD_SCREENSHOT=captura de pantalla\|captura
+CMD_ALARM=alarma\|alarma a
+CMD_LOG_OFF=cerrar sesión\|salir de la sesión
+CMD_BRIGHTNESS_UP=subir el brillo\|aumentar el brillo\|subir brillo\|aumentar brillo
+CMD_BRIGHTNESS_DOWN=bajar el brillo\|disminuir el brillo\|bajar brillo\|disminuir brillo
+CMD_POWER_OFF=apagar el sistema\|apagar la máquina\|apagar la computadora\|apagar computadora\|apagar
+CMD_CALCULATER=calculadora
+CMD_TAKE_PICTURE=fotografía\|tomar una foto\|tomar una fotografía\|foto
+CMD_TAKE_VIDEO=grabar\|grabar un vídeo\|grabar un video
+CMD_OPEN_FILE=abrir archivo\|abrir un nuevo archivo
+CMD_OFFICE=abrir un nuevo documento de\|abrir un nuevo documento\|crear un nuevo documento de\|crear un nuevo documento\|crear un nuevo\|crear una nueva\|abrir un nuevo\|abrir una nueva
+CMD_RETRY=reintentar comando\|repetir comando\|reiterar comando\|reintentar\|reiterar

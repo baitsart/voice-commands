@@ -1,95 +1,96 @@
-kiezen
-zet muziek\|muziek af te spelen\|muziekspeler\|muziek\|breken
-zet muziek van\|muziek van\|spelen\|muziek afspelen van
-muziek afspelen\|muziek te pauzeren\|start muziek\|stop muziek\|stop muziek
-volgende nummer\|volgende track
-vorige nummer\|vorige track
-random muziek\|mengen\|gaan niet samen
-herhaling\|niet herhalen
-vertraging\|terugspoelen\|teruggaan
-vooruit\|ga vooruit
-het volume verlagen\|volume omlaag\|minder volume\|volume minder
-het volume te verhogen\|volume omhoog\|meer volume\|volume meer
-geen audio\|geen volume\|audio uitschakelen\|stom
-zoeken
-verwijderen markeren\|verwijderen gemarkeerd\|geen markering\|geen gemarkeerd
-vertalen\|vertaalt de\|vertaling\|vertaalt van\|vertalen van\|vertaald uit\|vertaling van\|woordenboek van de\|vertaalt de\|vertaling van de
-schrijven\|type
-kapitaliseren\|typ kapitaal
-schrijven in hoofdletters\|schrijf alles gekapitaliseerde
-zeggen dat dit\|zeggen
-zoeken google\|internet zoeken\|zin van\|wat\|zoeken in de woordenlijst
-zoek op youtube\|hoe zit\|zoek video s\|video
-zoeken wiki\|zoeken wikipedia\|wikipedia
-weer\|klimaat
-kaart\|zoeken kaart\|kaart van\|kaart van\|waar is
-begroet te\|gedag zeggen
-hello machine
-wie ik ben
-open map
-open map van
-vertel me het uur\|hoe laat het is\|hoe laat is het
-datum is\|welke dag\|die datum vandaag\|welke dag vandaag\|vertel me de datum\|op welke datum we zijn
-dictee modus\|uit dictee modus\|end dictee modus
-ongedaan maken
-redo
-lijn wissen
-voeg toe aan favoriet
-sluit de terminal\|dicht terminal
-geopend mail\|geopend e-mail\|geopend mail\|mail\|e-mail
-kopie
-pasta
-gesneden
-alles selecteren
-besparen\|bestand op te slaan
-opslaan als\|pagina opslaan als
-map maken\|nieuwe map
-verkleinen
-maximaliseren
-volledig scherm\|fullscreen
-tab-toets\|tabel\|tab
-ontsnappen
-hoofdmenu\|open het hoofdmenu
-menu\|menu openen\|dicht menu
-close -programma\|uitgang
-venster sluiten
-afdeling\|krimpen\|verlagen\|zoomen minder
-benaderend\|vergroten\|verhogen\|zoom meer
-normale grootte\|nul zoom
-uitschakelen touchpad\|schakelen touchpad\|touchpad
-over\|terug
-verhuizing\|vooruit
-rechts
-links
-beneden
-omhoog gaan
-pagina beneden
-pagina up
-top van pagina\|naar bovenkant pagina\|ga naar de top
-einde van pagina\|ga naar het einde van de pagina\|gaan naar eind
-top van
-eind
-run pagina beneden\|leeglopen
-run pagina up\|oplopen
-verwijderen
-open\|uitvoeren\|invoeren
-nieuw venster
-venster verhuizing\|ga naar het venster\|overschakelen venster\|venster\|verhuizing tab\|ga naar het tabblad\|schakelen naar tab
-close tab
-browser\|geopend browser\|internet
-nautilus\|file explorer\|open nautilus\|open file explorer
-open de console\|geopend terminal\|terminal opent\|open de terminal
-lanceren commando\|run commando
-batterij\|batterijstatus\|batterijlading
-teksteditor\|open teksteditor\|lanceren teksteditor\|nieuwe tekst
-screenshot\|vangst
-alarm\|beginnen alarm bij
-logout\|systeem uitloggen
-verhogen de helderheid\|fleuren\|shine up\|up helderheid\|de helderheid verhogen
-verlaag de helderheid\|helderheid lager\|beneden schijnen\|verlagen helderheid
-het systeem automatisch afgesloten\|zet het apparaat uit\|zet de computer uit\|computer uitschakelen\|uitschakeling
-rekenmachine
-foto\|neem een ​​foto
-record\|video opnemen\|een video opnemen
-opent nieuwe document\|nieuw document van openen\|nieuwe document\|nieuwe document van\|het creëren van nieuwe\|opent nieuwe
-opnieuw proberen commandoo|herhalen commando|probeer het opnieuw het commando|opnieuw proberen|probeer het opnieuw
+CMD_SELECT_FILE=kiezen
+CMD_MUSIC_START=zet muziek\|muziek af te spelen\|muziekspeler\|muziek\|breken
+CMD_MUSIC_START_SONG=zet muziek van\|muziek van\|spelen\|muziek afspelen van
+CMD_MUSIC_PLAY=muziek afspelen\|muziek te pauzeren\|start muziek\|stop muziek\|stop muziek
+CMD_MUSIC_NEXT=volgende nummer\|volgende track
+CMD_MUSIC_PREV=vorige nummer\|vorige track
+CMD_MUSIC_SHUFFLE=random muziek\|mengen\|gaan niet samen
+CMD_MUSIC_REPEAT=herhaling\|niet herhalen
+CMD_VIDEO_REW=vertraging\|terugspoelen\|teruggaan
+CMD_VIDEO_FF=vooruit\|ga vooruit
+CMD_VOLUME_DOWN=het volume verlagen\|volume omlaag\|minder volume\|volume minder
+CMD_VOLUME_UP=het volume te verhogen\|volume omhoog\|meer volume\|volume meer
+CMD_VOLUME_MUTE=geen audio\|geen volume\|audio uitschakelen\|stom
+CMD_SEARCH=zoeken
+CMD_NO_RESALT=verwijderen markeren\|verwijderen gemarkeerd\|geen markering\|geen gemarkeerd
+CMD_TRANSLATE=vertalen\|vertaalt de\|vertaling\|vertaalt van\|vertalen van\|vertaald uit\|vertaling van\|woordenboek van de\|vertaalt de\|vertaling van de
+CMD_WRITE=schrijven\|type
+CMD_WRITE_CAPITAL=kapitaliseren\|typ kapitaal
+CMD_WRITE_CAPITAL_ALL=schrijven in hoofdletters\|schrijf alles gekapitaliseerde
+CMD_SAY_THIS=zeggen dat dit\|zeggen
+CMD_GOOGLE_SEARCH=zoeken google\|internet zoeken\|zin van\|wat\|zoeken in de woordenlijst
+CMD_YOUTUBE_SEARCH=zoek op youtube\|hoe zit\|zoek video s\|video
+CMD_WIKI_SEARCH=zoeken wiki\|zoeken wikipedia\|wikipedia
+CMD_WEATHER=weer\|klimaat
+CMD_SEARCH_MAPS=kaart\|zoeken kaart\|kaart van\|kaart van\|waar is
+CMD_SAY_HI=begroet te\|gedag zeggen
+CMD_HELLO=hello machine
+CMD_WHOAMI=wie ik ben
+CMD_OPEN_FOLDER=open map
+CMD_OPEN_FOLDER_OF=open map van
+CMD_SAY_TIME=vertel me het uur\|hoe laat het is\|hoe laat is het
+CMD_SAY_DATE=datum is\|welke dag\|die datum vandaag\|welke dag vandaag\|vertel me de datum\|op welke datum we zijn
+CMD_DICTATION=dictee modus\|uit dictee modus\|end dictee modus
+CMD_UNDO=ongedaan maken
+CMD_REDO=redo
+CMD_DEL_LINE=lijn wissen
+CMD_FAV=voeg toe aan favoriet
+CMD_CLOSE_TERM=sluit de terminal\|dicht terminal
+CMD_MAIL=geopend mail\|geopend e-mail\|geopend mail\|mail\|e-mail
+CMD_COPY=kopie
+CMD_PASTE=pasta
+CMD_CUT=gesneden
+CMD_SELECT_ALL=alles selecteren
+CMD_SAVE=besparen\|bestand op te slaan
+CMD_SAVE_AS=opslaan als\|pagina opslaan als
+CMD_FOLDER=map maken\|nieuwe map
+CMD_MINIMISE=verkleinen
+CMD_MAXIMISE=maximaliseren
+CMD_FULLSCREEN=volledig scherm\|fullscreen
+CMD_TAB=tab-toets\|tabel\|tab
+CMD_ESC=ontsnappen
+CMD_MENU=hoofdmenu\|open het hoofdmenu
+CMD_ACTIONS_MENU=menu\|menu openen\|dicht menu
+CMD_CLOSE=close -programma\|uitgang
+CMD_CLOSE_WIN=venster sluiten
+CMD_ZOOM_OUT=afdeling\|krimpen\|verlagen\|zoomen minder
+CMD_ZOOM_IN=benaderend\|vergroten\|verhogen\|zoom meer
+CMD_ZOOM_RESET=normale grootte\|nul zoom
+CMD_TOUCH_ON_OFF=uitschakelen touchpad\|schakelen touchpad\|touchpad
+CMD_BACK=over\|terug
+CMD_ADVANCE=verhuizing\|vooruit
+CMD_RIGHT=rechts
+CMD_LEFT=links
+CMD_DOWN=beneden
+CMD_UP=omhoog gaan
+CMD_PAGE_DOWN=pagina beneden
+CMD_PAGE_UP=pagina up
+CMD_HOME_PAGE=top van pagina\|naar bovenkant pagina\|ga naar de top
+CMD_END_PAGE=einde van pagina\|ga naar het einde van de pagina\|gaan naar eind
+CMD_HOME=top van
+CMD_END=eind
+CMD_SCROLL_DOWN=run pagina beneden\|leeglopen
+CMD_SCROLL_UP=run pagina up\|oplopen
+CMD_DELETE=verwijderen
+CMD_ENTER=open\|uitvoeren\|invoeren
+CMD_NEW_WINDOW=nieuw venster
+CMD_CHANGE_TAB=venster verhuizing\|ga naar het venster\|overschakelen venster\|venster\|verhuizing tab\|ga naar het tabblad\|schakelen naar tab
+CMD_CLOSE_TAB=close tab
+CMD_BROWSER=browser\|geopend browser\|internet
+CMD_FILE_MANAGER=nautilus\|file explorer\|open nautilus\|open file explorer
+CMD_TERMINAL=open de console\|geopend terminal\|terminal opent\|open de terminal
+CMD_EXECUTE=lanceren commando\|run commando
+CMD_BATTERY=batterij\|batterijstatus\|batterijlading
+CMD_TEXT_EDITOR=teksteditor\|open teksteditor\|lanceren teksteditor\|nieuwe tekst
+CMD_SCREENSHOT=screenshot\|vangst
+CMD_ALARM=alarm\|beginnen alarm bij
+CMD_LOG_OFF=logout\|systeem uitloggen
+CMD_BRIGHTNESS_UP=verhogen de helderheid\|fleuren\|shine up\|up helderheid\|de helderheid verhogen
+CMD_BRIGHTNESS_DOWN=verlaag de helderheid\|helderheid lager\|beneden schijnen\|verlagen helderheid
+CMD_POWER_OFF=het systeem automatisch afgesloten\|zet het apparaat uit\|zet de computer uit\|computer uitschakelen\|uitschakeling
+CMD_CALCULATER=rekenmachine
+CMD_TAKE_PICTURE=foto\|neem een ​​foto
+CMD_TAKE_VIDEO=record\|video opnemen\|een video opnemen
+CMD_OPEN_FILE=open file\|een nieuw bestand te openen
+CMD_OFFICE=opent nieuwe document\|nieuw document van openen\|nieuwe document\|nieuwe document van\|het creëren van nieuwe\|opent nieuwe
+CMD_RETRY=opnieuw proberen commandoo|herhalen commando|probeer het opnieuw het commando|opnieuw proberen|probeer het opnieuw

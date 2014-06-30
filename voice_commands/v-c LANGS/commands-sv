@@ -1,95 +1,96 @@
-välj
-sätta musik\|musikuppspelning\|musikspelare\|musik\|paus
-sätta musik på\|musik av\|spela till\|spela musik av
-spela musik\|pausa musik\|starta musik\|stoppa musiken\|stoppa musiken
-nästa låt\|nästa spår
-föregående låt\|föregående spår
-slumpmässig musik\|blanda\|blanda inte
-upprepning\|inte upprepa
-fördröjning\|rewind\|gå tillbaka
-framåt\|går framåt
-sänka volymen\|volymen\|mindre volym\|volym mindre
-öka volymen\|volym upp\|mer volym\|volym mer
-inget ljud\|inte volym\|stänga av ljud\|dum
-sök
-avlägsna lyfta\|avlägsna markerad\|ingen markering\|ingen markerad
-översätta\|översätter\|översättning\|översätter av\|översätta från\|översatt från\|översättning från\|dictionary av\|översätter\|översättning av
-skriva\|typ
-kapitalisera\|skriver kapital
-skriva alla versaler\|skriva allt aktiverade
-säga detta\|säga
-sök google\|sökning på internet\|innebörden av\|vad som är\|söka i ordboken
-sök på youtube\|hur är\|sök videor\|videor
-sökning wiki\|sökning wikipedia\|wikipedia
-väder\|klimat
-karta\|kartsökning\|karta över\|kartapa från\|där är
-greets att\|säga hej till
-hallå maskin
-vem jag är
-öppna mapp
-öppna mappen för
-berätta timmen\|vad tiden är\|vilken tid är det
-datumet är\|vilken dag är\|den dagen idag\|vilken dag är i dag\|berätta det datum\|vilket datum vi är
-dikteringsläge\|ut dikteringsläge\|ände dikteläge
-ogjord
-gör om
-radera raden
-lägg till favorit
-stänga terminal\|nära terminal
-öppna post\|öppna e\|öppna post\|post\|e-post
-kopia
-pasta
-snitt
-välj alla
-spara\|spara filen
-spara som\|spara sidan som
-skapa mapp\|ny mapp
-minimera
-maximera
-helskärm\|fullscreen
-tab-tangenten\|tabulering\|flik
-flykt
-huvudmenyn\|öppna huvudmenyn
-meny\|öppen meny\|stäng menyn
-stäng programmet\|utgång
-stäng fönster
-ward\|krympa\|minska\|in mindre
-ungefärlig\|förstoring\|höja\|in mer
-normal storlek\|noll zoom
-inaktivera pekplatta\|slå på pekplatta\|pekplatta
-över\|tillbaka
-drag\|framåt
-höger
-vänster
-ner
-gå upp
-sidan nedåt
-sida upp
-överst sida\|gå till toppen\|gå till toppen
-slutet av sidan\|gå till slutet av sidan\|gå till slutet
-överst
-slutet
-kör sidan nedåt\|nedgånget
-köra sidan upp\|köra upp
-ta bort
-öppet\|exekvera\|ange
-nytt fönster
-fönster drag\|gå till fönstret\|byta till fönster\|fönster\|drag flik\|gå till fliken\|växla till fliken
-nära fliken
-bananbläsare\|öppet bananbläsare\|internet
-nautilus\|filhanterare\|öppen nautilus\|öppet filhanterare
-öppna konsolen\|öppen terminal\|terminal öppnas\|öppna uttags
-lansera kommando\|köra kommando
-batteri\|batteristatus\|batteriladdning
-textredigerare\|öppna textredigerare\|lansera textredigerare\|ny text
-skärmdump\|fångst
-alarm\|börja larm vid
-logga ut\|systemet utloggning
-höja ljusstyrka\|lysa upp\|lysa upp\|upp ljusstyrka\|öka ljusstyrkan
-sänka ljusstyrkan\|ljusstyrka ned\|lysa ner\|minska ljusstyrka
-stänga av systemet\|stänga av maskinen\|stänga av datorn\|stänga av datorn\|strömmen
-räknare
-bild\|ta en bild
-post\|spela in video\|spela in en video
-öppna nya dokument\|Öppna nytt dokument av\|skapa nytt dokument\|skapa nytt dokument av\|skapa ny\|öppna nya
-försöka igen kommandot|upprepa kommandot|försök igen kommandot|försök|försök igen
+CMD_SELECT_FILE=välj
+CMD_MUSIC_START=sätta musik\|musikuppspelning\|musikspelare\|musik\|paus
+CMD_MUSIC_START_SONG=sätta musik på\|musik av\|spela till\|spela musik av
+CMD_MUSIC_PLAY=spela musik\|pausa musik\|starta musik\|stoppa musiken\|stoppa musiken
+CMD_MUSIC_NEXT=nästa låt\|nästa spår
+CMD_MUSIC_PREV=föregående låt\|föregående spår
+CMD_MUSIC_SHUFFLE=slumpmässig musik\|blanda\|blanda inte
+CMD_MUSIC_REPEAT=upprepning\|inte upprepa
+CMD_VIDEO_REW=fördröjning\|rewind\|gå tillbaka
+CMD_VIDEO_FF=framåt\|går framåt
+CMD_VOLUME_DOWN=sänka volymen\|volymen\|mindre volym\|volym mindre
+CMD_VOLUME_UP=öka volymen\|volym upp\|mer volym\|volym mer
+CMD_VOLUME_MUTE=inget ljud\|inte volym\|stänga av ljud\|dum
+CMD_SEARCH=sök
+CMD_NO_RESALT=avlägsna lyfta\|avlägsna markerad\|ingen markering\|ingen markerad
+CMD_TRANSLATE=översätta\|översätter\|översättning\|översätter av\|översätta från\|översatt från\|översättning från\|dictionary av\|översätter\|översättning av
+CMD_WRITE=skriva\|typ
+CMD_WRITE_CAPITAL=kapitalisera\|skriver kapital
+CMD_WRITE_CAPITAL_ALL=skriva alla versaler\|skriva allt aktiverade
+CMD_SAY_THIS=säga detta\|säga
+CMD_GOOGLE_SEARCH=sök google\|sökning på internet\|innebörden av\|vad som är\|söka i ordboken
+CMD_YOUTUBE_SEARCH=sök på youtube\|hur är\|sök videor\|videor
+CMD_WIKI_SEARCH=sökning wiki\|sökning wikipedia\|wikipedia
+CMD_WEATHER=väder\|klimat
+CMD_SEARCH_MAPS=karta\|kartsökning\|karta över\|kartapa från\|där är
+CMD_SAY_HI=greets att\|säga hej till
+CMD_HELLO=hallå maskin
+CMD_WHOAMI=vem jag är
+CMD_OPEN_FOLDER=öppna mapp
+CMD_OPEN_FOLDER_OF=öppna mappen för
+CMD_SAY_TIME=berätta timmen\|vad tiden är\|vilken tid är det
+CMD_SAY_DATE=datumet är\|vilken dag är\|den dagen idag\|vilken dag är i dag\|berätta det datum\|vilket datum vi är
+CMD_DICTATION=dikteringsläge\|ut dikteringsläge\|ände dikteläge
+CMD_UNDO=ogjord
+CMD_REDO=gör om
+CMD_DEL_LINE=radera raden
+CMD_FAV=lägg till favorit
+CMD_CLOSE_TERM=stänga terminal\|nära terminal
+CMD_MAIL=öppna post\|öppna e\|öppna post\|post\|e-post
+CMD_COPY=kopia
+CMD_PASTE=pasta
+CMD_CUT=snitt
+CMD_SELECT_ALL=välj alla
+CMD_SAVE=spara\|spara filen
+CMD_SAVE_AS=spara som\|spara sidan som
+CMD_FOLDER=skapa mapp\|ny mapp
+CMD_MINIMISE=minimera
+CMD_MAXIMISE=maximera
+CMD_FULLSCREEN=helskärm\|fullscreen
+CMD_TAB=tab-tangenten\|tabulering\|flik
+CMD_ESC=flykt
+CMD_MENU=huvudmenyn\|öppna huvudmenyn
+CMD_ACTIONS_MENU=meny\|öppen meny\|stäng menyn
+CMD_CLOSE=stäng programmet\|utgång
+CMD_CLOSE_WIN=stäng fönster
+CMD_ZOOM_OUT=ward\|krympa\|minska\|in mindre
+CMD_ZOOM_IN=ungefärlig\|förstoring\|höja\|in mer
+CMD_ZOOM_RESET=normal storlek\|noll zoom
+CMD_TOUCH_ON_OFF=inaktivera pekplatta\|slå på pekplatta\|pekplatta
+CMD_BACK=över\|tillbaka
+CMD_ADVANCE=drag\|framåt
+CMD_RIGHT=höger
+CMD_LEFT=vänster
+CMD_DOWN=ner
+CMD_UP=gå upp
+CMD_PAGE_DOWN=sidan nedåt
+CMD_PAGE_UP=sida upp
+CMD_HOME_PAGE=överst sida\|gå till toppen\|gå till toppen
+CMD_END_PAGE=slutet av sidan\|gå till slutet av sidan\|gå till slutet
+CMD_HOME=överst
+CMD_END=slutet
+CMD_SCROLL_DOWN=kör sidan nedåt\|nedgånget
+CMD_SCROLL_UP=köra sidan upp\|köra upp
+CMD_DELETE=ta bort
+CMD_ENTER=öppet\|exekvera\|ange
+CMD_NEW_WINDOW=nytt fönster
+CMD_CHANGE_TAB=fönster drag\|gå till fönstret\|byta till fönster\|fönster\|drag flik\|gå till fliken\|växla till fliken
+CMD_CLOSE_TAB=nära fliken
+CMD_BROWSER=bananbläsare\|öppet bananbläsare\|internet
+CMD_FILE_MANAGER=nautilus\|filhanterare\|öppen nautilus\|öppet filhanterare
+CMD_TERMINAL=öppna konsolen\|öppen terminal\|terminal öppnas\|öppna uttags
+CMD_EXECUTE=lansera kommando\|köra kommando
+CMD_BATTERY=batteri\|batteristatus\|batteriladdning
+CMD_TEXT_EDITOR=textredigerare\|öppna textredigerare\|lansera textredigerare\|ny text
+CMD_SCREENSHOT=skärmdump\|fångst
+CMD_ALARM=alarm\|börja larm vid
+CMD_LOG_OFF=logga ut\|systemet utloggning
+CMD_BRIGHTNESS_UP=höja ljusstyrka\|lysa upp\|lysa upp\|upp ljusstyrka\|öka ljusstyrkan
+CMD_BRIGHTNESS_DOWN=sänka ljusstyrkan\|ljusstyrka ned\|lysa ner\|minska ljusstyrka
+CMD_POWER_OFF=stänga av systemet\|stänga av maskinen\|stänga av datorn\|stänga av datorn\|strömmen
+CMD_CALCULATER=räknare
+CMD_TAKE_PICTURE=bild\|ta en bild
+CMD_TAKE_VIDEO=post\|spela in video\|spela in en video
+CMD_OPEN_FILE=öppna filen\|öppna en ny fil
+CMD_OFFICE=öppna nya dokument\|Öppna nytt dokument av\|skapa nytt dokument\|skapa nytt dokument av\|skapa ny\|öppna nya
+CMD_RETRY=försöka igen kommandot|upprepa kommandot|försök igen kommandot|försök|försök igen

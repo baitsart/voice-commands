@@ -1,95 +1,96 @@
-odabrati
-staviti glazbu\|glazba play\|glazbeni player\|glazba\|pauza
-stavite glazbu\|glazba\|igrati se\|reproducirati glazbu
-reprodukciju glazbe\|pauzirati glazbu\|početi glazbe\|zaustavljanje glazbe\|zaustavljanje glazbe
-sljedeća pjesma\|sljedeću pjesmu
-prethodnu pjesmu\|prethodni zapis
-slučajna glazba\|miješati\|ne miješati
-ponoviti\|ne ponoviti
-kašnjenje\|premotati\|vratiti se
-naprijed\|ići naprijed
-smanjite glasnoću\|glasnoće\|manje volumena\|volumen manje
-povećati volumen\|glasnoće\|više volumena\|glasnoća više
-nema zvuka\|ne volumen\|isključite zvuk\|glup
-pretraživanje
-uklonili isticanje\|izvadite istaknuo\|nema isticanja\|nema istaknute
-prevesti\|prevodi\|prijevod\|prevodi u\|prevoditi s\|prevedeno s\|prijevod s\|rječnik\|prevodi\|prijevod
-pisati\|tip
-kapitalizirati\|upisati kapital
-pisati sve velikim slovima\|pisati sve kapitalizirane
-kažem\|reći
-pretraživanje google\|internet pretraživač\|značenje\|ono što je\|pretražiti rječnik
-traži na youtube\|što je s\|search video\|video
-traži wiki\|traži wikipedia\|wikipedia
-vrijeme\|klima
-karta\|karta za pretraživanje\|karta mjesta\|karta iz\|gdje je
-pozdravlja se\|pozdravim
-pozdrav za kavu
-tko sam ja
-otvorene mape
-otvoren folder
-reci mi sat\|koliko je sati,\|koliko je sati
-datum je\|koji je dan\|da je datum danas\|koji je dan danas\|reci mi datum\|kojeg datuma smo
-diktata mode\|iz diktata mode\|kraj diktata mode
-otkopčati
-preurediti
-izbrisati liniju
-dodaj u favorite
-zatvoriti terminal\|u neposrednoj blizini terminala
-otvoren pošta\|otvoren je e-pošta\|otvoren pošta\|pošta\|e-pošta
-kopija
-zalijepi
-rez
-odaberi sve
-spasiti\|spremiti datoteku
-spremiti kao\|spremi stranicu kao
-stvoriti mapu\|nova mapa
-umanjiti
-povećala
-full screen\|fullscreen
-tipku tab\|tabeliranje\|tab
-bijeg
-glavni izbornik\|otvoren glavni izbornik
-meni\|otvorite izbornik\|zatvori izbornik
-zatvori\|izlaz
-zatvori prozor
-štićenik\|psihijatar\|smanjiti\|povećavanje manje
-približan\|uvećati\|podići\|zoom više
-normalne veličine\|nula zoom
-isključiti touchpad\|uključivanje touchpad\|touchpad
-više\|natrag
-potez\|naprijed
-u pravu
-lijeva
-dole
-rasti
-stranica dolje
-stranica gore
-vrh stranica\|na vrh stranice\|otići na vrh
-kraj stranice\|otići na kraju stranice\|ići u kraj
-vrh
-kraj
-pokrenuti stranicu prema dolje\|trknuti
-pokrenuti stranicu gore\|trčati gore
-izbrisati
-otvoren\|izvršiti\|ući
-novi prozor
-prozor potez\|ići na prozor\|prebacivanje na prozor\|prozor\|potez tab\|idite na karticu\|prebaciti na kartici
-zatvori karticu
-preglednik\|otvoren preglednik\|internet
-nautilus\|file explorer\|otvoren nautilus\|otvoren file explorer
-otvoriti konzolu\|otvoren terminal\|terminal otvara\|otvoriti terminal
-pokrenuti naredbu\|pokrenuti naredbu
-baterija\|stanja baterije\|napunjenosti baterije
-tekst editor\|otvoren za uređivanje teksta\|lansirati uređivač teksta\|novi tekst
-screenshot\|ulov
-alarm\|pokrenuti alarm na
-logout\|sustav logout
-podići svjetlina\|razvedriti se\|sjaji se\|do svjetlina\|povećanje svjetline
-smanjiti svjetlinu\|svjetlinu dolje\|obasjaju\|smanjiti svjetlost
-isključite sustav\|isključite stroj\|isključite računalo\|isključite računalo\|isključivanje
-kalkulator
-fotografija\|snimiti fotografiju
-rekord\|snimanje videa\|snimili video
-otvoren je novi dokument\|otvoriti novi dokument\|stvoriti novi dokument\|stvoriti novi dokument\|stvoriti novi\|otvoren je novi
-ponovni pokušaj naredbu|ponoviti naredbu|pokušajte ponovno naredbenog|ponovo suditi|pokušajte ponovno
+CMD_SELECT_FILE=odabrati
+CMD_MUSIC_START=staviti glazbu\|glazba play\|glazbeni player\|glazba\|pauza
+CMD_MUSIC_START_SONG=stavite glazbu\|glazba\|igrati se\|reproducirati glazbu
+CMD_MUSIC_PLAY=reprodukciju glazbe\|pauzirati glazbu\|početi glazbe\|zaustavljanje glazbe\|zaustavljanje glazbe
+CMD_MUSIC_NEXT=sljedeća pjesma\|sljedeću pjesmu
+CMD_MUSIC_PREV=prethodnu pjesmu\|prethodni zapis
+CMD_MUSIC_SHUFFLE=slučajna glazba\|miješati\|ne miješati
+CMD_MUSIC_REPEAT=ponoviti\|ne ponoviti
+CMD_VIDEO_REW=kašnjenje\|premotati\|vratiti se
+CMD_VIDEO_FF=naprijed\|ići naprijed
+CMD_VOLUME_DOWN=smanjite glasnoću\|glasnoće\|manje volumena\|volumen manje
+CMD_VOLUME_UP=povećati volumen\|glasnoće\|više volumena\|glasnoća više
+CMD_VOLUME_MUTE=nema zvuka\|ne volumen\|isključite zvuk\|glup
+CMD_SEARCH=pretraživanje
+CMD_NO_RESALT=uklonili isticanje\|izvadite istaknuo\|nema isticanja\|nema istaknute
+CMD_TRANSLATE=prevesti\|prevodi\|prijevod\|prevodi u\|prevoditi s\|prevedeno s\|prijevod s\|rječnik\|prevodi\|prijevod
+CMD_WRITE=pisati\|tip
+CMD_WRITE_CAPITAL=kapitalizirati\|upisati kapital
+CMD_WRITE_CAPITAL_ALL=pisati sve velikim slovima\|pisati sve kapitalizirane
+CMD_SAY_THIS=kažem\|reći
+CMD_GOOGLE_SEARCH=pretraživanje google\|internet pretraživač\|značenje\|ono što je\|pretražiti rječnik
+CMD_YOUTUBE_SEARCH=traži na youtube\|što je s\|search video\|video
+CMD_WIKI_SEARCH=traži wiki\|traži wikipedia\|wikipedia
+CMD_WEATHER=vrijeme\|klima
+CMD_SEARCH_MAPS=karta\|karta za pretraživanje\|karta mjesta\|karta iz\|gdje je
+CMD_SAY_HI=pozdravlja se\|pozdravim
+CMD_HELLO=pozdrav za kavu
+CMD_WHOAMI=tko sam ja
+CMD_OPEN_FOLDER=otvorene mape
+CMD_OPEN_FOLDER_OF=otvoren folder
+CMD_SAY_TIME=reci mi sat\|koliko je sati,\|koliko je sati
+CMD_SAY_DATE=datum je\|koji je dan\|da je datum danas\|koji je dan danas\|reci mi datum\|kojeg datuma smo
+CMD_DICTATION=diktata mode\|iz diktata mode\|kraj diktata mode
+CMD_UNDO=otkopčati
+CMD_REDO=preurediti
+CMD_DEL_LINE=izbrisati liniju
+CMD_FAV=dodaj u favorite
+CMD_CLOSE_TERM=zatvoriti terminal\|u neposrednoj blizini terminala
+CMD_MAIL=otvoren pošta\|otvoren je e-pošta\|otvoren pošta\|pošta\|e-pošta
+CMD_COPY=kopija
+CMD_PASTE=zalijepi
+CMD_CUT=rez
+CMD_SELECT_ALL=odaberi sve
+CMD_SAVE=spasiti\|spremiti datoteku
+CMD_SAVE_AS=spremiti kao\|spremi stranicu kao
+CMD_FOLDER=stvoriti mapu\|nova mapa
+CMD_MINIMISE=umanjiti
+CMD_MAXIMISE=povećala
+CMD_FULLSCREEN=full screen\|fullscreen
+CMD_TAB=tipku tab\|tabeliranje\|tab
+CMD_ESC=bijeg
+CMD_MENU=glavni izbornik\|otvoren glavni izbornik
+CMD_ACTIONS_MENU=meni\|otvorite izbornik\|zatvori izbornik
+CMD_CLOSE=zatvori\|izlaz
+CMD_CLOSE_WIN=zatvori prozor
+CMD_ZOOM_OUT=štićenik\|psihijatar\|smanjiti\|povećavanje manje
+CMD_ZOOM_IN=približan\|uvećati\|podići\|zoom više
+CMD_ZOOM_RESET=normalne veličine\|nula zoom
+CMD_TOUCH_ON_OFF=isključiti touchpad\|uključivanje touchpad\|touchpad
+CMD_BACK=više\|natrag
+CMD_ADVANCE=potez\|naprijed
+CMD_RIGHT=u pravu
+CMD_LEFT=lijeva
+CMD_DOWN=dole
+CMD_UP=rasti
+CMD_PAGE_DOWN=stranica dolje
+CMD_PAGE_UP=stranica gore
+CMD_HOME_PAGE=vrh stranica\|na vrh stranice\|otići na vrh
+CMD_END_PAGE=kraj stranice\|otići na kraju stranice\|ići u kraj
+CMD_HOME=vrh
+CMD_END=kraj
+CMD_SCROLL_DOWN=pokrenuti stranicu prema dolje\|trknuti
+CMD_SCROLL_UP=pokrenuti stranicu gore\|trčati gore
+CMD_DELETE=izbrisati
+CMD_ENTER=otvoren\|izvršiti\|ući
+CMD_NEW_WINDOW=novi prozor
+CMD_CHANGE_TAB=prozor potez\|ići na prozor\|prebacivanje na prozor\|prozor\|potez tab\|idite na karticu\|prebaciti na kartici
+CMD_CLOSE_TAB=zatvori karticu
+CMD_BROWSER=preglednik\|otvoren preglednik\|internet
+CMD_FILE_MANAGER=nautilus\|file explorer\|otvoren nautilus\|otvoren file explorer
+CMD_TERMINAL=otvoriti konzolu\|otvoren terminal\|terminal otvara\|otvoriti terminal
+CMD_EXECUTE=pokrenuti naredbu\|pokrenuti naredbu
+CMD_BATTERY=baterija\|stanja baterije\|napunjenosti baterije
+CMD_TEXT_EDITOR=tekst editor\|otvoren za uređivanje teksta\|lansirati uređivač teksta\|novi tekst
+CMD_SCREENSHOT=screenshot\|ulov
+CMD_ALARM=alarm\|pokrenuti alarm na
+CMD_LOG_OFF=logout\|sustav logout
+CMD_BRIGHTNESS_UP=podići svjetlina\|razvedriti se\|sjaji se\|do svjetlina\|povećanje svjetline
+CMD_BRIGHTNESS_DOWN=smanjiti svjetlinu\|svjetlinu dolje\|obasjaju\|smanjiti svjetlost
+CMD_POWER_OFF=isključite sustav\|isključite stroj\|isključite računalo\|isključite računalo\|isključivanje
+CMD_CALCULATER=kalkulator
+CMD_TAKE_PICTURE=fotografija\|snimiti fotografiju
+CMD_TAKE_VIDEO=rekord\|snimanje videa\|snimili video
+CMD_OPEN_FILE=otvoriti datoteku\|otvoriti novu datoteku
+CMD_OFFICE=otvoren je novi dokument\|otvoriti novi dokument\|stvoriti novi dokument\|stvoriti novi dokument\|stvoriti novi\|otvoren je novi
+CMD_RETRY=ponovni pokušaj naredbu|ponoviti naredbu|pokušajte ponovno naredbenog|ponovo suditi|pokušajte ponovno

@@ -1,95 +1,96 @@
-vælg
-sætte musik\|musikafspilning\|musikafspiller\|musik\|pause
-sætte musik på\|musik\|spille til\|spille musik
-afspille musik\|pause musik\|starte musik\|stop musik\|stop musik
-næste sang\|næste spor
-forrige sang\|forrige spor
-tilfældig musik\|mix\|bland ikke
-gentagelse\|ikke gentage
-forsinkelse\|tilbagespoling\|gå tilbage
-fremad\|gå fremad
-sænke lydstyrken\|lydstyrke ned\|mindre volumen\|volumen mindre
-øge lydstyrken\|lydstyrke op\|mere volumen\|volumen mere
-ingen lyd\|ikke volumen\|slukke lyden\|dum
-søg
-fjerne fremhæve\|fjerne fremhævet\|ingen fremhævning\|nej fremhævet
-løbetsætte\|løbetsætter\|løbetsættelse\|løbetsætter af\|løbetsætte fra\|løbetsat fra\|løbetsættelse fra\|ordbog af\|løbetsætter\|løbetsættelse af
-skrive\|typen
-kapitalisere\|skriv kapital
-skrive store bogstaver\|skrive alt kapitaliserede
-sige dette\|sige
-søg google\|søgning på internettet\|betydningen af\|hvad der er\|søge i ordbogen
-søg på youtube\|hvad\|søg videoer\|videoer
-søg wiki\|search wikipedia\|wikipedia
-vejr\|klima
-kort\|kort søg\|kort løbet\|kort fra\|hvor er
-hilser på\|sige hej til
-hej maskine
-hvem jeg er
-åben mappe
-åbne mappen
-fortælle mig time\|hvad tid er\|hvad tid er det
-dato er\|hvilken dag er\|denne dato i dag\|hvilken dag er i dag\|fortælle mig dato\|på hvilken dato vi er
-diktat tilstand\|ud diktat tilstand\|ende diktat tilstand
-fortryde
-redo
-slette linje
-tilføj til favoritbands
-lukke terminalen\|tæt terminal
-åben post\|åbne e-mail\|åben post\|mail\|e-mail
-kopi
-pasta
-cut
-vælg alle
-spare\|gemme fil
-gemme som\|gem side som
-oprette mappe\|ny mappe
-minimere
-maksimere
-fuld skærm\|fullscreen
-tabulatortasten\|tabulering\|fane
-flugt
-hovedmenuen\|åben hovedmenu
-menu\|åben menu\|luk menu
-tæt program\|exit
-luk vindue
-ward\|skrumpe\|formindske\|zoome mindre
-omtrentlige\|forstørre\|hæve\|zoome mere
-normal størrelse\|nul zoom
-slukke touchpad\|tænde touchpad\|touchpad
-løbet\|tilbage
-flytte\|fremad
-højre
-venstre
-ned
-gå op
-side ned
-side op
-toppen af side\|gå til toppen af ​​siden\|gå til toppen
-udgangen af ​​side\|gå til slutningen af siden\|gå til udgangen
-toppen af
-udgangen
-køre side ned\|løbe ned
-køre side op\|køre op
-slette
-åbent\|eksekvere\|indtaste
-nyt vindue
-vindue flytte\|gå til vinduet\|skifte til vindue\|vindue\|flytte fane\|gå til fanen\|skifte til fanen
-luk faneblad
-browser\|åben browser\|internet
-nautilus\|filstyring\|åbne nautilus\|åbent filstyring
-åbne konsollen\|åben terminal\|terminal åbner\|åbne terminalen
-lancere kommando\|køre kommandoen
-batteri\|batteristatus\|batteriopladning
-teksteditor\|åben teksteditor\|lancere teksteditor\|ny tekst
-screenshot\|fangst
-alarm\|starte alarm på
-logout\|systemet logout
-hæve lysstyrken\|lyse op\|shine op\|up lysstyrke\|øge lysstyrken
-sænke lysstyrken\|lysstyrke ned\|skinne ned\|formindske lysstyrke
-lukke systemet ned\|slukke for maskinen\|slukke computeren\|slukke computeren\|slukket
-regnemaskine
-foto\|tage et billede
-rekord\|optage video\|optage en video
-åben nyt dokument\|åbner nyt dokument af\|oprette nyt dokument\|oprette nyt dokument af\|skabe ny\|åbne nye
-prøv igen kommando|gentag kommandoen|prøv igen kommandoen|prøv igen|prøv igen
+CMD_SELECT_FILE=vælg
+CMD_MUSIC_START=sætte musik\|musikafspilning\|musikafspiller\|musik\|pause
+CMD_MUSIC_START_SONG=sætte musik på\|musik\|spille til\|spille musik
+CMD_MUSIC_PLAY=afspille musik\|pause musik\|starte musik\|stop musik\|stop musik
+CMD_MUSIC_NEXT=næste sang\|næste spor
+CMD_MUSIC_PREV=forrige sang\|forrige spor
+CMD_MUSIC_SHUFFLE=tilfældig musik\|mix\|bland ikke
+CMD_MUSIC_REPEAT=gentagelse\|ikke gentage
+CMD_VIDEO_REW=forsinkelse\|tilbagespoling\|gå tilbage
+CMD_VIDEO_FF=fremad\|gå fremad
+CMD_VOLUME_DOWN=sænke lydstyrken\|lydstyrke ned\|mindre volumen\|volumen mindre
+CMD_VOLUME_UP=øge lydstyrken\|lydstyrke op\|mere volumen\|volumen mere
+CMD_VOLUME_MUTE=ingen lyd\|ikke volumen\|slukke lyden\|dum
+CMD_SEARCH=søg
+CMD_NO_RESALT=fjerne fremhæve\|fjerne fremhævet\|ingen fremhævning\|nej fremhævet
+CMD_TRANSLATE=løbetsætte\|løbetsætter\|løbetsættelse\|løbetsætter af\|løbetsætte fra\|løbetsat fra\|løbetsættelse fra\|ordbog af\|løbetsætter\|løbetsættelse af
+CMD_WRITE=skrive\|typen
+CMD_WRITE_CAPITAL=kapitalisere\|skriv kapital
+CMD_WRITE_CAPITAL_ALL=skrive store bogstaver\|skrive alt kapitaliserede
+CMD_SAY_THIS=sige dette\|sige
+CMD_GOOGLE_SEARCH=søg google\|søgning på internettet\|betydningen af\|hvad der er\|søge i ordbogen
+CMD_YOUTUBE_SEARCH=søg på youtube\|hvad\|søg videoer\|videoer
+CMD_WIKI_SEARCH=søg wiki\|search wikipedia\|wikipedia
+CMD_WEATHER=vejr\|klima
+CMD_SEARCH_MAPS=kort\|kort søg\|kort løbet\|kort fra\|hvor er
+CMD_SAY_HI=hilser på\|sige hej til
+CMD_HELLO=hej maskine
+CMD_WHOAMI=hvem jeg er
+CMD_OPEN_FOLDER=åben mappe
+CMD_OPEN_FOLDER_OF=åbne mappen
+CMD_SAY_TIME=fortælle mig time\|hvad tid er\|hvad tid er det
+CMD_SAY_DATE=dato er\|hvilken dag er\|denne dato i dag\|hvilken dag er i dag\|fortælle mig dato\|på hvilken dato vi er
+CMD_DICTATION=diktat tilstand\|ud diktat tilstand\|ende diktat tilstand
+CMD_UNDO=fortryde
+CMD_REDO=redo
+CMD_DEL_LINE=slette linje
+CMD_FAV=tilføj til favoritbands
+CMD_CLOSE_TERM=lukke terminalen\|tæt terminal
+CMD_MAIL=åben post\|åbne e-mail\|åben post\|mail\|e-mail
+CMD_COPY=kopi
+CMD_PASTE=pasta
+CMD_CUT=cut
+CMD_SELECT_ALL=vælg alle
+CMD_SAVE=spare\|gemme fil
+CMD_SAVE_AS=gemme som\|gem side som
+CMD_FOLDER=oprette mappe\|ny mappe
+CMD_MINIMISE=minimere
+CMD_MAXIMISE=maksimere
+CMD_FULLSCREEN=fuld skærm\|fullscreen
+CMD_TAB=tabulatortasten\|tabulering\|fane
+CMD_ESC=flugt
+CMD_MENU=hovedmenuen\|åben hovedmenu
+CMD_ACTIONS_MENU=menu\|åben menu\|luk menu
+CMD_CLOSE=tæt program\|exit
+CMD_CLOSE_WIN=luk vindue
+CMD_ZOOM_OUT=ward\|skrumpe\|formindske\|zoome mindre
+CMD_ZOOM_IN=omtrentlige\|forstørre\|hæve\|zoome mere
+CMD_ZOOM_RESET=normal størrelse\|nul zoom
+CMD_TOUCH_ON_OFF=slukke touchpad\|tænde touchpad\|touchpad
+CMD_BACK=løbet\|tilbage
+CMD_ADVANCE=flytte\|fremad
+CMD_RIGHT=højre
+CMD_LEFT=venstre
+CMD_DOWN=ned
+CMD_UP=gå op
+CMD_PAGE_DOWN=side ned
+CMD_PAGE_UP=side op
+CMD_HOME_PAGE=toppen af side\|gå til toppen af ​​siden\|gå til toppen
+CMD_END_PAGE=udgangen af ​​side\|gå til slutningen af siden\|gå til udgangen
+CMD_HOME=toppen af
+CMD_END=udgangen
+CMD_SCROLL_DOWN=køre side ned\|løbe ned
+CMD_SCROLL_UP=køre side op\|køre op
+CMD_DELETE=slette
+CMD_ENTER=åbent\|eksekvere\|indtaste
+CMD_NEW_WINDOW=nyt vindue
+CMD_CHANGE_TAB=vindue flytte\|gå til vinduet\|skifte til vindue\|vindue\|flytte fane\|gå til fanen\|skifte til fanen
+CMD_CLOSE_TAB=luk faneblad
+CMD_BROWSER=browser\|åben browser\|internet
+CMD_FILE_MANAGER=nautilus\|filstyring\|åbne nautilus\|åbent filstyring
+CMD_TERMINAL=åbne konsollen\|åben terminal\|terminal åbner\|åbne terminalen
+CMD_EXECUTE=lancere kommando\|køre kommandoen
+CMD_BATTERY=batteri\|batteristatus\|batteriopladning
+CMD_TEXT_EDITOR=teksteditor\|åben teksteditor\|lancere teksteditor\|ny tekst
+CMD_SCREENSHOT=screenshot\|fangst
+CMD_ALARM=alarm\|starte alarm på
+CMD_LOG_OFF=logout\|systemet logout
+CMD_BRIGHTNESS_UP=hæve lysstyrken\|lyse op\|shine op\|up lysstyrke\|øge lysstyrken
+CMD_BRIGHTNESS_DOWN=sænke lysstyrken\|lysstyrke ned\|skinne ned\|formindske lysstyrke
+CMD_POWER_OFF=lukke systemet ned\|slukke for maskinen\|slukke computeren\|slukke computeren\|slukket
+CMD_CALCULATER=regnemaskine
+CMD_TAKE_PICTURE=foto\|tage et billede
+CMD_TAKE_VIDEO=rekord\|optage video\|optage en video
+CMD_OPEN_FILE=åbne filen\|åbne en ny fil
+CMD_OFFICE=åben nyt dokument\|åbner nyt dokument af\|oprette nyt dokument\|oprette nyt dokument af\|skabe ny\|åbne nye
+CMD_RETRY=prøv igen kommando|gentag kommandoen|prøv igen kommandoen|prøv igen|prøv igen

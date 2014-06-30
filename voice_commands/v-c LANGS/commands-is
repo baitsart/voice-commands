@@ -1,95 +1,96 @@
-velja
-setja tónlist\|tónlist spila\|tónlist leikmaður\|tónlist\|brot
-setja tónlist af\|tónlist\|leika til\|spila tónlist af
-spila tónlist\|gera hlé á tónlist\|byrja tónlist\|stöðva tónlist\|stöðva tónlist
-næsta lag\|næsta lag
-fyrra lagið\|fyrra lag
-handahófi tónlist\|blanda\|ekki blanda
-endurtaka\|ekki endurtaka
-töf\|spóla til baka\|fara til baka
-fram\|fara fram
-lækka hljóðstyrkinn\|bindi niður\|minna magn\|bindi minna
-auka hljóðstyrkinn\|bindi upp\|fleiri bindi\|bindi meira
-ekkert hljóð\|ekki bindi\|slökkva hljóð\|heimsk
-leita
-fjarlægja auðkenning\|fjarlægja hápunktur\|engin auðkenning\|engin hápunktur
-þýða\|þýðir að\|Þýðing\|þýðir að\|þýða frá\|þýtt úr\|Þýðing úr\|orðabók\|þýðir að\|þýðingar af
-skrifa\|gerð
-nýta\|slá fjármagn
-skrifa allt hástafi\|skrifa allt eignar
-segja þetta\|segja
-leit google\|leita\|merkingu\|hvað er\|leita orðabók
-leita á youtube\|hvað um\|leit myndbrot\|myndbönd
-leita wiki\|leita wikipedia\|wikipedia
-veðrið\|loftslag
-kort\|leita\|kort af\|kort frá\|hvar er
-heilsar að\|heilsa
-halló vél
-hver ég er
-opna möppu
-opna möppu af
-segðu mér klukkutíma\|hvað tíminn er\|hvað er klukkan
-dagsetning er\|hvaða dagur er\|þeim degi í dag\|hvaða dagur er í dag\|segðu mér dagsetninguna\|á hvaða tíma við erum
-dictation ham\|út dictation ham\|endir dictation ham
-afturkalla
-endurtaka
-eyða línu
-bæta við uppáhalds
-loka flugstöðinni\|loka flugstöðinni
-opna póstinn\|opinn email\|opna póstinn\|mail\|email
-eintak
-líma
-skera
-velja allt
-vista\|vista skrána
-vista sem\|vista síðuna sem
-búið til möppu\|nýja möppu
-lágmarka
-hámarka
-fullur skjár\|fullscreen
-lykill flipann\|tabulation\|flipann
-flýja
-aðalvalmynd\|opinn aðalvalmynd
-valmynd\|opinn valmynd\|loka valmynd
-loka program\|hætta
-loka glugga
-deild\|skreppa\|lækka\|zoom minna
-áætluð\|stækka\|hækka\|zoom meira
-full stærð\|núll zoom
-slökkva snerta\|kveikja á snerta\|snerta
-yfir\|aftur
-ferðinni\|fram
-hægri
-vinstri
-niður
-fara upp
-síðu niður
-síðu upp
-efst á síðu\|fara efst á síðu\|fara á toppinn
-endir á síðu\|fara til loka síðu\|fara til enda
-efst á
-enda
-hlaupa síðuna niður\|hlaupa niður
-hlaupa síðu upp\|hlaupa upp
-eyða
-opinn\|framkvæma\|slá inn
-nýr gluggi
-gluggi ferðinni\|fara í glugga\|skipta yfir í glugga\|gluggi\|ferðinni flipann\|fara í flipann\|skipta yfir í flipann
-loka flipa
-vafrinn\|opinn vafrinn\|internetið
-nautilus\|recordkönnuði\|opinn nautilus\|opinn skrákönnuði
-opna stjórnborðið\|opið flugstöðinni\|flugstöðinni opnar\|opna terminal
-ráðast stjórn\|hlaupa stjórn
-rafhlaða\|staða rafhlöðu\|hleðsla
-textii ritstjóri\|skoða texta ritstjóri\|ráðast textaritlinum\|nýr texti
-screenshot\|grípa
-viðvörun\|byrja viðvörun á
-Útskrá\|kerfi Útskrá
-hækka birtustig\|bjartari upp\|skína upp\|upp birtustig\|auka birtustig
-lækka birtustig\|birtu niður\|skína niður\|lækka birta
-leggja niður kerfið\|slökkva á vél\|slökkva á tölvunni\|slökkva á tölvunni\|slökkva
-reiknivél
-ljósmynd\|taka mynd
-skrá\|taka upp\|taka upp myndskeið
-opinn new skjal\|opna nýtt skjal í\|búa til nýtt skjal\|búa til nýtt skjal\|búa til nýja\|opinn new
-reyna stjórn|endurtaka skipun|reyndu aftur skipunin|reyna aftur|reyndu aftur
+CMD_SELECT_FILE=velja
+CMD_MUSIC_START=setja tónlist\|tónlist spila\|tónlist leikmaður\|tónlist\|brot
+CMD_MUSIC_START_SONG=setja tónlist af\|tónlist\|leika til\|spila tónlist af
+CMD_MUSIC_PLAY=spila tónlist\|gera hlé á tónlist\|byrja tónlist\|stöðva tónlist\|stöðva tónlist
+CMD_MUSIC_NEXT=næsta lag\|næsta lag
+CMD_MUSIC_PREV=fyrra lagið\|fyrra lag
+CMD_MUSIC_SHUFFLE=handahófi tónlist\|blanda\|ekki blanda
+CMD_MUSIC_REPEAT=endurtaka\|ekki endurtaka
+CMD_VIDEO_REW=töf\|spóla til baka\|fara til baka
+CMD_VIDEO_FF=fram\|fara fram
+CMD_VOLUME_DOWN=lækka hljóðstyrkinn\|bindi niður\|minna magn\|bindi minna
+CMD_VOLUME_UP=auka hljóðstyrkinn\|bindi upp\|fleiri bindi\|bindi meira
+CMD_VOLUME_MUTE=ekkert hljóð\|ekki bindi\|slökkva hljóð\|heimsk
+CMD_SEARCH=leita
+CMD_NO_RESALT=fjarlægja auðkenning\|fjarlægja hápunktur\|engin auðkenning\|engin hápunktur
+CMD_TRANSLATE=þýða\|þýðir að\|Þýðing\|þýðir að\|þýða frá\|þýtt úr\|Þýðing úr\|orðabók\|þýðir að\|þýðingar af
+CMD_WRITE=skrifa\|gerð
+CMD_WRITE_CAPITAL=nýta\|slá fjármagn
+CMD_WRITE_CAPITAL_ALL=skrifa allt hástafi\|skrifa allt eignar
+CMD_SAY_THIS=segja þetta\|segja
+CMD_GOOGLE_SEARCH=leit google\|leita\|merkingu\|hvað er\|leita orðabók
+CMD_YOUTUBE_SEARCH=leita á youtube\|hvað um\|leit myndbrot\|myndbönd
+CMD_WIKI_SEARCH=leita wiki\|leita wikipedia\|wikipedia
+CMD_WEATHER=veðrið\|loftslag
+CMD_SEARCH_MAPS=kort\|leita\|kort af\|kort frá\|hvar er
+CMD_SAY_HI=heilsar að\|heilsa
+CMD_HELLO=halló vél
+CMD_WHOAMI=hver ég er
+CMD_OPEN_FOLDER=opna möppu
+CMD_OPEN_FOLDER_OF=opna möppu af
+CMD_SAY_TIME=segðu mér klukkutíma\|hvað tíminn er\|hvað er klukkan
+CMD_SAY_DATE=dagsetning er\|hvaða dagur er\|þeim degi í dag\|hvaða dagur er í dag\|segðu mér dagsetninguna\|á hvaða tíma við erum
+CMD_DICTATION=dictation ham\|út dictation ham\|endir dictation ham
+CMD_UNDO=afturkalla
+CMD_REDO=endurtaka
+CMD_DEL_LINE=eyða línu
+CMD_FAV=bæta við uppáhalds
+CMD_CLOSE_TERM=loka flugstöðinni\|loka flugstöðinni
+CMD_MAIL=opna póstinn\|opinn email\|opna póstinn\|mail\|email
+CMD_COPY=eintak
+CMD_PASTE=líma
+CMD_CUT=skera
+CMD_SELECT_ALL=velja allt
+CMD_SAVE=vista\|vista skrána
+CMD_SAVE_AS=vista sem\|vista síðuna sem
+CMD_FOLDER=búið til möppu\|nýja möppu
+CMD_MINIMISE=lágmarka
+CMD_MAXIMISE=hámarka
+CMD_FULLSCREEN=fullur skjár\|fullscreen
+CMD_TAB=lykill flipann\|tabulation\|flipann
+CMD_ESC=flýja
+CMD_MENU=aðalvalmynd\|opinn aðalvalmynd
+CMD_ACTIONS_MENU=valmynd\|opinn valmynd\|loka valmynd
+CMD_CLOSE=loka program\|hætta
+CMD_CLOSE_WIN=loka glugga
+CMD_ZOOM_OUT=deild\|skreppa\|lækka\|zoom minna
+CMD_ZOOM_IN=áætluð\|stækka\|hækka\|zoom meira
+CMD_ZOOM_RESET=full stærð\|núll zoom
+CMD_TOUCH_ON_OFF=slökkva snerta\|kveikja á snerta\|snerta
+CMD_BACK=yfir\|aftur
+CMD_ADVANCE=ferðinni\|fram
+CMD_RIGHT=hægri
+CMD_LEFT=vinstri
+CMD_DOWN=niður
+CMD_UP=fara upp
+CMD_PAGE_DOWN=síðu niður
+CMD_PAGE_UP=síðu upp
+CMD_HOME_PAGE=efst á síðu\|fara efst á síðu\|fara á toppinn
+CMD_END_PAGE=endir á síðu\|fara til loka síðu\|fara til enda
+CMD_HOME=efst á
+CMD_END=enda
+CMD_SCROLL_DOWN=hlaupa síðuna niður\|hlaupa niður
+CMD_SCROLL_UP=hlaupa síðu upp\|hlaupa upp
+CMD_DELETE=eyða
+CMD_ENTER=opinn\|framkvæma\|slá inn
+CMD_NEW_WINDOW=nýr gluggi
+CMD_CHANGE_TAB=gluggi ferðinni\|fara í glugga\|skipta yfir í glugga\|gluggi\|ferðinni flipann\|fara í flipann\|skipta yfir í flipann
+CMD_CLOSE_TAB=loka flipa
+CMD_BROWSER=vafrinn\|opinn vafrinn\|internetið
+CMD_FILE_MANAGER=nautilus\|recordkönnuði\|opinn nautilus\|opinn skrákönnuði
+CMD_TERMINAL=opna stjórnborðið\|opið flugstöðinni\|flugstöðinni opnar\|opna terminal
+CMD_EXECUTE=ráðast stjórn\|hlaupa stjórn
+CMD_BATTERY=rafhlaða\|staða rafhlöðu\|hleðsla
+CMD_TEXT_EDITOR=textii ritstjóri\|skoða texta ritstjóri\|ráðast textaritlinum\|nýr texti
+CMD_SCREENSHOT=screenshot\|grípa
+CMD_ALARM=viðvörun\|byrja viðvörun á
+CMD_LOG_OFF=Útskrá\|kerfi Útskrá
+CMD_BRIGHTNESS_UP=hækka birtustig\|bjartari upp\|skína upp\|upp birtustig\|auka birtustig
+CMD_BRIGHTNESS_DOWN=lækka birtustig\|birtu niður\|skína niður\|lækka birta
+CMD_POWER_OFF=leggja niður kerfið\|slökkva á vél\|slökkva á tölvunni\|slökkva á tölvunni\|slökkva
+CMD_CALCULATER=reiknivél
+CMD_TAKE_PICTURE=ljósmynd\|taka mynd
+CMD_TAKE_VIDEO=skrá\|taka upp\|taka upp myndskeið
+CMD_OPEN_FILE=opinn skrá\|opna nýja skrá
+CMD_OFFICE=opinn new skjal\|opna nýtt skjal í\|búa til nýtt skjal\|búa til nýtt skjal\|búa til nýja\|opinn new
+CMD_RETRY=reyna stjórn|endurtaka skipun|reyndu aftur skipunin|reyna aftur|reyndu aftur

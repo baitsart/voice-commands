@@ -1,95 +1,96 @@
-selecta
-pune muzica\|redare muzică\|redare muzicăer\|muzică\|pauză
-pune muzica de\|muzică de\|juca la\|reda muzică de
-reda muzică\|pauză muzică\|începe muzica\|opri muzica\|opri muzica
-melodie următoare\|track următor
-melodia anterioară\|piesa anterioară
-muzică aleatorie\|amesteca\|nu se amestecă
-repeta\|nu repeta
-întârziere\|înapoi\|reveni
-înainte\|merge mai departe
-scădea volumul\|volum în jos\|mai puțin de volum\|volum mai mic
-crește volumul\|volum\|mai mult volum\|volum mai
-nu audio\|nu de volum\|dezactiva audio\|prost
-căutare
-elimina evidențierea\|elimina evidențiat\|nu subliniind\|nu a evidențiat
-traduce\|traduce\|traducere\|traduce de\|traduce din\|tradus din\|traducere din\|dicționar al\|traduce\|traducerea
-scrie\|tip
-valorifica\|tip de capital
-scrie toate majuscule\|scrie tot capitalizată
-spun acest lucru\|spune
-căutare pe google\|de căutare pe internet\|în sensul\|ceea ce este\|caută în dicționarul
-search pe youtube\|ce despre\|clipuri video de căutare\|clipuri video
-căutare wiki\|căutare wikipedia\|wikipedia
-vreme\|climat
-hartă\|harta de căutare\|harta de\|harta din\|în cazul în care este
-intampina la\|salut la
-salut mașină
-care i-am
-folder deschis
-dosar deschis de
-spune-mi ora\|ceea ce timpul este\|ceea ce e ceasul
-data este\|care zi este\|că data de astăzi\|care zi este azi\|spune-mi data\|la ce dată suntem
-modul de dictare\|modul de dictare de\|modul de dictare final
-anula
-reface
-șterge linie
-adauga la favorite
-închidețiterminalul\|terminal de aproape
-e-mail deschis\|e-mail deschis\|e-mail deschis\|poștă\|e-poștă
-copie
-pastă
-tăiat
-selectaați toate
-salva\|salvați fișierul
-salva ca\|salvați pagina ca
-crea folder\|folder nou
-minimaliza
-maximaliza
-ecran complet\|fullscreen
-tab -cheie\|intabulare\|tab
-evadare
-meniul principal\|meniul principal deschis
-meniu\|deschide meniul\|meniul aproape
-program de aproape\|ieșire
-inchide fereastra
-cartier\|scădea\|scădea\|zoom mai puțin
-aproximativ\|mări\|ridica\|zoom mai mult
-dimensiunea normală\|zoom de zero
-dezactiva touchpad\|porniți touchpad\|touchpad
-peste\|înapoi
-mișcare\|înainte
-dreapta
-stânga
-jos
-urca
-pagina jos
-pagina sus
-partea de sus a pagină\|du-te la partea de sus a paginii\|du-te la partea de sus
-sfârșit de pagină\|du-te la sfârșitul paginii\|du-te la sfârșitul
-partea de sus a
-sfârșitul
-rula pagina jos\|scufunda
-rula pagina sus\|a alerga în sus
-șterge
-deschis\|executa\|introduce
-fereastră nouă
-fereastră mișcare\|du-te la fereastră\|comuta la fereastra\|fereastră\|mișcare tab\|du-te la tab-ul\|comuta la fila
-tab aproape
-browser\|browser-ul deschis\|internet
-nautilus\|file explorer\|nautilus deschis\|fișier deschis explorer
-deschide consola\|terminale deschis\|terminale se deschide\|deschideterminalul
-lansa comanda\|rulați comanda
-baterie\|starea bateriei\|de încărcare a bateriei
-editor de text\|editor de text deschis\|lansa editor de text\|text nou
-screenshot\|captură
-alarmă\|începe alarmă la
-deconectare\|sistem de ieșire
-ridica luminozitatea\|se lumina\|străluci în sus\|up strălucire\|crește luminozitatea
-reduce luminozitatea\|luminozitate jos\|strălucească în jos\|scădea strălucire
-închide sistemul\|opriți aparatul\|opriți computerul\|opriți calculatorul\|opriți
-calculator
-fotografie\|să ia o imagine
-record\|înregistra video\|a înregistra un clip video
-document nou deschis\|deschide document nou de\|crea document nou\|crearea de noi documente de\|crearea de noi\|nou deschis
-încercați din nou comanda|repetați comanda|încercați din nou comanda|încercați din nou|încercați din nou
+CMD_SELECT_FILE=selecta
+CMD_MUSIC_START=pune muzica\|redare muzică\|redare muzicăer\|muzică\|pauză
+CMD_MUSIC_START_SONG=pune muzica de\|muzică de\|juca la\|reda muzică de
+CMD_MUSIC_PLAY=reda muzică\|pauză muzică\|începe muzica\|opri muzica\|opri muzica
+CMD_MUSIC_NEXT=melodie următoare\|track următor
+CMD_MUSIC_PREV=melodia anterioară\|piesa anterioară
+CMD_MUSIC_SHUFFLE=muzică aleatorie\|amesteca\|nu se amestecă
+CMD_MUSIC_REPEAT=repeta\|nu repeta
+CMD_VIDEO_REW=întârziere\|înapoi\|reveni
+CMD_VIDEO_FF=înainte\|merge mai departe
+CMD_VOLUME_DOWN=scădea volumul\|volum în jos\|mai puțin de volum\|volum mai mic
+CMD_VOLUME_UP=crește volumul\|volum\|mai mult volum\|volum mai
+CMD_VOLUME_MUTE=nu audio\|nu de volum\|dezactiva audio\|prost
+CMD_SEARCH=căutare
+CMD_NO_RESALT=elimina evidențierea\|elimina evidențiat\|nu subliniind\|nu a evidențiat
+CMD_TRANSLATE=traduce\|traduce\|traducere\|traduce de\|traduce din\|tradus din\|traducere din\|dicționar al\|traduce\|traducerea
+CMD_WRITE=scrie\|tip
+CMD_WRITE_CAPITAL=valorifica\|tip de capital
+CMD_WRITE_CAPITAL_ALL=scrie toate majuscule\|scrie tot capitalizată
+CMD_SAY_THIS=spun acest lucru\|spune
+CMD_GOOGLE_SEARCH=căutare pe google\|de căutare pe internet\|în sensul\|ceea ce este\|caută în dicționarul
+CMD_YOUTUBE_SEARCH=search pe youtube\|ce despre\|clipuri video de căutare\|clipuri video
+CMD_WIKI_SEARCH=căutare wiki\|căutare wikipedia\|wikipedia
+CMD_WEATHER=vreme\|climat
+CMD_SEARCH_MAPS=hartă\|harta de căutare\|harta de\|harta din\|în cazul în care este
+CMD_SAY_HI=intampina la\|salut la
+CMD_HELLO=salut mașină
+CMD_WHOAMI=care i-am
+CMD_OPEN_FOLDER=folder deschis
+CMD_OPEN_FOLDER_OF=dosar deschis de
+CMD_SAY_TIME=spune-mi ora\|ceea ce timpul este\|ceea ce e ceasul
+CMD_SAY_DATE=data este\|care zi este\|că data de astăzi\|care zi este azi\|spune-mi data\|la ce dată suntem
+CMD_DICTATION=modul de dictare\|modul de dictare de\|modul de dictare final
+CMD_UNDO=anula
+CMD_REDO=reface
+CMD_DEL_LINE=șterge linie
+CMD_FAV=adauga la favorite
+CMD_CLOSE_TERM=închidețiterminalul\|terminal de aproape
+CMD_MAIL=e-mail deschis\|e-mail deschis\|e-mail deschis\|poștă\|e-poștă
+CMD_COPY=copie
+CMD_PASTE=pastă
+CMD_CUT=tăiat
+CMD_SELECT_ALL=selectaați toate
+CMD_SAVE=salva\|salvați fișierul
+CMD_SAVE_AS=salva ca\|salvați pagina ca
+CMD_FOLDER=crea folder\|folder nou
+CMD_MINIMISE=minimaliza
+CMD_MAXIMISE=maximaliza
+CMD_FULLSCREEN=ecran complet\|fullscreen
+CMD_TAB=tab -cheie\|intabulare\|tab
+CMD_ESC=evadare
+CMD_MENU=meniul principal\|meniul principal deschis
+CMD_ACTIONS_MENU=meniu\|deschide meniul\|meniul aproape
+CMD_CLOSE=program de aproape\|ieșire
+CMD_CLOSE_WIN=inchide fereastra
+CMD_ZOOM_OUT=cartier\|scădea\|scădea\|zoom mai puțin
+CMD_ZOOM_IN=aproximativ\|mări\|ridica\|zoom mai mult
+CMD_ZOOM_RESET=dimensiunea normală\|zoom de zero
+CMD_TOUCH_ON_OFF=dezactiva touchpad\|porniți touchpad\|touchpad
+CMD_BACK=peste\|înapoi
+CMD_ADVANCE=mișcare\|înainte
+CMD_RIGHT=dreapta
+CMD_LEFT=stânga
+CMD_DOWN=jos
+CMD_UP=urca
+CMD_PAGE_DOWN=pagina jos
+CMD_PAGE_UP=pagina sus
+CMD_HOME_PAGE=partea de sus a pagină\|du-te la partea de sus a paginii\|du-te la partea de sus
+CMD_END_PAGE=sfârșit de pagină\|du-te la sfârșitul paginii\|du-te la sfârșitul
+CMD_HOME=partea de sus a
+CMD_END=sfârșitul
+CMD_SCROLL_DOWN=rula pagina jos\|scufunda
+CMD_SCROLL_UP=rula pagina sus\|a alerga în sus
+CMD_DELETE=șterge
+CMD_ENTER=deschis\|executa\|introduce
+CMD_NEW_WINDOW=fereastră nouă
+CMD_CHANGE_TAB=fereastră mișcare\|du-te la fereastră\|comuta la fereastra\|fereastră\|mișcare tab\|du-te la tab-ul\|comuta la fila
+CMD_CLOSE_TAB=tab aproape
+CMD_BROWSER=browser\|browser-ul deschis\|internet
+CMD_FILE_MANAGER=nautilus\|file explorer\|nautilus deschis\|fișier deschis explorer
+CMD_TERMINAL=deschide consola\|terminale deschis\|terminale se deschide\|deschideterminalul
+CMD_EXECUTE=lansa comanda\|rulați comanda
+CMD_BATTERY=baterie\|starea bateriei\|de încărcare a bateriei
+CMD_TEXT_EDITOR=editor de text\|editor de text deschis\|lansa editor de text\|text nou
+CMD_SCREENSHOT=screenshot\|captură
+CMD_ALARM=alarmă\|începe alarmă la
+CMD_LOG_OFF=deconectare\|sistem de ieșire
+CMD_BRIGHTNESS_UP=ridica luminozitatea\|se lumina\|străluci în sus\|up strălucire\|crește luminozitatea
+CMD_BRIGHTNESS_DOWN=reduce luminozitatea\|luminozitate jos\|strălucească în jos\|scădea strălucire
+CMD_POWER_OFF=închide sistemul\|opriți aparatul\|opriți computerul\|opriți calculatorul\|opriți
+CMD_CALCULATER=calculator
+CMD_TAKE_PICTURE=fotografie\|să ia o imagine
+CMD_TAKE_VIDEO=record\|înregistra video\|a înregistra un clip video
+CMD_OPEN_FILE=fișier deschis\|deschide un nou fișier
+CMD_OFFICE=document nou deschis\|deschide document nou de\|crea document nou\|crearea de noi documente de\|crearea de noi\|nou deschis
+CMD_RETRY=încercați din nou comanda|repetați comanda|încercați din nou comanda|încercați din nou|încercați din nou

@@ -1,95 +1,96 @@
-valima
-pane muusika\|muusika mängima\|muusikapleier\|muusika\|vaheaeg
-pane muusika\|muusika\|mängida\|mängida muusikat
-mängida muusikat\|paus muusika\|alustada muusika\|stop muusika\|stop muusika
-järgmise laulu\|järgmine lugu
-eelmise loo\|eelmine lugu
-juhuslik muusika\|segama\|ei sega
-kordus\|ei korrata
-viivitus\|tagasikerimine\|mine tagasi
-edasi\|minna edasi
-helitugevus\|helitugevust\|väiksema mahuga\|maht on väiksem
-suurendadamahtu\|helitugevuse\|rohkem mahtu\|maht enam
-no audio\|ei mahu\|lülitada audio\|tobe
-otsing
-eemaldada rõhutades\|eemaldada esile\|esiletõstuta\|no esile
-tõlkima\|tõlgib\|tõlkimine\|tõlgib kohta\|tõlkida\|tõlgitud\|tõlge\|sõnastik\|tõlgib\|tõlkimine
-kirjutama\|tüüp
-kapitaliseerima\|tüüp kapitalirent
-kirjutada suurte\|kirjutada kõik kapitaliseeritud
-öelda\|ütlema
-google\|interneti otsing\|tähenduses\|mis on\|otsisõnastik
-otsi youtube\|kuidas\|search videod\|videod
-otsi wiki\|search wikipedia\|wikipedia
-ilm\|kliima
-kaart\|kaardi otsing\|kaart\|kaarti\|kus on
-tervitades , et\|tere öelda
-tere masin
-kes ma olen
-avatud kausta
-avatud kausta
-mulletund\|mis ajast on\|mis kell on
-kuupäev on\|mis päev on\|et kuupäev täna\|mis päev on täna\|öelgekuupäev\|mis kuupäeval me oleme
-diktaat režiimis\|välja diktaat režiimis\|end diktaat režiimis
-undo
-uuesti
-kustutada line
-lisa lemmik
-sulgeda terminal\|lähedal terminal
-avatud post\|avatud epost\|avatud post\|post\|epost
-koopia
-pasta
-lõigatud
-vali kõik
-päästma\|salvestada faili
-salvestada\|päästma lehekülg as
-luua kausta\|uus kaust
-minimeerima
-maksimeerima
-täisekraanil\|fullscreen
-klahvi tab\|tabuleerimine\|tab
-põgenemine
-peamenüü\|avatud peamenüüst
-menüü\|ava menüü\|lähedal menüü
-tihe programm\|väljapääs
-sulge aken
-palat\|kahaneb\|vähenema\|suurendamiseks vähem
-ligikaudne\|suuremalt\|tõstma\|suurendamiseks rohkem
-normaalsuurus\|null zoom
-lülitada touchpad\|lülitage touchpad\|touchpad
-üle\|tagasi
-käik\|edasi
-õigus
-vasakul
-alla
-tõusma
-lehekülg alla
-lehekülg üles
-tippu lehekülg\|mine lehe algusesse\|tippu minna
-lõpus lehekülg\|mine lõppu lehele\|minna aasta lõpuks
-tippu
-aasta lõpuks
-joosta lehekülg alla\|alavääristama
-joosta lehekülg üles\|kokku klopsima
-kustutama
-avatud\|täitma\|sisenema
-uues aknas
-aken käik\|mine akna\|lülituda aknas\|aken\|käik tab\|minge lingile\|lülituda tab
-sulge kaart
-brauseri\|avatud brauseri\|internet
-nautilus\|file explorer\|avatud nautilus\|avatud faili explorer
-avada konsool\|avatud terminal\|terminal avab\|avage terminal
-käivitada käsk\|käivitada käsk
-aku\|aku staatus\|aku
-tekstiredaktor\|avatud tekstiredaktoris\|käivitada tekstiredaktor\|uus tekst
-screenshot\|saak
-alarm\|alustada häire
-logi välja\|süsteem logi välja
-tõstma heledus\|elavdada\|sära up\|kuni heledus\|ekraani heleduse suurendamiseks
-madalam heledus\|heledust\|särada alla\|vähenema heledus
-süsteem seisata\|lülitage masin\|lülitage arvuti\|lülitage arvuti\|väljalülitus
-kalkulaator
-foto\|pildistamiseks
-rekord\|videolõike\|salvestadavideo
-avatud uus dokument\|avada uus dokument\|luua uus dokument\|luua uus dokument\|luua uusi\|avatud uus
-uuesti käsk|korrake käsk|proovige uuestikäsk|uuesti|proovige uuesti
+CMD_SELECT_FILE=valima
+CMD_MUSIC_START=pane muusika\|muusika mängima\|muusikapleier\|muusika\|vaheaeg
+CMD_MUSIC_START_SONG=pane muusika\|muusika\|mängida\|mängida muusikat
+CMD_MUSIC_PLAY=mängida muusikat\|paus muusika\|alustada muusika\|stop muusika\|stop muusika
+CMD_MUSIC_NEXT=järgmise laulu\|järgmine lugu
+CMD_MUSIC_PREV=eelmise loo\|eelmine lugu
+CMD_MUSIC_SHUFFLE=juhuslik muusika\|segama\|ei sega
+CMD_MUSIC_REPEAT=kordus\|ei korrata
+CMD_VIDEO_REW=viivitus\|tagasikerimine\|mine tagasi
+CMD_VIDEO_FF=edasi\|minna edasi
+CMD_VOLUME_DOWN=helitugevus\|helitugevust\|väiksema mahuga\|maht on väiksem
+CMD_VOLUME_UP=suurendadamahtu\|helitugevuse\|rohkem mahtu\|maht enam
+CMD_VOLUME_MUTE=no audio\|ei mahu\|lülitada audio\|tobe
+CMD_SEARCH=otsing
+CMD_NO_RESALT=eemaldada rõhutades\|eemaldada esile\|esiletõstuta\|no esile
+CMD_TRANSLATE=tõlkima\|tõlgib\|tõlkimine\|tõlgib kohta\|tõlkida\|tõlgitud\|tõlge\|sõnastik\|tõlgib\|tõlkimine
+CMD_WRITE=kirjutama\|tüüp
+CMD_WRITE_CAPITAL=kapitaliseerima\|tüüp kapitalirent
+CMD_WRITE_CAPITAL_ALL=kirjutada suurte\|kirjutada kõik kapitaliseeritud
+CMD_SAY_THIS=öelda\|ütlema
+CMD_GOOGLE_SEARCH=google\|interneti otsing\|tähenduses\|mis on\|otsisõnastik
+CMD_YOUTUBE_SEARCH=otsi youtube\|kuidas\|search videod\|videod
+CMD_WIKI_SEARCH=otsi wiki\|search wikipedia\|wikipedia
+CMD_WEATHER=ilm\|kliima
+CMD_SEARCH_MAPS=kaart\|kaardi otsing\|kaart\|kaarti\|kus on
+CMD_SAY_HI=tervitades , et\|tere öelda
+CMD_HELLO=tere masin
+CMD_WHOAMI=kes ma olen
+CMD_OPEN_FOLDER=avatud kausta
+CMD_OPEN_FOLDER_OF=avatud kausta
+CMD_SAY_TIME=mulletund\|mis ajast on\|mis kell on
+CMD_SAY_DATE=kuupäev on\|mis päev on\|et kuupäev täna\|mis päev on täna\|öelgekuupäev\|mis kuupäeval me oleme
+CMD_DICTATION=diktaat režiimis\|välja diktaat režiimis\|end diktaat režiimis
+CMD_UNDO=undo
+CMD_REDO=uuesti
+CMD_DEL_LINE=kustutada line
+CMD_FAV=lisa lemmik
+CMD_CLOSE_TERM=sulgeda terminal\|lähedal terminal
+CMD_MAIL=avatud post\|avatud epost\|avatud post\|post\|epost
+CMD_COPY=koopia
+CMD_PASTE=pasta
+CMD_CUT=lõigatud
+CMD_SELECT_ALL=vali kõik
+CMD_SAVE=päästma\|salvestada faili
+CMD_SAVE_AS=salvestada\|päästma lehekülg as
+CMD_FOLDER=luua kausta\|uus kaust
+CMD_MINIMISE=minimeerima
+CMD_MAXIMISE=maksimeerima
+CMD_FULLSCREEN=täisekraanil\|fullscreen
+CMD_TAB=klahvi tab\|tabuleerimine\|tab
+CMD_ESC=põgenemine
+CMD_MENU=peamenüü\|avatud peamenüüst
+CMD_ACTIONS_MENU=menüü\|ava menüü\|lähedal menüü
+CMD_CLOSE=tihe programm\|väljapääs
+CMD_CLOSE_WIN=sulge aken
+CMD_ZOOM_OUT=palat\|kahaneb\|vähenema\|suurendamiseks vähem
+CMD_ZOOM_IN=ligikaudne\|suuremalt\|tõstma\|suurendamiseks rohkem
+CMD_ZOOM_RESET=normaalsuurus\|null zoom
+CMD_TOUCH_ON_OFF=lülitada touchpad\|lülitage touchpad\|touchpad
+CMD_BACK=üle\|tagasi
+CMD_ADVANCE=käik\|edasi
+CMD_RIGHT=õigus
+CMD_LEFT=vasakul
+CMD_DOWN=alla
+CMD_UP=tõusma
+CMD_PAGE_DOWN=lehekülg alla
+CMD_PAGE_UP=lehekülg üles
+CMD_HOME_PAGE=tippu lehekülg\|mine lehe algusesse\|tippu minna
+CMD_END_PAGE=lõpus lehekülg\|mine lõppu lehele\|minna aasta lõpuks
+CMD_HOME=tippu
+CMD_END=aasta lõpuks
+CMD_SCROLL_DOWN=joosta lehekülg alla\|alavääristama
+CMD_SCROLL_UP=joosta lehekülg üles\|kokku klopsima
+CMD_DELETE=kustutama
+CMD_ENTER=avatud\|täitma\|sisenema
+CMD_NEW_WINDOW=uues aknas
+CMD_CHANGE_TAB=aken käik\|mine akna\|lülituda aknas\|aken\|käik tab\|minge lingile\|lülituda tab
+CMD_CLOSE_TAB=sulge kaart
+CMD_BROWSER=brauseri\|avatud brauseri\|internet
+CMD_FILE_MANAGER=nautilus\|file explorer\|avatud nautilus\|avatud faili explorer
+CMD_TERMINAL=avada konsool\|avatud terminal\|terminal avab\|avage terminal
+CMD_EXECUTE=käivitada käsk\|käivitada käsk
+CMD_BATTERY=aku\|aku staatus\|aku
+CMD_TEXT_EDITOR=tekstiredaktor\|avatud tekstiredaktoris\|käivitada tekstiredaktor\|uus tekst
+CMD_SCREENSHOT=screenshot\|saak
+CMD_ALARM=alarm\|alustada häire
+CMD_LOG_OFF=logi välja\|süsteem logi välja
+CMD_BRIGHTNESS_UP=tõstma heledus\|elavdada\|sära up\|kuni heledus\|ekraani heleduse suurendamiseks
+CMD_BRIGHTNESS_DOWN=madalam heledus\|heledust\|särada alla\|vähenema heledus
+CMD_POWER_OFF=süsteem seisata\|lülitage masin\|lülitage arvuti\|lülitage arvuti\|väljalülitus
+CMD_CALCULATER=kalkulaator
+CMD_TAKE_PICTURE=foto\|pildistamiseks
+CMD_TAKE_VIDEO=rekord\|videolõike\|salvestadavideo
+CMD_OPEN_FILE=faili avamine\|avada uus fail
+CMD_OFFICE=avatud uus dokument\|avada uus dokument\|luua uus dokument\|luua uus dokument\|luua uusi\|avatud uus
+CMD_RETRY=uuesti käsk|korrake käsk|proovige uuestikäsk|uuesti|proovige uuesti

@@ -1,95 +1,96 @@
-vybrat
-dát hudbu\|přehrávání hudby\|přehrávač\|hudba\|přestávka
-dát hudbu\|hudba\|hrát na\|přehrávat hudbu
-přehrávání hudby\|pozastavit hudbu\|spustit hudbu\|zastavení hudby\|zastavení hudby
-další skladba\|další stopa
-předchozí skladbu\|předchozí stopa
-náhodné hudby\|směs\|nemíchejte
-opakovat\|neopakujte
-zpoždění\|vzad\|vrátit se
-vpřed\|vpřed
-snižte hlasitost\|hlasitost dolů\|méně objem\|objem méně
-zvýšení hlasitosti\|hlasitosti\|větší objem\|objem více
-bez zvuku\|ne objem\|vypnutí zvuku\|němý
-hledání
-odstranit zvýraznění\|odstranit zvýrazněné\|bez zvýraznění\|no zdůraznil
-překládat\|překládá\|překlad\|překládá z\|překlad z\|přeložen z\|překlad z\|slovník\|překládá\|překlad
-napsat\|typ
-vydělávat\|typ kapitál
-napsat velkými\|napsat všechno kapitalizovaných
-říkají, že toto\|říci
-satelitní vyhledávání\|vyhledávání na internetu\|význam\|to, co je\|hledat ve slovníku
-hledat na youtube\|co\|vyhledávání videa\|videa
-hledání wiki\|hledání wikipedia\|wikipedia
-počasí\|podnebí
-mapa\|vyhledávání mapa\|mapaa\|mapaa od\|kde je
-pozdraví se\|pozdravit
-ahoj stroje
-kdo jsem
-otevřít složku
-otevřená složka
-řekni mi hodinu\|kolik je hodin\|kolik je hodin
-datum\|který den je\|že datum dnes\|který den je dnes\|řekni mi, datum\|na to, co den jsme
-režim diktování\|režim z diktátu\|režim konec diktátu
-zrušit
-předělat
-vymazat řádek
-přidat k oblíbeným
-zavřít terminál\|v blízkosti terminálu
-otevřít poštu\|otevřený e-pošta\|otevřít poštu\|pošta\|e-pošta
-kopie
-pasta
-střih
-vybrat vše
-uložit\|uložit soubor
-uložit jako\|uložit stránku jako
-vytvořit složku\|nová složka
-minimalizovat
-maximalizovat
-na celou obrazovku\|fullscreen
-tabulátor\|tabelační\|záložka
-uniknout
-hlavní menu\|otevřte hlavní menu
-menu\|otevřete menu\|zavřít nabídka
-zavře program\|výjezd
-zavřít okno
-hlídat\|scvrknout se\|snížení\|zvětšit méně
-přibližný\|zvětšit\|zvednout\|zoom více
-normální velikost\|nulový zoom
-vypnutí touchpadu\|zapnutí touchpadu\|touchpad
-přes\|zpátky
-krok\|vpřed
-právo
-vlevo
-dolů
-jít nahoru
-strana dolů
-strana up
-horní strana\|přejít na začátek stránky\|přejít na začátek
-konec stránky\|přejít na konec stránky\|jít na end
-horní
-end
-spustit stránku dolů\|sběhnout
-spustit stránku nahoru\|běžet až
-vymazat
-otevřeno\|provést\|vstoupit
-nové okno
-okno krok\|přejděte do okna\|přepněte do okna\|okno\|krok záložka\|přejděte na kartu\|přejít na kartu
-karta zavřít
-prohlížeč\|otevřeno prohlížeč\|internet
-nautilus\|file explorer\|otevřené nautilus\|otevřít soubor explorer
-otevřete konzolu\|otevřený terminál\|otevře terminál\|otevřete terminál
-příkaz spustit\|příkaz spustit
-baterie\|stav baterie\|nabití baterie
-textový editor\|otevřený textový editor\|spustit textový editor\|nový text
-screenshot\|úlovek
-poplach\|spustit poplach při
-logout\|systém logout
-zvednout jas\|oživit\|lesk up\|up jas\|zvýšení jasu
-snížit jas\|snížení jasu\|zářit dolů\|snížení jas
-vypnutí systému\|vypněte přístroj\|vypněte počítač\|vypnout počítač\|vypnutí
-kalkulačka
-fotografie\|vyfotit
-záznam\|záznam videa\|nahrávat video
-otevřený nový dokument\|otevřete nový dokument\|vytvořit nový dokument\|vytvořit nový dokument\|vytvářet nové\|otevírají nové
-příkaz opakovat|příkaz opakovat|zkuste to znovupříkaz|opakování|zkuste to znovu
+CMD_SELECT_FILE=vybrat
+CMD_MUSIC_START=dát hudbu\|přehrávání hudby\|přehrávač\|hudba\|přestávka
+CMD_MUSIC_START_SONG=dát hudbu\|hudba\|hrát na\|přehrávat hudbu
+CMD_MUSIC_PLAY=přehrávání hudby\|pozastavit hudbu\|spustit hudbu\|zastavení hudby\|zastavení hudby
+CMD_MUSIC_NEXT=další skladba\|další stopa
+CMD_MUSIC_PREV=předchozí skladbu\|předchozí stopa
+CMD_MUSIC_SHUFFLE=náhodné hudby\|směs\|nemíchejte
+CMD_MUSIC_REPEAT=opakovat\|neopakujte
+CMD_VIDEO_REW=zpoždění\|vzad\|vrátit se
+CMD_VIDEO_FF=vpřed\|vpřed
+CMD_VOLUME_DOWN=snižte hlasitost\|hlasitost dolů\|méně objem\|objem méně
+CMD_VOLUME_UP=zvýšení hlasitosti\|hlasitosti\|větší objem\|objem více
+CMD_VOLUME_MUTE=bez zvuku\|ne objem\|vypnutí zvuku\|němý
+CMD_SEARCH=hledání
+CMD_NO_RESALT=odstranit zvýraznění\|odstranit zvýrazněné\|bez zvýraznění\|no zdůraznil
+CMD_TRANSLATE=překládat\|překládá\|překlad\|překládá z\|překlad z\|přeložen z\|překlad z\|slovník\|překládá\|překlad
+CMD_WRITE=napsat\|typ
+CMD_WRITE_CAPITAL=vydělávat\|typ kapitál
+CMD_WRITE_CAPITAL_ALL=napsat velkými\|napsat všechno kapitalizovaných
+CMD_SAY_THIS=říkají, že toto\|říci
+CMD_GOOGLE_SEARCH=satelitní vyhledávání\|vyhledávání na internetu\|význam\|to, co je\|hledat ve slovníku
+CMD_YOUTUBE_SEARCH=hledat na youtube\|co\|vyhledávání videa\|videa
+CMD_WIKI_SEARCH=hledání wiki\|hledání wikipedia\|wikipedia
+CMD_WEATHER=počasí\|podnebí
+CMD_SEARCH_MAPS=mapa\|vyhledávání mapa\|mapaa\|mapaa od\|kde je
+CMD_SAY_HI=pozdraví se\|pozdravit
+CMD_HELLO=ahoj stroje
+CMD_WHOAMI=kdo jsem
+CMD_OPEN_FOLDER=otevřít složku
+CMD_OPEN_FOLDER_OF=otevřená složka
+CMD_SAY_TIME=řekni mi hodinu\|kolik je hodin\|kolik je hodin
+CMD_SAY_DATE=datum\|který den je\|že datum dnes\|který den je dnes\|řekni mi, datum\|na to, co den jsme
+CMD_DICTATION=režim diktování\|režim z diktátu\|režim konec diktátu
+CMD_UNDO=zrušit
+CMD_REDO=předělat
+CMD_DEL_LINE=vymazat řádek
+CMD_FAV=přidat k oblíbeným
+CMD_CLOSE_TERM=zavřít terminál\|v blízkosti terminálu
+CMD_MAIL=otevřít poštu\|otevřený e-pošta\|otevřít poštu\|pošta\|e-pošta
+CMD_COPY=kopie
+CMD_PASTE=pasta
+CMD_CUT=střih
+CMD_SELECT_ALL=vybrat vše
+CMD_SAVE=uložit\|uložit soubor
+CMD_SAVE_AS=uložit jako\|uložit stránku jako
+CMD_FOLDER=vytvořit složku\|nová složka
+CMD_MINIMISE=minimalizovat
+CMD_MAXIMISE=maximalizovat
+CMD_FULLSCREEN=na celou obrazovku\|fullscreen
+CMD_TAB=tabulátor\|tabelační\|záložka
+CMD_ESC=uniknout
+CMD_MENU=hlavní menu\|otevřte hlavní menu
+CMD_ACTIONS_MENU=menu\|otevřete menu\|zavřít nabídka
+CMD_CLOSE=zavře program\|výjezd
+CMD_CLOSE_WIN=zavřít okno
+CMD_ZOOM_OUT=hlídat\|scvrknout se\|snížení\|zvětšit méně
+CMD_ZOOM_IN=přibližný\|zvětšit\|zvednout\|zoom více
+CMD_ZOOM_RESET=normální velikost\|nulový zoom
+CMD_TOUCH_ON_OFF=vypnutí touchpadu\|zapnutí touchpadu\|touchpad
+CMD_BACK=přes\|zpátky
+CMD_ADVANCE=krok\|vpřed
+CMD_RIGHT=právo
+CMD_LEFT=vlevo
+CMD_DOWN=dolů
+CMD_UP=jít nahoru
+CMD_PAGE_DOWN=strana dolů
+CMD_PAGE_UP=strana up
+CMD_HOME_PAGE=horní strana\|přejít na začátek stránky\|přejít na začátek
+CMD_END_PAGE=konec stránky\|přejít na konec stránky\|jít na end
+CMD_HOME=horní
+CMD_END=end
+CMD_SCROLL_DOWN=spustit stránku dolů\|sběhnout
+CMD_SCROLL_UP=spustit stránku nahoru\|běžet až
+CMD_DELETE=vymazat
+CMD_ENTER=otevřeno\|provést\|vstoupit
+CMD_NEW_WINDOW=nové okno
+CMD_CHANGE_TAB=okno krok\|přejděte do okna\|přepněte do okna\|okno\|krok záložka\|přejděte na kartu\|přejít na kartu
+CMD_CLOSE_TAB=karta zavřít
+CMD_BROWSER=prohlížeč\|otevřeno prohlížeč\|internet
+CMD_FILE_MANAGER=nautilus\|file explorer\|otevřené nautilus\|otevřít soubor explorer
+CMD_TERMINAL=otevřete konzolu\|otevřený terminál\|otevře terminál\|otevřete terminál
+CMD_EXECUTE=příkaz spustit\|příkaz spustit
+CMD_BATTERY=baterie\|stav baterie\|nabití baterie
+CMD_TEXT_EDITOR=textový editor\|otevřený textový editor\|spustit textový editor\|nový text
+CMD_SCREENSHOT=screenshot\|úlovek
+CMD_ALARM=poplach\|spustit poplach při
+CMD_LOG_OFF=logout\|systém logout
+CMD_BRIGHTNESS_UP=zvednout jas\|oživit\|lesk up\|up jas\|zvýšení jasu
+CMD_BRIGHTNESS_DOWN=snížit jas\|snížení jasu\|zářit dolů\|snížení jas
+CMD_POWER_OFF=vypnutí systému\|vypněte přístroj\|vypněte počítač\|vypnout počítač\|vypnutí
+CMD_CALCULATER=kalkulačka
+CMD_TAKE_PICTURE=fotografie\|vyfotit
+CMD_TAKE_VIDEO=záznam\|záznam videa\|nahrávat video
+CMD_OPEN_FILE=otevřít soubor\|otevřít nový soubor
+CMD_OFFICE=otevřený nový dokument\|otevřete nový dokument\|vytvořit nový dokument\|vytvořit nový dokument\|vytvářet nové\|otevírají nové
+CMD_RETRY=příkaz opakovat|příkaz opakovat|zkuste to znovupříkaz|opakování|zkuste to znovu

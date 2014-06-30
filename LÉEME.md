@@ -5,7 +5,7 @@ Puede modificar los comandos de abajo para un mejor uso, en el archivo: /home/$U
 La función de éste programa se inicia ejecutando el script play_stop.sh, el cual comenzará a grabar su voz, y si transcurren cinco segundos, o si lo vuelves a ejecutar, iniciará el reconocimiento de voz, para ya, realizar uno de todos los comandos disponibles.
 Las órdenes pueden ser simples de un sólo contexto: << orden >>, o de doble contexto: << orden >> << texto-citado >>
 También se puede repetir el último comando con función: RETRY
-Las órdenes disponibles son 92
+Las órdenes disponibles son 95
 
 Después de instalado lo podrás lanzar desde Aplicaciones, Acceso universal, Comandos de Voz
 Y lo puedes arrastrar y soltar en el panel de gnome, y para llamarlo de un atajo de teclado, por ej. F6, éste es el comando: 
@@ -130,7 +130,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    OPEN_FOLDER << cited-text >>
    (open folder)
 ################################
-   OPEN_FOLDER << cited-text >>_OF
+   OPEN_FOLDER_OF << cited-text >>
    (open folder of)
 ################################
    SAY_TIME
@@ -322,13 +322,23 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    TAKE_VIDEO
    (record | record video | record a video)
 ################################
-   OFFICE
+   OPEN_FILE
+   (open file | open a new file)
+################################
+   OFFICE << cited-text [ writer, calc, impress, draw, math ] >>
    (open new document | open new document of | create new document | create new document of | create new | open new)
+Writer (text)
+Calc (calc)
+Impress (presentation | page | web)
+Draw (drawing | graphic)
+Math (formula | math)
 ################################
    RETRY
    (retry command | repeat command | try again the command | retry | try again)
 ################################
 
+Puedes encontrar muchísimas más funciones disponibles con este comando:
+Multimendia y medios:
 # grep "XK_" /usr/include/X11/XF86keysym.h|sed 's/XK_//g' > ~/"Mas comandos" && gedit ~/"Mas comandos"
 Todos los demás:
 # grep "XK_" /usr/include/X11/keysymdef.h|sed 's/ XK_/ /g' > ~/"Muchos mas comandos" && gedit ~/"Muchos mas comandos" 

@@ -1,95 +1,96 @@
-izberite
-dal glasbo\|predvajanje glasbe\|predvajalnik glasbe\|glasba\|odmor
-dal glasbo\|glasba\|igrajo na\|predvajanje glasbe
-predvajanje glasbe\|pavza glasbe\|začetek glasbe\|stop glasbo\|stop glasbo
-naslednja skladba\|naslednja skladba
-prejšnja skladba\|prejšnja skladba
-naključno glasba\|mix\|ne mešajte
-ponavljanje\|ne ponavlja
-zamuda\|previjanje\|pojdi nazaj
-naprej\|iti naprej
-znižanje glasnosti\|glasnosti\|manjši obseg\|prostornina je manjša
-povečanje količine\|glasnosti\|več obseg\|večji volumen
-ni zvoka\|ne volumen\|izklop zvoka\|dumb
-iskanje
-odstrani poudarjanje\|odstrani poudarila\|poudarjanje\|no izpostavil
-translate\|prevaja\|prevajanje\|prevaja iz\|prevajati iz\|prevedeno iz\|prevod iz\|slovar\|prevaja\|prevod
-pišite\|tip
-izkoristiti\|tip kapitala
-napisati vse velike\|pisati vse kapitalizirane
-reči\|pravijo
-iskanje v google\|internet iskanje\|pomen\|kaj je\|iskanje slovar
-iskanje na youtube\|kaj pa\|išči video\|videi
-iskanje wiki\|iskanje wikipedia\|wikipedia
-vreme\|podnebne
-zemljevid\|iskanje zemljevid\|zemljevid\|zemljevid iz\|kjer je
-pozdravlja , da\|pozdravi
-pozdravljeni stroj
-kdo sem
-odprto mapo
-odprta mapa
-povej mi eno uro\|kajčas\|koliko je ura
-datum\|kateri dan je\|ta datum danes\|kateri dan je danes\|povej mi datum\|na kateri datum smo
-način narek\|ven način narek\|konec način narek
-undo
-redo
-izbrisati vrstico
-dodaj med priljubljene
-zaprtje terminala\|blizu terminal
-open mail\|open email\|open mail\|mail\|email
-kopijo
-paste
-rez
-izberi vse
-shranite\|shranite datoteko
-shranite kot\|shranite stran kot
-ustvariti mapo\|nova mapa
-zmanjšanje
-maksimiranje
-celozaslonski način\|celozaslonski
-kartica ključ\|tabulation\|tab
-escape
-glavni meni\|odprta glavni meni
-meni\|odprt meni\|zapri meni
-zapri program,\|exit
-zapri okno
-ward\|shrink\|zmanjša\|približaj manj
-približen\|povečavo\|dvigniti\|približaj več
-normalna velikost\|nič zoom
-izklopiti touchpad\|vklopiti sledilno ploščico\|touchpad
-več\|nazaj
-poteza\|naprej
-pravica
-levo
-navzdol
-iti gor
-stran navzdol
-stran up
-na vrh stran\|pojdite na vrh strani\|pojdi na vrh
-konec strani\|pojdi na koncu strani\|pojdi na konec
-na vrh
-konec
-teči stran navzdol\|spuščajo
-teči stran navzgor\|teči navzgor
-odstrani
-open\|izvršiti\|vnesite
-novo okno
-okno poteza\|pojdi na oknu\|preklopite v okno\|okno\|poteza tab\|pojdite na zavihek\|preklopite na zavihek
-zapri tab
-brskalnik\|open brskalnik\|internet
-nautilus\|file explorer\|open nautilus\|odprte datoteke raziskovalec
-odprite konzolo\|odprt terminal\|odpre se terminal\|odprite terminal
-sprožiti ukaz\|zaženete ukaz
-baterija\|stanja baterije\|baterija
-urejevalnik besedila\|odprt urejevalnik besedila\|začetek urejevalnik besedila\|novo besedilo
-screenshot\|ulov
-alarm\|začetek alarm na
-logout\|sistem odjava
-dvigniti svetlosti\|uljepšati\|sijaj up\|up svetlosti\|povečanje svetlosti
-zmanjšate svetlost\|svetlost navzdol\|sijalo navzdol\|zmanjša svetlosti
-zapreti sistem\|izključite napravo\|izklopite računalnik\|izklopite računalnik\|izklop
-kalkulator
-fotografija\|slikaj
-zapis\|snemanje video\|snemanje videa
-odprt nov dokument\|odprite nov dokument\|ustvariti nov dokument\|ustvariti nov dokument\|ustvariti novo\|odprta nova
-ponovite ukaz|ponovite ukaz|poskusite znova poveljstvom|retry|poskusite znova
+CMD_SELECT_FILE=izberite
+CMD_MUSIC_START=dal glasbo\|predvajanje glasbe\|predvajalnik glasbe\|glasba\|odmor
+CMD_MUSIC_START_SONG=dal glasbo\|glasba\|igrajo na\|predvajanje glasbe
+CMD_MUSIC_PLAY=predvajanje glasbe\|pavza glasbe\|začetek glasbe\|stop glasbo\|stop glasbo
+CMD_MUSIC_NEXT=naslednja skladba\|naslednja skladba
+CMD_MUSIC_PREV=prejšnja skladba\|prejšnja skladba
+CMD_MUSIC_SHUFFLE=naključno glasba\|mix\|ne mešajte
+CMD_MUSIC_REPEAT=ponavljanje\|ne ponavlja
+CMD_VIDEO_REW=zamuda\|previjanje\|pojdi nazaj
+CMD_VIDEO_FF=naprej\|iti naprej
+CMD_VOLUME_DOWN=znižanje glasnosti\|glasnosti\|manjši obseg\|prostornina je manjša
+CMD_VOLUME_UP=povečanje količine\|glasnosti\|več obseg\|večji volumen
+CMD_VOLUME_MUTE=ni zvoka\|ne volumen\|izklop zvoka\|dumb
+CMD_SEARCH=iskanje
+CMD_NO_RESALT=odstrani poudarjanje\|odstrani poudarila\|poudarjanje\|no izpostavil
+CMD_TRANSLATE=translate\|prevaja\|prevajanje\|prevaja iz\|prevajati iz\|prevedeno iz\|prevod iz\|slovar\|prevaja\|prevod
+CMD_WRITE=pišite\|tip
+CMD_WRITE_CAPITAL=izkoristiti\|tip kapitala
+CMD_WRITE_CAPITAL_ALL=napisati vse velike\|pisati vse kapitalizirane
+CMD_SAY_THIS=reči\|pravijo
+CMD_GOOGLE_SEARCH=iskanje v google\|internet iskanje\|pomen\|kaj je\|iskanje slovar
+CMD_YOUTUBE_SEARCH=iskanje na youtube\|kaj pa\|išči video\|videi
+CMD_WIKI_SEARCH=iskanje wiki\|iskanje wikipedia\|wikipedia
+CMD_WEATHER=vreme\|podnebne
+CMD_SEARCH_MAPS=zemljevid\|iskanje zemljevid\|zemljevid\|zemljevid iz\|kjer je
+CMD_SAY_HI=pozdravlja , da\|pozdravi
+CMD_HELLO=pozdravljeni stroj
+CMD_WHOAMI=kdo sem
+CMD_OPEN_FOLDER=odprto mapo
+CMD_OPEN_FOLDER_OF=odprta mapa
+CMD_SAY_TIME=povej mi eno uro\|kajčas\|koliko je ura
+CMD_SAY_DATE=datum\|kateri dan je\|ta datum danes\|kateri dan je danes\|povej mi datum\|na kateri datum smo
+CMD_DICTATION=način narek\|ven način narek\|konec način narek
+CMD_UNDO=undo
+CMD_REDO=redo
+CMD_DEL_LINE=izbrisati vrstico
+CMD_FAV=dodaj med priljubljene
+CMD_CLOSE_TERM=zaprtje terminala\|blizu terminal
+CMD_MAIL=open mail\|open email\|open mail\|mail\|email
+CMD_COPY=kopijo
+CMD_PASTE=paste
+CMD_CUT=rez
+CMD_SELECT_ALL=izberi vse
+CMD_SAVE=shranite\|shranite datoteko
+CMD_SAVE_AS=shranite kot\|shranite stran kot
+CMD_FOLDER=ustvariti mapo\|nova mapa
+CMD_MINIMISE=zmanjšanje
+CMD_MAXIMISE=maksimiranje
+CMD_FULLSCREEN=celozaslonski način\|celozaslonski
+CMD_TAB=kartica ključ\|tabulation\|tab
+CMD_ESC=escape
+CMD_MENU=glavni meni\|odprta glavni meni
+CMD_ACTIONS_MENU=meni\|odprt meni\|zapri meni
+CMD_CLOSE=zapri program,\|exit
+CMD_CLOSE_WIN=zapri okno
+CMD_ZOOM_OUT=ward\|shrink\|zmanjša\|približaj manj
+CMD_ZOOM_IN=približen\|povečavo\|dvigniti\|približaj več
+CMD_ZOOM_RESET=normalna velikost\|nič zoom
+CMD_TOUCH_ON_OFF=izklopiti touchpad\|vklopiti sledilno ploščico\|touchpad
+CMD_BACK=več\|nazaj
+CMD_ADVANCE=poteza\|naprej
+CMD_RIGHT=pravica
+CMD_LEFT=levo
+CMD_DOWN=navzdol
+CMD_UP=iti gor
+CMD_PAGE_DOWN=stran navzdol
+CMD_PAGE_UP=stran up
+CMD_HOME_PAGE=na vrh stran\|pojdite na vrh strani\|pojdi na vrh
+CMD_END_PAGE=konec strani\|pojdi na koncu strani\|pojdi na konec
+CMD_HOME=na vrh
+CMD_END=konec
+CMD_SCROLL_DOWN=teči stran navzdol\|spuščajo
+CMD_SCROLL_UP=teči stran navzgor\|teči navzgor
+CMD_DELETE=odstrani
+CMD_ENTER=open\|izvršiti\|vnesite
+CMD_NEW_WINDOW=novo okno
+CMD_CHANGE_TAB=okno poteza\|pojdi na oknu\|preklopite v okno\|okno\|poteza tab\|pojdite na zavihek\|preklopite na zavihek
+CMD_CLOSE_TAB=zapri tab
+CMD_BROWSER=brskalnik\|open brskalnik\|internet
+CMD_FILE_MANAGER=nautilus\|file explorer\|open nautilus\|odprte datoteke raziskovalec
+CMD_TERMINAL=odprite konzolo\|odprt terminal\|odpre se terminal\|odprite terminal
+CMD_EXECUTE=sprožiti ukaz\|zaženete ukaz
+CMD_BATTERY=baterija\|stanja baterije\|baterija
+CMD_TEXT_EDITOR=urejevalnik besedila\|odprt urejevalnik besedila\|začetek urejevalnik besedila\|novo besedilo
+CMD_SCREENSHOT=screenshot\|ulov
+CMD_ALARM=alarm\|začetek alarm na
+CMD_LOG_OFF=logout\|sistem odjava
+CMD_BRIGHTNESS_UP=dvigniti svetlosti\|uljepšati\|sijaj up\|up svetlosti\|povečanje svetlosti
+CMD_BRIGHTNESS_DOWN=zmanjšate svetlost\|svetlost navzdol\|sijalo navzdol\|zmanjša svetlosti
+CMD_POWER_OFF=zapreti sistem\|izključite napravo\|izklopite računalnik\|izklopite računalnik\|izklop
+CMD_CALCULATER=kalkulator
+CMD_TAKE_PICTURE=fotografija\|slikaj
+CMD_TAKE_VIDEO=zapis\|snemanje video\|snemanje videa
+CMD_OPEN_FILE=odprte datoteke\|odpreti novo datoteko
+CMD_OFFICE=odprt nov dokument\|odprite nov dokument\|ustvariti nov dokument\|ustvariti nov dokument\|ustvariti novo\|odprta nova
+CMD_RETRY=ponovite ukaz|ponovite ukaz|poskusite znova poveljstvom|retry|poskusite znova

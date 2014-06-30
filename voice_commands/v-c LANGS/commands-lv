@@ -1,95 +1,96 @@
-atlasīt
-likt mūziku\|mūzikas atskaņošana\|mūzikas atskaņotājs\|mūzika\|pārtraukums
-likt mūziku\|mūzika\|spēlēt\|atskaņot mūziku
-atskaņot mūziku\|pauzes mūzika\|sākt mūziku\|stop mūzika\|stop mūzika
-nākamā dziesma\|nākamā dziesma
-iepriekšējā dziesma\|iepriekšējo dziesmu
-izlases mūziku\|sajaukt\|nejaukt
-atkārtot\|neatkārtot
-aizkavēšana\|pārtīšana\|iet atpakaļ
-uz priekšu\|iet uz priekšu
-pazemināt skaļumu\|tilpums leju\|mazāku tilpumu\|tilpums ir mazāks
-palielināt skaļumu\|tilpumu līdz\|vairāk apjoma\|apjoms ir vairāk
-nav audio\|ne apjoms\|izslēgtu audio\|mēms
-meklēšana
-noņemt izceļot\|noņemt izcelti\|ne izcelšana\|nav iezīmēts
-tulkot\|pārveido\|tulkojums\|pārveido par\|tulkot no\|tulkots no\|tulkojums no\|vārdnīca\|pārveido\|tulkojums
-rakstīt\|tips
-kapitalizēt\|kapitālu tipa
-rakstīt visu lielos\|rakstīt visu kapitalizēto
-saku\|teikt
-meklēšana google\|internetsa meklēšanas\|nozīmē\|, kas ir\|meklēt vārdnīcu
-meklēt youtube\|kas par\|meklēt video\|video
-meklēšana wiki\|meklēšana wikipedia\|wikipedia
-laiks\|klimats
-karte\|karte meklēt\|karte\|karti no\|kur
-sveicina uz\|teikt hi
-sveiki mašīna
-kas es esmu
-atvērt mapi
-atvērt mapi
-man pateikt stundu\|kāds laiks ir\|cik ir pulkstenis
-datums ir\|kura diena ir\|ka diena šodien\|kura diena ir šodien\|man pateikt datumu\|par to, kad mēs esam
-diktāts režīms\|out diktāts režīms\|end diktāts režīms
-atpogāt
-pārtaisīt
-dzēst līnijas
-pievienot mīļākie
-aizvērtu termināli\|close termināls
-atvērt pastu\|atvērts e-pasts\|atvērt pastu\|pasts\|e-pasts
-kopija
-pasta
-samazināt
-izvēlēties visus
-glābt\|saglabāt failu
-saglabāt kā\|saglabājiet lapu
-izveidot mapi\|jauna mape
-samazinātu
-palielinātu
-pilnekrāna\|pilnekrāna
-taustiņu tab\|tabula\|tab
-aizbēgt
-galveno izvēlni\|atvērt galveno izvēlni
-ēdienkarte\|atvērt izvēlni\|aizvērt izvēlni
-close programma\|iziet
-aizvērt logu
-aizbilstamais\|sarauties\|samazināt\|zoom mazāk
-aptuvens\|palielināt\|paaugstināt\|zoom vairāk
-normāla izmēra\|nulle zoom
-izslēdziet touchpad\|ieslēdziet touchpad\|touchpad
-vairāk\|atpakaļ
-pārvietot\|uz priekšu
-tiesības
-kreisi
-uz leju
-pieiet
-lapa uz leju
-lappuse up
-top lappuse\|iet uz augšu lapas\|iet uz augšu
-beigu sākums\|iet uz beigām lapas\|iet end
-top
-end
-palaist lapu uz leju\|nomocīt
-palaist uz augšu\|uzskriet
-izdzēst
-atvērts\|izpildīt\|ieiet
-jaunā logā
-logs pārvietot\|iet uz loga\|pāriet uz logu\|logs\|pārvietot tab\|dodieties uz cilni\|pāriet uz cilni
-close tab
-pārlūks\|atvērts pārlūks\|internets
-mīkstmiesis\|failu pētnieks\|atvērts mīkstmiesis\|atvērts failu pētnieks
-atveriet konsoli\|atvērt termināla\|termināls atver\|atvērt termināli
-palaist komandu\|palaist komandu
-akumulators\|akumulatora stāvoklis\|akumulatora uzlādes
-teksta redaktors\|atvērta teksta redaktoru\|uzsākt teksta redaktoru\|jauns teksts
-screenshot\|loms
-signalizācija\|sākums trauksmi
-logout\|sistēma logout
-paaugstināt spilgtums\|atdzīvināt\|spīdēt up\|up spilgtums\|palielinātu spilgtumu
-samazināt spilgtumu\|spīdums uz leju\|spīdēt uz leju\|samazināt spilgtums
-slēgtas sistēmas\|izslēdziet iekārtu\|izslēdziet datoru\|izslēdziet datoru\|izslēdziet
-kalkulators
-foto\|fotografēt
-ieraksts\|ierakstīt video\|ierakstīt video
-atvērts jauns dokuments\|atver jaunu dokumentu\|izveidot jaunu dokumentu\|izveidot jaunu dokumentu\|izveidot jaunas\|atvērta jauna
-atkārtojiet komandu|atkārtot komandu|mēģiniet vēlreiz komandu|otrreiz izskatīt|mēģiniet vēlreiz
+CMD_SELECT_FILE=atlasīt
+CMD_MUSIC_START=likt mūziku\|mūzikas atskaņošana\|mūzikas atskaņotājs\|mūzika\|pārtraukums
+CMD_MUSIC_START_SONG=likt mūziku\|mūzika\|spēlēt\|atskaņot mūziku
+CMD_MUSIC_PLAY=atskaņot mūziku\|pauzes mūzika\|sākt mūziku\|stop mūzika\|stop mūzika
+CMD_MUSIC_NEXT=nākamā dziesma\|nākamā dziesma
+CMD_MUSIC_PREV=iepriekšējā dziesma\|iepriekšējo dziesmu
+CMD_MUSIC_SHUFFLE=izlases mūziku\|sajaukt\|nejaukt
+CMD_MUSIC_REPEAT=atkārtot\|neatkārtot
+CMD_VIDEO_REW=aizkavēšana\|pārtīšana\|iet atpakaļ
+CMD_VIDEO_FF=uz priekšu\|iet uz priekšu
+CMD_VOLUME_DOWN=pazemināt skaļumu\|tilpums leju\|mazāku tilpumu\|tilpums ir mazāks
+CMD_VOLUME_UP=palielināt skaļumu\|tilpumu līdz\|vairāk apjoma\|apjoms ir vairāk
+CMD_VOLUME_MUTE=nav audio\|ne apjoms\|izslēgtu audio\|mēms
+CMD_SEARCH=meklēšana
+CMD_NO_RESALT=noņemt izceļot\|noņemt izcelti\|ne izcelšana\|nav iezīmēts
+CMD_TRANSLATE=tulkot\|pārveido\|tulkojums\|pārveido par\|tulkot no\|tulkots no\|tulkojums no\|vārdnīca\|pārveido\|tulkojums
+CMD_WRITE=rakstīt\|tips
+CMD_WRITE_CAPITAL=kapitalizēt\|kapitālu tipa
+CMD_WRITE_CAPITAL_ALL=rakstīt visu lielos\|rakstīt visu kapitalizēto
+CMD_SAY_THIS=saku\|teikt
+CMD_GOOGLE_SEARCH=meklēšana google\|internetsa meklēšanas\|nozīmē\|, kas ir\|meklēt vārdnīcu
+CMD_YOUTUBE_SEARCH=meklēt youtube\|kas par\|meklēt video\|video
+CMD_WIKI_SEARCH=meklēšana wiki\|meklēšana wikipedia\|wikipedia
+CMD_WEATHER=laiks\|klimats
+CMD_SEARCH_MAPS=karte\|karte meklēt\|karte\|karti no\|kur
+CMD_SAY_HI=sveicina uz\|teikt hi
+CMD_HELLO=sveiki mašīna
+CMD_WHOAMI=kas es esmu
+CMD_OPEN_FOLDER=atvērt mapi
+CMD_OPEN_FOLDER_OF=atvērt mapi
+CMD_SAY_TIME=man pateikt stundu\|kāds laiks ir\|cik ir pulkstenis
+CMD_SAY_DATE=datums ir\|kura diena ir\|ka diena šodien\|kura diena ir šodien\|man pateikt datumu\|par to, kad mēs esam
+CMD_DICTATION=diktāts režīms\|out diktāts režīms\|end diktāts režīms
+CMD_UNDO=atpogāt
+CMD_REDO=pārtaisīt
+CMD_DEL_LINE=dzēst līnijas
+CMD_FAV=pievienot mīļākie
+CMD_CLOSE_TERM=aizvērtu termināli\|close termināls
+CMD_MAIL=atvērt pastu\|atvērts e-pasts\|atvērt pastu\|pasts\|e-pasts
+CMD_COPY=kopija
+CMD_PASTE=pasta
+CMD_CUT=samazināt
+CMD_SELECT_ALL=izvēlēties visus
+CMD_SAVE=glābt\|saglabāt failu
+CMD_SAVE_AS=saglabāt kā\|saglabājiet lapu
+CMD_FOLDER=izveidot mapi\|jauna mape
+CMD_MINIMISE=samazinātu
+CMD_MAXIMISE=palielinātu
+CMD_FULLSCREEN=pilnekrāna\|pilnekrāna
+CMD_TAB=taustiņu tab\|tabula\|tab
+CMD_ESC=aizbēgt
+CMD_MENU=galveno izvēlni\|atvērt galveno izvēlni
+CMD_ACTIONS_MENU=ēdienkarte\|atvērt izvēlni\|aizvērt izvēlni
+CMD_CLOSE=close programma\|iziet
+CMD_CLOSE_WIN=aizvērt logu
+CMD_ZOOM_OUT=aizbilstamais\|sarauties\|samazināt\|zoom mazāk
+CMD_ZOOM_IN=aptuvens\|palielināt\|paaugstināt\|zoom vairāk
+CMD_ZOOM_RESET=normāla izmēra\|nulle zoom
+CMD_TOUCH_ON_OFF=izslēdziet touchpad\|ieslēdziet touchpad\|touchpad
+CMD_BACK=vairāk\|atpakaļ
+CMD_ADVANCE=pārvietot\|uz priekšu
+CMD_RIGHT=tiesības
+CMD_LEFT=kreisi
+CMD_DOWN=uz leju
+CMD_UP=pieiet
+CMD_PAGE_DOWN=lapa uz leju
+CMD_PAGE_UP=lappuse up
+CMD_HOME_PAGE=top lappuse\|iet uz augšu lapas\|iet uz augšu
+CMD_END_PAGE=beigu sākums\|iet uz beigām lapas\|iet end
+CMD_HOME=top
+CMD_END=end
+CMD_SCROLL_DOWN=palaist lapu uz leju\|nomocīt
+CMD_SCROLL_UP=palaist uz augšu\|uzskriet
+CMD_DELETE=izdzēst
+CMD_ENTER=atvērts\|izpildīt\|ieiet
+CMD_NEW_WINDOW=jaunā logā
+CMD_CHANGE_TAB=logs pārvietot\|iet uz loga\|pāriet uz logu\|logs\|pārvietot tab\|dodieties uz cilni\|pāriet uz cilni
+CMD_CLOSE_TAB=close tab
+CMD_BROWSER=pārlūks\|atvērts pārlūks\|internets
+CMD_FILE_MANAGER=mīkstmiesis\|failu pētnieks\|atvērts mīkstmiesis\|atvērts failu pētnieks
+CMD_TERMINAL=atveriet konsoli\|atvērt termināla\|termināls atver\|atvērt termināli
+CMD_EXECUTE=palaist komandu\|palaist komandu
+CMD_BATTERY=akumulators\|akumulatora stāvoklis\|akumulatora uzlādes
+CMD_TEXT_EDITOR=teksta redaktors\|atvērta teksta redaktoru\|uzsākt teksta redaktoru\|jauns teksts
+CMD_SCREENSHOT=screenshot\|loms
+CMD_ALARM=signalizācija\|sākums trauksmi
+CMD_LOG_OFF=logout\|sistēma logout
+CMD_BRIGHTNESS_UP=paaugstināt spilgtums\|atdzīvināt\|spīdēt up\|up spilgtums\|palielinātu spilgtumu
+CMD_BRIGHTNESS_DOWN=samazināt spilgtumu\|spīdums uz leju\|spīdēt uz leju\|samazināt spilgtums
+CMD_POWER_OFF=slēgtas sistēmas\|izslēdziet iekārtu\|izslēdziet datoru\|izslēdziet datoru\|izslēdziet
+CMD_CALCULATER=kalkulators
+CMD_TAKE_PICTURE=foto\|fotografēt
+CMD_TAKE_VIDEO=ieraksts\|ierakstīt video\|ierakstīt video
+CMD_OPEN_FILE=atvērt failu\|atvērt jaunu failu
+CMD_OFFICE=atvērts jauns dokuments\|atver jaunu dokumentu\|izveidot jaunu dokumentu\|izveidot jaunu dokumentu\|izveidot jaunas\|atvērta jauna
+CMD_RETRY=atkārtojiet komandu|atkārtot komandu|mēģiniet vēlreiz komandu|otrreiz izskatīt|mēģiniet vēlreiz

@@ -5,7 +5,7 @@ You can modify the commands down below for a better usage, on the file: speech_c
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
 Also can repeat the last command with RETRY function
 Orders can be just a simple context: << order >> , or double context: << order >> << cited-text >>
-Available commands are 93
+Available commands are 95
 
 After installed we can launch it from Applications, Universal Access, Voice Commands
 And you can drag and drop on the gnome panel, and to call it a keyboard shortcut, eg. F6, this is the command: 
@@ -139,7 +139,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    OPEN_FOLDER << cited-text >>
    (open folder)
 ################################
-   OPEN_FOLDER << cited-text >>_OF
+   OPEN_FOLDER_OF << cited-text >>
    (open folder of)
 ################################
    SAY_TIME
@@ -331,8 +331,16 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    TAKE_VIDEO
    (record | record video | record a video)
 ################################
-   OFFICE
+   OPEN_FILE
+   (open file | open a new file)
+################################
+   OFFICE << cited-text [ writer, calc, impress, draw, math ] >>
    (open new document | open new document of | create new document | create new document of | create new | open new)
+Writer (text)
+Calc (calc)
+Impress (presentation | page | web)
+Draw (drawing | graphic)
+Math (formula | math)
 ################################
    RETRY
    (retry command | repeat command | try again the command | retry | try again)

@@ -1,95 +1,96 @@
-seçmek
-müzik koymak\|müzik çalma\|müzik çalar\|müzik\|mola
-müzik koymak\|müzik\|oynamak\|müzik oynatımını
-müzik çalmak\|duraklatmak müzik\|müziği başlatın\|müziği durdu dili dilirmak\|müziği durdu dili dilirmak
-sonraki şarkı\|sonraki parça
-önceki şarkı\|önceki parça
-rastgele müzik\|karıştırmak\|karışmaz
-tekrar\|tekrarlayın
-gecikme\|geri sarma\|geri gitmek
-ileri\|ilerlemek
-ses seviyesini düşürmek\|aşağı hacmi\|daha az hacim\|hacmi az
-ses seviyesini artırmak\|hacmi\|daha fazla hacim\|hacmi daha
-ses yok\|değil hacmi\|sesi kapatmak\|dilsiz
-arama
-vurgulayarak kaldır\|kaldırmak vurgulanan\|hiçbir vurgulama\|vurgulanan yok
-çevirmek\|çevirir\|çeviri\|arasında çevirir\|tercüme\|çevrilmiştir\|tercüme\|sözlük\|çevirir\|çevirisi
-yazmak\|tip
-yararlanmak\|sermaye yazın
-tüm büyük yazmak\|büyük harfle her şeyi yazmak
-bu demek\|demek
-arama google\|internet arama\|anlamı\|ne\|arama sözlük
-youtube arama\|ne\|arama videos\|videos
-arama wiki\|arama wikipedia\|wikipedia
-hava durumu\|iklim
-harita\|harita arama\|haritası\|eşlemek\|nerede
-selamlıyor\|selam
-merhaba makinesi
-ben kimim
-açık klasörün
-açık klasör
-banasaat söyle\|nezaman\|ne zaman
-tarih\|hangi gün\|bu tarih bugün\|hangi gün bugün\|banatarihini söyle\|biz hangi tarihte
-dikte modu\|dışarı dikte modu\|sonuna dikte modu
-geri
-yeniden yapmak
-satırı silin
-sık kullanılanlara eklemek
-terminali kapatın\|yakın terminali
-açık posta\|açık e-posta\|açık posta\|posta\|e-posta
-kopya
-yapıştırmak
-kesim
-tümünü seç
-kurtarmak\|dosyayı kaydetmek
-olarak kaydetmek\|olarak sayfa kaydetmek
-klasör oluşturun\|yeni klasör
-küçültmek
-maksimuma çıkarmak
-tam ekran\|tam ekran
-anahtar sekmesi\|listeleme\|çıkıntı
-kaçış
-ana menü\|açık ana menü
-menü\|açılan menü\|yakın menüsü
-programı kapat\|çıkış
-pencereyi kapat
-koğuş\|küçültmek\|azaltmak\|daha az yakınlaştırın
-yaklaşık\|büyütmek\|yükseltmek\|fazla yakınlaştırmaya
-normal boyut\|sıfır zoom
-dokunmatik ekranı kapatın\|touchpad açmak\|touchpad
-üzerinde\|geri
-hareket\|ileri
-sağ
-sol
-aşağı
-kadar gitmek
-sayfa aşağı
-sayfa yukarı
-üst sayfa\|sayfanın üstüne gitmek\|üstüne gidin
-sayfa sonu\|sayfanın sonuna gidin\|gitmek end
-üst
-end
-aşağı sayfasını çalıştırın\|tükendiğinde
-sayfasını çalıştırın\|yukarıya koşmak
-silmek
-açık\|gerçekleştirmek\|girmek
-yeni pencere
-pencere hareket\|penceresine gidin\|penceresine geçmek\|pencere\|hareket çıkıntı\|sekmesine gidin\|sekmesine geçin
-yakın sekme
-tarayıcı\|açık tarayıcı\|internet
-nautilus\|dosya gezgini\|açık nautilus\|açık dosya gezgini
-konsolu açın\|açık terminal\|terminali açılıyor\|terminal açın
-komutu başlatmak\|komutunu çalıştırın
-pil\|pil durumu\|akü şarj
-metin editörü\|açık metin editörü\|metin editörü başlatmak\|yeni metin
-ekran görüntüsü\|yakalamak
-alarm\|at alarmı başlayacak
-logout\|sistem çıkış
-yükseltmek parlaklık\|neşelenmek\|parlatayım\|parlaklığı kadar\|parlaklığını artırmak
-parlaklığını azaltmak\|aşağı parlaklık\|aşağı parlaklık\|azaltmak parlaklık
-sistemi kapatıp\|makineyi kapatmak\|bilgisayarı kapatın\|bilgisayarı kapatmak\|kapatma
-hesap makinesi
-fotoğraf\|fotoğraf çekmek
-kayıt\|video kaydı\|video kaydetmenizi
-açık yeni bir belge\|yeni belge açmak\|yeni bir belge oluşturmak\|yeni bir belge oluşturmak\|yeni oluştur\|açık yeni
-komutu yeniden deneyin|komutunu tekrar|komutu tekrar deneyin|yeniden|tekrar deneyin
+CMD_SELECT_FILE=seçmek
+CMD_MUSIC_START=müzik koymak\|müzik çalma\|müzik çalar\|müzik\|mola
+CMD_MUSIC_START_SONG=müzik koymak\|müzik\|oynamak\|müzik oynatımını
+CMD_MUSIC_PLAY=müzik çalmak\|duraklatmak müzik\|müziği başlatın\|müziği durdu dili dilirmak\|müziği durdu dili dilirmak
+CMD_MUSIC_NEXT=sonraki şarkı\|sonraki parça
+CMD_MUSIC_PREV=önceki şarkı\|önceki parça
+CMD_MUSIC_SHUFFLE=rastgele müzik\|karıştırmak\|karışmaz
+CMD_MUSIC_REPEAT=tekrar\|tekrarlayın
+CMD_VIDEO_REW=gecikme\|geri sarma\|geri gitmek
+CMD_VIDEO_FF=ileri\|ilerlemek
+CMD_VOLUME_DOWN=ses seviyesini düşürmek\|aşağı hacmi\|daha az hacim\|hacmi az
+CMD_VOLUME_UP=ses seviyesini artırmak\|hacmi\|daha fazla hacim\|hacmi daha
+CMD_VOLUME_MUTE=ses yok\|değil hacmi\|sesi kapatmak\|dilsiz
+CMD_SEARCH=arama
+CMD_NO_RESALT=vurgulayarak kaldır\|kaldırmak vurgulanan\|hiçbir vurgulama\|vurgulanan yok
+CMD_TRANSLATE=çevirmek\|çevirir\|çeviri\|arasında çevirir\|tercüme\|çevrilmiştir\|tercüme\|sözlük\|çevirir\|çevirisi
+CMD_WRITE=yazmak\|tip
+CMD_WRITE_CAPITAL=yararlanmak\|sermaye yazın
+CMD_WRITE_CAPITAL_ALL=tüm büyük yazmak\|büyük harfle her şeyi yazmak
+CMD_SAY_THIS=bu demek\|demek
+CMD_GOOGLE_SEARCH=arama google\|internet arama\|anlamı\|ne\|arama sözlük
+CMD_YOUTUBE_SEARCH=youtube arama\|ne\|arama videos\|videos
+CMD_WIKI_SEARCH=arama wiki\|arama wikipedia\|wikipedia
+CMD_WEATHER=hava durumu\|iklim
+CMD_SEARCH_MAPS=harita\|harita arama\|haritası\|eşlemek\|nerede
+CMD_SAY_HI=selamlıyor\|selam
+CMD_HELLO=merhaba makinesi
+CMD_WHOAMI=ben kimim
+CMD_OPEN_FOLDER=açık klasörün
+CMD_OPEN_FOLDER_OF=açık klasör
+CMD_SAY_TIME=banasaat söyle\|nezaman\|ne zaman
+CMD_SAY_DATE=tarih\|hangi gün\|bu tarih bugün\|hangi gün bugün\|banatarihini söyle\|biz hangi tarihte
+CMD_DICTATION=dikte modu\|dışarı dikte modu\|sonuna dikte modu
+CMD_UNDO=geri
+CMD_REDO=yeniden yapmak
+CMD_DEL_LINE=satırı silin
+CMD_FAV=sık kullanılanlara eklemek
+CMD_CLOSE_TERM=terminali kapatın\|yakın terminali
+CMD_MAIL=açık posta\|açık e-posta\|açık posta\|posta\|e-posta
+CMD_COPY=kopya
+CMD_PASTE=yapıştırmak
+CMD_CUT=kesim
+CMD_SELECT_ALL=tümünü seç
+CMD_SAVE=kurtarmak\|dosyayı kaydetmek
+CMD_SAVE_AS=olarak kaydetmek\|olarak sayfa kaydetmek
+CMD_FOLDER=klasör oluşturun\|yeni klasör
+CMD_MINIMISE=küçültmek
+CMD_MAXIMISE=maksimuma çıkarmak
+CMD_FULLSCREEN=tam ekran\|tam ekran
+CMD_TAB=anahtar sekmesi\|listeleme\|çıkıntı
+CMD_ESC=kaçış
+CMD_MENU=ana menü\|açık ana menü
+CMD_ACTIONS_MENU=menü\|açılan menü\|yakın menüsü
+CMD_CLOSE=programı kapat\|çıkış
+CMD_CLOSE_WIN=pencereyi kapat
+CMD_ZOOM_OUT=koğuş\|küçültmek\|azaltmak\|daha az yakınlaştırın
+CMD_ZOOM_IN=yaklaşık\|büyütmek\|yükseltmek\|fazla yakınlaştırmaya
+CMD_ZOOM_RESET=normal boyut\|sıfır zoom
+CMD_TOUCH_ON_OFF=dokunmatik ekranı kapatın\|touchpad açmak\|touchpad
+CMD_BACK=üzerinde\|geri
+CMD_ADVANCE=hareket\|ileri
+CMD_RIGHT=sağ
+CMD_LEFT=sol
+CMD_DOWN=aşağı
+CMD_UP=kadar gitmek
+CMD_PAGE_DOWN=sayfa aşağı
+CMD_PAGE_UP=sayfa yukarı
+CMD_HOME_PAGE=üst sayfa\|sayfanın üstüne gitmek\|üstüne gidin
+CMD_END_PAGE=sayfa sonu\|sayfanın sonuna gidin\|gitmek end
+CMD_HOME=üst
+CMD_END=end
+CMD_SCROLL_DOWN=aşağı sayfasını çalıştırın\|tükendiğinde
+CMD_SCROLL_UP=sayfasını çalıştırın\|yukarıya koşmak
+CMD_DELETE=silmek
+CMD_ENTER=açık\|gerçekleştirmek\|girmek
+CMD_NEW_WINDOW=yeni pencere
+CMD_CHANGE_TAB=pencere hareket\|penceresine gidin\|penceresine geçmek\|pencere\|hareket çıkıntı\|sekmesine gidin\|sekmesine geçin
+CMD_CLOSE_TAB=yakın sekme
+CMD_BROWSER=tarayıcı\|açık tarayıcı\|internet
+CMD_FILE_MANAGER=nautilus\|dosya gezgini\|açık nautilus\|açık dosya gezgini
+CMD_TERMINAL=konsolu açın\|açık terminal\|terminali açılıyor\|terminal açın
+CMD_EXECUTE=komutu başlatmak\|komutunu çalıştırın
+CMD_BATTERY=pil\|pil durumu\|akü şarj
+CMD_TEXT_EDITOR=metin editörü\|açık metin editörü\|metin editörü başlatmak\|yeni metin
+CMD_SCREENSHOT=ekran görüntüsü\|yakalamak
+CMD_ALARM=alarm\|at alarmı başlayacak
+CMD_LOG_OFF=logout\|sistem çıkış
+CMD_BRIGHTNESS_UP=yükseltmek parlaklık\|neşelenmek\|parlatayım\|parlaklığı kadar\|parlaklığını artırmak
+CMD_BRIGHTNESS_DOWN=parlaklığını azaltmak\|aşağı parlaklık\|aşağı parlaklık\|azaltmak parlaklık
+CMD_POWER_OFF=sistemi kapatıp\|makineyi kapatmak\|bilgisayarı kapatın\|bilgisayarı kapatmak\|kapatma
+CMD_CALCULATER=hesap makinesi
+CMD_TAKE_PICTURE=fotoğraf\|fotoğraf çekmek
+CMD_TAKE_VIDEO=kayıt\|video kaydı\|video kaydetmenizi
+CMD_OPEN_FILE=açık dosya\|yeni bir dosya açmak
+CMD_OFFICE=açık yeni bir belge\|yeni belge açmak\|yeni bir belge oluşturmak\|yeni bir belge oluşturmak\|yeni oluştur\|açık yeni
+CMD_RETRY=komutu yeniden deneyin|komutunu tekrar|komutu tekrar deneyin|yeniden|tekrar deneyin
