@@ -13,7 +13,7 @@ recording=5
 key="AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
 PKG_PATH=$(dirname "$(readlink -f "$0")")
 PROCESS=$$
-CMD_RETRY=$(sed -n '96p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_RETRY=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 
 
 if [ -f /tmp/line_of_process ] ; then

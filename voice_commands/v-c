@@ -18,7 +18,7 @@ language_list=$(cat /tmp/lang)
 if echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g' | cut -d' ' -f2 | grep -x -q -i "$lang"; then
 	language=$( echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g'  | grep "$lang" | awk '{print $1}')
 commands=$(echo "$@" | sed 's/-try//g;s/-t//g;s/-lang//g;s/-l//g;s/'"$lang"'//' | sed 's/^[ ]*//' )
-CMD_RETRY=$(sed -n '96p' ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2)
+CMD_RETRY=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2)
 if echo "$commands" | grep -q "$CMD_RETRY" ; then
 [[ -f /tmp/speech_recognition_prev.tmp ]] || notify-send "No previous command" "Execute it again, please"
 mv /tmp/speech_recognition_prev.tmp /tmp/speech_recognition.tmp
@@ -32,7 +32,7 @@ fi
 if echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g' | cut -d' ' -f1 | grep -x -q -i "$lang"; then
 	language=$( echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g'  | grep -i "$lang " | awk '{print $1}')
 commands=$(echo "$@" | sed 's/-try//g;s/-t//g;s/-lang//g;s/-l//g;s/'"$lang"'//' | sed 's/^[ ]*//' )
-CMD_RETRY=$(sed -n '96p' ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2)
+CMD_RETRY=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2)
 if echo "$commands" | grep -q "$CMD_RETRY" ; then
 [[ -f /tmp/speech_recognition_prev.tmp ]] || notify-send "No previous command" "Execute it again, please"
 mv /tmp/speech_recognition_prev.tmp /tmp/speech_recognition.tmp
@@ -53,7 +53,7 @@ fi
 if echo "$1" | grep -x -q -- "-t\|-try"; then
 commands=$(echo "$@" | sed 's/-try//g;s/-t//' | sed 's/^[ ]*//')
 language="en"
-CMD_RETRY=$(sed -n '96p' ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2)
+CMD_RETRY=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2)
 if echo "$commands" | grep -q "$CMD_RETRY" ; then
 [[ -f /tmp/speech_recognition_prev.tmp ]] || notify-send "No previous command" "Execute it again, please"
 mv /tmp/speech_recognition_prev.tmp /tmp/speech_recognition.tmp
@@ -124,13 +124,13 @@ exit
 fi
 if echo "$1" | grep -x -q -i -- "-v"; then
 echo "# Voice commands (command your PC with spoken commands) #
-Version 1.0.0-6"
+Version 1.0.0-7"
 exit
 fi
 if echo "$1" | grep -x -q -i -- "--help"; then
 echo "
 	# Voice commands (command your PC with spoken commands) #
-Version 1.0.0-6
+Version 1.0.0-7
 	v-c , command line options
 
 v-c -r		Run

@@ -104,7 +104,12 @@ CMD_TAKE_PICTURE=$(sed -n '92p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" |
 CMD_TAKE_VIDEO=$(sed -n '93p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_OPEN_FILE=$(sed -n '94p' /usr/bin/voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_OFFICE=$(sed -n '95p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-# CMD_RETRY ' It is in /usr/bin/voice_commands/play_stop.sh, and is refer to line 96 '
+Writer=$(sed -n '96p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Calc=$(sed -n '97p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Impress=$(sed -n '98p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Draw=$(sed -n '99p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Math=$(sed -n '100p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+# CMD_RETRY ' It is in /usr/bin/voice_commands/play_stop.sh, and is refer to line 101 '
 
 
 
@@ -274,18 +279,6 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_VOLUME_MUTE" )
 	then
 	notify-send "Command:"  "$recog"
 	xdotool key XF86AudioMute 
-mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
-exit 0;
-fi
-
-###################################################################
-
-
-recog=$(echo "$UTTERANCE" | awk '{print $1}' | grep -x "$CMD_SEARCH" )
-	if [ "$recog" != "" ]
-	then
-	name=$(echo "$UTTERANCE" | sed 's/'"$CMD_SEARCH"' //g;s/'"$CMD_SEARCH"'//')
-xdotool key "Ctrl+f" && xdotool type "`echo $name`"
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
@@ -525,6 +518,19 @@ exit 0;
 fi
 
 ###################################################################
+
+
+recog=$(echo "$UTTERANCE" | awk '{print $1}' | grep -x "$CMD_SEARCH" )
+	if [ "$recog" != "" ]
+	then
+	name=$(echo "$UTTERANCE" | sed 's/'"$CMD_SEARCH"' //g;s/'"$CMD_SEARCH"'//')
+xdotool key "Ctrl+f" && xdotool type "`echo $name`"
+mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
+exit 0;
+fi
+
+###################################################################
+
 
 
 recog=$(echo "$UTTERANCE" | awk '{print $1, $2}' | grep "$CMD_SAY_HI" )
@@ -1713,35 +1719,35 @@ recog=$(echo "$UTTERANCE" | grep "$CMD_OFFICE" )
 	then
 	docs=$(echo "$UTTERANCE" | sed 's/'"$CMD_OFFICE"' //g;s/'"$CMD_OFFICE"'//')
 
-Action_Writer=$(echo "$UTTERANCE" | grep "text" )
+Action_Writer=$(echo "$UTTERANCE" | grep "$Writer" )
 	if [ "$Action_Writer" != "" ]
 	then
 libreoffice --writer
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
-Action_Calc=$(echo "$UTTERANCE" | grep "calc" )
+Action_Calc=$(echo "$UTTERANCE" | grep "$Calc" )
 	if [ "$Action_Calc" != "" ]
 	then
 libreoffice --calc
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
-Action_Impress=$(echo "$UTTERANCE" | grep "presentation\|page\|web" )
+Action_Impress=$(echo "$UTTERANCE" | grep "$Impress" )
 	if [ "$Action_Impress" != "" ]
 	then
 libreoffice --impress
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
-Action_Draw=$(echo "$UTTERANCE" | grep "drawing\|graphic" )
+Action_Draw=$(echo "$UTTERANCE" | grep "$Draw" )
 	if [ "$Action_Draw" != "" ]
 	then
 libreoffice --draw
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi
-Action_Math=$(echo "$UTTERANCE" | grep "formula\|math" )
+Action_Math=$(echo "$UTTERANCE" | grep "$Math" )
 	if [ "$Action_Math" != "" ]
 	then
 libreoffice --math
