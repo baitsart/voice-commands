@@ -1,6 +1,6 @@
 # Voice commands (command your PC with spoken commands) #
 
-You can modify the commands down below for a better usage, on the file: speech_commands.sh
+You can modify the commands down below for a better usage, on the file: ~/.voice_commands/"v-c LANGS"/commands-en
   
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
 Also can repeat the last command with RETRY function
@@ -53,34 +53,34 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
 
 ################################
    SELECT_FILE << cited-text >>
-   (select)
+   (select | select file)
 ################################
    MUSIC_START
-   (put music | music play | music player | music | pause)
+   (put music | music player | music | pause | music start)
 ################################
    MUSIC_START_SONG << cited-text >>
-   (put music of | music of | play to | play music of)
+   (put music of | music of | play to | play music of | music start song)
 ################################
    MUSIC_PLAY
-   (play music | pause music | start music | stop music | stop music)
+   (play music | pause music | music play | pause the music | stop music)
 ################################
    MUSIC_NEXT
-   (next song | next track)
+   (next song | next track | music next)
 ################################
    MUSIC_PREV
-   (previous song | previous track)
+   (previous song | previous track | music previous)
 ################################
    MUSIC_SHUFFLE
-   (random music | mix | do not mix)
+   (random music | mix | do not mix | music shuffle)
 ################################
    MUSIC_REPEAT
-   (repeat | not repeat)
+   (repeat | not repeat | music repeat | music not repeat)
 ################################
-   VIDEO_REW
-   (delay | rewind | go back)
+   MEDIA_REW
+   (delay | rewind | go back | music rewind | video rewind | media rewind)
 ################################
-   VIDEO_FF
-   (forward | go forward)
+   MEDIA_FF
+   (go forward | music forward | video forward | media forward)
 ################################
    VOLUME_DOWN
    (lower the volume | volume down | less volume | volume less)
@@ -89,13 +89,13 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (increase the volume | volume up | more volume | volume more)
 ################################
    VOLUME_MUTE
-   (no audio | no volume | turn off audio | dumb)
+   (no audio | no volume | turn off audio | dumb | mute)
 ################################
    SEARCH << cited-text >>
-   (search)
+   (search | found)
 ################################
-   NO_RESALT
-   (remove highlighting | remove highlighted | no highlighting | no highlighted)
+   NO_STAND_OUT
+   (remove stand out | remove highlighted | no stand out | no highlighted)
 ################################
    TRANSLATE [from] [to] << cited-text >>
    (translate | translates the | translation | translates of | translate from | translated from | translation from | dictionary of the | translates the | translation of the)
@@ -104,13 +104,13 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (write | type)
 ################################
    WRITE_CAPITAL << cited-text >>
-   (capitalize | type capital)
+   (capitalize | write capital | type capital)
 ################################
    WRITE_CAPITAL_ALL << cited-text >>
-   (write all uppercase | write everything capitalized)
+   (write all uppercase | write everything capital | write everything capitalized)
 ################################
    SAY_THIS << cited-text >>
-   (say this | say)
+   (say this | say | say me)
 ################################
    GOOGLE_SEARCH << cited-text >>
    (search google | internet search | meaning of | what is | search the dictionary)
@@ -134,22 +134,22 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (hello machine)
 ################################
    WHOAMI
-   (who i am)
+   (who i am | who am i)
 ################################
    OPEN_FOLDER << cited-text >>
-   (open folder)
+   (open folder | open directory)
 ################################
    OPEN_FOLDER_OF << cited-text >>
-   (open folder of)
+   (open folder of | open directory of)
 ################################
    SAY_TIME
-   (tell me the hour | what the time is | what time is it)
+   (say time | say the time | say me the time | tell me the hour | what the time is | what time is it | what the time)
 ################################
    SAY_DATE
-   (date is | which day is | that date today | which day is today | tell me the date | on what date we are)
+   (say date | date is | which day is | that date today | which day is today | tell me the date | on what date we are)
 ################################
    DICTATION << cited-text-continuously >>
-   (dictation mode | out dictation mode | end dictation mode)
+   (dictation mode | out dictation mode | end dictation mode | close dictation mode | out dictation | end dictation | close dictation )
 ################################
    UNDO
    (undo)
@@ -167,7 +167,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (close the terminal | close terminal)
 ################################
    MAIL
-   (open mail | open email | open mail | mail | email)
+   (open mail | open email | open e-mail | mail | email)
 ################################
    COPY
    (copy)
@@ -185,16 +185,16 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (save | save file)
 ################################
    SAVE_AS
-   (save as | save page as)
+   (save as | save page as | save file as)
 ################################
    FOLDER
-   (create folder | new folder)
+   (create folder | new folder | create directory | new directory)
 ################################
    MINIMISE
-   (minimize)
+   (minimize | minimize window)
 ################################
    MAXIMISE
-   (maximize)
+   (maximize | maximize window)
 ################################
    FULLSCREEN
    (full screen | fullscreen)
@@ -203,7 +203,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (key tab | tabulation | tab)
 ################################
    ESC
-   (escape)
+   (escape | escape key)
 ################################
    MENU
    (main menu | open main menu)
@@ -218,13 +218,13 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (close window)
 ################################
    ZOOM_OUT
-   (ward | shrink | decrease | zoom less)
+   (ward | shrink | decrease | zoom less | zoom out)
 ################################
    ZOOM_IN
-   (approximate | enlarge | raise | zoom more)
+   (approximate | enlarge | increase | raise | zoom more | zoom in)
 ################################
    ZOOM_RESET
-   (normal size | zero zoom)
+   (normal size | zero zoom | no zoom | zoom reset | reset zoom)
 ################################
    TOUCH_ON_OFF
    (turn off touchpad | turn on touchpad | touchpad)
@@ -233,55 +233,55 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (over | back)
 ################################
    ADVANCE
-   (move | forward)
+   (move | forward | advance)
 ################################
    RIGHT
-   (right)
+   (right | one to right)
 ################################
    LEFT
-   (left)
+   (left | one to left)
 ################################
    DOWN
-   (down)
+   (down | go down)
 ################################
    UP
-   (go up)
+   (up | go up)
 ################################
    PAGE_DOWN
-   (page down)
+   (page down | go page down)
 ################################
    PAGE_UP
-   (page up)
+   (page up | go page up)
 ################################
    HOME_PAGE
-   (top of page | go to top of page | go to the top)
+   (top of page | go to top of page | go to the top | go to the principle)
 ################################
    END_PAGE
    (end of page | go to end of page | go to the end)
 ################################
    HOME
-   (top of)
+   (top of | home | principle)
 ################################
    END
-   (the end)
+   (the end | end)
 ################################
    SCROLL_DOWN
-   (run page down | run down)
+   (run page down | run down | scroll down)
 ################################
    SCROLL_UP
-   (run page up | run up)
+   (run page up | run up | scroll up)
 ################################
    DELETE
-   (delete)
+   (delete | remove)
 ################################
    ENTER
    (open | execute | enter)
 ################################
    NEW_WINDOW
-   (new window)
+   (new window | open new window | open a new window)
 ################################
-   CHANGE_TAB
-   (window move | go to window | switch to window | window | move tab | go to tab | switch to tab)
+   CHANGE_TAB << cited-number >>
+   (window move | go to window | switch to window | window | move tab | go to tab | switch to tab | change to tab | change tab)
 ################################
    CLOSE_TAB
    (close tab)
@@ -296,7 +296,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (open the console | open terminal | terminal opens | open the terminal)
 ################################
    EXECUTE
-   (launch command | run command)
+   (launch command | run command | execute command)
 ################################
    BATTERY
    (battery | battery status | battery charge)
@@ -308,7 +308,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (screenshot | catch)
 ################################
    ALARM << cited-numbers [days] [hours] [minutes] [seconds] to sleep >>
-   (alarm | start alarm at)
+   (alarm | start alarm at | start alarm to | start alarm for)
 ################################
    LOG_OFF
    (logout | system logout)
@@ -317,7 +317,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (raise the brightness | brighten up | shine up | up brightness | increase brightness)
 ################################
    BRIGHTNESS_DOWN
-   (lower the brightness | decrease brightness | brightness down | shine down | decrease brightness)
+   (lower the brightness | decrease brightness | brightness down | shine down )
 ################################
    POWER_OFF
    (shut down the system | turn off the machine | turn off the computer | turn off computer | power off)
@@ -335,7 +335,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (open file | open a new file)
 ################################
    OFFICE << cited-text [ writer, calc, impress, draw, math ] >>
-   (open new document | open new document of | create new document | create new document of | create new | open new)
+   (open new document | open a new document | open new document of | open a new document of | create new document | create a new document | create new document of | create a new document of | new document of | new office document of| create new | create a new | open new | open a new)
 Writer (text)
 Calc (calc)
 Impress (presentation | page | web)

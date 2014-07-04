@@ -17,13 +17,13 @@ CMD_MUSIC_NEXT=$(sed -n '5p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cu
 CMD_MUSIC_PREV=$(sed -n '6p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_MUSIC_SHUFFLE=$(sed -n '7p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_MUSIC_REPEAT=$(sed -n '8p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-CMD_VIDEO_REW=$(sed -n '9p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-CMD_VIDEO_FF=$(sed -n '10p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_MEDIA_REW=$(sed -n '9p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_MEDIA_FF=$(sed -n '10p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_VOLUME_DOWN=$(sed -n '11p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_VOLUME_UP=$(sed -n '12p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_VOLUME_MUTE=$(sed -n '13p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_SEARCH=$(sed -n '14p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-CMD_NO_RESALT=$(sed -n '15p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_NO_STAND_OUT=$(sed -n '15p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_TRANSLATE=$(sed -n '16p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_WRITE=$(sed -n '17p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_WRITE_CAPITAL=$(sed -n '18p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
@@ -220,7 +220,7 @@ fi
 ###################################################################
 
 
-recog=$(echo "$UTTERANCE" | grep -x "$CMD_VIDEO_REW" )
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_MEDIA_REW" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
@@ -233,7 +233,7 @@ fi
 ###################################################################
 
 
-recog=$(echo "$UTTERANCE" | grep -x "$CMD_VIDEO_FF" )
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_MEDIA_FF" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
@@ -286,7 +286,7 @@ fi
 ###################################################################
 
 
-recog=$(echo "$UTTERANCE" | grep -x "$CMD_NO_RESALT" )
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_NO_STAND_OUT" )
 	if [ "$recog" != "" ]
 	then
 xdotool key "Ctrl+Shift+k"
