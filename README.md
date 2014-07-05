@@ -23,10 +23,15 @@ voice-commands
 #	##	v-c , command line options	##	#
 
 v-c -r		Run
+
 v-c -l -lang	To select another, of 67 languages for recognition.
+
 v-c -t -try	To try any command, of default lang, or, a [-lang].
+
 v-c -m -mod	To modify the commands file, and the README file.
+
 v-c -h		Show instructions README file.
+
 v-c --help	Show this message
 
 ------------------------------------------------------------
