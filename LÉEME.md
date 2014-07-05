@@ -34,7 +34,7 @@ Puedes modificar el puerto de micrófono, del comando que activa Micrófono, y l
 
 Instalar dependencias:
 
-sudo apt-get install xdotool gawk curl wget cheese audacious sox alsa-utils
+sudo apt-get install xdotool gawk curl wget cheese audacious sox flac pulseaudio alsa-utils
 
 Programas que usa y ya están en la distribución:
 rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-draw libreoffice-math
@@ -355,6 +355,13 @@ El "+" sólo cuando escribes el comando no cuando lo presionas, en éste caso no
 
 # Descargarlo en otros idiomas en Gnome-Look.org
 http://gnome-look.org/content/show.php?content=165529
+
+
+Para instaralo desde el repocitorio ppa de launchpad:
+
+sudo add-apt-repository ppa:baitsart/voice-commands
+sudo apt-get update
+sudo apt-get install voice-commands
 
 ############# Escrito por Rodrigo Esteves ##############
 ### baitsart@gmail.com www.youtube.com/user/baitsart ###

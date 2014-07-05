@@ -43,7 +43,7 @@ You can modify the microphone port, of the command that activates microphone, an
 
 
 Install dependencies:
-sudo apt-get install xdotool gawk curl wget cheese audacious sox alsa-utils
+sudo apt-get install xdotool gawk curl wget cheese audacious sox flac pulseaudio alsa-utils
 
 Programs that use and are already in the distribution:
 rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-draw libreoffice-math
@@ -364,6 +364,13 @@ The "+" only when you type the command doesn't when you press it, in this case d
 
 # Download others languages on Gnome-Look.org
 http://gnome-look.org/content/show.php?content=165529
+
+
+Install it from launchpad repository
+
+sudo add-apt-repository ppa:baitsart/voice-commands
+sudo apt-get update
+sudo apt-get install voice-commands
 
 ############# Written by Rodrigo Esteves ###############
 ### baitsart@gmail.com www.youtube.com/user/baitsart ###
