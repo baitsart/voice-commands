@@ -23,15 +23,10 @@ voice-commands
 #	##	v-c , command line options	##	#
 
 v-c -r		Run
-
 v-c -l -lang	To select another, of 67 languages for recognition.
-
 v-c -t -try	To try any command, of default lang, or, a [-lang].
-
 v-c -m -mod	To modify the commands file, and the README file.
-
 v-c -h		Show instructions README file.
-
 v-c --help	Show this message
 
 ------------------------------------------------------------
@@ -39,6 +34,8 @@ v-c --help	Show this message
 Dependencies:
 Internet access.
 Active, and correct volume Microphone, Check: System Settings, Sound, Internal microphone, to Microphone.
+You can modify the microphone port, of the command that activates microphone, and again to internal microphone, the default port is 1, if you have that recognition is not done, you can modify: microphe_port=1, changing 1 on 2, or which is your port.
+
 
 Install dependencies:
 sudo apt-get install xdotool gawk curl wget cheese audacious sox alsa-utils
@@ -336,10 +333,10 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
 ################################
    OFFICE << cited-text [ writer, calc, impress, draw, math ] >>
    (open new document | open a new document | open new document of | open a new document of | create new document | create a new document | create new document of | create a new document of | new document of | new office document of| create new | create a new | open new | open a new)
-Writer (text)
+Writer (writer | text)
 Calc (calc)
-Impress (presentation | page | web)
-Draw (drawing | graphic)
+Impress (impress | presentation | page | web)
+Draw (draw | drawing | graphic)
 Math (formula | math)
 ################################
    RETRY

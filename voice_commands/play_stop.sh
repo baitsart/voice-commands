@@ -12,6 +12,7 @@ fi
 recording=5
 key="AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
 PKG_PATH=$(dirname "$(readlink -f "$0")")
+microphe_port=1
 PROCESS=$$
 CMD_RETRY=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 
@@ -75,6 +76,7 @@ pre_recog()
 if [ -f /tmp/result ] ; then
 PID=$(cat /tmp/process_result)
 killall rec 2>/dev/null
+pacmd set-source-port "$microphe_port" 'analog-input-microphone-internal'
 mv /tmp/voice_.flac /tmp/voice_"$PID".flac
 killall notify-osd 2>/dev/null
 transcribe
@@ -88,9 +90,11 @@ pre_recog
 
 
 PID=$(cat /tmp/process_result)
+pacmd set-source-port "$microphe_port" 'analog-input-microphone'
 killall notify-osd 2>/dev/null
 notify-send "Recording..." "talk, please" 
 #paly ~/.voice_commands/sounds/"Recording, talk, please.mp3"
+pacmd set-source-port "$microphe_port" 'analog-input-microphone-internal'
 ( rec -r 16000 -d /tmp/voice_.flac ) & pid=$!
 ( sleep "$recording"s && kill -HUP $pid ) 2>/dev/null & watcher=$!
 wait $pid 2>/dev/null && pkill -HUP -P $watcher

@@ -6,6 +6,7 @@
 lang="$1"
 key="$2"
 recording=3
+microphe_port=1
 SONGS_PATH="$HOME/.voice_commands/sounds/ringtones"
 UTTERANCE=$(cat /tmp/speech_recognition.tmp | sed "s/  / /g" )
 
@@ -702,6 +703,7 @@ script_process=$(cat /tmp/dictation_mode/line_of_process)
 kill -HUP "$script_process"
 rm -rf /tmp/dictation_mode
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
+pacmd set-source-port "$microphe_port" 'analog-input-microphone-internal'
 exit 1;
 fi
 mkdir /tmp/dictation_mode/
@@ -709,6 +711,7 @@ echo "$$" > /tmp/dictation_mode/line_of_process
 notify-send -i "/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" "Recording ..." 
 echo "Result:"
 echo "0" > /tmp/dictation_mode/number_of_process
+pacmd set-source-port "$microphe_port" 'analog-input-microphone'
 record
 
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp

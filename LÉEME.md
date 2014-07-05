@@ -29,6 +29,8 @@ v-c --help	Show this message
 Dependencias:
 Acceso a internet.
 Micrófono activo, y con volumen correcto, Micrófono, o Micrófono interno. Está en: Configuración del sistema, Sonido, Entrada.
+Puedes modificar el puerto de micrófono, del comando que activa Micrófono, y lo vuelve a Micrófono interno, por defecto el puerto es el 1, si experimenta que no se realiza el reconocimiento puede modificar: microphe_port=1, cambiando 1 por 2 o el que sea su puerto.
+
 
 Instalar dependencias:
 
@@ -327,10 +329,10 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
 ################################
    OFFICE << número-citado [ writer, calc, impress, draw, math ] >>
    (open new document | open a new document | open new document of | open a new document of | create new document | create a new document | create new document of | create a new document of | new document of | new office document of| create new | create a new | open new | open a new)
-Writer (text)
+Writer (writer | text)
 Calc (calc)
-Impress (presentation | page | web)
-Draw (drawing | graphic)
+Impress (impress | presentation | page | web)
+Draw (draw | drawing | graphic)
 Math (formula | math)
 ################################
    RETRY
