@@ -123,14 +123,14 @@ cat ~/.voice_commands/README.md
 exit
 fi
 if echo "$1" | grep -x -q -i -- "-v"; then
-echo "# Voice commands (command your PC with spoken commands) #
-Version 1.0.1-2"
+echo "# Voice commands (command your PC speaking commands) #
+Version 1.0.1-3"
 exit
 fi
 if echo "$1" | grep -x -q -i -- "--help"; then
 echo "
-	# Voice commands (command your PC with spoken commands) #
-Version 1.0.1-2
+	# Voice commands (command your PC speaking commands) #
+Version 1.0.1-3
 	v-c , command line options
 
 v-c -r		Run

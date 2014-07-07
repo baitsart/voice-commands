@@ -1,4 +1,4 @@
-# Voice commands (command your PC with spoken commands) #
+# Voice commands (command your PC speaking commands) #
 
 You can modify the commands down below for a better usage, on the file: ~/.voice_commands/"v-c LANGS"/commands-en
   
@@ -39,7 +39,9 @@ v-c --help	Show this message
 Dependencies:
 Internet access.
 Active, and correct volume Microphone, Check: System Settings, Sound, Internal microphone, to Microphone.
-You can modify the microphone port, of the command that activates microphone, and again to internal microphone, the default port is 1, if you have that recognition is not done, you can modify: microphe_port=1, changing 1 on 2, or which is your port.
+You can modify the microphone port, of the command that activates microphone, and again to internal microphone, the default port is 1, if you have that recognition is not done, you can modify: microphe_port=1, changing 1 on 2, or which is your port. In the files: 
+/play_stop.sh and 
+/speech_commands.sh
 
 
 Install dependencies:
@@ -94,7 +96,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (no audio | no volume | turn off audio | dumb | mute)
 ################################
    SEARCH << cited-text >>
-   (search | found)
+   (search | find)
 ################################
    NO_STAND_OUT
    (remove stand out | remove highlighted | no stand out | no highlighted)
@@ -364,13 +366,6 @@ The "+" only when you type the command doesn't when you press it, in this case d
 
 # Download others languages on Gnome-Look.org
 http://gnome-look.org/content/show.php?content=165529
-
-
-Install it from launchpad repository
-
-sudo add-apt-repository ppa:baitsart/voice-commands
-sudo apt-get update
-sudo apt-get install voice-commands
 
 ############# Written by Rodrigo Esteves ###############
 ### baitsart@gmail.com www.youtube.com/user/baitsart ###

@@ -29,7 +29,9 @@ v-c --help	Show this message
 Dependencias:
 Acceso a internet.
 Micrófono activo, y con volumen correcto, Micrófono, o Micrófono interno. Está en: Configuración del sistema, Sonido, Entrada.
-Puedes modificar el puerto de micrófono, del comando que activa Micrófono, y lo vuelve a Micrófono interno, por defecto el puerto es el 1, si experimenta que no se realiza el reconocimiento puede modificar: microphe_port=1, cambiando 1 por 2 o el que sea su puerto.
+Puedes modificar el puerto de micrófono, del comando que activa Micrófono, y lo vuelve a Micrófono interno, por defecto el puerto es el 1, si experimenta que no se realiza el reconocimiento puede modificar: microphe_port=1, cambiando 1 por 2 o el que sea su puerto. En en los archivos:
+/play_stop.sh y 
+/speech_commands.sh
 
 
 Instalar dependencias:
@@ -85,7 +87,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    (no audio | no volume | turn off audio | dumb | mute)
 ################################
    SEARCH << número-citado >>
-   (search | found)
+   (search | find)
 ################################
    NO_STAND_OUT
    (remove stand out | remove highlighted | no stand out | no highlighted)
@@ -355,13 +357,6 @@ El "+" sólo cuando escribes el comando no cuando lo presionas, en éste caso no
 
 # Descargarlo en otros idiomas en Gnome-Look.org
 http://gnome-look.org/content/show.php?content=165529
-
-
-Para instaralo desde el repocitorio ppa de launchpad:
-
-sudo add-apt-repository ppa:baitsart/voice-commands
-sudo apt-get update
-sudo apt-get install voice-commands
 
 ############# Escrito por Rodrigo Esteves ##############
 ### baitsart@gmail.com www.youtube.com/user/baitsart ###
