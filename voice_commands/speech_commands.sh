@@ -100,7 +100,7 @@ CMD_LOG_OFF=$(sed -n '87p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut 
 CMD_BRIGHTNESS_UP=$(sed -n '88p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_BRIGHTNESS_DOWN=$(sed -n '89p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_POWER_OFF=$(sed -n '90p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-CMD_CALCULATER=$(sed -n '91p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_CALCULATOR=$(sed -n '91p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_TAKE_PICTURE=$(sed -n '92p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_TAKE_VIDEO=$(sed -n '93p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_OPEN_FILE=$(sed -n '94p' /usr/bin/voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
@@ -1264,7 +1264,7 @@ fi
 recog=$(echo "$UTTERANCE" | grep "$CMD_CHANGE_TAB" )
 	if [ "$recog" != "" ]
 	then
-	winds=$(echo "$UTTERANCE" | sed 's/'"$CMD_CHANGE_TAB"' //g;s/'"$CMD_CHANGE_TAB"'//g;s/ //g;s/diez/010/g;s/once/011/g;s/doce/012/g;s/trece/013/g;s/catorce/014/g;s/quince/015/g;s/dieciséis/016/g;s/dieci/01/g;s/veinte/020/g;s/veinti/020/g;s/treintay/03/g;s/cuarentay/040/g;s/cincuentay/050/g;s/sesentay/060/g;s/setentay/070/g;s/ochentay/080/g;s/noventay/090/g;s/treintai/030/g;s/treinta/030/g;s/cuarentai/040/g;s/cuarenta/040/g;s/cincuentai/050/g;s/cincuenta/050/g;s/sesentai/060/g;s/sesenta/060/g;s/setentai/070/g;s/setenta/070/g;s/ochentai/080/g;s/ochenta/080/g;s/noventai/090/g;s/noventa/090/g;s/doscientos/200/g;s/trescientos/300/g;s/cuatrocientos/400/g;s/quinientos/500/g;s/seiscientos/600/g;s/setecientos/700/g;s/ochocientos/800/g;s/novecientos/900/g;s/ciento/100/g;s/cien/100/g;s/uno/01/g;s/un/01/g;s/dos/02/g;s/tres/03/g;s/cuatro/04/g;s/cinco/05/g;s/seis/06/g;s/siete/07/g;s/ocho/08/g;s/nueve/09/g;s/016/16/g;s/017/17/g;s/018/18/g;s/019/19/g;s/020/20/g;s/030/30/g;s/040/40/g;s/050/50/g;s/060/60/g;s/070/70/g;s/080/80/g;s/090/90/g;s/001/1/g;s/002/2/g;s/003/3/g;s/004/4/g;s/005/5/g;s/006/6/g;s/007/7/g;s/008/8/g;s/009/9/g' | sed 's/^[0]*//' )
+	winds=$(echo "$UTTERANCE" | sed 's/'"$CMD_CHANGE_TAB"' //g;s/'"$CMD_CHANGE_TAB"'//g;s/ //g;s/ten/010/g;s/once/011/g;s/twelve/012/g;s/thirteen/013/g;s/fourteen/014/g;s/fifteen/015/g;s/sixteen/016/g;s/ten/01/g;s/twenty/020/g;s/veinti/020/g;s/treintay/03/g;s/cuarentay/040/g;s/cincuentay/050/g;s/sesentay/060/g;s/setentay/070/g;s/ochentay/080/g;s/noventay/090/g;s/treintai/030/g;s/thirty/030/g;s/cuarentai/040/g;s/forty/040/g;s/cincuentai/050/g;s/fifty/050/g;s/sesentai/060/g;s/sixty/060/g;s/setentai/070/g;s/seventy/070/g;s/ochentai/080/g;s/eighty/080/g;s/noventai/090/g;s/ninety/090/g;s/two hundred/200/g;s/three hundred/300/g;s/four/400/g;s/five hundred/500/g;s/six hundred/600/g;s/seven/700/g;s/eight/800/g;s/nine/900/g;s/percent/100/g;s/hundred/100/g;s/one/01/g;s/un/01/g;s/two/02/g;s/three/03/g;s/four/04/g;s/five/05/g;s/six/06/g;s/seven/07/g;s/eight/08/g;s/nine/09/g;s/016/16/g;s/017/17/g;s/018/18/g;s/019/19/g;s/020/20/g;s/030/30/g;s/040/40/g;s/050/50/g;s/060/60/g;s/070/70/g;s/080/80/g;s/090/90/g;s/001/1/g;s/002/2/g;s/003/3/g;s/004/4/g;s/005/5/g;s/006/6/g;s/007/7/g;s/008/8/g;s/009/9/g' | sed 's/^[0]*//' )
 	echo "number `echo $winds`"
 	xdotool key Alt+`echo $winds`
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
@@ -1409,7 +1409,7 @@ fi
 recog=$(echo "$UTTERANCE" | awk '{print $1}' | grep -x "$CMD_ALARM" )
 	if [ "$recog" != "" ]
 	then
-	number=$(echo "$UTTERANCE" | sed 's/'"$CMD_ALARM"' //g;s/'"$CMD_ALARM"'//g;s/ y/y/g;s/treinta y/030/g;s/cuarenta y/040/g;s/cincuenta y/050/g;s/sesenta y/060/g;s/setenta y/070/g;s/ochenta y/080/g;s/noventa y/090/g;s/diez/010/g;s/once/011/g;s/doce/012/g;s/trece/013/g;s/catorce/014/g;s/quince/015/g;s/dieciséis/016/g;s/dieci/01/g;s/veinte/020/g;s/veinti/020/g;s/treintai/030/g;s/treinta/030/g;s/cuarentai/040/g;s/cuarenta/040/g;s/cincuentai/050/g;s/cincuenta/050/g;s/sesentai/060/g;s/sesenta/060/g;s/setentai/070/g;s/setenta/070/g;s/ochentai/080/g;s/ochenta/080/g;s/noventai/090/g;s/noventa/090/g;s/doscientos/200/g;s/trescientos/300/g;s/cuatrocientos/400/g;s/quinientos/500/g;s/seiscientos/600/g;s/setecientos/700/g;s/ochocientos/800/g;s/novecientos/900/g;s/ciento/100/g;s/cien/100/g;s/uno/01/g;s/un/01/g;s/dos/02/g;s/tres/03/g;s/cuatro/04/g;s/cinco/05/g;s/seis/06/g;s/siete/07/g;s/ocho/08/g;s/nueve/09/g;s/016/16/g;s/017/17/g;s/018/18/g;s/019/19/g;s/020/20/g;s/030/30/g;s/040/40/g;s/050/50/g;s/060/60/g;s/070/70/g;s/080/80/g;s/090/90/g;s/001/1/g;s/002/2/g;s/003/3/g;s/004/4/g;s/005/5/g;s/006/6/g;s/007/7/g;s/008/8/g;s/009/9/g;s/ 0/ /g' )
+	number=$(echo "$UTTERANCE" | sed 's/'"$CMD_ALARM"' //g;s/'"$CMD_ALARM"'//g;s/ y/y/g;s/thirty/030/g;s/forty/040/g;s/fifty/050/g;s/sixty/060/g;s/seventy/070/g;s/eighty/080/g;s/ninety/090/g;s/ten/010/g;s/once/011/g;s/twelve/012/g;s/thirteen/013/g;s/fourteen/014/g;s/fifteen/015/g;s/sixteen/016/g;s/ten/01/g;s/twenty/020/g;s/veinti/020/g;s/treintai/030/g;s/thirty/030/g;s/cuarentai/040/g;s/forty/040/g;s/cincuentai/050/g;s/fifty/050/g;s/sesentai/060/g;s/sixty/060/g;s/setentai/070/g;s/seventy/070/g;s/ochentai/080/g;s/eighty/080/g;s/noventai/090/g;s/ninety/090/g;s/two hundred/200/g;s/three hundred/300/g;s/four/400/g;s/five hundred/500/g;s/six hundred/600/g;s/seven/700/g;s/eight/800/g;s/nine/900/g;s/percent/100/g;s/hundred/100/g;s/one/01/g;s/un/01/g;s/two/02/g;s/three/03/g;s/four/04/g;s/five/05/g;s/six/06/g;s/seven/07/g;s/eight/08/g;s/nine/09/g;s/016/16/g;s/017/17/g;s/018/18/g;s/019/19/g;s/020/20/g;s/030/30/g;s/040/40/g;s/050/50/g;s/060/60/g;s/070/70/g;s/080/80/g;s/090/90/g;s/001/1/g;s/002/2/g;s/003/3/g;s/004/4/g;s/005/5/g;s/006/6/g;s/007/7/g;s/008/8/g;s/009/9/g;s/ 0/ /g' )
 	time="`echo $number | sed 's/^[0]*//'`"
 	if echo "$time" | awk '{print $2}' | head -c 1 | grep -q "d"; then
 	day="`echo "$time" | awk '{print $1}'` days"
@@ -1680,11 +1680,17 @@ fi
 ###################################################################
 
 
-recog=$(echo "$UTTERANCE" | grep -x "$CMD_CALCULATER" )
+recog=$(echo "$UTTERANCE" | grep "$CMD_CALCULATOR" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
-	gcalctool
+	numb_smimb=$(echo "$UTTERANCE" | sed 's/'"$CMD_CALCULATOR"' //g;s/'"$CMD_CALCULATOR"'//g;s/ y/y/g;s/thirty/030/g;s/forty/040/g;s/fifty/050/g;s/sixty/060/g;s/seventy/070/g;s/eighty/080/g;s/ninety/090/g;s/ten/010/g;s/once/011/g;s/twelve/012/g;s/thirteen/013/g;s/fourteen/014/g;s/fifteen/015/g;s/sixteen/016/g;s/ten/01/g;s/twenty/020/g;s/veinti/020/g;s/treintai/030/g;s/thirty/030/g;s/cuarentai/040/g;s/forty/040/g;s/cincuentai/050/g;s/fifty/050/g;s/sesentai/060/g;s/sixty/060/g;s/setentai/070/g;s/seventy/070/g;s/ochentai/080/g;s/eighty/080/g;s/noventai/090/g;s/ninety/090/g;s/two hundred/200/g;s/three hundred/300/g;s/four/400/g;s/five hundred/500/g;s/six hundred/600/g;s/seven/700/g;s/eight/800/g;s/nine/900/g;s/percent/100/g;s/hundred/100/g;s/one/01/g;s/un/01/g;s/two/02/g;s/three/03/g;s/four/04/g;s/five/05/g;s/six/06/g;s/seven/07/g;s/eight/08/g;s/nine/09/g;s/016/16/g;s/017/17/g;s/018/18/g;s/019/19/g;s/020/20/g;s/030/30/g;s/040/40/g;s/050/50/g;s/060/60/g;s/070/70/g;s/080/80/g;s/090/90/g;s/001/1/g;s/002/2/g;s/003/3/g;s/004/4/g;s/005/5/g;s/006/6/g;s/007/7/g;s/008/8/g;s/009/9/g;s/ 0/ /g;s/resta/−/g;s/less/−/g;s/times/×/g;s/divided/÷/g;s/divided/÷/g;s/about/÷/g;s/percent/%/g;s/porcentage/%/g;s/by/×/g;s/squared/²/g;s/square/²/g;s/square root of/√/g;s/square root/√/g;s/root/√/g;s/point/,/g;s/coma/,/g;s/ //g')
+lines=$(echo "xdotool type "$numb_smimb"" | sed 's/more/ \&\& xdotool key 0x002b \&\& xdotool type /g;s/but/ \&\& xdotool key 0x002b \&\& xdotool type /g;s/suma/ \&\& xdotool key 0x002b \&\& xdotool type /g' )
+echo "#/bin/bash
+$lines" > /tmp/script_calc.temp
+chmod +x /tmp/script_calc.temp
+	gcalctool & sleep 1 && sh /tmp/script_calc.temp
+	rm /tmp/script_calc.temp
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
 fi

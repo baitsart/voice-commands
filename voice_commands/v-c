@@ -98,12 +98,12 @@ language_list=$(cat /tmp/lang)
 
 if echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g' | cut -d' ' -f2 | grep -x -q -i "$lang"; then
 	language=$( echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g'  | grep "$lang" | awk '{print $1}')
-gedit ~/.voice_commands/README.md ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2
+gedit ~/.voice_commands/"v-c LANGS"/README-"$language".md ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2
 exit 1
 fi
 if echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g' | cut -d' ' -f1 | grep -x -q -i "$lang"; then
 	language=$( echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g'  | grep -i "$lang " | awk '{print $1}')
-gedit ~/.voice_commands/README.md ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2
+gedit ~/.voice_commands/"v-c LANGS"/README-"$language".md ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2
 exit 1
 fi
 echo "No lang option: $lang
@@ -115,32 +115,61 @@ exit 0;
 fi
 if echo "$1" | grep -x -q -i -- "-m\|-mod"; then
 language="en"
-gedit ~/.voice_commands/README.md ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2
+gedit ~/.voice_commands/"v-c LANGS"/README-"$language".md ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2
+exit
+fi
+if echo "$@" | awk '{print $1, $2}' | grep -- "-u\|-update" | sed 's/-update//g;s/-u//' | awk '{print $1}' | grep -x -q -- "-l\|-lang"; then
+
+lang=$(echo "$@" | sed 's/-update//g;s/-u//g;s/-lang//g;s/-l//' | sed 's/^[ ]*//' | awk '{print $1}')
+echo "(af afrikaans), (ar arabic), (az azerbaijani), (be belarusian), (bg bulgarian), (bn bengali), (ca catalan), (cs czech), (cy welsh), (da danish), (de german), (el greek), (en english), (eo esperanto), (es spanish), (et estonian), (eu basque), (fa persian), (fi finnish), (fr french), (ga irish), (gl galician), (gu gujarati), (hi hindi), (hr croatian), (ht haitian), (hu hungarian), (hy armenian), (id indonesian), (is icelandic), (it italian), (iw hebrew), (ja japanese), (ka georgian), (km khmer), (kn kannada), (ko korean), (la latin), (lo lao), (lt lithuanian), (lv latvian), (mk macedonian), (ms malay), (mt maltese), (nl dutch), (no norwegian), (pl polish), (pt portuguese), (ro romanian), (ru russian), (sk slovak), (sl slovenian), (sq albanian), (sr serbian), (sv swedish), (sw swahili), (ta tamil), (te telugu), (th thai), (tl filipino), (tr turkish), (uk ukrainian), (ur urdu), (vi vietnamese), (yi yiddish), (zh-CN chinese)" > /tmp/lang  
+language_list=$(cat /tmp/lang)
+
+if echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g' | cut -d' ' -f2 | grep -x -q -i "$lang"; then
+	language=$( echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g'  | grep "$lang" | awk '{print $1}')
+sh ~/.voice_commands/hace_leeme.sh "$language"
+exit 1
+fi
+if echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g' | cut -d' ' -f1 | grep -x -q -i "$lang"; then
+	language=$( echo "$language_list" | sed 's/), (/\n/g;s/(//g;s/)//g'  | grep "$lang" | awk '{print $1}')
+sh ~/.voice_commands/hace_leeme.sh "$language"
+exit 1
+fi
+echo "No lang option: $lang
+List of language availables is:
+ (language abbreviature, or language complete name)
+
+`echo "$language_list"`"
+exit 0;
+fi
+if echo "$1" | grep -x -q -i -- "-u\|-update"; then
+language="en"
+sh ~/.voice_commands/hace_leeme.sh "$language" | cut -d "=" -f 2
 exit
 fi
 if echo "$1" | grep -x -q -i -- "-h"; then
-cat ~/.voice_commands/README.md
+cat ~/.voice_commands/"v-c LANGS"/README-"$language".md
 exit
 fi
 if echo "$1" | grep -x -q -i -- "-v"; then
 echo "# Voice commands (command your PC speaking commands) #
-Version 1.0.1-3"
+Version 1.0.1-4"
 exit
 fi
 if echo "$1" | grep -x -q -i -- "--help"; then
 echo "
 	# Voice commands (command your PC speaking commands) #
-Version 1.0.1-3
+Version 1.0.1-4
 	v-c , command line options
 
 v-c -r		Run
 v-c -l -lang	To select another, of 67 languages for recognition.
 v-c -t -try	To try any command, of default lang, or, a [-lang].
 v-c -m -mod	To modify the commands file, and the README file.
+v-c -u -update	To update the README file, after modify the script.
 v-c -h		Show instructions README file.
 v-c --help	Show this message"
 exit
 fi
 echo "No command $1
-Try v-c --help, to see the available commands"
+Try « v-c --help », to see the available commands"
 

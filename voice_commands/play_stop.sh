@@ -36,13 +36,13 @@ JSON=`curl -s -X POST \
 --data-binary @/tmp/voice_"$PID".flac \
 --header 'Content-Type: audio/x-flac; rate=16000;' \
 'https://www.google.com/speech-api/v2/recognize?output=json&lang='$lang'&key='$key'' | cut -d\" -f8 `
-if echo "$JSON" | grep -x -q "$CMD_RETRY" ; then
+if echo "$JSON" | sed 's/'"'"'/ /g'  | grep -x -q "$CMD_RETRY" ; then
 [[ -f /tmp/speech_recognition_prev.tmp ]] || notify-send "No previous command" "Execute it again, please"
 mv /tmp/speech_recognition_prev.tmp /tmp/speech_recognition.tmp
 /bin/bash ~/.voice_commands/speech_commands.sh "$lang" "$key"
 exit 1
 fi
-if echo "$JSON" | grep -q "Your client does not have permission to get URL" ; then
+if echo "$JSON" | sed 's/'"'"'/ /g'  | grep -q "Your client does not have permission to get URL" ; then
 if new_key=$( zenity --entry --text="The key speech-api/v2 google, should be updated.\nPlease enter a new correct key.\nOtherwise the process can not be made" --title="speech-api new key"); then
 if
 curl -s -X POST \
@@ -58,7 +58,7 @@ exit 1
 fi
 exit
 fi
-echo "$JSON" | sed '/^$/d' | tr '[:upper:]' '[:lower:]' > /tmp/speech_recognition.tmp
+echo "$JSON" | sed 's/'"'"'/ /g'  | sed '/^$/d' | tr '[:upper:]' '[:lower:]' > /tmp/speech_recognition.tmp
 rm /tmp/voice_"$PID".flac
 rm /tmp/result
 killall notify-osd 2>/dev/null
