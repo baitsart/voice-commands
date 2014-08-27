@@ -1,6 +1,6 @@
 # Comandos de Voz (comanda tu PC con órdenes habladas)  #
 
-You can modify the commands down below for a better usage, on the file: ~/.voice_commands/"v-c LANGS"/commands-en
+Puede modificar los comandos de abajo para un mejor uso, en el archivo: ~/.voice_commands/"v-c LANGS"/commands-en
 
 La función de éste programa se inicia ejecutando el script play_stop.sh, el cual comenzará a grabar su voz, y si transcurren cinco segundos, o si lo vuelves a ejecutar, iniciará el reconocimiento de voz, para ya, realizar uno de todos los comandos disponibles.
 Las órdenes pueden ser simples de un sólo contexto: << orden >>, o de doble contexto: << orden >> << texto-citado >>
@@ -9,7 +9,7 @@ Las órdenes disponibles son 95
 
 Después de instalado lo podrás lanzar desde Aplicaciones, Acceso universal, Comandos de Voz
 Y lo puedes arrastrar y soltar en el panel de gnome, y para llamarlo de un atajo de teclado, por ej. F6, éste es el comando: 
-# Cambiando $USER por to nombre de usuario: /home/$USER/.voice_commands/play_stop.sh
+ ~/.voice_commands/play_stop.sh
 Y lo puede llamar así:
 v-c
 o,
@@ -18,20 +18,31 @@ voice-commands
 ------------------------------------------------------------
 
 #	##	v-c , command line options	##	#
-v-c -r		Run
-v-c -l -lang	To select another, of 67 languages for recognition.
-v-c -t -try	To try any command, of default lang, or, a [-lang].
-v-c -m -mod	To modify the commands file, and the README file.
-v-c -u -update	To update the README file, after modify the script.
-v-c -h		Show instructions README file.
-v-c --help	Show this message
+
+v-c -r		Correr
+v-c -l -lang	Para seleccionar otro, de 67 idiomas de reconocimiento .
+v-c -t -try	Para probar cualquier comando, de manera predeterminada lang, o un [-lang].
+v-c -mic [NUM]	Configure el puerto, por defecto [1,2,3...]. Y, si es [input-"1,2,3..."].
+v-c -m -mod	Para modificar el archivo de comandos y el archivo LÉEME.
+v-c -u -update	Para actualizar el archivo LÉEME, luego de modificar el archivo de comandos.
+v-c -h		Ver instrucciones del documento LÉEME.
+v-c --help	Mostrar este mensaje
 
 ------------------------------------------------------------
 
 Dependencias:
 Acceso a internet.
 Micrófono activo, y con volumen correcto, Micrófono, o Micrófono interno. Está en: Configuración del sistema, Sonido, Entrada.
-Puedes modificar el puerto de micrófono, del comando que activa Micrófono, y lo vuelve a Micrófono interno, por defecto el puerto es el 1, si experimenta que no se realiza el reconocimiento puede modificar: microphe_port=1, cambiando 1 por 2 o el que sea su puerto. 
+Puedes modificar el puerto de micrófono, del comando que activa Micrófono, y lo vuelve a Micrófono interno, por defecto el puerto es el 1, si experimenta que no se realiza el reconocimiento puede modificarlo con el comando:
+
+ « v-c -mic '1, 2,...' ». 
+
+Y, si es Micrófono / Micrófono '1, 2,...', entonces sería asi:
+
+ « v-c -mic '1, 2,...' input-'1, 2,...' »
+ « v-c -mic '1, 2,...' input-' ' » [ vacío para 'reset' para ";input-" ]
+
+
 Si por errores de la traducción automática, tiene algúnos comandos mal escritos, o repetido, debe modificarlos, también, puede hacerlo con el comando:
 v-c -m, o, v-c -mod
 Y si su idioma usa apóstrofes, esto (') debe reemplazarlos por espacio esto ( ), porque podría generar conflictos.
@@ -42,7 +53,7 @@ En en los archivos:
 
 Instalar dependencias:
 
-sudo apt-get install xdotool gawk curl wget cheese audacious sox flac pulseaudio alsa-utils
+xdotool gawk curl wget cheese audacious sox flac pulseaudio alsa-utils
 
 Programas que usa y ya están en la distribución:
 rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-draw libreoffice-math

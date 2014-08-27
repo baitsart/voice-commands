@@ -1,7 +1,7 @@
-# Voice commands (command your PC speaking commands) #
+# Voice commands (command your PC with spoken commands) #
 
-You can modify the commands down below for a better usage, on the file: ~/.voice_commands/"v-c LANGS"/commands-en
-  
+You can modify the commands below to better use in the file: ~/.voice_commands/"v-c LANGS"/commands-en
+
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
 Also can repeat the last command with RETRY function
 Orders can be just a simple context: << order >> , or double context: << order >> << cited-text >>
@@ -9,11 +9,7 @@ Available commands are 95
 
 After installed we can launch it from Applications, Universal Access, Voice Commands
 And you can drag and drop on the gnome panel, and to call it a keyboard shortcut, eg. F6, this is the command: 
-# Changing $USER, to your user name: /home/$USER/.voice_commands/play_stop.sh
-First install the command line file, typing this:
-sudo cp ~/.voice_commands/v-c /usr/bin && sudo cp ~/.voice_commands/v-c /usr/bin/voice-commands
 
-And you can call it at:
 v-c
 or,
 voice-commands
@@ -22,11 +18,12 @@ voice-commands
 
 #	##	v-c , command line options	##	#
 
-v-c -u -update	To update the README file, after modify the script.
 v-c -r		Run
 v-c -l -lang	To select another, of 67 languages for recognition.
 v-c -t -try	To try any command, of default lang, or, a [-lang].
+v-c -mic [NUM]	Set port, to default [1,2,3...]. And, if [input-"1,2,3..."].
 v-c -m -mod	To modify the commands file, and the README file.
+v-c -u -update	To update the README file, after modify the script.
 v-c -h		Show instructions README file.
 v-c --help	Show this message
 
@@ -35,7 +32,15 @@ v-c --help	Show this message
 Dependencies:
 Internet access.
 Active, and correct volume Microphone, Check: System Settings, Sound, Internal microphone, to Microphone.
-You can modify the microphone port, of the command that activates microphone, and again to internal microphone, the default port is 1, if you have that recognition is not done, you can modify: microphe_port=1, changing 1 on 2, or which is your port. 
+You can modify the microphone port, of the command that activates microphone, and again to internal microphone, the default port is 1, if you have that recognition is not done, you can modify by command with:
+
+ « v-c -mic '1, 2,...' »
+
+ and, if is Microphone / Microphone '1, 2,...', then will be:
+
+ « v-c -mic '1, 2,...' input-'1, 2,...' »
+ « v-c -mic '1, 2,...' input-' ' » [ empty for 'reset' to no ";input-" ]
+
 And if by errors of machine translation, has commands some misspelled or repeated, must modify also, can doit with the command:
 v-c -m, or, v-c -mod
 If your language uses apostrophes this (') should replace by an space this ( ), because it could cause conflicts.
@@ -45,7 +50,7 @@ In the files:
 
 
 Install dependencies:
-sudo apt-get install xdotool gawk curl wget cheese audacious sox alsa-utils
+xdotool gawk curl wget cheese audacious sox flac pulseaudio alsa-utils
 
 Programs that use and are already in the distribution:
 rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-draw libreoffice-math

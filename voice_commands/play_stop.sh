@@ -12,7 +12,8 @@ fi
 recording=5
 key="AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
 PKG_PATH=$(dirname "$(readlink -f "$0")")
-microphe_port=1
+microphe_port=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/microphone_port | cut -d '=' -f2)
+input=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/input_port | cut -d '=' -f2)
 PROCESS=$$
 CMD_RETRY=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 
@@ -90,7 +91,7 @@ pre_recog
 
 
 PID=$(cat /tmp/process_result)
-pacmd set-source-port "$microphe_port" 'analog-input-microphone'
+pacmd set-source-port "$microphe_port" "analog-input-microphone""$input"
 killall notify-osd 2>/dev/null
 notify-send "Recording..." "talk, please" 
 #paly ~/.voice_commands/sounds/"Recording, talk, please.mp3"

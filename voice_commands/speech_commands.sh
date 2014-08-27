@@ -6,7 +6,8 @@
 lang="$1"
 key="$2"
 recording=3
-microphe_port=1
+microphe_port=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/microphone_port | cut -d '=' -f2)
+input=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/input_port | cut -d '=' -f2)
 SONGS_PATH="$HOME/.voice_commands/sounds/ringtones"
 UTTERANCE=$(cat /tmp/speech_recognition.tmp | sed "s/  / /g" )
 
@@ -711,7 +712,7 @@ echo "$$" > /tmp/dictation_mode/line_of_process
 notify-send -i "/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" "Recording ..." 
 echo "Result:"
 echo "0" > /tmp/dictation_mode/number_of_process
-pacmd set-source-port "$microphe_port" 'analog-input-microphone'
+pacmd set-source-port "$microphe_port" "analog-input-microphone""$input"
 record
 
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
@@ -1502,7 +1503,7 @@ echo "Alarm:$alarm"
 cuatro()
 {
 echo "Alarm:$alarm"
-pacmd set-source-port "$microphe_port" 'analog-input-microphone'
+pacmd set-source-port "$microphe_port" "analog-input-microphone""$input"
 rec -r 16000 -c 1 -t mp3  ~/".$fecha record-reminder Sleeping:$alarm.mp3" 2>&1 | awk -vRS="\r" '$1 ~ /In/ {gsub(/In:/," ");gsub(/%\)/," ");gsub(/ \(/," ");print $3"\n# Record reminder.\\n\\nClose this window to\\nend recording.\\n\\nTime:\\t"$2"\\nSize :\\t"$4; fflush();}' | zenity --window-icon="/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" --progress --pulsate --no-cancel --auto-kill --auto-close --width="255" --height="190" --title=" Recording ..."
 pacmd set-source-port "$microphe_port" 'analog-input-microphone-internal'
 	sleep $alarm && audacious ~/".$fecha record-reminder Sleeping:$alarm.mp3"
@@ -1551,7 +1552,7 @@ siete()
 {
 echo "Alarm:$alarm"
 notify-send -i "/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" " Recording ..." 
-pacmd set-source-port "$microphe_port" 'analog-input-microphone'
+pacmd set-source-port "$microphe_port" "analog-input-microphone""$input"
 rec -r 16000 -c 1 -t flac  /tmp/grabacion-recordatorio.flac 2>&1 | awk -vRS="\r" '$1 ~ /In/ {gsub(/In:/," ");gsub(/%\)/," ");gsub(/ \(/," ");print $3"\n# Record reminder.\\n\\nClose this window to\\nend recording.\\n\\nTime:\\t"$2"\\nSize :\\t"$4; fflush();}' | zenity --window-icon="/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" --progress --pulsate --no-cancel --auto-kill --auto-close --width="255" --height="190" --title=" Recording ..." 
 
 JSON=`curl -s -X POST \

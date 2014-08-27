@@ -9,6 +9,25 @@ if [ -z "$1" ]; then
 /bin/bash ~/.voice_commands/play_stop.sh
 exit
 fi
+if echo "$@" | grep -q -- "-mic\|-microphone"; then
+microphe_port=$(echo "$@" | sed 's/microphone/mic/g;s/mic/mic /g;s/mic=/mic /g' | sed 's/  / /g' | tr ' ' '\n' | grep -A1 -- "-mic\|-mic" | tail -n1 )
+if echo "$microphe_port" | grep -E -v -x '[0-9]*' ; then
+microphe_port=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/microphone_port | cut -d '=' -f2)
+fi
+input_opt=$(echo "$@" | sed 's/microphone/mic/g;s/mic/mic /g;s/mic=/mic /g' | sed 's/  / /g' | sed 's/input- /input-/' | sed 's/input-=/input-/' | sed 's/  / /g' | tr ' ' '\n' | grep -A2 -- "-mic\|-mic" | tail -n1 )
+if echo "$input_opt" | grep -q -- "input-"; then
+input_opt=$(echo "$input_opt" | sed 's/input-//' )
+input=$(echo ";input-microphone-"$input_opt"" )
+if echo "$input_opt" | grep -E -v -x '[0-9]*' ; then
+input=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/input_port | cut -d '=' -f2)
+fi
+if [ -z "$input_opt" ] ; then
+input=""
+fi
+fi
+sh ~/.voice_commands/"v-c LANGS"/Scripts/micro_config.sh "$microphe_port" "$input"
+exit
+fi
 if echo "$@" | awk '{print $1, $2}' | grep -- "-t\|-try" | sed 's/-try//g;s/-t//' | awk '{print $1}' | grep -x -q -- "-l\|-lang"; then
 
 lang=$(echo "$@" | sed 's/-try//g;s/-t//g;s/-lang//g;s/-l//' | sed 's/^[ ]*//' | awk '{print $1}')
@@ -152,18 +171,19 @@ exit
 fi
 if echo "$1" | grep -x -q -i -- "-v"; then
 echo "# Voice commands (command your PC speaking commands) #
-Version 1.0.1-4"
+Version 1.0.1-5"
 exit
 fi
 if echo "$1" | grep -x -q -i -- "--help"; then
 echo "
 	# Voice commands (command your PC speaking commands) #
-Version 1.0.1-4
+Version 1.0.1-5
 	v-c , command line options
 
 v-c -r		Run
 v-c -l -lang	To select another, of 67 languages for recognition.
 v-c -t -try	To try any command, of default lang, or, a [-lang].
+v-c -mic [NUM]	Set port, to default [1,2,3...]. And, if [input-"'"'"1,2,3..."'"'"].
 v-c -m -mod	To modify the commands file, and the README file.
 v-c -u -update	To update the README file, after modify the script.
 v-c -h		Show instructions README file.
