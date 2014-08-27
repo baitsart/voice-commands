@@ -9,6 +9,9 @@ Available commands are 95
 
 After installed we can launch it from Applications, Universal Access, Voice Commands
 And you can drag and drop on the gnome panel, and to call it a keyboard shortcut, eg. F6, this is the command: 
+# Changing $USER, to your user name: /home/$USER/.voice_commands/play_stop.sh
+First install the command line file, typing this:
+sudo cp ~/.voice_commands/v-c /usr/bin && sudo cp ~/.voice_commands/v-c /usr/bin/voice-commands 
 
 v-c
 or,

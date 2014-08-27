@@ -9,7 +9,9 @@ Las órdenes disponibles son 95
 
 Después de instalado lo podrás lanzar desde Aplicaciones, Acceso universal, Comandos de Voz
 Y lo puedes arrastrar y soltar en el panel de gnome, y para llamarlo de un atajo de teclado, por ej. F6, éste es el comando: 
- ~/.voice_commands/play_stop.sh
+# Cambiando $USER por tu nombre de usuario: /home/$USER/.voice_commands/play_stop.sh
+Primero instala el archivo de linea de comandos, con éste comando:
+sudo cp ~/.voice_commands/v-c /usr/bin && sudo cp ~/.voice_commands/v-c /usr/bin/voice-commands
 Y lo puede llamar así:
 v-c
 o,
