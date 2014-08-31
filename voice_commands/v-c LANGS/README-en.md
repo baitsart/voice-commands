@@ -25,6 +25,7 @@ v-c -r		Run
 v-c -l -lang	To select another, of 67 languages for recognition.
 v-c -t -try	To try any command, of default lang, or, a [-lang].
 v-c -mic [NUM]	Set port, to default [1,2,3...]. And, if [input-"1,2,3..."].
+v-c -vol	Set the microphone volume that is used by default. Level (<= 200).
 v-c -m -mod	To modify the commands file, and the README file.
 v-c -u -update	To update the README file, after modify the script.
 v-c -h		Show instructions README file.

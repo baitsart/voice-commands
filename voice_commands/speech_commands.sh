@@ -303,7 +303,7 @@ recog=$(echo "$UTTERANCE" | grep -v "$CMD_WRITE_CAPITAL" | grep -v "$CMD_WRITE_C
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
-	line=$(echo "$UTTERANCE" | sed 's/'"$CMD_WRITE_CAPITAL"' //g;s/'"$CMD_WRITE_CAPITAL"'//' | sed 's/.*/\u&/' )
+	line=$(echo "$UTTERANCE" | sed 's/'"$CMD_WRITE"' //g;s/'"$CMD_WRITE"'//' )
 
 xdotool type "$line"
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
@@ -428,7 +428,7 @@ if cat /tmp/lang | cut -d' ' -f2 | grep -x -q "$TO"; then
 else
 	to="es"
 fi
-echo "Translate to `cat /tmp/lang | grep  "$from " | cut -d' ' -f2` to `cat /tmp/lang | grep  "$to " | cut -d' ' -f2`: `echo "$TEXT" | sed 's/.*/\u&/' `"
+echo "Translate to `cat /tmp/lang | grep  "$from " | cut -d' ' -f2` to `cat /tmp/lang | grep  "$to " | cut -d' ' -f2`: `echo "$TEXT" `"
 
 	xdg-open "http://translate.google.com/?hl="$lang"#"$from"/"$to"/$(python -c "import urllib; print urllib.quote('''$TEXT''')")"
 	rm /tmp/lang
@@ -444,7 +444,7 @@ recog=$(echo "$UTTERANCE" | awk '{print $1, $2}' | grep -x "$CMD_SAY_THIS" )
 	then
 	notify-send "Command:"  "$recog"
 	the_text_encoded=$(echo "$UTTERANCE" | sed 's/'"$CMD_SAY_THIS"' //g;s/'"$CMD_SAY_THIS"'//')
-wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/say_this.mp3" "http://translate.google.com/translate_tts?tl=es&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
+wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/say_this.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/say_this.mp3
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
@@ -541,7 +541,7 @@ recog=$(echo "$UTTERANCE" | awk '{print $1, $2}' | grep "$CMD_SAY_HI" )
 	notify-send "Command:"  "$recog"
 	name=$(echo "$UTTERANCE" | sed 's/'"$CMD_SAY_HI"' //g;s/'"$CMD_SAY_HI"'//')
 	the_text_encoded=$(echo "Hello "$name" Have a nice day!")
-wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/say_hi_to.mp3" "http://translate.google.com/translate_tts?tl=es&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
+wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/say_hi_to.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/say_hi_to.mp3
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
@@ -555,7 +555,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_HELLO" )
 	then
 	notify-send "Command:"  "$recog"
 	the_text_encoded=$(echo "Hello `whoami`, Have a nice day!")
-wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/user-is-it.mp3" "http://translate.google.com/translate_tts?tl=es&q=$(python -c "import urllib; print urllib.quote()")&ie=UTF-8"
+wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/user-is-it.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/user-is-it.mp3 
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
@@ -569,7 +569,7 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_WHOAMI" )
 	then
 	notify-send "Command:"  "$recog"
 	the_text_encoded=$(echo "Your name of user is `whoami`")
-wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/user-is-it.mp3" "http://translate.google.com/translate_tts?tl=es&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
+wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/user-is-it.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/user-is-it.mp3 
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;
@@ -704,7 +704,12 @@ script_process=$(cat /tmp/dictation_mode/line_of_process)
 kill -HUP "$script_process"
 rm -rf /tmp/dictation_mode
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
-pacmd set-source-port "$microphe_port" 'analog-input-microphone-internal'
+sh /tmp/if_internal_active
+rm /tmp/if_internal_active
+rm /tmp/progress_active
+if [ -f /tmp/port_errors ] ; then
+rm /tmp/port_errors
+fi
 exit 1;
 fi
 mkdir /tmp/dictation_mode/
@@ -712,7 +717,21 @@ echo "$$" > /tmp/dictation_mode/line_of_process
 notify-send -i "/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" "Recording ..." 
 echo "Result:"
 echo "0" > /tmp/dictation_mode/number_of_process
-pacmd set-source-port "$microphe_port" "analog-input-microphone""$input"
+echo "echo -n "'"'"                                "'"'"\\\\r" > /tmp/if_internal_active
+ports=$(pacmd list-sources | grep "active port")
+if echo "$ports" | grep -q -v "active port: <analog-input-microphone>\|active port: <analog-input-microphone;"; then
+v-c -mic "$microphe_port" >/tmp/port_errors
+if sed -n '2p' /tmp/port_errors | grep -q -v "The configuration of microphone, now is with this ports:"; then
+cat /tmp/port_errors
+rm /tmp/port_errors
+rm /tmp/line_of_process
+rm /tmp/process_result
+rm /tmp/if_internal_active
+exit 1
+fi
+echo "pacmd set-source-port "$microphe_port" '`echo "$ports" | cut -d'>' -f1 | cut -d'<' -f2 `'  >/tmp/port_errors && echo -n "'"'"                                "'"'"\\\\r"  > /tmp/if_internal_active
+fi
+
 record
 
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
@@ -1410,7 +1429,7 @@ fi
 recog=$(echo "$UTTERANCE" | awk '{print $1}' | grep -x "$CMD_ALARM" )
 	if [ "$recog" != "" ]
 	then
-	number=$(echo "$UTTERANCE" | sed 's/'"$CMD_ALARM"' //g;s/'"$CMD_ALARM"'//g;s/ y/y/g;s/thirty/030/g;s/forty/040/g;s/fifty/050/g;s/sixty/060/g;s/seventy/070/g;s/eighty/080/g;s/ninety/090/g;s/ten/010/g;s/once/011/g;s/twelve/012/g;s/thirteen/013/g;s/fourteen/014/g;s/fifteen/015/g;s/sixteen/016/g;s/ten/01/g;s/twenty/020/g;s/veinti/020/g;s/treintai/030/g;s/thirty/030/g;s/cuarentai/040/g;s/forty/040/g;s/cincuentai/050/g;s/fifty/050/g;s/sesentai/060/g;s/sixty/060/g;s/setentai/070/g;s/seventy/070/g;s/ochentai/080/g;s/eighty/080/g;s/noventai/090/g;s/ninety/090/g;s/two hundred/200/g;s/three hundred/300/g;s/four/400/g;s/five hundred/500/g;s/six hundred/600/g;s/seven/700/g;s/eight/800/g;s/nine/900/g;s/percent/100/g;s/hundred/100/g;s/one/01/g;s/un/01/g;s/two/02/g;s/three/03/g;s/four/04/g;s/five/05/g;s/six/06/g;s/seven/07/g;s/eight/08/g;s/nine/09/g;s/016/16/g;s/017/17/g;s/018/18/g;s/019/19/g;s/020/20/g;s/030/30/g;s/040/40/g;s/050/50/g;s/060/60/g;s/070/70/g;s/080/80/g;s/090/90/g;s/001/1/g;s/002/2/g;s/003/3/g;s/004/4/g;s/005/5/g;s/006/6/g;s/007/7/g;s/008/8/g;s/009/9/g;s/ 0/ /g' )
+	number=$(echo "$UTTERANCE" | sed 's/'"$CMD_ALARM"' //g;s/'"$CMD_ALARM"'//g' )
 	time="`echo $number | sed 's/^[0]*//'`"
 	if echo "$time" | awk '{print $2}' | head -c 1 | grep -q "d"; then
 	day="`echo "$time" | awk '{print $1}'` days"
@@ -1503,9 +1522,28 @@ echo "Alarm:$alarm"
 cuatro()
 {
 echo "Alarm:$alarm"
-pacmd set-source-port "$microphe_port" "analog-input-microphone""$input"
+echo "echo -n "'"'"                                "'"'"\\\\r" > /tmp/if_internal_active
+ports=$(pacmd list-sources | grep "active port")
+if echo "$ports" | grep -q -v "active port: <analog-input-microphone>\|active port: <analog-input-microphone;"; then
+v-c -mic "$microphe_port" >/tmp/port_errors
+if sed -n '2p' /tmp/port_errors | grep -q -v "The configuration of microphone, now is with this ports:"; then
+cat /tmp/port_errors
+rm /tmp/port_errors
+rm /tmp/line_of_process
+rm /tmp/process_result
+rm /tmp/if_internal_active
+exit 1
+fi
+echo "pacmd set-source-port "$microphe_port" '`echo "$ports" | cut -d'>' -f1 | cut -d'<' -f2 `'  >/tmp/port_errors && echo -n "'"'"                                "'"'"\\\\r"  > /tmp/if_internal_active
+fi
+
 rec -r 16000 -c 1 -t mp3  ~/".$fecha record-reminder Sleeping:$alarm.mp3" 2>&1 | awk -vRS="\r" '$1 ~ /In/ {gsub(/In:/," ");gsub(/%\)/," ");gsub(/ \(/," ");print $3"\n# Record reminder.\\n\\nClose this window to\\nend recording.\\n\\nTime:\\t"$2"\\nSize :\\t"$4; fflush();}' | zenity --window-icon="/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" --progress --pulsate --no-cancel --auto-kill --auto-close --width="255" --height="190" --title=" Recording ..."
-pacmd set-source-port "$microphe_port" 'analog-input-microphone-internal'
+sh /tmp/if_internal_active
+rm /tmp/if_internal_active
+rm /tmp/progress_active
+if [ -f /tmp/port_errors ] ; then
+rm /tmp/port_errors
+fi
 	sleep $alarm && audacious ~/".$fecha record-reminder Sleeping:$alarm.mp3"
 }
 
@@ -1552,7 +1590,21 @@ siete()
 {
 echo "Alarm:$alarm"
 notify-send -i "/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" " Recording ..." 
-pacmd set-source-port "$microphe_port" "analog-input-microphone""$input"
+echo "echo -n "'"'"                                "'"'"\\\\r" > /tmp/if_internal_active
+ports=$(pacmd list-sources | grep "active port")
+if echo "$ports" | grep -q -v "active port: <analog-input-microphone>\|active port: <analog-input-microphone;"; then
+v-c -mic "$microphe_port" >/tmp/port_errors
+if sed -n '2p' /tmp/port_errors | grep -q -v "The configuration of microphone, now is with this ports:"; then
+cat /tmp/port_errors
+rm /tmp/port_errors
+rm /tmp/line_of_process
+rm /tmp/process_result
+rm /tmp/if_internal_active
+exit 1
+fi
+echo "pacmd set-source-port "$microphe_port" '`echo "$ports" | cut -d'>' -f1 | cut -d'<' -f2 `'  >/tmp/port_errors && echo -n "'"'"                                "'"'"\\\\r"  > /tmp/if_internal_active
+fi
+
 rec -r 16000 -c 1 -t flac  /tmp/grabacion-recordatorio.flac 2>&1 | awk -vRS="\r" '$1 ~ /In/ {gsub(/In:/," ");gsub(/%\)/," ");gsub(/ \(/," ");print $3"\n# Record reminder.\\n\\nClose this window to\\nend recording.\\n\\nTime:\\t"$2"\\nSize :\\t"$4; fflush();}' | zenity --window-icon="/usr/share/icons/hicolor/48x48/apps/audio-recorder-on.png" --progress --pulsate --no-cancel --auto-kill --auto-close --width="255" --height="190" --title=" Recording ..." 
 
 JSON=`curl -s -X POST \
@@ -1560,7 +1612,12 @@ JSON=`curl -s -X POST \
 --header 'Content-Type: audio/x-flac; rate=16000;' \
 'https://www.google.com/speech-api/v2/recognize?output=json&lang='$lang'&key='$key'' | cut -d\" -f8 `
 mv /tmp/grabacion-recordatorio.flac ~/".$fecha record-reminder Sleeping:$alarm.flac"
-pacmd set-source-port "$microphe_port" 'analog-input-microphone-internal'
+sh /tmp/if_internal_active
+rm /tmp/if_internal_active
+rm /tmp/progress_active
+if [ -f /tmp/port_errors ] ; then
+rm /tmp/port_errors
+fi
 echo "$JSON" | sed '/^$/d' > /tmp/Texto_recordatorio-temp
 
 text_in=$(zenity --title "Text reminder" --width="335" --height="310" --text-info --editable --filename="/tmp/Texto_recordatorio-temp" | awk '{ printf "%s ", $0 }')
@@ -1685,8 +1742,8 @@ recog=$(echo "$UTTERANCE" | grep "$CMD_CALCULATOR" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
-	numb_smimb=$(echo "$UTTERANCE" | sed 's/'"$CMD_CALCULATOR"' //g;s/'"$CMD_CALCULATOR"'//g;s/ y/y/g;s/thirty/030/g;s/forty/040/g;s/fifty/050/g;s/sixty/060/g;s/seventy/070/g;s/eighty/080/g;s/ninety/090/g;s/ten/010/g;s/once/011/g;s/twelve/012/g;s/thirteen/013/g;s/fourteen/014/g;s/fifteen/015/g;s/sixteen/016/g;s/ten/01/g;s/twenty/020/g;s/veinti/020/g;s/treintai/030/g;s/thirty/030/g;s/cuarentai/040/g;s/forty/040/g;s/cincuentai/050/g;s/fifty/050/g;s/sesentai/060/g;s/sixty/060/g;s/setentai/070/g;s/seventy/070/g;s/ochentai/080/g;s/eighty/080/g;s/noventai/090/g;s/ninety/090/g;s/two hundred/200/g;s/three hundred/300/g;s/four/400/g;s/five hundred/500/g;s/six hundred/600/g;s/seven/700/g;s/eight/800/g;s/nine/900/g;s/percent/100/g;s/hundred/100/g;s/one/01/g;s/un/01/g;s/two/02/g;s/three/03/g;s/four/04/g;s/five/05/g;s/six/06/g;s/seven/07/g;s/eight/08/g;s/nine/09/g;s/016/16/g;s/017/17/g;s/018/18/g;s/019/19/g;s/020/20/g;s/030/30/g;s/040/40/g;s/050/50/g;s/060/60/g;s/070/70/g;s/080/80/g;s/090/90/g;s/001/1/g;s/002/2/g;s/003/3/g;s/004/4/g;s/005/5/g;s/006/6/g;s/007/7/g;s/008/8/g;s/009/9/g;s/ 0/ /g;s/resta/−/g;s/less/−/g;s/times/×/g;s/divided/÷/g;s/divided/÷/g;s/about/÷/g;s/percent/%/g;s/porcentage/%/g;s/by/×/g;s/squared/²/g;s/square/²/g;s/square root of/√/g;s/square root/√/g;s/root/√/g;s/point/,/g;s/coma/,/g;s/ //g')
-lines=$(echo "xdotool type "$numb_smimb"" | sed 's/more/ \&\& xdotool key 0x002b \&\& xdotool type /g;s/but/ \&\& xdotool key 0x002b \&\& xdotool type /g;s/suma/ \&\& xdotool key 0x002b \&\& xdotool type /g' )
+	numb_smimb=$(echo "$UTTERANCE" | sed 's/'"$CMD_CALCULATOR"' //g;s/'"$CMD_CALCULATOR"'//g;s/subtracts/−/g;s/less/−/g;s/multiplied by/×/g;s/divided/÷/g;s/divided/÷/g;s/about/÷/g;s/percent/%/g;s/percentage/%/g;s/per/×/g;s/squared/²/g;s/square/²/g;s/square root of/√/g;s/square root/√/g;s/root/√/g;s/point/,/g;s/comma/,/g;s/ //g')
+lines=$(echo "xdotool type "$numb_smimb"" | sed 's/more/ && xdotool key 0x002b && xdotool type /g;s/mas/ && xdotool key 0x002b && xdotool type /g;s/sum/ && xdotool key 0x002b && xdotool type /g' )
 echo "#/bin/bash
 $lines" > /tmp/script_calc.temp
 chmod +x /tmp/script_calc.temp

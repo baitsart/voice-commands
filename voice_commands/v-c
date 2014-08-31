@@ -9,6 +9,36 @@ if [ -z "$1" ]; then
 /bin/bash ~/.voice_commands/play_stop.sh
 exit
 fi
+if echo "$@" | grep -q -- "-vol\|-volume"; then
+microphe_port=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/microphone_port | cut -d '=' -f2)
+input=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/input_port | cut -d '=' -f2)
+command_line=$(echo "$@" | sed 's/volume/vol/g;s/vol/vol /g;s/vol=/vol /g' | sed 's/  / /g' | tr ' ' '\n' | grep -A1 -- "-vol\|-vol" | tail -n1 )
+if (( "$command_line" >= 200 )); then
+echo "
+Error. Volume is (<= 200).
+"
+exit 1
+fi
+if echo "
+Volume level at: `echo "$command_line" | grep -E -x '[0-9]*'`%" ; then
+volume_mic=$(echo "$command_line" \* 100  | bc -l )
+pacmd set-source-volume "$microphe_port" 0x"$volume_mic" >/tmp/result_vol_mic_config
+if
+grep -q "You need to specify a volume" /tmp/result_vol_mic_config; then
+echo "
+Error output:
+`cat /tmp/result_vol_mic_config | tail -n 2 | sed 's/>>>//'
+
+Execute:
+ « v-c -mic [NUM] »	Configure the port default [1,2,3...]
+
+And try again.
+`"
+fi
+rm /tmp/result_vol_mic_config
+exit
+fi
+fi
 if echo "$@" | grep -q -- "-mic\|-microphone"; then
 microphe_port=$(echo "$@" | sed 's/microphone/mic/g;s/mic/mic /g;s/mic=/mic /g' | sed 's/  / /g' | tr ' ' '\n' | grep -A1 -- "-mic\|-mic" | tail -n1 )
 if echo "$microphe_port" | grep -E -v -x '[0-9]*' ; then
@@ -160,8 +190,8 @@ List of language availables is:
 `echo "$language_list"`"
 exit 0;
 fi
-if echo "$1" | grep -x -q -i -- "-u\|-update"; then
 language="en"
+if echo "$1" | grep -x -q -i -- "-u\|-update"; then
 sh ~/.voice_commands/hace_leeme.sh "$language" | cut -d "=" -f 2
 exit
 fi
@@ -171,19 +201,20 @@ exit
 fi
 if echo "$1" | grep -x -q -i -- "-v"; then
 echo "# Voice commands (command your PC speaking commands) #
-Version 1.0.1-5"
+Version 1.0.1-6"
 exit
 fi
 if echo "$1" | grep -x -q -i -- "--help"; then
 echo "
 	# Voice commands (command your PC speaking commands) #
-Version 1.0.1-5
+Version 1.0.1-6
 	v-c , command line options
 
 v-c -r		Run
 v-c -l -lang	To select another, of 67 languages for recognition.
 v-c -t -try	To try any command, of default lang, or, a [-lang].
 v-c -mic [NUM]	Set port, to default [1,2,3...]. And, if [input-"'"'"1,2,3..."'"'"].
+v-c -vol	Set the microphone volume that is used by default. Level (<= 200).
 v-c -m -mod	To modify the commands file, and the README file.
 v-c -u -update	To update the README file, after modify the script.
 v-c -h		Show instructions README file.

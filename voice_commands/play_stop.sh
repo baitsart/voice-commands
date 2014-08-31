@@ -8,15 +8,12 @@ if [ -n "$1" ]; then
 lang=$( echo "$1" | uniq )
 echo "Language `cat /tmp/lang | sed 's/), (/\n/g;s/(//g;s/)//g' | grep "$lang " | cut -d' ' -f2 `"
 fi
-
 recording=5
 key="AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
-PKG_PATH=$(dirname "$(readlink -f "$0")")
-microphe_port=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/microphone_port | cut -d '=' -f2)
-input=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/input_port | cut -d '=' -f2)
 PROCESS=$$
 CMD_RETRY=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-
+microphe_port=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/microphone_port | cut -d '=' -f2)
+input=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/input_port | cut -d '=' -f2)
 
 if [ -f /tmp/line_of_process ] ; then
 PID=$(cat /tmp/process_result)
@@ -65,6 +62,11 @@ rm /tmp/result
 killall notify-osd 2>/dev/null
 /bin/bash ~/.voice_commands/speech_commands.sh "$lang" "$key"
 rm /tmp/process_result
+rm /tmp/if_internal_active
+rm /tmp/progress_active
+if [ -f /tmp/port_errors ] ; then
+rm /tmp/port_errors
+fi
 if [ -f /tmp/line_of_process ] ; then
 rm /tmp/line_of_process
 exit
@@ -77,9 +79,9 @@ pre_recog()
 if [ -f /tmp/result ] ; then
 PID=$(cat /tmp/process_result)
 killall rec 2>/dev/null
-pacmd set-source-port "$microphe_port" 'analog-input-microphone-internal'
 mv /tmp/voice_.flac /tmp/voice_"$PID".flac
 killall notify-osd 2>/dev/null
+sh /tmp/if_internal_active
 transcribe
 fi
 }
@@ -91,14 +93,48 @@ pre_recog
 
 
 PID=$(cat /tmp/process_result)
-pacmd set-source-port "$microphe_port" "analog-input-microphone""$input"
 killall notify-osd 2>/dev/null
+echo "echo -n "'"'"                                "'"'"\\\\r" > /tmp/if_internal_active
+ports=$(pacmd list-sources | grep "active port")
+if echo "$ports" | grep -q -v "active port: <analog-input-microphone>\|active port: <analog-input-microphone;"; then
+v-c -mic "$microphe_port" >/tmp/port_errors
+if sed -n '2p' /tmp/port_errors | grep -q -v "The configuration of microphone, now is with this ports:"; then
+cat /tmp/port_errors
+rm /tmp/port_errors
+rm /tmp/line_of_process
+rm /tmp/process_result
+rm /tmp/if_internal_active
+exit 1
+fi
+echo "pacmd set-source-port "$microphe_port" '`echo "$ports" | cut -d'>' -f1 | cut -d'<' -f2 `'  >/tmp/port_errors && echo -n "'"'"                                "'"'"\\\\r"  > /tmp/if_internal_active
+fi
 notify-send "Recording..." "talk, please" 
+
+echo "echo -n "'"'"  Talk, please. Recording.  "'"'"\\\\r
+sleep 0.5 &&
+echo -n "'"'"  Talk, please. Recording.. "'"'"\\\\r
+sleep 0.5 &&
+echo -n "'"'"  Talk, please. Recording..."'"'"\\\\r
+sleep 0.5 &&
+echo -n "'"'"  Talk, please. Recording.  "'"'"\\\\r
+sleep 0.5 &&
+echo -n "'"'"  Talk, please. Recording.. "'"'"\\\\r
+sleep 0.5 &&
+echo -n "'"'"  Talk, please. Recording..."'"'"\\\\r
+sleep 0.5 &&
+echo -n "'"'"  Talk, please. Recording.  "'"'"\\\\r
+sleep 0.5 &&
+echo -n "'"'"  Talk, please. Recording.. "'"'"\\\\r
+sleep 0.5 &&
+echo -n "'"'"  Talk, please. Recording..."'"'"\\\\r
+sleep 0.5 &&
+echo -n "'"'"  Talk, please. Recording.. "'"'"\\\\r" > /tmp/progress_active
+sh /tmp/progress_active &
 #paly ~/.voice_commands/sounds/"Recording, talk, please.mp3"
-pacmd set-source-port "$microphe_port" 'analog-input-microphone-internal'
-( rec -r 16000 -d /tmp/voice_.flac ) & pid=$!
+( rec -q -r 16000 -d /tmp/voice_.flac ) & pid=$!
 ( sleep "$recording"s && kill -HUP $pid ) 2>/dev/null & watcher=$!
 wait $pid 2>/dev/null && pkill -HUP -P $watcher
+sh /tmp/if_internal_active
 killall notify-osd 2>/dev/null
 > /tmp/result
 pre_recog

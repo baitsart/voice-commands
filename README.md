@@ -8,7 +8,7 @@ Orders can be just a simple context: << order >> , or double context: << order >
 Available commands are 95
 
 After installed we can launch it from Applications, Universal Access, Voice Commands
-And you can drag and drop on the gnome panel, and to call it a keyboard shortcut, eg. F6, this is the command: 
+And you can drag and drop on the gnome panel, and to call it a keyboard shortcut, eg. F6, this is the command:
 # Changing $USER, to your user name: /home/$USER/.voice_commands/play_stop.sh
 First install the command line file, typing this:
 sudo cp ~/.voice_commands/v-c /usr/bin && sudo cp ~/.voice_commands/v-c /usr/bin/voice-commands 
@@ -28,6 +28,8 @@ v-c -l -lang	To select another, of 67 languages for recognition.
 v-c -t -try	To try any command, of default lang, or, a [-lang].
 
 v-c -mic [NUM]	Set port, to default [1,2,3...]. And, if [input-"1,2,3..."].
+
+v-c -vol	Set the microphone volume that is used by default. Level (<= 200).
 
 v-c -m -mod	To modify the commands file, and the README file.
 

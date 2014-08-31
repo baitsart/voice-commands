@@ -29,6 +29,8 @@ v-c -t -try	Para probar cualquier comando, de manera predeterminada lang, o un [
 
 v-c -mic [NUM]	Configure el puerto, por defecto [1,2,3...]. Y, si es [input-"1,2,3..."].
 
+v-c -vol	Establecer el volumen del micrófono que se usa por defecto. Nivel (<= 200).
+
 v-c -m -mod	Para modificar el archivo de comandos y el archivo LÉEME.
 
 v-c -u -update	Para actualizar el archivo LÉEME, luego de modificar el archivo de comandos.
