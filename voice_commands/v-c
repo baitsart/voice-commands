@@ -201,13 +201,13 @@ exit
 fi
 if echo "$1" | grep -x -q -i -- "-v"; then
 echo "# Voice commands (command your PC speaking commands) #
-Version 1.0.1-6"
+Version 1.0.1-7"
 exit
 fi
 if echo "$1" | grep -x -q -i -- "--help"; then
 echo "
 	# Voice commands (command your PC speaking commands) #
-Version 1.0.1-6
+Version 1.0.1-7
 	v-c , command line options
 
 v-c -r		Run
