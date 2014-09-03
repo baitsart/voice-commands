@@ -1,6 +1,6 @@
 # Comandos de Voz (comanda tu PC con órdenes habladas)  #
 
-Puede modificar los comandos de abajo para un mejor uso, en el archivo: ~/.voice_commands/"v-c LANGS"/commands-en
+Puede modificar los comandos de abajo para un mejor uso, en el archivo: /usr/bin/voice_commands/"v-c LANGS"/commands-en
 
 La función de éste programa se inicia ejecutando el script play_stop.sh, el cual comenzará a grabar su voz, y si transcurren cinco segundos, o si lo vuelves a ejecutar, iniciará el reconocimiento de voz, para ya, realizar uno de todos los comandos disponibles.
 Las órdenes pueden ser simples de un sólo contexto: << orden >>, o de doble contexto: << orden >> << texto-citado >>
@@ -22,7 +22,7 @@ voice-commands
 #	##	v-c , command line options	##	#
 
 v-c -r		Correr
-v-c -l -lang	Para seleccionar otro, de 67 idiomas de reconocimiento .
+v-c -l -lang	Para seleccionar otro, de 67 idiomas de reconocimiento. (Viable en: « -run, -try, -modify, -update, -h »)
 v-c -t -try	Para probar cualquier comando, de manera predeterminada lang, o un [-lang].
 v-c -mic [NUM]	Configure el puerto, por defecto [1,2,3...]. Y, si es [input-"1,2,3..."].
 v-c -vol	Establecer el volumen del micrófono que se usa por defecto. Nivel (<= 200).
@@ -121,7 +121,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    WRITE_CAPITAL
    (capitalize | write capital | type capital)
 ################################
-   WRITE_CAPITAL_ALL << texto-citado >>
+   WRITE_CAPITAL_ALL
    (write all uppercase | write everything capital | write everything capitalized)
 ################################
    SAY_THIS << texto-citado >>
@@ -336,6 +336,15 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
 ################################
    CALCULATOR << operación-citada >>
    (calculated | calculate | the counting | making operation | make the calculation | calculator)
+Sum (more | and | suming | sum)
+Rest (subtracts | less | resting | rest)
+Multiplication (per | multiplied by | multiplied | by | multiplication | multiplying it)
+Divition (divided in | divided | dividing in | about | divition)
+Square (squared | square | at square | squared of | square of)
+Percent (percent | percentage | percent of | percentage of)
+Root (squared | square | square root of | square root | root)
+Dup (point | dup)
+Comma (comma)
 ################################
    TAKE_PICTURE
    (photo | take a picture)

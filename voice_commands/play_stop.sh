@@ -12,8 +12,8 @@ recording=5
 key="AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
 PROCESS=$$
 CMD_RETRY=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-microphe_port=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/microphone_port | cut -d '=' -f2)
-input=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/input_port | cut -d '=' -f2)
+microphe_port=$(sed -n '1p' ~/.voice_commands/Scripts/microphone_port | cut -d '=' -f2)
+input=$(sed -n '1p' ~/.voice_commands/Scripts/input_port | cut -d '=' -f2)
 
 if [ -f /tmp/line_of_process ] ; then
 PID=$(cat /tmp/process_result)
@@ -37,7 +37,7 @@ JSON=`curl -s -X POST \
 if echo "$JSON" | sed 's/'"'"'/ /g'  | grep -x -q "$CMD_RETRY" ; then
 [[ -f /tmp/speech_recognition_prev.tmp ]] || notify-send "No previous command" "Execute it again, please"
 mv /tmp/speech_recognition_prev.tmp /tmp/speech_recognition.tmp
-/bin/bash ~/.voice_commands/speech_commands.sh "$lang" "$key"
+/bin/bash ~/.voice_commands/speech_commands.sh "$lang"
 exit 1
 fi
 if echo "$JSON" | sed 's/'"'"'/ /g'  | grep -q "Your client does not have permission to get URL" ; then
@@ -50,7 +50,7 @@ curl -s -X POST \
 notify-send "Wrong key, Message:" "Your client does not have permission to get URL"
 exit 0
 fi
-sed -i 's/'"$key"'/'"$new_key"'/' ~/.voice_commands/play_stop.sh
+sed -i 's/'"$key"'/'"$new_key"'/' ~/.voice_commands/play_stop.sh ~/.voice_commands/speech_commands.sh
 sh ~/.voice_commands/play_stop.sh
 exit 1
 fi
@@ -60,7 +60,7 @@ echo "$JSON" | sed 's/'"'"'/ /g'  | sed '/^$/d' | tr '[:upper:]' '[:lower:]' > /
 rm /tmp/voice_"$PID".flac
 rm /tmp/result
 killall notify-osd 2>/dev/null
-/bin/bash ~/.voice_commands/speech_commands.sh "$lang" "$key"
+/bin/bash ~/.voice_commands/speech_commands.sh "$lang"
 rm /tmp/process_result
 rm /tmp/if_internal_active
 rm /tmp/progress_active

@@ -4,10 +4,10 @@
 # GNU License. You are free to modify and redistribute   # 
 
 lang="$1"
-key="$2"
+key="AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
 recording=3
-microphe_port=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/microphone_port | cut -d '=' -f2)
-input=$(sed -n '1p' ~/.voice_commands/"v-c LANGS"/Scripts/input_port | cut -d '=' -f2)
+microphe_port=$(sed -n '1p' ~/.voice_commands/Scripts/microphone_port | cut -d '=' -f2)
+input=$(sed -n '1p' ~/.voice_commands/Scripts/input_port | cut -d '=' -f2)
 SONGS_PATH="$HOME/.voice_commands/sounds/ringtones"
 UTTERANCE=$(cat /tmp/speech_recognition.tmp | sed "s/  / /g" )
 
@@ -102,16 +102,25 @@ CMD_BRIGHTNESS_UP=$(sed -n '88p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" 
 CMD_BRIGHTNESS_DOWN=$(sed -n '89p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_POWER_OFF=$(sed -n '90p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_CALCULATOR=$(sed -n '91p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-CMD_TAKE_PICTURE=$(sed -n '92p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-CMD_TAKE_VIDEO=$(sed -n '93p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-CMD_OPEN_FILE=$(sed -n '94p' /usr/bin/voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-CMD_OFFICE=$(sed -n '95p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Writer=$(sed -n '96p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Calc=$(sed -n '97p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Impress=$(sed -n '98p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Draw=$(sed -n '99p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Math=$(sed -n '100p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-# CMD_RETRY ' It is in /usr/bin/voice_commands/play_stop.sh, and is refer to line 101 '
+Sum=$(sed -n '92p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Rest=$(sed -n '93p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Multiplication=$(sed -n '94p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Division=$(sed -n '95p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Square=$(sed -n '96p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Percent=$(sed -n '97p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Root=$(sed -n '98p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Dut=$(sed -n '99p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Comma=$(sed -n '100p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_TAKE_PICTURE=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_TAKE_VIDEO=$(sed -n '102p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_OPEN_FILE=$(sed -n '103p' /usr/bin/voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_OFFICE=$(sed -n '104p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Writer=$(sed -n '105p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Calc=$(sed -n '106p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Impress=$(sed -n '107p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Draw=$(sed -n '108p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Math=$(sed -n '109p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+# CMD_RETRY ' It is in /usr/bin/voice_commands/play_stop.sh, and is refer to line 110 '
 
 
 
@@ -1742,8 +1751,8 @@ recog=$(echo "$UTTERANCE" | grep "$CMD_CALCULATOR" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
-	numb_smimb=$(echo "$UTTERANCE" | sed 's/'"$CMD_CALCULATOR"' //g;s/'"$CMD_CALCULATOR"'//g;s/subtracts/−/g;s/less/−/g;s/multiplied by/×/g;s/divided/÷/g;s/divided/÷/g;s/about/÷/g;s/percent/%/g;s/percentage/%/g;s/per/×/g;s/squared/²/g;s/square/²/g;s/square root of/√/g;s/square root/√/g;s/root/√/g;s/point/,/g;s/comma/,/g;s/ //g')
-lines=$(echo "xdotool type "$numb_smimb"" | sed 's/more/ && xdotool key 0x002b && xdotool type /g;s/mas/ && xdotool key 0x002b && xdotool type /g;s/sum/ && xdotool key 0x002b && xdotool type /g' )
+	numb_smimb=$(echo "$UTTERANCE" | sed 's/'"$CMD_CALCULATOR"' //g;s/'"$CMD_CALCULATOR"'//g;s/'"$Rest"'/−/g;s/'"$Division"'/÷/g;s/'"$Square"'/²/g;s/'"$Percent"'/%/g;s/'"$Multipli"'/×/g;s/'"$Root"'/√/g;s/'"$Dut"'/./g;s/'"$Comma"'/,/g;s/ //g')
+lines=$(echo "xdotool type "$numb_smimb"" | sed 's/'"$Sum"'/ && xdotool key 0x002b && xdotool type /g' )
 echo "#/bin/bash
 $lines" > /tmp/script_calc.temp
 chmod +x /tmp/script_calc.temp

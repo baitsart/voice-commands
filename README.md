@@ -1,6 +1,6 @@
 # Voice commands (command your PC with spoken commands) #
 
-You can modify the commands below to better use in the file: ~/.voice_commands/"v-c LANGS"/commands-en
+You can modify the commands below to better use in the file: /usr/bin/voice_commands/"v-c LANGS"/commands-en
 
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
 Also can repeat the last command with RETRY function
@@ -9,6 +9,9 @@ Available commands are 95
 
 After installed we can launch it from Applications, Universal Access, Voice Commands
 And you can drag and drop on the gnome panel, and to call it a keyboard shortcut, eg. F6, this is the command:
+# Changing $USER, to your user name: /home/$USER/.voice_commands/play_stop.sh
+First install the command line file, typing this:
+sudo cp ~/.voice_commands/v-c /usr/bin && sudo cp ~/.voice_commands/v-c /usr/bin/voice-commands
 # Changing $USER, to your user name: /home/$USER/.voice_commands/play_stop.sh
 First install the command line file, typing this:
 sudo cp ~/.voice_commands/v-c /usr/bin && sudo cp ~/.voice_commands/v-c /usr/bin/voice-commands 
@@ -23,7 +26,7 @@ voice-commands
 
 v-c -r		Run
 
-v-c -l -lang	To select another, of 67 languages for recognition.
+v-c -l -lang	To select another, of 67 languages for recognition. (Available on commands: « -run, -try, -modify, -update, -h »)
 
 v-c -t -try	To try any command, of default lang, or, a [-lang].
 
@@ -127,7 +130,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    WRITE_CAPITAL
    (capitalize | write capital | type capital)
 ################################
-   WRITE_CAPITAL_ALL << cited-text >>
+   WRITE_CAPITAL_ALL
    (write all uppercase | write everything capital | write everything capitalized)
 ################################
    SAY_THIS << cited-text >>
@@ -342,6 +345,15 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
 ################################
    CALCULATOR << cited-operation >>
    (calculated | calculate | the counting | making operation | make the calculation | calculator)
+Sum (more | and | suming | sum)
+Rest (subtracts | less | resting | rest)
+Multiplication (per | multiplied by | multiplied | by | multiplication | multiplying it)
+Divition (divided in | divided | dividing in | about | divition)
+Square (squared | square | at square | squared of | square of)
+Percent (percent | percentage | percent of | percentage of)
+Root (squared | square | square root of | square root | root)
+Dup (point | dup)
+Comma (comma)
 ################################
    TAKE_PICTURE
    (photo | take a picture)
