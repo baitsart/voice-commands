@@ -91,7 +91,7 @@ if echo "$1" | grep -x -q -- "-r\|-run"; then
 exit
 fi
 if echo "$1" | grep -x -q -- "-t\|-try"; then
-commands=$(echo "$@" | sed 's/-try //g;s/-t /g;s/  / /g;s/-lang '"$language"'//g;s/-l '"$language"'//g;s/-lang='"$language"'//g;s/-l='"$language"'//g' | sed 's/^[ ]*//')
+commands=$(echo "$@" | sed 's/-try //g;s/-t //g;s/  / /g;s/-lang '"$language"'//g;s/-l '"$language"'//g;s/-lang='"$language"'//g;s/-l='"$language"'//g' | sed 's/^[ ]*//')
 CMD_RETRY=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2)
 if echo "$commands" | grep -q "$CMD_RETRY" ; then
 [[ -f /tmp/speech_recognition_prev.tmp ]] || notify-send "No previous command" "Execute it again, please"

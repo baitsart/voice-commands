@@ -351,7 +351,7 @@ Divition (divided in | divided | dividing in | about | divition)
 Square (squared | square | at square | squared of | square of)
 Percent (percent | percentage | percent of | percentage of)
 Root (squared | square | square root of | square root | root)
-Dup (point | dup)
+Dot (point | dot)
 Comma (comma)
 ################################
    TAKE_PICTURE

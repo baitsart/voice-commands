@@ -109,7 +109,7 @@ Division=$(sed -n '95p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d 
 Square=$(sed -n '96p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 Percent=$(sed -n '97p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 Root=$(sed -n '98p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Dut=$(sed -n '99p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Dot=$(sed -n '99p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 Comma=$(sed -n '100p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_TAKE_PICTURE=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_TAKE_VIDEO=$(sed -n '102p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
@@ -1751,7 +1751,7 @@ recog=$(echo "$UTTERANCE" | grep "$CMD_CALCULATOR" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
-	numb_smimb=$(echo "$UTTERANCE" | sed 's/'"$CMD_CALCULATOR"' //g;s/'"$CMD_CALCULATOR"'//g;s/'"$Rest"'/−/g;s/'"$Division"'/÷/g;s/'"$Square"'/²/g;s/'"$Percent"'/%/g;s/'"$Multipli"'/×/g;s/'"$Root"'/√/g;s/'"$Dut"'/./g;s/'"$Comma"'/,/g;s/ //g')
+	numb_smimb=$(echo "$UTTERANCE" | sed 's/'"$CMD_CALCULATOR"' //g;s/'"$CMD_CALCULATOR"'//g;s/'"$Rest"'/−/g;s/'"$Division"'/÷/g;s/'"$Square"'/²/g;s/'"$Percent"'/%/g;s/'"$Multipli"'/×/g;s/'"$Root"'/√/g;s/'"$Dot"'/./g;s/'"$Comma"'/,/g;s/ //g')
 lines=$(echo "xdotool type "$numb_smimb"" | sed 's/'"$Sum"'/ && xdotool key 0x002b && xdotool type /g' )
 echo "#/bin/bash
 $lines" > /tmp/script_calc.temp
