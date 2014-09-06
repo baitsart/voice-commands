@@ -100,6 +100,7 @@ Dot=punto\|tuldok
 Comma=comma
 CMD_TAKE_PICTURE=kumuha ng larawan\|cheese\|mga pagsisimula keso\|larawan\|kumuha ng larawan
 CMD_TAKE_VIDEO=talaan\|mag-record ng isang video\|talaan\|talaan ng video\|talaan ng video
+CMD_ADD_NEW_ACTION=magdagdag ng mga bagong utos\|lumikha ng mga bagong utos\|ginawa bagong utos\|magdagdag ng isang bagong utos\|lumikha ng isang bagong utos\|ginawa bagong isang command\|bagong utos\|bagong order\|bagong aksyon
 CMD_OPEN_FILE=buksan ang file\|bukas\|mabuksan ang file\|magbukas ng bagong file
 CMD_OFFICE=ay lumikha ng isang bagong dokumento\|buksan ang isang bagong dokumento\|ay lumikha ng isang bagong dokumento\|buksan ang isang bagong dokumento\|bagong dokumento\|bukas bagong dokumento\|magbukas ng bagong dokumento\|buksan ang bagong dokumento ng\|magbukas ng bagong dokumento ng\|lumikha ng bagong dokumento\|lumikha ng bagong dokumento\|lumikha ng bagong dokumento ng\|lumikha ng bagong dokumento ng\|bagong dokumento ng\|bagong dokumento opisina ng\|lumikha ng mga bagong\|lumikha ng isang bagong\|bukas bagong\|magbukas ng bagong
 Writer=teksto

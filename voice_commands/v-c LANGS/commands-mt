@@ -100,6 +100,7 @@ Dot=punt\|dot
 Comma=comma
 CMD_TAKE_PICTURE=jieħu stampa\|cheese\|jibda ġobon\|photo\|jieħu stampa
 CMD_TAKE_VIDEO=record\|reġistrazzjoni video\|record\|video rekord\|jirreġistra video
+CMD_ADD_NEW_ACTION=żid ġdida ta  kmand\|joħolqu ġdida ta  kmand\|magħmula ġdida ta  kmand\|żid ġdida ta  kmand\|joħolqu ġdida ta  kmand\|għamel ġdida kmand\|ġdida ta  kmand\|ordni ġdida\|azzjoni ġdida
 CMD_OPEN_FILE=tiftaħ il-fajl\|miftuħa\|fajl miftuħ\|tiftaħ fajl ġdid
 CMD_OFFICE=toħloq dokument ġdid\|iftaħ dokument ġdid\|toħloq dokument ġdid\|iftaħ dokument ġdid\|dokument il-ġdid\|dokument ġdid miftuħ\|tiftaħ dokument ġdid\|tiftaħ dokument ġdid ta  \|tiftaħ dokument ġdid ta  \|toħloq dokument ġdid\|toħloq dokument ġdid\|toħloq dokument ġdid ta  \|toħloq dokument ġdid ta  \|dokument ġdid ta  \|dokument uffiċċju l-ġdid ta  \|joħolqu ġodda\|tinħoloq entità ġdida\|ġodda miftuħa\|tiftaħ ġdida
 Writer=test

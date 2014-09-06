@@ -100,6 +100,7 @@ Dot=punct\|punct
 Comma=comma
 CMD_TAKE_PICTURE=să ia o imagine\|cheese\|începe brânză\|fotografie\|să ia o imagine
 CMD_TAKE_VIDEO=record\|înregistrarea unui videoclip\|record\|înregistra video\|a înregistra un clip video
+CMD_ADD_NEW_ACTION=adăuga noi comenzi\|crearea de noi comenzi\|a făcut nouă comandă\|adăuga o nouă comandă\|crea o nouă comandă\|a făcut o nouă comandă\|noua comandă\|pentru noi\|acțiune nouă
 CMD_OPEN_FILE=deschide fișierul\|deschis\|fișier deschis\|deschide un nou fișier
 CMD_OFFICE=creează un nou document\|deschideți un document nou\|creează un nou document\|deschideți un document nou\|document nou\|document nou deschis\|deschide un document nou\|deschide document nou de\|deschide un nou document de\|crea document nou\|a crea un document nou\|crearea de noi documente de\|a crea un nou document de\|nou document de\|document nou birou de\|crearea de noi\|a crea un nou\|nou deschis\|deschide un nou
 Writer=text

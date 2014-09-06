@@ -100,6 +100,7 @@ Dot=kohta\|dot
 Comma=comma
 CMD_TAKE_PICTURE=ota kuva\|cheese\|juusto alkaa\|kuva\|ota kuva
 CMD_TAKE_VIDEO=ennätys\|videon kuvaamista\|ennätys\|tallentaa videokuvaa\|nauhoittaavideo
+CMD_ADD_NEW_ACTION=lisää uusi komento\|luoda uutta käskyä\|loi uutta käskyä\|lisääuusi komento\|luoda uuden komennon\|tehty uusikomento\|uusi komento\|uusi järjestys\|uusi toimi
 CMD_OPEN_FILE=avaatiedosto\|avoin\|avoin file\|avaauusi tiedosto
 CMD_OFFICE=luouuden asiakirjan\|avaauusi asiakirja\|luouuden asiakirjan\|avaauusi asiakirja\|uusi asiakirja\|avata uusia asiakirja\|avaauuden asiakirjan\|avata uusia asiakirja\|avaa uuden asiakirjan\|luoda uuden asiakirjan\|luo uusi asiakirja\|luoda uusia asiakirja\|luoda uuden asiakirjan\|uusi asiakirja\|uusi toimisto asiakirja\|luoda uusia\|luoda uuden\|avaa uusia\|avaa uuden
 Writer=teksti

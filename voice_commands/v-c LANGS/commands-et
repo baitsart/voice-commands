@@ -100,6 +100,7 @@ Dot=punkti\|dot
 Comma=comma
 CMD_TAKE_PICTURE=pildistamiseks\|cheese\|juust algab\|foto\|pildistamiseks
 CMD_TAKE_VIDEO=rekord\|video salvestamist\|rekord\|videolõike\|salvestadavideo
+CMD_ADD_NEW_ACTION=lisada uut käsku\|luua uus käsk\|tehtud uus käsk\|lisadauut käsku\|uue käsu\|tehtud uuskäsk\|uus käsk\|uus kord\|uus tegevus
 CMD_OPEN_FILE=avage fail\|avatud\|faili avamine\|avada uus fail
 CMD_OFFICE=loob uue dokumendi\|avage uus dokument\|loob uue dokumendi\|avage uus dokument\|uus dokument\|avatud uus dokument\|avage uus dokument\|avada uus dokument\|avage uus dokument\|luua uus dokument\|uue dokumendi loomiseks\|luua uus dokument\|uue dokumendi\|uus dokument\|uus kontor dokumendi\|luua uusi\|uue\|avatud uus\|avatud uus
 Writer=tekst

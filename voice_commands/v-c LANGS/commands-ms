@@ -100,6 +100,7 @@ Dot=titik\|dot
 Comma=comma
 CMD_TAKE_PICTURE=mengambil gambar\|cheese\|keju bermula\|gambar\|mengambil gambar
 CMD_TAKE_VIDEO=rekod\|merakam video\|rekod\|rekod video\|merakam video
+CMD_ADD_NEW_ACTION=menambah perintah baru\|membuat arahan baru\|perintah baru dibuat\|menambah arahan baru\|mewujudkan satu arahan baru\|dibuat baru perintah\|arahan baru\|perintah baru\|tindakan baru
 CMD_OPEN_FILE=membuka fail tersebut\|terbuka\|fail terbuka\|membuka fail baru
 CMD_OFFICE=mencipta dokumen baru\|buka dokumen baru\|mencipta dokumen baru\|buka dokumen baru\|dokumen baru\|dokumen baru terbuka\|membuka dokumen baru\|membuka dokumen baru\|membuka dokumen baru\|mencipta dokumen baru\|membuat dokumen baru\|membuat dokumen baru\|membuat dokumen baru\|dokumen baru\|dokumen pejabat baru\|mewujudkan baru\|mewujudkan baru\|baru terbuka\|membuka baru
 Writer=teks

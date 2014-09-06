@@ -100,6 +100,7 @@ Dot=točka\|dot
 Comma=comma
 CMD_TAKE_PICTURE=slikaj\|cheese\|začne sir\|fotografija\|slikaj
 CMD_TAKE_VIDEO=zapis\|snemanju videa\|zapis\|snemanje video\|snemanje videa
+CMD_ADD_NEW_ACTION=dodaj nov ukaz\|ustvariti nov ukaz\|je nov ukaz\|dodajanje novega ukaza\|ustvariti nov ukaz\|je novukaz\|nov ukaz\|nov red\|novi ukrepi
 CMD_OPEN_FILE=odprite datoteko\|open\|odprte datoteke\|odpreti novo datoteko
 CMD_OFFICE=ustvari nov dokument\|odprite nov dokument\|ustvari nov dokument\|odprite nov dokument\|novi dokument\|odprt nov dokument\|odprete nov dokument\|odprite nov dokument\|odprite nov dokument\|ustvariti nov dokument\|ustvariti nov dokument\|ustvariti nov dokument\|ustvariti nov dokument\|novi dokument\|novi pisarniški dokument\|ustvariti novo\|ustvaritinovo\|odprta nova\|odpretinovo
 Writer=besedilo

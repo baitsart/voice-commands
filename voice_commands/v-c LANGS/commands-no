@@ -100,6 +100,7 @@ Dot=punkt\|dot
 Comma=comma
 CMD_TAKE_PICTURE=ta et bilde\|cheese\|oste starter\|bilde\|ta et bilde
 CMD_TAKE_VIDEO=rekord\|spiller inn en video\|rekord\|ta opp video\|spille inn en video
+CMD_ADD_NEW_ACTION=legge ny kommando\|skape ny kommando\|laget ny kommando\|legge til en ny kommando\|opprette en ny kommando\|laget ny en kommando\|ny kommando\|ny ordre\|ny handling
 CMD_OPEN_FILE=åpne filen\|åpent\|åpen fil\|åpne en ny fil
 CMD_OFFICE=oppretter et nytt dokument\|Åpne et nytt dokument\|oppretter et nytt dokument\|Åpne et nytt dokument\|nytt dokument\|åpne nytt dokument\|åpne et nytt dokument\|åpner nytt dokument av\|åpne et nytt dokument av\|opprette nytt dokument\|opprette et nytt dokument\|opprette nytt dokument av\|opprette et nytt dokument av\|nytt dokument av\|ny office-dokument av\|skape ny\|opprette en ny\|åpne nye\|åpne en ny
 Writer=tekst

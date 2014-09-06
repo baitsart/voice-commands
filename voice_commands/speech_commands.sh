@@ -113,14 +113,15 @@ Dot=$(sed -n '99p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -
 Comma=$(sed -n '100p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_TAKE_PICTURE=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
 CMD_TAKE_VIDEO=$(sed -n '102p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-CMD_OPEN_FILE=$(sed -n '103p' /usr/bin/voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-CMD_OFFICE=$(sed -n '104p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Writer=$(sed -n '105p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Calc=$(sed -n '106p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Impress=$(sed -n '107p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Draw=$(sed -n '108p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-Math=$(sed -n '109p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
-# CMD_RETRY ' It is in /usr/bin/voice_commands/play_stop.sh, and is refer to line 110 '
+CMD_ADD_NEW_ACTION=$(sed -n '103p' /usr/bin/voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_OPEN_FILE=$(sed -n '104p' /usr/bin/voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+CMD_OFFICE=$(sed -n '105p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Writer=$(sed -n '106p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Calc=$(sed -n '107p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Impress=$(sed -n '108p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Draw=$(sed -n '109p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+Math=$(sed -n '110p' ~/.voice_commands/"v-c LANGS"/commands-"$lang" | cut -d "=" -f 2)
+# CMD_RETRY ' It is in /usr/bin/voice_commands/play_stop.sh, and is refer to line 111 '
 
 
 
@@ -452,7 +453,8 @@ recog=$(echo "$UTTERANCE" | awk '{print $1, $2}' | grep -x "$CMD_SAY_THIS" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
-	the_text_encoded=$(echo "$UTTERANCE" | sed 's/'"$CMD_SAY_THIS"' //g;s/'"$CMD_SAY_THIS"'//')
+	the_text_encoded1=$(echo "$UTTERANCE" | sed 's/'"$CMD_SAY_THIS"' //g;s/'"$CMD_SAY_THIS"'//')
+the_text_encoded=$(curl -s -A "Mozilla/5.0" "http://translate.google.com/translate_a/t?client=t&text=$(python -c "import urllib; print urllib.quote('''$the_text_encoded1''')")&hl=en&sl=ese&tl="$lang"&ie=UTF-9&oe=UTF-9&multires=1&prev=btn&ssel=0&tsel=0&sc=1" | sed 's/\[\[\["\([^"]*\).*/\1/'| sed 's/  / /g' | sed 's/'"'"'/ /g'| tail -n 1 | tr '[:upper:]' '[:lower:]' )
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/say_this.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/say_this.mp3
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
@@ -549,7 +551,8 @@ recog=$(echo "$UTTERANCE" | awk '{print $1, $2}' | grep "$CMD_SAY_HI" )
 	then
 	notify-send "Command:"  "$recog"
 	name=$(echo "$UTTERANCE" | sed 's/'"$CMD_SAY_HI"' //g;s/'"$CMD_SAY_HI"'//')
-	the_text_encoded=$(echo "Hello "$name" Have a nice day!")
+	the_text_encoded1=$(echo "Hello "$name" Have a nice day!")
+the_text_encoded=$(curl -s -A "Mozilla/5.0" "http://translate.google.com/translate_a/t?client=t&text=$(python -c "import urllib; print urllib.quote('''$the_text_encoded1''')")&hl=en&sl=ese&tl="$lang"&ie=UTF-9&oe=UTF-9&multires=1&prev=btn&ssel=0&tsel=0&sc=1" | sed 's/\[\[\["\([^"]*\).*/\1/'| sed 's/  / /g' | sed 's/'"'"'/ /g'| tail -n 1 | tr '[:upper:]' '[:lower:]' )
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/say_hi_to.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/say_hi_to.mp3
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
@@ -563,7 +566,8 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_HELLO" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
-	the_text_encoded=$(echo "Hello `whoami`, Have a nice day!")
+	the_text_encoded1=$(echo "Hello `whoami`, Have a nice day!")
+the_text_encoded=$(curl -s -A "Mozilla/5.0" "http://translate.google.com/translate_a/t?client=t&text=$(python -c "import urllib; print urllib.quote('''$the_text_encoded1''')")&hl=en&sl=ese&tl="$lang"&ie=UTF-9&oe=UTF-9&multires=1&prev=btn&ssel=0&tsel=0&sc=1" | sed 's/\[\[\["\([^"]*\).*/\1/'| sed 's/  / /g' | sed 's/'"'"'/ /g'| tail -n 1 | tr '[:upper:]' '[:lower:]' )
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/user-is-it.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/user-is-it.mp3 
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
@@ -577,7 +581,8 @@ recog=$(echo "$UTTERANCE" | grep -x "$CMD_WHOAMI" )
 	if [ "$recog" != "" ]
 	then
 	notify-send "Command:"  "$recog"
-	the_text_encoded=$(echo "Your name of user is `whoami`")
+	the_text_encoded1=$(echo "Your name of user is `whoami`")
+the_text_encoded=$(curl -s -A "Mozilla/5.0" "http://translate.google.com/translate_a/t?client=t&text=$(python -c "import urllib; print urllib.quote('''$the_text_encoded1''')")&hl=en&sl=ese&tl="$lang"&ie=UTF-9&oe=UTF-9&multires=1&prev=btn&ssel=0&tsel=0&sc=1" | sed 's/\[\[\["\([^"]*\).*/\1/'| sed 's/  / /g' | sed 's/'"'"'/ /g'| tail -n 1 | tr '[:upper:]' '[:lower:]' )
 wget -A.mp3 -U "\"Mozillla\"" -O "/tmp/user-is-it.mp3" "http://translate.google.com/translate_tts?tl="$lang"&q=$(python -c "import urllib; print urllib.quote('''$the_text_encoded''')")&ie=UTF-8"
 audacious /tmp/user-is-it.mp3 
 mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
@@ -1422,7 +1427,7 @@ fi
 recog=$(echo "$UTTERANCE" | grep -x "$CMD_TAKE_VIDEO" )
 	if [ "$recog" != "" ]
 	then
-	notify-send "Comando:"  "$recog"
+	notify-send "Command:"  "$recog"
 	cheese & sleep 2s
 	xdotool key "Tab"
 	xdotool key "Tab"
@@ -1780,10 +1785,23 @@ fi
 ###################################################################
 
 
+recog=$(echo "$UTTERANCE" | grep -x "$CMD_ADD_NEW_ACTION" )
+	if [ "$recog" != "" ]
+	then
+	notify-send "Command:"  "$recog"
+	sh ~/.voice_commands/Scripts/add_new.sh
+	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
+exit 0;
+fi
+
+
+###################################################################
+
+
 recog=$(echo "$UTTERANCE" | grep -x "$CMD_OPEN_FILE" )
 	if [ "$recog" != "" ]
 	then
-	notify-send "Comando:"  "$recog"
+	notify-send "Command:"  "$recog"
 	xdotool key "Ctrl+o"
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp
 exit 0;

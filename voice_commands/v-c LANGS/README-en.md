@@ -1,6 +1,6 @@
 # Voice commands (command your PC with spoken commands) #
 
-You can modify the commands below to better use in the file: /usr/bin/voice_commands/"v-c LANGS"/commands-en
+You can modify the commands below to better use in the file: ~/.voice_commands/"v-c LANGS"/commands-en
 
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
 Also can repeat the last command with RETRY function
@@ -25,12 +25,18 @@ voice-commands
 #	##	v-c , command line options	##	#
 
 v-c -r		Run
-v-c -l -lang	To select another, of 67 languages for recognition. (Available on commands: « -run, -try, -modify, -update, -h »)
-v-c -t -try	To try any command, of default lang, or, a [-lang].
-v-c -mic [NUM]	Set port, to default [1,2,3...]. And, if [input-"1,2,3..."].
-v-c -vol	Set the microphone volume that is used by default. Level (<= 200).
+v-c -l -lang	To select another, of 67 languages, on the commands:
+		 ( « -run », « -try », « -modify », « -update » and « -h » ).
+v-c -t -try	To try any command. « v-c -try "order call method" »
+v-c -mic [NUM]	Set the port, to use by default [1,2,3...]. And, if [input-"1,2,3..."].
+v-c -vol	Set the microphone volume that is used by default. Level max. 200.
 v-c -m -mod	To modify the commands file, and the README file.
 v-c -u -update	To update the README file, after modify the script.
+v-c -a -add	To add, create, a new voice command action « v-c -add »,
+		 or « v-c -add "action name" »,
+		 or « v-c -add "action name=one call method;another call method"
+		Separating between NAME and ORDER with =. And between ORDERS, with ;
+v-c -v		Print the program version.
 v-c -h		Show instructions README file.
 v-c --help	Show this message
 
@@ -337,14 +343,14 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
 ################################
    CALCULATOR << cited-operation >>
    (calculated | calculate | the counting | making operation | make the calculation | calculator)
-Sum (more | and | suming | sum)
+Sum (more | and | summing | sum)
 Rest (subtracts | less | resting | rest)
 Multiplication (per | multiplied by | multiplied | by | multiplication | multiplying it)
-Divition (divided in | divided | dividing in | about | divition)
+Division (divided in | divided | dividing in | about | division)
 Square (squared | square | at square | squared of | square of)
 Percent (percent | percentage | percent of | percentage of)
-Root (squared | square | square root of | square root | root)
-Dup (point | dup)
+Root (square root of | square root | root)
+Dot (point | dot)
 Comma (comma)
 ################################
    TAKE_PICTURE
@@ -352,6 +358,9 @@ Comma (comma)
 ################################
    TAKE_VIDEO
    (record | record video | record a video)
+################################
+   ADD_NEW_ACTION
+   (add new command | create new command | made new command | add a new command | create a new command | made new a command | new command | new order | new action)
 ################################
    OPEN_FILE
    (open file | open a new file)

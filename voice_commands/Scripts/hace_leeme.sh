@@ -2,7 +2,7 @@
 TO="$1"
 echo "# Comandos de Voz (comanda tu PC con órdenes habladas)  #
 
-Puede modificar los comandos de abajo para un mejor uso, en el archivo: /usr/bin/voice_commands/"'"'"v-c LANGS"'"'"/commands-"$TO"
+Puede modificar los comandos de abajo para un mejor uso, en el archivo: ~/.voice_commands/"'"'"v-c LANGS"'"'"/commands-"$TO"
 
 La función de éste programa se inicia ejecutando el script play_stop.sh, el cual comenzará a grabar su voz, y si transcurren cinco segundos, o si lo vuelves a ejecutar, iniciará el reconocimiento de voz, para ya, realizar uno de todos los comandos disponibles.
 Las órdenes pueden ser simples de un sólo contexto: << orden >>, o de doble contexto: << orden >> << texto-citado >>
@@ -24,12 +24,18 @@ voice-commands
 #	##	v-c , command line options	##	#
 
 v-c -r		Correr
-v-c -l -lang	Para seleccionar otro, de 67 idiomas de reconocimiento. (Viable en: « -run, -try, -modify, -update, -h »)
-v-c -t -try	Para probar cualquier comando, de manera predeterminada lang, o un [-lang].
-v-c -mic [NUM]	Configure el puerto, por defecto [1,2,3...]. Y, si es [input-"'"'"1,2,3..."'"'"].
+v-c -l -lang	Para seleccionar otro, de 67 idiomas, en los comandos:
+		 ( « -run », « -try », « -modify », « -update » and « -h » ).
+v-c -t -try	Para tratar cualquier comando. « v-c -try "'"'"para las llamadas a métodos"'"'" »
+v-c -mic [NUM]	ajuste el puerto, utilizar de forma predeterminada [1,2,3...]. y, si [input-"'"'"1,2,3..."'"'"].
 v-c -vol	Establecer el volumen del micrófono que se usa por defecto. Nivel (<= 200).
 v-c -m -mod	Para modificar el archivo de comandos y el archivo LÉEME.
 v-c -u -update	Para actualizar el archivo LÉEME, luego de modificar el archivo de comandos.
+v-c -a -add	Para agregar, Crear, Una nueva acción de comando de voz « v-c -add »,
+		 or « v-c -add "'"'"nombre de la acción"'"'" »,
+		 or « v-c -add "'"'"nombre de la acción=método de una llamada;otro método de llamada"'"'"
+		La separación entre los NAME y ORDER Con =. Y entre ORDERS, Con ;
+v-c -v		Imprimir la versión del programa .
 v-c -h		Ver instrucciones del documento LÉEME.
 v-c --help	Mostrar este mensaje
 
@@ -70,7 +76,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
 " >> '/tmp/LEEME_TEMP'
 echo "# Voice commands (command your PC with spoken commands) #
 
-You can modify the commands below to better use in the file: /usr/bin/voice_commands/"'"'"v-c LANGS"'"'"/commands-"$TO"
+You can modify the commands below to better use in the file: ~/.voice_commands/"'"'"v-c LANGS"'"'"/commands-"$TO"
 
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
 Also can repeat the last command with RETRY function
@@ -95,12 +101,18 @@ voice-commands
 #	##	v-c , command line options	##	#
 
 v-c -r		Run
-v-c -l -lang	To select another, of 67 languages for recognition. (Available on commands: « -run, -try, -modify, -update, -h »)
-v-c -t -try	To try any command, of default lang, or, a [-lang].
-v-c -mic [NUM]	Set port, to default [1,2,3...]. And, if [input-"'"'"1,2,3..."'"'"].
-v-c -vol	Set the microphone volume that is used by default. Level (<= 200).
+v-c -l -lang	To select another, of 67 languages, on the commands:
+		 ( « -run », « -try », « -modify », « -update » and « -h » ).
+v-c -t -try	To try any command. « v-c -try "'"'"order call method"'"'" »
+v-c -mic [NUM]	Set the port, to use by default [1,2,3...]. And, if [input-"'"'"1,2,3..."'"'"].
+v-c -vol	Set the microphone volume that is used by default. Level max. 200.
 v-c -m -mod	To modify the commands file, and the README file.
 v-c -u -update	To update the README file, after modify the script.
+v-c -a -add	To add, create, a new voice command action « v-c -add »,
+		 or « v-c -add "'"'"action name"'"'" »,
+		 or « v-c -add "'"'"action name=one call method;another call method"'"'"
+		Separating between NAME and ORDER with =. And between ORDERS, with ;
+v-c -v		Print the program version.
 v-c -h		Show instructions README file.
 v-c --help	Show this message
 
@@ -137,7 +149,7 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
    Command name
    *activate with*
 " >> '/tmp/README_TEMP'
-lines_to_paste=$(cat  "/usr/bin/voice_commands/v-c LANGS/commands-$TO" | tr '\n' ';' | sed 's/SELECT_FILE/SELECT_FILE << texto-citado >>/g;s/MUSIC_START_SONG/MUSIC_START_SONG << texto-citado >>/g;s/SEARCH;/SEARCH << texto-citado >>;/g;s/TRANSLATE/TRANSLATE \[from\] \[to\] << texto-citado >>/g;s/WRITE;/WRITE << texto-citado >>;/g;s/WRITE_CAPITAL;/WRITE_CAPITAL << texto-citado >>;/g;s/WRITE_CAPITAL_ALL;/WRITE_CAPITAL_ALL << texto-citado >>;/g;s/SAY_THIS/SAY_THIS << texto-citado >>/g;s/GOOGLE_SEARCH/GOOGLE_SEARCH << texto-citado >>/g;s/YOUTUBE_SEARCH/YOUTUBE_SEARCH << texto-citado >>/g;s/WIKI_SEARCH/WIKI_SEARCH << texto-citado >>/g;s/WEATHER/WEATHER << texto-citado >>/g;s/SEARCH_MAPS/SEARCH_MAPS << texto-citado >>/g;s/SAY_HI/SAY_HI << texto-citado >>/g;s/;CMD_OPEN_FOLDER_OF=/\\|/g;s/OPEN_FOLDER/OPEN_FOLDER << texto-citado >>/g;s/DICTATION/DICTATION << texto-citado-continuo >>/g;s/CHANGE_TAB/CHANGE_TAB << números-citados >>/g;s/ALARM/ALARM << números-citados \[days\] \[hours\] \[minutes\] \[seconds\] to sleep >>/g;s/CALCULATOR/CALCULATOR << operación-citada >>/g;s/OFFICE/OFFICE << texto-citado \[ writer, calc, impress, draw, math \] >>/g;s/CMD_/);################################;   /g;s/=/;   (/g;s/;)/)/g;s/;Writer;  /);Writer/g;s/;Calc;  /);Calc/g;s/;Impress;  /);Impress/g;s/;Draw;  /);Draw/g;s/;Math;  /);Math/g;s/\\|/ | /g;s/;Sum;  /);Sum/g;s/;Rest;  /);Rest/g;s/;Multiplication;  /);Multiplication/g;s/;Division;  /);Division/g;s/;Square;  /);Square/g;s/;Percent;  /);Percent/g;s/;Root;  /);Root/g;s/;Dot;  /);Dot/g;s/;Comma;  /);Comma/g' | tr ';' '\n' | sed '1d' )
+lines_to_paste=$(cat  "$HOME/.voice_commands/v-c LANGS/commands-$TO" | tr '\n' ';' | sed 's/SELECT_FILE/SELECT_FILE << texto-citado >>/g;s/MUSIC_START_SONG/MUSIC_START_SONG << texto-citado >>/g;s/SEARCH;/SEARCH << texto-citado >>;/g;s/TRANSLATE/TRANSLATE \[from\] \[to\] << texto-citado >>/g;s/WRITE;/WRITE << texto-citado >>;/g;s/WRITE_CAPITAL;/WRITE_CAPITAL << texto-citado >>;/g;s/WRITE_CAPITAL_ALL;/WRITE_CAPITAL_ALL << texto-citado >>;/g;s/SAY_THIS/SAY_THIS << texto-citado >>/g;s/GOOGLE_SEARCH/GOOGLE_SEARCH << texto-citado >>/g;s/YOUTUBE_SEARCH/YOUTUBE_SEARCH << texto-citado >>/g;s/WIKI_SEARCH/WIKI_SEARCH << texto-citado >>/g;s/WEATHER/WEATHER << texto-citado >>/g;s/SEARCH_MAPS/SEARCH_MAPS << texto-citado >>/g;s/SAY_HI/SAY_HI << texto-citado >>/g;s/;CMD_OPEN_FOLDER_OF=/\\|/g;s/OPEN_FOLDER/OPEN_FOLDER << texto-citado >>/g;s/DICTATION/DICTATION << texto-citado-continuo >>/g;s/CHANGE_TAB/CHANGE_TAB << números-citados >>/g;s/ALARM/ALARM << números-citados \[days\] \[hours\] \[minutes\] \[seconds\] to sleep >>/g;s/CALCULATOR/CALCULATOR << operación-citada >>/g;s/OFFICE/OFFICE << texto-citado \[ writer, calc, impress, draw, math \] >>/g;s/CMD_/);################################;   /g;s/=/;   (/g;s/;)/)/g;s/;Writer;  /);Writer/g;s/;Calc;  /);Calc/g;s/;Impress;  /);Impress/g;s/;Draw;  /);Draw/g;s/;Math;  /);Math/g;s/\\|/ | /g;s/;Sum;  /);Sum/g;s/;Rest;  /);Rest/g;s/;Multiplication;  /);Multiplication/g;s/;Division;  /);Division/g;s/;Square;  /);Square/g;s/;Percent;  /);Percent/g;s/;Root;  /);Root/g;s/;Dot;  /);Dot/g;s/;Comma;  /);Comma/g' | tr ';' '\n' | sed '1d' )
 
 echo "`echo "$lines_to_paste"`)
 ################################
@@ -164,7 +176,7 @@ http://gnome-look.org/content/show.php?content=165529
 # Licencia GNU. Eres libre de modificar y redistribuir #
 
 " >> '/tmp/LEEME_TEMP'
-lines_to_paste_en=$(cat  "/usr/bin/voice_commands/v-c LANGS/commands-$TO" | tr '\n' ';' | sed 's/SELECT_FILE/SELECT_FILE << cited-text >>/g;s/MUSIC_START_SONG/MUSIC_START_SONG << cited-text >>/g;s/SEARCH;/SEARCH << cited-text >>;/g;s/TRANSLATE/TRANSLATE \[from\] \[to\] << cited-text >>/g;s/WRITE;/WRITE << cited-text >>;/g;s/WRITE_CAPITAL;/WRITE_CAPITAL << cited-text >>;/g;s/WRITE_CAPITAL_ALL;/WRITE_CAPITAL_ALL << cited-text >>;/g;s/SAY_THIS/SAY_THIS << cited-text >>/g;s/GOOGLE_SEARCH/GOOGLE_SEARCH << cited-text >>/g;s/YOUTUBE_SEARCH/YOUTUBE_SEARCH << cited-text >>/g;s/WIKI_SEARCH/WIKI_SEARCH << cited-text >>/g;s/WEATHER/WEATHER << cited-text >>/g;s/SEARCH_MAPS/SEARCH_MAPS << cited-text >>/g;s/SAY_HI/SAY_HI << cited-text >>/g;s/;CMD_OPEN_FOLDER_OF=/\\|/g;s/OPEN_FOLDER/OPEN_FOLDER << cited-text >>/g;s/DICTATION/DICTATION << cited-text-continuo >>/g;s/CHANGE_TAB/CHANGE_TAB << cited-numbers >>/g;s/ALARM/ALARM << cited-numbers \[days\] \[hours\] \[minutes\] \[seconds\] to sleep >>/g;s/CALCULATOR/CALCULATOR << cited-operation >>/g;s/OFFICE/OFFICE << cited-text \[ writer, calc, impress, draw, math \] >>/g;s/CMD_/);################################;   /g;s/=/;   (/g;s/;)/)/g;s/;Writer;  /);Writer/g;s/;Calc;  /);Calc/g;s/;Impress;  /);Impress/g;s/;Draw;  /);Draw/g;s/;Math;  /);Math/g;s/\\|/ | /g;s/;Sum;  /);Sum/g;s/;Rest;  /);Rest/g;s/;Multiplication;  /);Multiplication/g;s/;Division;  /);Division/g;s/;Square;  /);Square/g;s/;Percent;  /);Percent/g;s/;Root;  /);Root/g;s/;Dot;  /);Dot/g;s/;Comma;  /);Comma/g' | tr ';' '\n' | sed '1d')
+lines_to_paste_en=$(cat  "$HOME/.voice_commands/v-c LANGS/commands-$TO" | tr '\n' ';' | sed 's/SELECT_FILE/SELECT_FILE << cited-text >>/g;s/MUSIC_START_SONG/MUSIC_START_SONG << cited-text >>/g;s/SEARCH;/SEARCH << cited-text >>;/g;s/TRANSLATE/TRANSLATE \[from\] \[to\] << cited-text >>/g;s/WRITE;/WRITE << cited-text >>;/g;s/WRITE_CAPITAL;/WRITE_CAPITAL << cited-text >>;/g;s/WRITE_CAPITAL_ALL;/WRITE_CAPITAL_ALL << cited-text >>;/g;s/SAY_THIS/SAY_THIS << cited-text >>/g;s/GOOGLE_SEARCH/GOOGLE_SEARCH << cited-text >>/g;s/YOUTUBE_SEARCH/YOUTUBE_SEARCH << cited-text >>/g;s/WIKI_SEARCH/WIKI_SEARCH << cited-text >>/g;s/WEATHER/WEATHER << cited-text >>/g;s/SEARCH_MAPS/SEARCH_MAPS << cited-text >>/g;s/SAY_HI/SAY_HI << cited-text >>/g;s/;CMD_OPEN_FOLDER_OF=/\\|/g;s/OPEN_FOLDER/OPEN_FOLDER << cited-text >>/g;s/DICTATION/DICTATION << cited-text-continuo >>/g;s/CHANGE_TAB/CHANGE_TAB << cited-numbers >>/g;s/ALARM/ALARM << cited-numbers \[days\] \[hours\] \[minutes\] \[seconds\] to sleep >>/g;s/CALCULATOR/CALCULATOR << cited-operation >>/g;s/OFFICE/OFFICE << cited-text \[ writer, calc, impress, draw, math \] >>/g;s/CMD_/);################################;   /g;s/=/;   (/g;s/;)/)/g;s/;Writer;  /);Writer/g;s/;Calc;  /);Calc/g;s/;Impress;  /);Impress/g;s/;Draw;  /);Draw/g;s/;Math;  /);Math/g;s/\\|/ | /g;s/;Sum;  /);Sum/g;s/;Rest;  /);Rest/g;s/;Multiplication;  /);Multiplication/g;s/;Division;  /);Division/g;s/;Square;  /);Square/g;s/;Percent;  /);Percent/g;s/;Root;  /);Root/g;s/;Dot;  /);Dot/g;s/;Comma;  /);Comma/g' | tr ';' '\n' | sed '1d')
 
 echo "`echo "$lines_to_paste_en"`)
 ################################
@@ -191,5 +203,5 @@ http://gnome-look.org/content/show.php?content=165529
 # GNU License. You are free to modify and redistribute #
 
 " >> '/tmp/README_TEMP'
-mv '/tmp/LEEME_TEMP' "/usr/bin/voice_commands/v-c LANGS/LÉEME-$TO.md"
-mv '/tmp/README_TEMP' "/usr/bin/voice_commands/v-c LANGS/README-$TO.md"
+mv '/tmp/LEEME_TEMP' "$HOME/.voice_commands/v-c LANGS/LÉEME-$TO.md"
+mv '/tmp/README_TEMP' "$HOME/.voice_commands/v-c LANGS/README-$TO.md"

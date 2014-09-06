@@ -100,6 +100,7 @@ Dot=punt\|dot
 Comma=comma
 CMD_TAKE_PICTURE=fer una fotografia\|cheese\|comença formatge\|foto\|fer una fotografia
 CMD_TAKE_VIDEO=registre\|la gravació d un vídeo\|registre\|gravació de vídeo\|gravar un vídeo
+CMD_ADD_NEW_ACTION=afegeix un comandament\|crear nou comandament\|nou ordre de fet\|afegir un nou ordre\|crear un nou ordre\|fet nou una ordre\|nou ordre\|nou ordre\|nova acció
 CMD_OPEN_FILE=obrir l arxiu\|obert\|arxiu obert\|obrir un nou arxiu
 CMD_OFFICE=crea un nou document\|obriu un nou document\|crea un nou document\|obriu un nou document\|nou document\|nou document obert\|obrir un nou document\|obrir nou document de\|obrir un nou document de\|crear nou document\|crear un nou document\|crear nou document de\|crear un nou document de\|nou document de\|nou document de l oficina de\|crear nova\|crear un nou\|nou obert\|obrir una nova
 Writer=text

@@ -100,6 +100,7 @@ Dot=uhakika\|dot
 Comma=comma
 CMD_TAKE_PICTURE=kuchukua picha\|cheese\|jibini kuanza\|picha\|kuchukua picha
 CMD_TAKE_VIDEO=rekodi\|kurekodi video\|rekodi\|rekodi ya video\|kurekodi video
+CMD_ADD_NEW_ACTION=kuongeza amri mpya\|kujenga amri mpya\|alifanya amri mpya\|kuongeza amri mpya\|kujenga amri mpya\|alifanya mpya amri\|amri mpya\|utaratibu mpya\|hatua mpya
 CMD_OPEN_FILE=kufungua faili\|wazi\|file wazi\|kufungua faili mpya
 CMD_OFFICE=inajenga hati mpya\|kufungua hati mpya\|inajenga hati mpya\|kufungua hati mpya\|hati mpya\|wazi waraka mpya\|kufungua hati mpya\|kufungua hati mpya ya\|kufungua hati mpya ya\|kutengeneza hati mpya\|kutengeneza hati mpya\|kutengeneza hati mpya ya\|kutengeneza hati mpya ya\|hati mpya ya\|mpya ofisi hati ya\|kuunda mpya\|kuunda mpya\|wazi mpya\|kufungua mpya
 Writer=nakala

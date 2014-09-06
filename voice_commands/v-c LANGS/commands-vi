@@ -100,6 +100,7 @@ Dot=điểm\|dot
 Comma=comma
 CMD_TAKE_PICTURE=chụp ảnh\|cheese\|pho mát bắt đầu\|ảnh\|chụp ảnh
 CMD_TAKE_VIDEO=ghi\|quay video\|ghi\|ghi lại video\|quay video
+CMD_ADD_NEW_ACTION=thêm lệnh mới\|tạo ra lệnh mới\|thực hiện lệnh mới\|thêm một lệnh mới\|tạo ra một lệnh mới\|thực hiện một lệnh mới\|lệnh mới\|trật tự mới\|hành động mới
 CMD_OPEN_FILE=mở file\|công khai\|mở tập tin\|mở một tập tin mới
 CMD_OFFICE=tạo ra một tài liệu mới\|mở một tài liệu mới\|tạo ra một tài liệu mới\|mở một tài liệu mới\|tài liệu mới\|tài liệu mới mở\|mở một tài liệu mới\|mở tài liệu mới\|mở một tài liệu mới\|tạo tài liệu mới\|tạo một tài liệu mới\|tạo tài liệu mới\|tạo một tài liệu mới\|tài liệu mới\|tài liệu văn phòng mới của\|tạo mới\|tạo ra một mới\|mở mới\|mở mới
 Writer=văn bản

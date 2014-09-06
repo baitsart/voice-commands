@@ -100,6 +100,7 @@ Dot=bod\|dot
 Comma=comma
 CMD_TAKE_PICTURE=vyfotit\|cheese\|spustí se sýrem\|fotografie\|vyfotit
 CMD_TAKE_VIDEO=záznam\|nahrávání videa\|záznam\|záznam videa\|nahrávat video
+CMD_ADD_NEW_ACTION=přidat nový příkaz\|vytvořit nový příkaz\|dělal nový příkaz\|přidat nový příkaz\|vytvořit nový příkaz\|dělal novýpříkaz\|nový příkaz\|new order\|nová akce
 CMD_OPEN_FILE=otevřete soubor\|otevřeno\|otevřít soubor\|otevřít nový soubor
 CMD_OFFICE=vytvoří nový dokument\|otevřete nový dokument\|vytvoří nový dokument\|otevřete nový dokument\|nový dokument\|otevřený nový dokument\|otevřete nový dokument\|otevřete nový dokument\|otevřete nový dokument\|vytvořit nový dokument\|vytvořit nový dokument\|vytvořit nový dokument\|vytvořit nový dokument\|nový dokument\|nový dokument office of\|vytvářet nové\|vytvořitnový\|otevírají nové\|otevřenínové
 Writer=text

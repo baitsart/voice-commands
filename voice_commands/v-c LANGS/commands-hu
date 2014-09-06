@@ -100,6 +100,7 @@ Dot=pont\|dot
 Comma=comma
 CMD_TAKE_PICTURE=a kép\|cheese\|sajt kezdődik\|fénykép\|a kép
 CMD_TAKE_VIDEO=rekord\|videó rögzítése\|rekord\|videoklipeket\|videofelvétel
+CMD_ADD_NEW_ACTION=új parancs\|új parancs\|készült új parancs\|Új parancs\|Új parancs létrehozása\|tett új parancs\|új parancs\|új rend\|új akció
 CMD_OPEN_FILE=nyissa meg a fájlt\|nyitott\|fájl megnyitása\|nyisson meg egy új fájlt
 CMD_OFFICE=létrehoz egy új dokumentumot\|nyisson meg egy új dokumentumot\|létrehoz egy új dokumentumot\|nyisson meg egy új dokumentumot\|új dokumentum\|nyitott az új dokumentum\|nyisson meg egy új dokumentumot\|nyitott új dokumentumot\|nyisson meg egy új dokumentumot a\|Új dokumentum létrehozása\|hozzon létre egy új dokumentumot\|új dokumentumot\|hozzon létre egy új dokumentumot\|új dokumentumot\|új iroda dokumentumot\|új\|hozzon létre egy új\|nyitott az új\|megnyit egy új
 Writer=szöveg

@@ -100,6 +100,7 @@ Dot=pointe\|ponc
 Comma=comma
 CMD_TAKE_PICTURE=a chur le pictiúr\|cheese\|tosaíonn cáis\|grianghraf\|a chur le pictiúr
 CMD_TAKE_VIDEO=taifead\|thaifeadadh físeáin\|taifead\|físeán taifead\|físeán a thaifeadadh
+CMD_ADD_NEW_ACTION=cuir ordú nua\|ordú nua a chruthú\|ordú arna dhéanamh nua\|add a ordú nua\|chruthú ordú nua\|déanta nua a dtoil\|ordú nua\|ordú nua\|gníomhaíocht nua
 CMD_OPEN_FILE=an comhad a oscailt\|oscailte\|comhad a oscailt\|comhad nua a oscailt
 CMD_OFFICE=cruthaíonn doiciméad nua\|oscail cáipéis nua\|cruthaíonn doiciméad nua\|oscail cáipéis nua\|doiciméad nua\|doiciméad nua oscailte\|cáipéis nua a oscailt\|doiciméad nua a oscailt\|doiciméad nua ar oscailt\|cáipéis nua a chruthú\|cáipéis nua a chruthú\|cáipéis nua a chruthú ar\|doiciméad nua a chruthú de\|doiciméad nua\|cáipéisí oifige nua\|nua a chruthú\|nua a chruthú\|nua oscailte\|oscailt nua
 Writer=téacs

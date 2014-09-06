@@ -100,6 +100,7 @@ Dot=punkto\|dot
 Comma=comma
 CMD_TAKE_PICTURE=fotu\|cheese\|fromaĝo komenciĝas\|foto\|fotu
 CMD_TAKE_VIDEO=rekordo\|registrado video\|rekordo\|rekordo video\|gravuri video
+CMD_ADD_NEW_ACTION=aldoni novajn komando\|krei novan komandon\|faris novan komandon\|aldoni novan komandon\|kreu novan komandon\|faris nova komando\|nova komando\|nova ordo\|nova ago
 CMD_OPEN_FILE=malfermu la dosieron\|malferma\|malfermita dosiero\|malfermi novan dosieron
 CMD_OFFICE=kreas novan dokumenton\|malfermi novan dokumenton\|kreas novan dokumenton\|malfermi novan dokumenton\|novan dokumenton\|malfermita nova dokumento\|malfermi novan dokumenton\|malfermi novan dokumenton de\|malfermi novan dokumenton de\|krei novan dokumenton\|krei novan dokumenton\|krei novan dokumenton de\|krei novan dokumenton de\|nova dokumento de\|nova oficejo dokumento de\|krei novajn\|krei novajn\|malfermita nova\|malfermi novan
 Writer=teksto

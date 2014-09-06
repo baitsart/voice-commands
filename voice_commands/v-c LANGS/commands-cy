@@ -100,6 +100,7 @@ Dot=pwynt\|dot
 Comma=comma
 CMD_TAKE_PICTURE=cymryd llun\|cheese\|caws yn dechrau\|photo\|cymryd llun
 CMD_TAKE_VIDEO=cofnod\|recordio fideo\|cofnod\|cofnod fideo\|cofnodio fideo
+CMD_ADD_NEW_ACTION=ychwanegu gorchymyn newydd\|creu gorchymyn newydd\|gorchymyn newydd a wnaed\|ychwanegu gorchymyn newydd\|creu gorchymyn newydd\|gwneud gorchymyn newydd\|gorchymyn newydd\|drefn newydd\|gweithredu newydd
 CMD_OPEN_FILE=agor y ffeil\|agored\|agor ffeil\|agor ffeil newydd
 CMD_OFFICE=yn creu dogfen newydd\|agor dogfen newydd\|yn creu dogfen newydd\|agor dogfen newydd\|dogfen newydd\|dogfen newydd yn agor\|agor dogfen newydd\|agor y ddogfen newydd o\|agor dogfen newydd o\|creu dogfen newydd\|greu dogfen newydd\|creu dogfen newydd o\|greu dogfen newydd o\|dogfen newydd o\|dogfen swyddfa newydd\|creu newydd\|creu newydd\|newydd yn agor\|agor newydd
 Writer=testun

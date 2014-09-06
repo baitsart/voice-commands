@@ -100,6 +100,7 @@ Dot=punkts\|dot
 Comma=comma
 CMD_TAKE_PICTURE=fotografēt\|cheese\|siers sāk\|foto\|fotografēt
 CMD_TAKE_VIDEO=ieraksts\|ierakstot videoklipu\|ieraksts\|ierakstīt video\|ierakstīt video
+CMD_ADD_NEW_ACTION=pievienot jaunu komandu\|izveidot jaunu komandu\|izgatavots jaunu komandu\|pievienot jaunu komandu\|izveidot jaunu komandu\|izgatavots jaunakomanda\|jaunu komandu\|jaunā kārtība\|jauns pasākums
 CMD_OPEN_FILE=atvērt failu\|atvērts\|atvērt failu\|atvērt jaunu failu
 CMD_OFFICE=izveido jaunu dokumentu\|atvērt jaunu dokumentu\|izveido jaunu dokumentu\|atvērt jaunu dokumentu\|jaunais dokuments\|atvērts jauns dokuments\|atvērt jaunu dokumentu\|atver jaunu dokumentu\|atvērt jaunu dokumentu\|izveidot jaunu dokumentu\|izveidot jaunu dokumentu\|izveidot jaunu dokumentu\|izveidot jaunu dokumentu\|jaunais dokuments\|jaunā biroja dokuments\|izveidot jaunas\|izveidotjaunu\|atvērta jauna\|atvērtjaunu
 Writer=teksts

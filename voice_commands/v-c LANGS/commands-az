@@ -100,6 +100,7 @@ Dot=point\|dot
 Comma=comma
 CMD_TAKE_PICTURE=bir şəkil çəkmək\|cheese\|pendir başlayır\|foto\|bir şəkil çəkmək
 CMD_TAKE_VIDEO=rekord\|bir video qeyd\|rekord\|rekord video\|bir video qeyd
+CMD_ADD_NEW_ACTION=yeni komanda əlavə\|yeni bir əmr yaratmaq\|hazırlanmış yeni komanda\|yeni bir əmr et\|yeni bir əmr yaratmaq\|hazırlanmış yeni bir skript\|yeni komanda\|new order\|yeni fəaliyyət
 CMD_OPEN_FILE=fayl açmaq\|açıq\|açıq fayl\|yeni bir fayl açmaq
 CMD_OFFICE=yeni bir sənəd yaradır\|yeni bir sənəd açın\|yeni bir sənəd yaradır\|yeni bir sənəd açın\|yeni sənəd\|açıq yeni sənəd\|yeni bir sənəd açmaq\|yeni sənəd açmaq\|yeni bir sənəd açmaq\|yeni sənəd yaratmaq\|yeni sənəd yaratmaq\|yeni sənəd yaratmaq\|yeni sənəd yaratmaq\|yeni sənəd\|yeni ofis sənəd\|yeni yaratmaq\|yeni bir yaratmaq\|açıq yeni\|yeni açmaq
 Writer=mətn

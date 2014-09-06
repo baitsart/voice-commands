@@ -92,7 +92,7 @@ exit
 fi
 if echo "$1" | grep -x -q -- "-t\|-try"; then
 commands=$(echo "$@" | sed 's/-try //g;s/-t //g;s/  / /g;s/-lang '"$language"'//g;s/-l '"$language"'//g;s/-lang='"$language"'//g;s/-l='"$language"'//g' | sed 's/^[ ]*//')
-CMD_RETRY=$(sed -n '101p' ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2)
+CMD_RETRY=$(sed -n '111p' ~/.voice_commands/"v-c LANGS"/commands-"$language" | cut -d "=" -f 2)
 if echo "$commands" | grep -q "$CMD_RETRY" ; then
 [[ -f /tmp/speech_recognition_prev.tmp ]] || notify-send "No previous command" "Execute it again, please"
 mv /tmp/speech_recognition_prev.tmp /tmp/speech_recognition.tmp
@@ -132,26 +132,38 @@ Execute:
 And try again."
 exit 1
 fi
-if echo "$1" | grep -x -q -i -- "-v"; then
+if echo "$1" | grep -x -q -i -- "-a\|-add"; then
+text_line=$(echo "$@" | sed 's/'"$1"'//' )
+sh ~/.voice_commands/Scripts/add_new.sh "$text_line"
+exit
+fi
+if echo "$1" | grep -x -q -i -- "-v\|-version"; then
 echo "# Voice commands (command your PC speaking commands) #
-Version 1.0.1-7"
+Version 1.0.2-1"
 exit
 fi
 if echo "$1" | grep -x -q -i -- "--help"; then
 echo "
 	# Voice commands (command your PC speaking commands) #
-Version 1.0.1-7
+Version 1.0.2-1
 	v-c , command line options
 
 v-c -r		Run
-v-c -l -lang	To select another, of 67 languages for recognition.
-v-c -t -try	To try any command, of default lang, or, a [-lang].
-v-c -mic [NUM]	Set port, to default [1,2,3...]. And, if [input-"'"'"1,2,3..."'"'"].
-v-c -vol	Set the microphone volume that is used by default. Level (<= 200).
+v-c -l -lang	To select another, of 67 languages, on the commands:
+		 ( « -run », « -try », « -modify », « -update » and « -h » ).
+v-c -t -try	To try any command. « v-c -try "'"'"order call method"'"'" »
+v-c -mic [NUM]	Set the port, to use by default [1,2,3...]. And, if [input-"'"'"1,2,3..."'"'"].
+v-c -vol	Set the microphone volume that is used by default. Level max. 200.
 v-c -m -mod	To modify the commands file, and the README file.
 v-c -u -update	To update the README file, after modify the script.
+v-c -a -add	To add, create, a new voice command action « v-c -add »,
+		 or « v-c -add "'"'"action name"'"'" »,
+		 or « v-c -add "'"'"action name=one call method;another call method"'"'"
+		Separating between NAME and ORDER with =. And between ORDERS, with ;
+v-c -v		Print the program version.
 v-c -h		Show instructions README file.
-v-c --help	Show this message"
+v-c --help	Show this message
+"
 exit
 fi
 echo "No command $1

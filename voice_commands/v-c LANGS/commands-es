@@ -100,6 +100,7 @@ Dot=punto
 Comma=coma
 CMD_TAKE_PICTURE=tomar una fotografía\|cheese\|comienza queso\|fotografía\|tomar una foto\|tomar una fotografía\|foto
 CMD_TAKE_VIDEO=registrar un vídeo\|grabación de un vídeo\|grabar\|grabar un vídeo\|grabar un video
+CMD_ADD_NEW_ACTION=añadir nuevo comando\|crear nuevo comando\|hacer nuevo comando\|agregar un nuevo comando\|crear un nuevo comando\|hacer un nuevo comando\|nuevo comando\|nuevo orden\|nueva acción
 CMD_OPEN_FILE=abrir el archivo\|abrir archivo\|abrir un nuevo archivo\|abre el archivo\|abre archivo\|abre un nuevo archivo
 CMD_OFFICE=crea un nuevo documento\|abra un nuevo documento\|crea un nuevo documento\|abra un nuevo documento\|nuevo documento\|abrir un nuevo documento de\|abrir un nuevo documento\|crear un nuevo documento de\|crear un nuevo documento\|crear un nuevo\|crear una nueva\|abrir un nuevo\|abrir una nueva
 Writer=texto

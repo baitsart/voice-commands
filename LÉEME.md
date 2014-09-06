@@ -1,6 +1,6 @@
 # Comandos de Voz (comanda tu PC con órdenes habladas)  #
 
-Puede modificar los comandos de abajo para un mejor uso, en el archivo: /usr/bin/voice_commands/"v-c LANGS"/commands-en
+Puede modificar los comandos de abajo para un mejor uso, en el archivo: ~/.voice_commands/"v-c LANGS"/commands-en
 
 La función de éste programa se inicia ejecutando el script play_stop.sh, el cual comenzará a grabar su voz, y si transcurren cinco segundos, o si lo vuelves a ejecutar, iniciará el reconocimiento de voz, para ya, realizar uno de todos los comandos disponibles.
 Las órdenes pueden ser simples de un sólo contexto: << orden >>, o de doble contexto: << orden >> << texto-citado >>
@@ -23,11 +23,13 @@ voice-commands
 
 v-c -r		Correr
 
-v-c -l -lang	Para seleccionar otro, de 67 idiomas de reconocimiento. (Viable en: « -run, -try, -modify, -update, -h »)
+v-c -l -lang	Para seleccionar otro, de 67 idiomas, en los comandos:
 
-v-c -t -try	Para probar cualquier comando, de manera predeterminada lang, o un [-lang].
+		 ( « -run », « -try », « -modify », « -update » and « -h » ).
 
-v-c -mic [NUM]	Configure el puerto, por defecto [1,2,3...]. Y, si es [input-"1,2,3..."].
+v-c -t -try	Para tratar cualquier comando. « v-c -try "para las llamadas a métodos" »
+
+v-c -mic [NUM]	ajuste el puerto, utilizar de forma predeterminada [1,2,3...]. y, si [input-"1,2,3..."].
 
 v-c -vol	Establecer el volumen del micrófono que se usa por defecto. Nivel (<= 200).
 
@@ -35,9 +37,20 @@ v-c -m -mod	Para modificar el archivo de comandos y el archivo LÉEME.
 
 v-c -u -update	Para actualizar el archivo LÉEME, luego de modificar el archivo de comandos.
 
+v-c -a -add	Para agregar, Crear, Una nueva acción de comando de voz « v-c -add »,
+
+		 or « v-c -add "nombre de la acción" »,
+
+		 or « v-c -add "nombre de la acción=método de una llamada;otro método de llamada"
+
+		La separación entre los NAME y ORDER Con =. Y entre ORDERS, Con ;
+
+v-c -v		Imprimir la versión del programa .
+
 v-c -h		Ver instrucciones del documento LÉEME.
 
 v-c --help	Mostrar este mensaje
+
 
 ------------------------------------------------------------
 
@@ -344,13 +357,13 @@ rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libre
 ################################
    CALCULATOR << operación-citada >>
    (calculated | calculate | the counting | making operation | make the calculation | calculator)
-Sum (more | and | suming | sum)
+Sum (more | and | summing | sum)
 Rest (subtracts | less | resting | rest)
 Multiplication (per | multiplied by | multiplied | by | multiplication | multiplying it)
-Divition (divided in | divided | dividing in | about | divition)
+Division (divided in | divided | dividing in | about | division)
 Square (squared | square | at square | squared of | square of)
 Percent (percent | percentage | percent of | percentage of)
-Root (squared | square | square root of | square root | root)
+Root (square root of | square root | root)
 Dot (point | dot)
 Comma (comma)
 ################################
@@ -359,6 +372,9 @@ Comma (comma)
 ################################
    TAKE_VIDEO
    (record | record video | record a video)
+################################
+   ADD_NEW_ACTION
+   (add new command | create new command | made new command | add a new command | create a new command | made new a command | new command | new order | new action)
 ################################
    OPEN_FILE
    (open file | open a new file)

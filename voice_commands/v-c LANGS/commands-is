@@ -100,6 +100,7 @@ Dot=lið\|punktur
 Comma=comma
 CMD_TAKE_PICTURE=taka mynd\|cheese\|ostur byrjar\|ljósmynd\|taka mynd
 CMD_TAKE_VIDEO=skrá\|hreyfimynd er\|skrá\|taka upp\|taka upp myndskeið
+CMD_ADD_NEW_ACTION=bæta við nýjum skipun\|búa til nýtt stjórn\|eignast nýja stjórn\|bæta við nýjum skipun\|búa til nýja stjórn\|eignast nýja stjórn\|ný stjórn\|nýja röð\|ný aðgerð
 CMD_OPEN_FILE=opna skrána\|opinn\|opinn skrá\|opna nýja skrá
 CMD_OFFICE=skapar nýja skjal\|opnaðu nýtt skjal\|skapar nýja skjal\|opnaðu nýtt skjal\|nýtt skjal\|opinn new skjal\|opna nýtt skjal\|opna nýtt skjal í\|opna nýtt skjal í\|búa til nýtt skjal\|búa til nýtt skjal\|búa til nýtt skjal\|búa til nýtt skjal\|nýtt skjal um\|ný skrifstofa skjal\|búa til nýja\|að búa til nýja\|opinn new\|opna nýjan
 Writer=texti

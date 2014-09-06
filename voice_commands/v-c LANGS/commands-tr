@@ -100,6 +100,7 @@ Dot=nokta\|nokta
 Comma=comma
 CMD_TAKE_PICTURE=fotoğraf çekmek\|cheese\|peynir başlar\|fotoğraf\|fotoğraf çekmek
 CMD_TAKE_VIDEO=kayıt\|bir video kaydı\|kayıt\|video kaydı\|video kaydetmenizi
+CMD_ADD_NEW_ACTION=yeni bir komut eklemek\|yeni komutu oluşturmak\|yapılan yeni bir komut\|yeni bir komut eklemek\|yeni bir komut oluşturmak\|yapılan yeni bir komut\|yeni bir komut\|yeni düzen\|yeni eylem
 CMD_OPEN_FILE=dosyayı açmak\|açık\|açık dosya\|yeni bir dosya açmak
 CMD_OFFICE=yeni bir belge oluşturur\|yeni bir belge açın\|yeni bir belge oluşturur\|yeni bir belge açın\|yeni bir belge\|açık yeni bir belge\|yeni bir belge açın\|yeni belge açmak\|yeni bir belge açın ve\|yeni bir belge oluşturmak\|yeni bir belge oluşturmak\|yeni bir belge oluşturmak\|yeni bir belge yaratmak arasında\|yeni belge\|yeni ofis belge\|yeni oluştur\|yeni oluştur\|açık yeni\|yeni açın
 Writer=metin

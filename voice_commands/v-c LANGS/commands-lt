@@ -100,6 +100,7 @@ Dot=taškas\|taškas
 Comma=comma
 CMD_TAKE_PICTURE=fotografuoti\|cheese\|sūrio prasideda\|nuotrauka\|fotografuoti
 CMD_TAKE_VIDEO=įrašas\|filmuojant\|įrašas\|filmuoti\|filmuoti
+CMD_ADD_NEW_ACTION=pridėti naują komandą\|sukurti naują komandą\|padarė naują komandą\|pridėti naują komandą\|sukurti naują komandą\|padarė naująkomandą\|nauja komanda\|nauja tvarka\|naujų veiksmų
 CMD_OPEN_FILE=atidarykite failą\|atviras\|atidaryti failo\|atidaryti naują failą
 CMD_OFFICE=sukuria naują dokumentą\|atidarykite naują dokumentą\|sukuria naują dokumentą\|atidarykite naują dokumentą\|naujas dokumentas\|atidarykite naują dokumentą\|atidarykite naują dokumentą\|atidaryti naują dokumentą\|atidaryti naują dokumentą\|sukurti naują dokumentą\|sukurti naują dokumentą\|sukurti naują dokumentą\|sukurti naują dokumentą\|naujas dokumentas\|naujas biurų dokumentas\|sukurti naują\|sukurtinaują\|atidaryti naujas\|atidarytinaujas
 Writer=tekstas

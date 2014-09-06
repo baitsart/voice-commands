@@ -100,6 +100,7 @@ Dot=puntua\|dot
 Comma=comma
 CMD_TAKE_PICTURE=argazki bat atera\|cheese\|gazta hasten\|argazki\|argazki bat atera
 CMD_TAKE_VIDEO=errekorra\|bideo bat grabatu\|errekorra\|erregistro video\|bideo bat grabatu
+CMD_ADD_NEW_ACTION=gehitzen komando berria\|sortu komando berria\|egin komando berria\|komando berri bat gehitu\|komando berri bat sortu\|egin komando bat berria\|komando berria\|eskaera berri\|ekintza berria
 CMD_OPEN_FILE=ireki fitxategia\|open\|fitxategia ireki\|fitxategi berri bat ireki
 CMD_OFFICE=dokumentu berri bat sortzen\|dokumentu berri bat ireki\|dokumentu berri bat sortzen\|dokumentu berri bat ireki\|dokumentu berri\|dokumentu berria irekita\|dokumentu berri bat ireki\|ireki duen dokumentu berri\|dokumentu berri bat ireki\|dokumentu berria sortzen\|dokumentu berri bat sortzeko\|dokumentu berriak sortzeko\|dokumentu berri bat sortzeko\|dokumentu berria\|bulegoko dokumentu berri\|sortu berria\|berri bat sortzeko\|berriak irekitzen\|ireki berria
 Writer=testua

@@ -100,6 +100,7 @@ Dot=punctum\|dot
 Comma=comma
 CMD_TAKE_PICTURE=a picture\|cheese\|caseum incipit\|lorem ipsummae\|a picture
 CMD_TAKE_VIDEO=record\|a video recording\|record\|scriptum video\|scribere video
+CMD_ADD_NEW_ACTION=morbi ligula imperium\|mandatum novum\|iterum mandatum novum fecit\|addunt novam imperium\|mandatum novum\|renovabitur mandatum\|iterum mandatum novum\|disponet\|nova actio
 CMD_OPEN_FILE=patefacio lima\|aperi\|aperi file\|patefacio a novus file
 CMD_OFFICE=haec novum document\|aperi novum document\|haec novum document\|aperi novum document\|novum document\|aperire novum document\|aperire novum document\|aperire librum\|aperire novum documentum,\|novum document\|in novum documentum,\|novum documentum,\|in novum documentum,\|novum documentum,\|novum officii genus et originem\|patet quod arcanum\|nova\|aperire\|patefacio a novus
 Writer=text
