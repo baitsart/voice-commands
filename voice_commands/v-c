@@ -120,6 +120,10 @@ if echo "$1" | grep -q -- "-u\|-update"; then
 sh ~/.voice_commands/Scripts/hace_leeme.sh "$language"
 exit
 fi
+if echo "$1" | grep -q -- "-tr\|-translate"; then
+sh ~/.voice_commands/Scripts/translate_some.sh
+exit
+fi
 if echo "$1" | grep -x -q -i -- "-h"; then
 if [[ -f ~/.voice_commands/"v-c LANGS"/README-"$language".md ]]; then
 cat ~/.voice_commands/"v-c LANGS"/README-"$language".md
@@ -139,13 +143,13 @@ exit
 fi
 if echo "$1" | grep -x -q -i -- "-v\|-version"; then
 echo "# Voice commands (command your PC speaking commands) #
-Version 1.0.2-1"
+Version 1.0.2-2"
 exit
 fi
 if echo "$1" | grep -x -q -i -- "--help"; then
 echo "
 	# Voice commands (command your PC speaking commands) #
-Version 1.0.2-1
+Version 1.0.2-2
 	v-c , command line options
 
 v-c -r		Run
@@ -160,6 +164,7 @@ v-c -a -add	To add, create, a new voice command action « v-c -add »,
 		 or « v-c -add "'"'"action name"'"'" »,
 		 or « v-c -add "'"'"action name=one call method;another call method"'"'"
 		Separating between NAME and ORDER with =. And between ORDERS, with ;
+v-c -tr		Translate some new action, if you not translated yet.
 v-c -v		Print the program version.
 v-c -h		Show instructions README file.
 v-c --help	Show this message

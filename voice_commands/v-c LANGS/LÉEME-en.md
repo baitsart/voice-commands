@@ -4,7 +4,7 @@ Puede modificar los comandos de abajo para un mejor uso, en el archivo: ~/.voice
 
 La función de éste programa se inicia ejecutando el script play_stop.sh, el cual comenzará a grabar su voz, y si transcurren cinco segundos, o si lo vuelves a ejecutar, iniciará el reconocimiento de voz, para ya, realizar uno de todos los comandos disponibles.
 Las órdenes pueden ser simples de un sólo contexto: << orden >>, o de doble contexto: << orden >> << texto-citado >>
-También se puede repetir el último comando con función: RETRY
+También se puede repetir el último comando con función: RETRY, y adherir una nueva acción, con la función: ADD_NEW_ACTION
 Las órdenes disponibles son 95
 
 Después de instalado lo podrás lanzar desde Aplicaciones, Acceso universal, Comandos de Voz
@@ -33,6 +33,7 @@ v-c -a -add	Para agregar, Crear, Una nueva acción de comando de voz « v-c -add
 		 or « v-c -add "nombre de la acción" »,
 		 or « v-c -add "nombre de la acción=método de una llamada;otro método de llamada"
 		La separación entre los NAME y ORDER Con =. Y entre ORDERS, Con ;
+v-c -tr		Traducir alguna acción nueva, si no traducido aún.
 v-c -v		Imprimir la versión del programa .
 v-c -h		Ver instrucciones del documento LÉEME.
 v-c --help	Mostrar este mensaje

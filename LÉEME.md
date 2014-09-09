@@ -4,7 +4,7 @@ Puede modificar los comandos de abajo para un mejor uso, en el archivo: ~/.voice
 
 La función de éste programa se inicia ejecutando el script play_stop.sh, el cual comenzará a grabar su voz, y si transcurren cinco segundos, o si lo vuelves a ejecutar, iniciará el reconocimiento de voz, para ya, realizar uno de todos los comandos disponibles.
 Las órdenes pueden ser simples de un sólo contexto: << orden >>, o de doble contexto: << orden >> << texto-citado >>
-También se puede repetir el último comando con función: RETRY
+También se puede repetir el último comando con función: RETRY, y adherir una nueva acción, con la función: ADD_NEW_ACTION
 Las órdenes disponibles son 95
 
 Después de instalado lo podrás lanzar desde Aplicaciones, Acceso universal, Comandos de Voz
@@ -22,35 +22,21 @@ voice-commands
 #	##	v-c , command line options	##	#
 
 v-c -r		Correr
-
 v-c -l -lang	Para seleccionar otro, de 67 idiomas, en los comandos:
-
 		 ( « -run », « -try », « -modify », « -update » and « -h » ).
-
 v-c -t -try	Para tratar cualquier comando. « v-c -try "para las llamadas a métodos" »
-
 v-c -mic [NUM]	ajuste el puerto, utilizar de forma predeterminada [1,2,3...]. y, si [input-"1,2,3..."].
-
 v-c -vol	Establecer el volumen del micrófono que se usa por defecto. Nivel (<= 200).
-
 v-c -m -mod	Para modificar el archivo de comandos y el archivo LÉEME.
-
 v-c -u -update	Para actualizar el archivo LÉEME, luego de modificar el archivo de comandos.
-
 v-c -a -add	Para agregar, Crear, Una nueva acción de comando de voz « v-c -add »,
-
 		 or « v-c -add "nombre de la acción" »,
-
 		 or « v-c -add "nombre de la acción=método de una llamada;otro método de llamada"
-
 		La separación entre los NAME y ORDER Con =. Y entre ORDERS, Con ;
-
+v-c -tr		Traducir alguna acción nueva, si no traducido aún.
 v-c -v		Imprimir la versión del programa .
-
 v-c -h		Ver instrucciones del documento LÉEME.
-
 v-c --help	Mostrar este mensaje
-
 
 ------------------------------------------------------------
 

@@ -3,7 +3,7 @@
 You can modify the commands below to better use in the file: ~/.voice_commands/"v-c LANGS"/commands-en
 
 The function of this program starts running play_stop.sh script, which will start recording your voice, and if after five seconds, or run it again, start voice recognition, for now, make one of all commands available.
-Also can repeat the last command with RETRY function
+Also can repeat the last command with RETRY function, and apply a new action with the function: ADD_NEW_ACTION
 Orders can be just a simple context: << order >> , or double context: << order >> << cited-text >>
 Available commands are 95
 
@@ -36,6 +36,7 @@ v-c -a -add	To add, create, a new voice command action « v-c -add »,
 		 or « v-c -add "action name" »,
 		 or « v-c -add "action name=one call method;another call method"
 		Separating between NAME and ORDER with =. And between ORDERS, with ;
+v-c -tr		Translate some new action, if you not translated yet.
 v-c -v		Print the program version.
 v-c -h		Show instructions README file.
 v-c --help	Show this message
