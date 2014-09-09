@@ -98,7 +98,7 @@ echo "#!/bin/bash
 # the_rest=\$(echo "'"'"\$UTTERANCE"'"'" | sed 's/'"'"'"\$"$string""'"'"'//' )" > /usr/bin/voice_commands/Scripts/New_actions/"$string"
 chmod +x /usr/bin/voice_commands/Scripts/New_actions/"$string"
 sed -i ''"$line_paste"'i\
-\n\nrecog=\$(echo \"\$UTTERANCE\" | grep \"\$'"$string"'\" )\n\tif \[ \"\$recog\" != \"\" \]\n\tthen\n\tnotify-send \"Command:\"  \"\$recog\"\nexec /usr/bin/voice_commands/Scripts/New_actions/'"$string"' \"\$lang\" \$UTTERANCE\" \&\n\tmv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp\nexit 0;\nfi\n\n###################################################################' /usr/bin/voice_commands/speech_commands.sh
+\n\nrecog=\$(echo \"\$UTTERANCE\" | grep \"\$'"$string"'\" )\n\tif \[ \"\$recog\" != \"\" \]\n\tthen\n\tnotify-send \"Command:\"  \"\$recog\"\nexec /usr/bin/voice_commands/Scripts/New_actions/'"$string"' \"\$lang\" \"\$UTTERANCE\" \&\n\tmv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp\nexit 0;\nfi\n\n###################################################################' /usr/bin/voice_commands/speech_commands.sh
 
 sed -i '125i\
 '"$string"'=\$(sed -n '"'"''"$line_paste_cmd"'p'"'"' /usr/bin/voice_commands/\"v-c LANGS\"/commands-\"\$lang\" | cut -d \"=\" -f 2)' /usr/bin/voice_commands/speech_commands.sh

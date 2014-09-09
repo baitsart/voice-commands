@@ -3,6 +3,11 @@
 # Written by Rodrigo Esteves baitsart@gmail.com www.youtube.com/user/baitsart 
 # GNU License. You are free to modify and redistribute   # 
 
+web_host=$(echo `ping -c 1 www.google.com`)
+if [ -z "$web_host" ] ; then
+	notify-send "Internet connection required"
+exit
+fi
 lang="en"
 if [ -n "$1" ]; then
 lang=$( echo "$1" | uniq )
