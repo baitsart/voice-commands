@@ -25,33 +25,21 @@ voice-commands
 #	##	v-c , command line options	##	#
 
 v-c -r		Run
-
 v-c -l -lang	To select another, of 67 languages, on the commands:
 		 ( « -run », « -try », « -modify », « -update » and « -h » ).
-
 v-c -t -try	To try any command. « v-c -try "order call method" »
-
 v-c -mic [NUM]	Set the port, to use by default [1,2,3...]. And, if [input-"1,2,3..."].
-
 v-c -vol	Set the microphone volume that is used by default. Level max. 200.
-
 v-c -m -mod	To modify the commands file, and the README file.
-
 v-c -u -update	To update the README file, after modify the script.
-
 v-c -a -add	To add, create, a new voice command action « v-c -add »,
 		 or « v-c -add "action name" »,
 		 or « v-c -add "action name=one call method;another call method"
 		Separating between NAME and ORDER with =. And between ORDERS, with ;
-
 v-c -tr		Translate some new action, if you not translated yet.
-
 v-c -remove	To remove a new action, if doesn't need it any more.
-
 v-c -v		Print the program version.
-
 v-c -h		Show instructions README file.
-
 v-c --help	Show this message
 
 ------------------------------------------------------------

@@ -121,8 +121,7 @@ sh ~/.voice_commands/Scripts/hace_leeme.sh "$language"
 exit
 fi
 if echo "$1" | grep -q -- "-remove\|-rem"; then
-cmd=$(echo "$@" | sed 's/'"$1"' //' )
-sh ~/.voice_commands/Scripts/remove_some.sh "$cmd"
+sh ~/.voice_commands/Scripts/remove_some.sh "$2"
 exit
 fi
 if echo "$1" | grep -q -- "-l\|-lang"; then
@@ -153,13 +152,13 @@ exit
 fi
 if echo "$1" | grep -x -q -i -- "-v\|-version"; then
 echo "# Voice commands (command your PC speaking commands) #
-Version 1.0.2-4"
+Version 1.0.2-5"
 exit
 fi
 if echo "$1" | grep -x -q -i -- "--help"; then
 echo "
 	# Voice commands (command your PC speaking commands) #
-Version 1.0.2-4
+Version 1.0.2-5
 	v-c , command line options
 
 v-c -r		Run
