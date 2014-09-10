@@ -46,6 +46,8 @@ v-c -a -add	To add, create, a new voice command action « v-c -add »,
 
 v-c -tr		Translate some new action, if you not translated yet.
 
+v-c -remove	To remove a new action, if doesn't need it any more.
+
 v-c -v		Print the program version.
 
 v-c -h		Show instructions README file.

@@ -1298,7 +1298,7 @@ fi
 recog=$(echo "$UTTERANCE" | grep "$CMD_CHANGE_TAB" )
 	if [ "$recog" != "" ]
 	then
-	winds=$(echo "$UTTERANCE" | sed 's/'"$CMD_CHANGE_TAB"' //g;s/'"$CMD_CHANGE_TAB"'//g;s/ //g;s/ten/010/g;s/once/011/g;s/twelve/012/g;s/thirteen/013/g;s/fourteen/014/g;s/fifteen/015/g;s/sixteen/016/g;s/ten/01/g;s/twenty/020/g;s/veinti/020/g;s/treintay/03/g;s/cuarentay/040/g;s/cincuentay/050/g;s/sesentay/060/g;s/setentay/070/g;s/ochentay/080/g;s/noventay/090/g;s/treintai/030/g;s/thirty/030/g;s/cuarentai/040/g;s/forty/040/g;s/cincuentai/050/g;s/fifty/050/g;s/sesentai/060/g;s/sixty/060/g;s/setentai/070/g;s/seventy/070/g;s/ochentai/080/g;s/eighty/080/g;s/noventai/090/g;s/ninety/090/g;s/two hundred/200/g;s/three hundred/300/g;s/four/400/g;s/five hundred/500/g;s/six hundred/600/g;s/seven/700/g;s/eight/800/g;s/nine/900/g;s/percent/100/g;s/hundred/100/g;s/one/01/g;s/un/01/g;s/two/02/g;s/three/03/g;s/four/04/g;s/five/05/g;s/six/06/g;s/seven/07/g;s/eight/08/g;s/nine/09/g;s/016/16/g;s/017/17/g;s/018/18/g;s/019/19/g;s/020/20/g;s/030/30/g;s/040/40/g;s/050/50/g;s/060/60/g;s/070/70/g;s/080/80/g;s/090/90/g;s/001/1/g;s/002/2/g;s/003/3/g;s/004/4/g;s/005/5/g;s/006/6/g;s/007/7/g;s/008/8/g;s/009/9/g' | sed 's/^[0]*//' )
+	winds=$(echo "$UTTERANCE" | sed 's/'"$CMD_CHANGE_TAB"' //g;s/'"$CMD_CHANGE_TAB"'//g' | sed 's/^[0]*//' )
 	echo "number `echo $winds`"
 	xdotool key Alt+`echo $winds`
 	mv /tmp/speech_recognition.tmp /tmp/speech_recognition_prev.tmp

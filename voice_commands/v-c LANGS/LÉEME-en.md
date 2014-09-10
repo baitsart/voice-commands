@@ -34,6 +34,7 @@ v-c -a -add	Para agregar, Crear, Una nueva acción de comando de voz « v-c -add
 		 or « v-c -add "nombre de la acción=método de una llamada;otro método de llamada"
 		La separación entre los NAME y ORDER Con =. Y entre ORDERS, Con ;
 v-c -tr		Traducir alguna acción nueva, si no traducido aún.
+v-c -remove	Para eliminar una nueva acción, si no la necesita más.
 v-c -v		Imprimir la versión del programa .
 v-c -h		Ver instrucciones del documento LÉEME.
 v-c --help	Mostrar este mensaje
@@ -63,7 +64,7 @@ En en los archivos:
 
 Instalar dependencias:
 
-xdotool gawk curl wget cheese audacious sox flac pulseaudio alsa-utils
+xdotool gnome-nettool gawk curl wget cheese audacious sox flac pulseaudio alsa-utils
 
 Programas que usa y ya están en la distribución:
 rhythmbox nautilus gcalctool gedit eog libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-draw libreoffice-math
